@@ -1,4 +1,4 @@
-// The Garden Path: thirteen short stops. Each one introduces a family of
+// The Garden Path: fourteen short stops. Each one introduces a family of
 // letters, a handful of real words (the new letter is highlighted inside
 // them), a story from Persian history and culture, and grows one plant in
 // her garden.
@@ -296,6 +296,33 @@ export const LESSONS = [
       bridge: "This garden you're learning in is named after Saadi's book — Golestan.",
     },
     closing: { fa: "تبریک!", translit: "tabrik!", meaning: "congratulations — you've met all 32 letters!" },
+  },
+  {
+    id: "l13",
+    title: "The little marks",
+    titleFa: "نشانه‌های کوچک",
+    plant: "narcissus",
+    plantName: "white narcissus (نرگس, narges)",
+    letters: [],
+    intro:
+      "Five little marks sit above or below the letters. Day to day, Persian leaves most of them out — but the Quran, prayers, poems and children's books write them in, and they tell you exactly how a word is said. They are the key to saying Arabic words in Persian correctly: الله, محمّد, مؤمن.",
+    words: [
+      { fa: "محمّد", translit: "mohammad", meaning: "Muhammad", note: "The little w-shape on م is a tashdid (ـّ): say the letter twice — mo-ham-mad." },
+      { fa: "اوّل", translit: "avval", meaning: "first", note: "Tashdid on و: av-val. In الله the tashdid is there even when it isn't written: al-lâh." },
+      { fa: "مؤمن", translit: "mo'men", meaning: "believer", note: "ء is a hamza: a tiny catch in the throat. Here it sits on a و." },
+      { fa: "مسئله", translit: "mas'ale", meaning: "question, problem", note: "The same hamza, sitting on a ی without its dots: ئ." },
+      { fa: "لطفاً", translit: "lotfan", meaning: "please", note: "Two little strokes on the final ا are a tanvin (ـً): it adds “an”." },
+      { fa: "کتابِ من", translit: "ketâb-e man", meaning: "my book", note: "A small stroke under a letter (ـِ, kasre) shows the ezafe -e. Usually left unwritten." },
+      { fa: "خانهٔ ما", translit: "khâne-ye mâ", meaning: "our house", note: "After a final ه the ezafe is written as a little ء on top, and says -ye." },
+    ],
+    story: {
+      title: "The dots that kept the Quran's sounds",
+      body:
+        "The first Arabic writing had no vowel marks at all. Abu al-Aswad al-Du'ali, a companion of Imam Ali (ع) — who, many narrations say, taught him the first rules of Arabic grammar — marked the vowels of the Quran with coloured dots: a dot above a letter for “a”, below it for “e”, beside it for “o”. A century later the scholar al-Khalil ibn Ahmad turned those dots into the little strokes still written today, and added the tashdid. Every Quran and prayer book you'll open in Iran carries them, so that each word is said just as it was revealed.",
+      bridge:
+        "The accents on French words in Montreal — café, Québec, élève — do the same job: little marks that tell you exactly how to say a word.",
+    },
+    closing: { fa: "ماشاءالله", translit: "mâshâallâh", meaning: "“what God has willed” — said with admiration, like “how wonderful!”" },
   },
   {
     id: "l12",

@@ -65,7 +65,7 @@ STRESS = {
     "shoghlet": 0, "khodet": 0, "azizam": 1, "montazeretim": 2, "forudgâhim": 2, "khoshbakhtam": 1,
     "khoshhâlam": 1, "khâram": 0, "kuchike": 1, "esmam": 1, "dastet": 0, "dastetun": 0, "ghorbunet": 1,
     # Arabic blessings and prayers keep their Arabic stress, on the long or closed syllable
-    "sallallâho": 2, "alayhe": 1, "âleh": 0, "alayhâ": 1, "ajjalallâho": 3, "ta'âlâ": 1, "farajah": 1,
+    "sallallâho": 2, "alayhe": 1, "âleh": 0, "alayhâ": 1, "ajjalallâho": 3, "ta'âlâ": 1, "zohurah": 1,
     "allâhomma": 1, "salle": 0, "mohammadin": 1, "âle": 0, "rahmatollâh": 3,
     # adverbs and little words stressed at the front
     "lotfan": 0, "hatman": 0, "vâghe'an": 0, "faghat": 0, "âre": 0, "bale": 0, "ya'ni": 0,

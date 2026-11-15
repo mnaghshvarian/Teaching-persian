@@ -94,6 +94,19 @@ const PLANTS = {
         [[0, -7, 2.4], [-3, -3, 2.8], [3, -3, 2.8], [-4, 2, 3], [0, 1, 3], [4, 2, 3], [0, 6, 2.6]].map(([dx, dy, r]) => circle(x + dx, y + dy, r, { fill: "#b48ad6" })),
       ),
     ),
+  narcissus: () =>
+    [-11, 0, 11].flatMap((x, i) => {
+      const y = -(26 + (i % 2) * 9);
+      return [
+        s("path", { d: `M${x} 0 Q ${x + (i - 1) * 2} -14 ${x} ${y}`, class: "g-stem", fill: "none" }),
+        s("path", { d: `M${x - 2} 0 Q ${x - 8} -10 ${x - 6} -18`, class: "g-stem", fill: "none" }),
+        ...[0, 60, 120, 180, 240, 300].map((deg) => {
+          const r = (deg * Math.PI) / 180;
+          return s("ellipse", { cx: x + Math.cos(r) * 4, cy: y + Math.sin(r) * 4, rx: 3.4, ry: 2.2, transform: `rotate(${deg} ${x + Math.cos(r) * 4} ${y + Math.sin(r) * 4})`, fill: "#fffdf4", stroke: "#e4dcc2", "stroke-width": 0.6 });
+        }),
+        circle(x, y, 2.2, { fill: "#f0b429" }),
+      ];
+    }),
 };
 
 function nightingale() {
@@ -108,10 +121,10 @@ function nightingale() {
   ];
 }
 
-// Plant slots, in lesson order (lesson 1 → first slot).
+// Plant slots, in lesson order (lesson 1 → first slot): six by the back wall, six at the front.
 const SLOTS = [
   [40, 132], [104, 132], [162, 132], [238, 132], [296, 132], [360, 132],
-  [44, 228], [116, 228], [200, 232], [284, 228], [356, 228],
+  [40, 228], [104, 228], [162, 228], [238, 228], [296, 228], [360, 228],
 ];
 
 /** Draw the garden. `done` is the set of finished lesson ids; `fresh` is a
@@ -129,10 +142,10 @@ export function gardenSvg(done, fresh = null) {
   svg.append(s("rect", { x: 0, y: 0, width: 400, height: 250, class: "g-sky" }));
   svg.append(circle(352, 30, 13, { class: "g-sun" }));
   svg.append(s("rect", { x: 0, y: 58, width: 400, height: 44, class: "g-wall" }));
-  // Reading Room units fill the arches with turquoise tilework.
-  const tiledArch = [0, 1, 2, 4, 5, 6];
-  for (let i = 0; i < 7; i++) {
-    const x = 18 + i * 56;
+  // Reading Room units fill the arches with turquoise tilework (the middle arch stays plain).
+  const tiledArch = [0, 1, 2, 3, 5, 6, 7, 8];
+  for (let i = 0; i < 9; i++) {
+    const x = 10 + i * 44;
     const unit = READING[tiledArch.indexOf(i)];
     const tiled = unit && done.has(unit.id);
     svg.append(s("path", { d: `M${x} 102 V 80 Q ${x + 14} 62 ${x + 28} 80 V 102 Z`, class: tiled ? `g-arch-tiled${fresh === unit.id ? " fresh-tile" : ""}` : "g-arch" }));
@@ -161,7 +174,8 @@ export function gardenSvg(done, fresh = null) {
   }
 
   // plants
-  LESSONS.slice(1, 12).forEach((lesson, i) => {
+  // every stop between the pool (the first) and the nightingale (the last) grows a plant
+  LESSONS.filter((l) => l.id !== "l0" && l.id !== "l12").forEach((lesson, i) => {
     const [x, y] = SLOTS[i];
     if (done.has(lesson.id)) {
       const draw = PLANTS[lesson.plant];

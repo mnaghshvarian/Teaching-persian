@@ -13,7 +13,7 @@ transliteration shows them:
        علیهماالسلام           alayhemassalâm   once, after a pair, where the
                                                 transliteration says it that way
   (س)  سلام‌الله‌علیها         salâmollâh alayhâ           after a lady of the Prophet's family
-  (عج) عجل‌الله‌تعالی‌فرجه      ajjalallâho ta'âlâ farajah  after Imam Mahdi
+  (عج) عجل‌الله‌تعالی‌ظهوره      ajjalallâho ta'âlâ zohurah  after Imam Mahdi
   (ره) رحمة‌الله‌علیه          rahmatollâh alayh           after a righteous companion or scholar
        رحمة‌الله‌علیها         rahmatollâh alayhâ          … when she is a woman
 
@@ -27,7 +27,7 @@ WORDS = {
     "ص": "صلی‌الله‌علیه‌وآله",
     "ع": "علیه‌السلام",
     "س": "سلام‌الله‌علیها",
-    "عج": "عجل‌الله‌تعالی‌فرجه",
+    "عج": "عجل‌الله‌تعالی‌ظهوره",
     "ره": "رحمة‌الله‌علیه",
 }
 PLURAL = "علیهم‌السلام"

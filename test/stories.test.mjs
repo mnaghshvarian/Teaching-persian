@@ -94,7 +94,7 @@ test("every Imam has a story of his own, in order", () => {
 test("every blessing mark is said, and the help under the line shows it", () => {
   // (ص) (ع) (س) (عج) are abbreviations: the recording says the words (scripts/spoken.py)
   // and the transliteration must show the same words, in the same place
-  const SAID = /sallallâho alayhe va âleh|alayhessalâm|alayhemassalâm|alayhemossalâm|salâmollâh alayhâ|ajjalallâho ta'âlâ farajah|rahmatollâh alayhâ?|rezvânollâh alayhem/g;
+  const SAID = /sallallâho alayhe va âleh|alayhessalâm|alayhemassalâm|alayhemossalâm|salâmollâh alayhâ|ajjalallâho ta'âlâ zohurah|rahmatollâh alayhâ?|rezvânollâh alayhem/g;
   for (const st of STORIES) {
     for (const line of storyLines(st)) {
       const marks = (line.fa.match(/\((ص|ع|س|عج|ره|رضوان‌الله‌علیهم)\)/g) ?? []).length;

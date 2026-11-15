@@ -545,6 +545,46 @@
   "say": "tabrik!"
  },
  {
+  "id": "w-12827a7b",
+  "fa": "محمّد",
+  "say": "mohammad"
+ },
+ {
+  "id": "w-8bea5d4a",
+  "fa": "اوّل",
+  "say": "avval"
+ },
+ {
+  "id": "w-3dfa13b3",
+  "fa": "مؤمن",
+  "say": "mo'men"
+ },
+ {
+  "id": "w-4b079574",
+  "fa": "مسئله",
+  "say": "mas'ale"
+ },
+ {
+  "id": "w-b8020490",
+  "fa": "لطفاً",
+  "say": "lotfan"
+ },
+ {
+  "id": "w-268e43fa",
+  "fa": "کتابِ من",
+  "say": "ketâb-e man"
+ },
+ {
+  "id": "w-58548421",
+  "fa": "خانهٔ ما",
+  "say": "khâne-ye mâ"
+ },
+ {
+  "id": "w-f650149d",
+  "fa": "ماشاءالله",
+  "say": "mâshâallâh"
+ },
+ {
   "id": "w-461e1d4c",
   "fa": "حالت چطوره؟",
   "say": "hâlet chetore?"
@@ -630,19 +670,9 @@
   "say": "khâb"
  },
  {
-  "id": "w-b8020490",
-  "fa": "لطفاً",
-  "say": "lotfan"
- },
- {
   "id": "w-5d31d73c",
   "fa": "ایرانی",
   "say": "irâni"
- },
- {
-  "id": "w-268e43fa",
-  "fa": "کتابِ من",
-  "say": "ketâb-e man"
  },
  {
   "id": "w-3a29f3bc",
@@ -1032,12 +1062,12 @@
  {
   "id": "w-1b06c048",
   "fa": "(عج)",
-  "say": "ajjalallâho ta'âlâ farajah"
+  "say": "ajjalallâho ta'âlâ zohurah"
  },
  {
   "id": "w-d244c35c",
   "fa": "امام زمان (عج)",
-  "say": "emâm-e zamân ajjalallâho ta'âlâ farajah"
+  "say": "emâm-e zamân ajjalallâho ta'âlâ zohurah"
  },
  {
   "id": "w-46001441",
@@ -3282,12 +3312,12 @@
  {
   "id": "w-571fd717",
   "fa": "امام حسن عسکری (ع)، عسکری: پدر امام زمان (عج)، که در سامرا زندگی کرد.",
-  "say": "emâm hasan askari alayhessalâm, askari: pedar-e emâm-e zamân ajjalallâho ta'âlâ farajah, ke dar sâmerrâ zendegi kard."
+  "say": "emâm hasan askari alayhessalâm, askari: pedar-e emâm-e zamân ajjalallâho ta'âlâ zohurah, ke dar sâmerrâ zendegi kard."
  },
  {
   "id": "w-0fdb7bd9",
   "fa": "امام مهدی (عج)، قائم: امام زنده و پنهان، که در نیمهٔ شعبان به دنیا آمد و روزی جهان را پر از عدالت می‌کند.",
-  "say": "emâm mahdi ajjalallâho ta'âlâ farajah, ghâ'em: emâm-e zende va penhân, ke dar nime-ye sha'bân be donyâ âmad va ruzi jahân râ por az edâlat mikonad."
+  "say": "emâm mahdi ajjalallâho ta'âlâ zohurah, ghâ'em: emâm-e zende va penhân, ke dar nime-ye sha'bân be donyâ âmad va ruzi jahân râ por az edâlat mikonad."
  },
  {
   "id": "w-ddfbb1ca",
@@ -4212,7 +4242,7 @@
  {
   "id": "w-7aef8f3a",
   "fa": "او تولد پسرش، امام مهدی (عج)، را از دشمنان پنهان کرد.",
-  "say": "u tavallod-e pesarash, emâm mahdi ajjalallâho ta'âlâ farajah, râ az doshmanân penhân kard."
+  "say": "u tavallod-e pesarash, emâm mahdi ajjalallâho ta'âlâ zohurah, râ az doshmanân penhân kard."
  },
  {
   "id": "w-c2e06379",
@@ -4257,7 +4287,7 @@
  {
   "id": "w-d1f58047",
   "fa": "امام مهدی (عج) در سحرگاه نیمهٔ شعبان سال دویست و پنجاه و پنج، در سامرا به دنیا آمد.",
-  "say": "emâm mahdi ajjalallâho ta'âlâ farajah dar sahargâh-e nime-ye sha'bân-e sâl-e devist-o-panjâh-o-panj, dar sâmerrâ be donyâ âmad."
+  "say": "emâm mahdi ajjalallâho ta'âlâ zohurah dar sahargâh-e nime-ye sha'bân-e sâl-e devist-o-panjâh-o-panj, dar sâmerrâ be donyâ âmad."
  },
  {
   "id": "w-2098b4e9",
