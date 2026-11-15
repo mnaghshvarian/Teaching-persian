@@ -109,14 +109,20 @@ def stress_at(ph: list[str], syllable: int) -> list[str]:
     return ph[:v] + ["ˈ"] + ph[v:]
 
 
+# Silence added after each mark, in seconds (the voice adds a little of its own). A line is read clause by clause, with a
+# real pause at every «،» «؛» «:» and sentence end — exactly where the Persian
+# text has them — and none inside a clause.
+PAUSE = {",": 0.18, ";": 0.25, ":": 0.22, ".": 0.4, "?": 0.4, "!": 0.4}
+
+
 def phonemes_for(say: str) -> list[str]:
     text = say.lower()
     text = re.sub(r"[«»\"“”]", "", text)
-    text = text.replace("…", ",").replace("...", ",").replace(";", ",").replace("—", ",").replace("/", ",")
-    tokens = re.findall(r"[a-zâ'\-]+|[,.?!]", text)
+    text = text.replace("…", ",").replace("...", ",").replace("—", ",").replace("/", ",")
+    tokens = re.findall(r"[a-zâ'\-]+|[,.?!;:]", text)
     out: list[str] = []
     for tok in tokens:
-        if tok in {",", ".", "?", "!"}:
+        if tok in PAUSE:
             if out and out[-1] == " ":
                 out.pop()
             out.append(tok)
@@ -139,6 +145,32 @@ def phonemes_for(say: str) -> list[str]:
     if out and out[-1] not in {".", "?", "!"}:
         out.append(".")
     return out
+
+
+def speak(voice, ph: list[str], config):
+    """Say the phonemes clause by clause, with a real pause at each mark."""
+    import numpy as np
+
+    chunks, cur = [], []
+    for p in ph:
+        cur.append(p)
+        if p in PAUSE:
+            chunks.append(cur)
+            cur = []
+    if [p for p in cur if p != " "]:
+        chunks.append(cur)
+    parts = []
+    for k, chunk in enumerate(chunks):
+        while chunk and chunk[0] == " ":
+            chunk = chunk[1:]
+        while chunk and chunk[-1] == " ":
+            chunk = chunk[:-1]
+        if not [p for p in chunk if p not in PAUSE]:
+            continue
+        parts.append(np.asarray(voice.phoneme_ids_to_audio(voice.phonemes_to_ids(chunk), config), dtype=np.float32))
+        if k < len(chunks) - 1 and chunk[-1] in PAUSE:
+            parts.append(np.zeros(int(PAUSE[chunk[-1]] * voice.config.sample_rate), np.float32))
+    return np.concatenate(parts) if parts else np.zeros(1, np.float32)
 
 
 def candidates(voice, item) -> list[tuple[str, list[str]]]:
@@ -233,9 +265,8 @@ def main() -> None:
             missing = [p for p in ph if p not in known]
             if missing:
                 raise SystemExit(f"{item['say']}: unknown phonemes {missing}")
-            ids_for_voice = voice.phonemes_to_ids(ph)
             for _ in range(max(1, args.takes)):
-                audio = voice.phoneme_ids_to_audio(ids_for_voice, config)
+                audio = speak(voice, ph, config)
                 if not judge:
                     best, best_way = audio, way
                     break

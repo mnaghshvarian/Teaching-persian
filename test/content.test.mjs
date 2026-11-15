@@ -73,3 +73,11 @@ test("Shirin's shared requests: medium for talk and role-play, xhigh for lessons
   assert.equal(judgeRequest({ target: { fa: "سلام", translit: "salâm", meaning: "hi" }, guesses: [], attempt: 1, learner }).output_config.effort, "medium");
   assert.deepEqual(DEFAULT_ROUTES, { design: { model: "claude-opus-5-5", effort: "xhigh" }, talk: { model: "claude-opus-5-5", effort: "medium" } });
 });
+
+test("the pronunciation pauses exactly where the Persian does", () => {
+  // the voice pauses at the transliteration's punctuation, so it must match the
+  // Persian's: a comma under the line with no «،» above it is a pause no reader makes
+  const fa = (s) => [...s.replace(/\.\.\.|…|\n/g, "،")].filter((c) => "،؛؟:.!".includes(c)).map((c) => ({ "،": ",", "؛": ";", "؟": "?" })[c] ?? c).join("");
+  const tr = (s) => [...s.replace(/\.\.\.|…/g, ",")].filter((c) => ",;?:.!".includes(c)).join("");
+  for (const it of collectItems()) assert.equal(tr(it.say), fa(it.fa), `${it.fa} — ${it.say}`);
+});

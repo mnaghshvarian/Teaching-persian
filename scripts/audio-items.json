@@ -997,7 +997,7 @@
  {
   "id": "w-74d17216",
   "fa": "حضرت محمد (ص)",
-  "say": "hazrat-e mohammad, sallallâho alayhe va âleh"
+  "say": "hazrat-e mohammad sallallâho alayhe va âleh"
  },
  {
   "id": "w-3c098db4",
@@ -1007,17 +1007,17 @@
  {
   "id": "w-ef0f740f",
   "fa": "امام علی (ع)",
-  "say": "emâm ali, alayhessalâm"
+  "say": "emâm ali alayhessalâm"
  },
  {
   "id": "w-5c6d47ed",
   "fa": "امام حسن (ع) و امام حسین (ع)",
-  "say": "emâm hasan va emâm hoseyn, alayhemassalâm"
+  "say": "emâm hasan va emâm hoseyn alayhemassalâm"
  },
  {
   "id": "w-b0595528",
   "fa": "اهل بیت (ع)",
-  "say": "ahl-e beyt, alayhemossalâm"
+  "say": "ahl-e beyt alayhemossalâm"
  },
  {
   "id": "w-36098442",
@@ -1027,7 +1027,7 @@
  {
   "id": "w-b9c440be",
   "fa": "حضرت زینب (س)",
-  "say": "hazrat-e zeynab, salâmollâh alayhâ"
+  "say": "hazrat-e zeynab salâmollâh alayhâ"
  },
  {
   "id": "w-1b06c048",
@@ -1037,7 +1037,7 @@
  {
   "id": "w-d244c35c",
   "fa": "امام زمان (عج)",
-  "say": "emâm-e zamân, ajjalallâho ta'âlâ farajah"
+  "say": "emâm-e zamân ajjalallâho ta'âlâ farajah"
  },
  {
   "id": "w-46001441",
@@ -1047,7 +1047,7 @@
  {
   "id": "w-551f5b1c",
   "fa": "سلمان فارسی (ره)",
-  "say": "salmân-e fârsi, rahmatollâh alayh"
+  "say": "salmân-e fârsi rahmatollâh alayh"
  },
  {
   "id": "w-56676780",
@@ -2732,17 +2732,17 @@
  {
   "id": "w-92a79753",
   "fa": "حضرت محمد (ص) در هفدهم ربیع‌الاول، در مکه به دنیا آمد.",
-  "say": "hazrat-e mohammad, sallallâho alayhe va âleh, dar hefdahom-e rabi'-ol-avval, dar makke be donyâ âmad."
+  "say": "hazrat-e mohammad sallallâho alayhe va âleh dar hefdahom-e rabi'-ol-avval, dar makke be donyâ âmad."
  },
  {
   "id": "w-ccd354eb",
-  "fa": "پدرش عبدالله پیش از تولد او از دنیا رفت و مادرش آمنه (س) وقتی او شش ساله بود.",
-  "say": "pedarash abdollâh pish az tavallod-e u az donyâ raft va mâdarash âmene, salâmollâh alayhâ, vaghti u shesh sâle bud."
+  "fa": "پدرش عبدالله پیش از تولد او از دنیا رفت، و مادرش آمنه (س) وقتی او شش ساله بود.",
+  "say": "pedarash abdollâh pish az tavallod-e u az donyâ raft, va mâdarash âmene salâmollâh alayhâ vaghti u shesh sâle bud."
  },
  {
   "id": "w-db49f8b9",
   "fa": "پدربزرگش عبدالمطلب (ع) و بعد عمویش، حضرت ابوطالب (ع)، او را با محبت بزرگ کردند.",
-  "say": "pedarbozorgash abdolmotalleb, alayhessalâm, va ba'd amuyash, hazrat-e abutâleb, alayhessalâm, u râ bâ mohabbat bozorg kardand."
+  "say": "pedarbozorgash abdolmotalleb alayhessalâm va ba'd amuyash, hazrat-e abutâleb alayhessalâm, u râ bâ mohabbat bozorg kardand."
  },
  {
   "id": "w-a5e55a74",
@@ -2756,8 +2756,8 @@
  },
  {
   "id": "w-e67a97cd",
-  "fa": "او سنگ را روی پارچه‌ای گذاشت و همهٔ قبیله‌ها با هم آن را بالا بردند.",
-  "say": "u sang râ ru-ye pârche-i gozâsht va hame-ye ghabile-hâ bâ ham ân râ bâlâ bordand."
+  "fa": "او سنگ را روی پارچه‌ای گذاشت، و همهٔ قبیله‌ها با هم آن را بالا بردند.",
+  "say": "u sang râ ru-ye pârche-i gozâsht, va hame-ye ghabile-hâ bâ ham ân râ bâlâ bordand."
  },
  {
   "id": "w-e1c3ebff",
@@ -2767,7 +2767,7 @@
  {
   "id": "w-b9e8e5e7",
   "fa": "او در جوانی با حضرت خدیجه (س) ازدواج کرد.",
-  "say": "u dar javâni bâ hazrat-e khadije, salâmollâh alayhâ, ezdevâj kard."
+  "say": "u dar javâni bâ hazrat-e khadije salâmollâh alayhâ ezdevâj kard."
  },
  {
   "id": "w-e6889e30",
@@ -2821,8 +2821,8 @@
  },
  {
   "id": "w-ce5ba4c7",
-  "fa": "حضرت خدیجه (س) بزرگ‌بانوی مکه بود و مردم او را «طاهره» یعنی پاک می‌نامیدند.",
-  "say": "hazrat-e khadije, salâmollâh alayhâ, bozorgbânu-ye makke bud va mardom u râ «tâhere» ya'ni pâk minâmidand."
+  "fa": "حضرت خدیجه (س) بزرگ‌بانوی مکه بود، و مردم او را «طاهره» یعنی پاک می‌نامیدند.",
+  "say": "hazrat-e khadije salâmollâh alayhâ bozorgbânu-ye makke bud, va mardom u râ «tâhere» ya'ni pâk minâmidand."
  },
  {
   "id": "w-95f18f93",
@@ -2837,17 +2837,17 @@
  {
   "id": "w-b1a0320d",
   "fa": "روایت شده که پادشاه یمن به پدرش خبر داده بود که خدیجه همسر پیامبر آخرالزمان (ص) می‌شود.",
-  "say": "revâyat shode ke pâdshâh-e yaman be pedarash khabar dâde bud ke khadije hamsar-e payâmbar-e âkherozzamân, sallallâho alayhe va âleh, mishavad."
+  "say": "revâyat shode ke pâdshâh-e yaman be pedarash khabar dâde bud ke khadije hamsar-e payâmbar-e âkherozzamân sallallâho alayhe va âleh mishavad."
  },
  {
   "id": "w-1068278c",
-  "fa": "او امانت‌داری و پاکی حضرت محمد (ص) را دید و خودش از او خواستگاری کرد.",
-  "say": "u amânatdâri va pâki-ye hazrat-e mohammad, sallallâho alayhe va âleh, râ did va khodash az u khâstgâri kard."
+  "fa": "او امانت‌داری و پاکی حضرت محمد (ص) را دید، و خودش از او خواستگاری کرد.",
+  "say": "u amânatdâri va pâki-ye hazrat-e mohammad sallallâho alayhe va âleh râ did, va khodash az u khâstgâri kard."
  },
  {
   "id": "w-1570c8ff",
   "fa": "حضرت ابوطالب (ع) خطبهٔ عقد آن‌ها را خواند.",
-  "say": "hazrat-e abutâleb, alayhessalâm, khotbe-ye aghd-e ân-hâ râ khând."
+  "say": "hazrat-e abutâleb alayhessalâm khotbe-ye aghd-e ân-hâ râ khând."
  },
  {
   "id": "w-d8345bc1",
@@ -2861,8 +2861,8 @@
  },
  {
   "id": "w-3742d01b",
-  "fa": "او نخستین زنی بود که ایمان آورد و همراه پیامبر و امام علی (ع) نماز خواند.",
-  "say": "u nokhostin zani bud ke imân âvard va hamrâh-e payâmbar va emâm ali, alayhessalâm, namâz khând."
+  "fa": "او نخستین زنی بود که ایمان آورد، و همراه پیامبر و امام علی (ع) نماز خواند.",
+  "say": "u nokhostin zani bud ke imân âvard, va hamrâh-e payâmbar va emâm ali alayhessalâm namâz khând."
  },
  {
   "id": "w-affc376b",
@@ -2872,7 +2872,7 @@
  {
   "id": "w-b084861a",
   "fa": "هنگام تولد حضرت فاطمه (س)، زنان قریش او را تنها گذاشتند.",
-  "say": "hengâm-e tavallod-e hazrat-e fâteme, salâmollâh alayhâ, zanân-e ghoreysh u râ tanhâ gozâshtand."
+  "say": "hengâm-e tavallod-e hazrat-e fâteme salâmollâh alayhâ, zanân-e ghoreysh u râ tanhâ gozâshtand."
  },
  {
   "id": "w-671593b3",
@@ -2881,8 +2881,8 @@
  },
  {
   "id": "w-b21480eb",
-  "fa": "جبرئیل از طرف خدا به او سلام رساند و خانه‌ای در بهشت را به او مژده داد.",
-  "say": "jebra'il az taraf-e khodâ be u salâm resând va khâne-i dar behesht râ be u mozhde dâd."
+  "fa": "جبرئیل از طرف خدا به او سلام رساند، و خانه‌ای در بهشت را به او مژده داد.",
+  "say": "jebra'il az taraf-e khodâ be u salâm resând, va khâne-i dar behesht râ be u mozhde dâd."
  },
  {
   "id": "w-e2d09029",
@@ -2937,7 +2937,7 @@
  {
   "id": "w-745c03cd",
   "fa": "حضرت فاطمه زهرا (س) دختر پیامبر (ص) و حضرت خدیجه (س) است.",
-  "say": "hazrat-e fâteme-ye zahrâ, salâmollâh alayhâ, dokhtar-e payâmbar, sallallâho alayhe va âleh, va hazrat-e khadije, salâmollâh alayhâ, ast."
+  "say": "hazrat-e fâteme-ye zahrâ salâmollâh alayhâ dokhtar-e payâmbar sallallâho alayhe va âleh va hazrat-e khadije salâmollâh alayhâ ast."
  },
  {
   "id": "w-0e230633",
@@ -2952,12 +2952,12 @@
  {
   "id": "w-1cec9c5b",
   "fa": "یک بار امام حسن (ع) و امام حسین (ع) بیمار شدند.",
-  "say": "yek bâr emâm hasan va emâm hoseyn, alayhemassalâm, bimâr shodand."
+  "say": "yek bâr emâm hasan va emâm hoseyn alayhemassalâm bimâr shodand."
  },
  {
   "id": "w-ebbb3002",
   "fa": "امام علی (ع) و حضرت فاطمه (س) نذر کردند که برای شفای آن‌ها سه روز روزه بگیرند.",
-  "say": "emâm ali, alayhessalâm, va hazrat-e fâteme, salâmollâh alayhâ, nazr kardand ke barâye shafâ-ye ân-hâ se ruz ruze begirand."
+  "say": "emâm ali alayhessalâm va hazrat-e fâteme salâmollâh alayhâ nazr kardand ke barâye shafâ-ye ân-hâ se ruz ruze begirand."
  },
  {
   "id": "w-d8bb0278",
@@ -2971,8 +2971,8 @@
  },
  {
   "id": "w-1b5532c9",
-  "fa": "آن‌ها هر سه شب نانشان را بخشیدند و خودشان با آب افطار کردند.",
-  "say": "ân-hâ har se shab nânashân râ bakhshidand va khodeshân bâ âb eftâr kardand."
+  "fa": "آن‌ها هر سه شب نانشان را بخشیدند، و خودشان با آب افطار کردند.",
+  "say": "ân-hâ har se shab nânashân râ bakhshidand, va khodeshân bâ âb eftâr kardand."
  },
  {
   "id": "w-2ab6960a",
@@ -2981,8 +2981,8 @@
  },
  {
   "id": "w-77fd8078",
-  "fa": "روزی حضرت فاطمه (س) از کار سخت خانه خسته بود و از پدرش کمک خواست.",
-  "say": "ruzi hazrat-e fâteme, salâmollâh alayhâ, az kâr-e sakht-e khâne khaste bud va az pedarash komak khâst."
+  "fa": "روزی حضرت فاطمه (س) از کار سخت خانه خسته بود، و از پدرش کمک خواست.",
+  "say": "ruzi hazrat-e fâteme salâmollâh alayhâ az kâr-e sakht-e khâne khaste bud, va az pedarash komak khâst."
  },
  {
   "id": "w-984b5a72",
@@ -2991,8 +2991,8 @@
  },
  {
   "id": "w-ee385a64",
-  "fa": "این ذکر را «تسبیحات حضرت زهرا (س)» می‌نامند و شیعیان پس از هر نماز آن را می‌گویند.",
-  "say": "in zekr râ «tasbihât-e hazrat-e zahrâ, salâmollâh alayhâ» minâmand va shi'iyân pas az har namâz ân râ miguyand."
+  "fa": "این ذکر را «تسبیحات حضرت زهرا (س)» می‌نامند، و شیعیان پس از هر نماز آن را می‌گویند.",
+  "say": "in zekr râ «tasbihât-e hazrat-e zahrâ salâmollâh alayhâ» minâmand, va shi'iyân pas az har namâz ân râ miguyand."
  },
  {
   "id": "w-bc2aa68e",
@@ -3042,7 +3042,7 @@
  {
   "id": "w-547a6552",
   "fa": "امام حسین (ع) پسر امام علی (ع) و حضرت فاطمه (س) و نوهٔ پیامبر (ص) بود.",
-  "say": "emâm hoseyn, alayhessalâm, pesar-e emâm ali, alayhessalâm, va hazrat-e fâteme, salâmollâh alayhâ, va nave-ye payâmbar, sallallâho alayhe va âleh, bud."
+  "say": "emâm hoseyn alayhessalâm pesar-e emâm ali alayhessalâm va hazrat-e fâteme salâmollâh alayhâ va nave-ye payâmbar sallallâho alayhe va âleh bud."
  },
  {
   "id": "w-e182295f",
@@ -3057,17 +3057,17 @@
  {
   "id": "w-11502985",
   "fa": "در روز عاشورا، امام حسین (ع) و یاران وفادارش به شهادت رسیدند.",
-  "say": "dar ruz-e âshurâ, emâm hoseyn, alayhessalâm, va yârân-e vafâdârash be shahâdat residand."
+  "say": "dar ruz-e âshurâ, emâm hoseyn alayhessalâm va yârân-e vafâdârash be shahâdat residand."
  },
  {
   "id": "w-f5b37b5c",
   "fa": "خواهرش، حضرت زینب (س)، از زنان و کودکان اسیر نگهداری کرد.",
-  "say": "khâharash, hazrat-e zeynab, salâmollâh alayhâ, az zanân va kudakân-e asir negahdâri kard."
+  "say": "khâharash, hazrat-e zeynab salâmollâh alayhâ, az zanân va kudakân-e asir negahdâri kard."
  },
  {
   "id": "w-222c348b",
   "fa": "او از امام سجاد (ع) که بیمار بود، مراقبت کرد.",
-  "say": "u az emâm sajjâd, alayhessalâm, ke bimâr bud, morâghebat kard."
+  "say": "u az emâm sajjâd alayhessalâm ke bimâr bud, morâghebat kard."
  },
  {
   "id": "w-02f2e522",
@@ -3077,12 +3077,12 @@
  {
   "id": "w-7cefa5d4",
   "fa": "حضرت زینب (س) فرمود: «جز زیبایی چیزی ندیدم.»",
-  "say": "hazrat-e zeynab, salâmollâh alayhâ, farmud: «joz zibâyi chizi nadidam.»"
+  "say": "hazrat-e zeynab salâmollâh alayhâ farmud: «joz zibâyi chizi nadidam.»"
  },
  {
   "id": "w-9abd3bc6",
-  "fa": "او در کوفه و شام خطبه خواند و حقیقت را به همه گفت.",
-  "say": "u dar kufe va shâm khotbe khând va haghighat râ be hame goft."
+  "fa": "او در کوفه و شام خطبه خواند، و حقیقت را به همه گفت.",
+  "say": "u dar kufe va shâm khotbe khând, va haghighat râ be hame goft."
  },
  {
   "id": "w-817b01e5",
@@ -3157,7 +3157,7 @@
  {
   "id": "w-46fc9e76",
   "fa": "وقتی نام پیامبر (ص) را می‌شنویم، صلوات می‌فرستیم.",
-  "say": "vaghti nâm-e payâmbar, sallallâho alayhe va âleh, râ mishenavim, salavât miferestim."
+  "say": "vaghti nâm-e payâmbar sallallâho alayhe va âleh râ mishenavim, salavât miferestim."
  },
  {
   "id": "w-23c26309",
@@ -3227,67 +3227,67 @@
  {
   "id": "w-56aab063",
   "fa": "پیامبر (ص) فرمود: «امامان پس از من دوازده نفرند؛ نخستینشان علی و آخرینشان قائم است.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, farmud: «emâmân pas az man davâzdah nafar-and; nokhostineshân ali va âkharineshân ghâ'em ast.»"
+  "say": "payâmbar sallallâho alayhe va âleh farmud: «emâmân pas az man davâzdah nafar-and; nokhostineshân ali va âkharineshân ghâ'em ast.»"
  },
  {
   "id": "w-779e8672",
   "fa": "امام علی (ع)، امیرالمؤمنین: پدر یتیمان و الگوی عدالت.",
-  "say": "emâm ali, alayhessalâm, amir-ol-mo'menin: pedar-e yatimân va olgu-ye edâlat."
+  "say": "emâm ali alayhessalâm, amir-ol-mo'menin: pedar-e yatimân va olgu-ye edâlat."
  },
  {
   "id": "w-3f4a0d7d",
   "fa": "امام حسن (ع)، مجتبی: کریم اهل بیت، بسیار بخشنده.",
-  "say": "emâm hasan, alayhessalâm, mojtabâ: karim-e ahl-e beyt, besyâr bakhshande."
+  "say": "emâm hasan alayhessalâm, mojtabâ: karim-e ahl-e beyt, besyâr bakhshande."
  },
  {
   "id": "w-19f0d443",
   "fa": "امام حسین (ع)، سیدالشهدا: سرور شهیدان در کربلا.",
-  "say": "emâm hoseyn, alayhessalâm, seyyed-osh-shohadâ: sarvar-e shahidân dar karbalâ."
+  "say": "emâm hoseyn alayhessalâm, seyyed-osh-shohadâ: sarvar-e shahidân dar karbalâ."
  },
  {
   "id": "w-a7ac9793",
   "fa": "امام سجاد (ع)، زین‌العابدین: زینت عبادت‌کنندگان، با دعاهای زیبای صحیفهٔ سجادیه.",
-  "say": "emâm sajjâd, alayhessalâm, zeyn-ol-âbedin: zinat-e ebâdatkonandegân, bâ do'â-hâ-ye zibâ-ye sahife-ye sajjâdiyye."
+  "say": "emâm sajjâd alayhessalâm, zeyn-ol-âbedin: zinat-e ebâdatkonandegân, bâ do'â-hâ-ye zibâ-ye sahife-ye sajjâdiyye."
  },
  {
   "id": "w-bfb87bdb",
   "fa": "امام محمد باقر (ع)، باقرالعلوم: شکافندهٔ دانش‌ها، که پیامبر به‌وسیلهٔ جابر (ره) به او سلام رساند.",
-  "say": "emâm mohammad bâgher, alayhessalâm, bâgher-ol-olum: shekâfande-ye dânesh-hâ, ke payâmbar be-vasile-ye jâber, rahmatollâh alayh, be u salâm resând."
+  "say": "emâm mohammad bâgher alayhessalâm, bâgher-ol-olum: shekâfande-ye dânesh-hâ, ke payâmbar be-vasile-ye jâber rahmatollâh alayh be u salâm resând."
  },
  {
   "id": "w-bffb3f53",
   "fa": "امام جعفر صادق (ع)، صادق: راستگو، استاد هزاران شاگرد.",
-  "say": "emâm ja'far sâdegh, alayhessalâm, sâdegh: râstgu, ostâd-e hezârân shâgerd."
+  "say": "emâm ja'far sâdegh alayhessalâm, sâdegh: râstgu, ostâd-e hezârân shâgerd."
  },
  {
   "id": "w-d738f55e",
   "fa": "امام موسی کاظم (ع)، کاظم: فروبرندهٔ خشم، «باب‌الحوائج» یعنی درِ برآمدن حاجت‌ها.",
-  "say": "emâm musâ kâzem, alayhessalâm, kâzem: forubarande-ye khashm, «bâb-ol-havâ'ej» ya'ni dar-e barâmadan-e hâjat-hâ."
+  "say": "emâm musâ kâzem alayhessalâm, kâzem: forubarande-ye khashm, «bâb-ol-havâ'ej» ya'ni dar-e barâmadan-e hâjat-hâ."
  },
  {
   "id": "w-31c6192f",
   "fa": "امام رضا (ع)، ضامن آهو: تنها امامی که آرامگاهش در ایران، در مشهد، است.",
-  "say": "emâm rezâ, alayhessalâm, zâmen-e âhu: tanhâ emâmi ke ârâmgâhash dar irân, dar mashhad, ast."
+  "say": "emâm rezâ alayhessalâm, zâmen-e âhu: tanhâ emâmi ke ârâmgâhash dar irân, dar mashhad, ast."
  },
  {
   "id": "w-60fc77cf",
   "fa": "امام محمد تقی (ع)، جواد: بسیار بخشنده، که در کودکی امام شد.",
-  "say": "emâm mohammad taghi, alayhessalâm, javâd: besyâr bakhshande, ke dar kudaki emâm shod."
+  "say": "emâm mohammad taghi alayhessalâm, javâd: besyâr bakhshande, ke dar kudaki emâm shod."
  },
  {
   "id": "w-b68350d6",
   "fa": "امام علی نقی (ع)، هادی: راهنمای مردم، که «زیارت جامعهٔ کبیره» را به ما آموخت.",
-  "say": "emâm ali naghi, alayhessalâm, hâdi: râhnamâ-ye mardom, ke «ziyârat-e jâme'e-ye kabire» râ be mâ âmukht."
+  "say": "emâm ali naghi alayhessalâm, hâdi: râhnamâ-ye mardom, ke «ziyârat-e jâme'e-ye kabire» râ be mâ âmukht."
  },
  {
   "id": "w-571fd717",
   "fa": "امام حسن عسکری (ع)، عسکری: پدر امام زمان (عج)، که در سامرا زندگی کرد.",
-  "say": "emâm hasan askari, alayhessalâm, askari: pedar-e emâm-e zamân, ajjalallâho ta'âlâ farajah, ke dar sâmerrâ zendegi kard."
+  "say": "emâm hasan askari alayhessalâm, askari: pedar-e emâm-e zamân ajjalallâho ta'âlâ farajah, ke dar sâmerrâ zendegi kard."
  },
  {
   "id": "w-0fdb7bd9",
   "fa": "امام مهدی (عج)، قائم: امام زنده و پنهان، که در نیمهٔ شعبان به دنیا آمد و روزی جهان را پر از عدالت می‌کند.",
-  "say": "emâm mahdi, ajjalallâho ta'âlâ farajah, ghâ'em: emâm-e zende va penhân, ke dar nime-ye sha'bân be donyâ âmad va ruzi jahân râ por az edâlat mikonad."
+  "say": "emâm mahdi ajjalallâho ta'âlâ farajah, ghâ'em: emâm-e zende va penhân, ke dar nime-ye sha'bân be donyâ âmad va ruzi jahân râ por az edâlat mikonad."
  },
  {
   "id": "w-ddfbb1ca",
@@ -3332,12 +3332,12 @@
  {
   "id": "w-5477ba48",
   "fa": "امام علی (ع) در سیزدهم رجب، درون خانهٔ کعبه به دنیا آمد.",
-  "say": "emâm ali, alayhessalâm, dar sizdahom-e rajab, darun-e khâne-ye ka'be be donyâ âmad."
+  "say": "emâm ali alayhessalâm dar sizdahom-e rajab, darun-e khâne-ye ka'be be donyâ âmad."
  },
  {
   "id": "w-c981a0bd",
   "fa": "او نخستین مردی بود که به پیامبر (ص) ایمان آورد.",
-  "say": "u nokhostin mardi bud ke be payâmbar, sallallâho alayhe va âleh, imân âvard."
+  "say": "u nokhostin mardi bud ke be payâmbar sallallâho alayhe va âleh imân âvard."
  },
  {
   "id": "w-9ac97cec",
@@ -3347,17 +3347,17 @@
  {
   "id": "w-80aab622",
   "fa": "او دست علی (ع) را بالا برد و فرمود: «هر کس من مولای اویم، علی مولای اوست.»",
-  "say": "u dast-e ali, alayhessalâm, râ bâlâ bord va farmud: «har kas man mowlâ-ye u-yam, ali mowlâ-ye ust.»"
+  "say": "u dast-e ali alayhessalâm râ bâlâ bord va farmud: «har kas man mowlâ-ye u-yam, ali mowlâ-ye ust.»"
  },
  {
   "id": "w-f977c79a",
   "fa": "امام علی (ع) به عدالت و مهربانی معروف بود.",
-  "say": "emâm ali, alayhessalâm, be edâlat va mehrabâni ma'ruf bud."
+  "say": "emâm ali alayhessalâm be edâlat va mehrabâni ma'ruf bud."
  },
  {
   "id": "w-dbaa0a1e",
   "fa": "روزی هنگام نزول وحی، سر پیامبر (ص) بر دامان علی (ع) بود و خورشید پیش از آنکه علی نماز عصر بخواند غروب کرد.",
-  "say": "ruzi hengâm-e nozul-e vahy, sar-e payâmbar, sallallâho alayhe va âleh, bar dâmân-e ali, alayhessalâm, bud va khorshid pish az ân ke ali namâz-e asr bekhânad ghorub kard."
+  "say": "ruzi hengâm-e nozul-e vahy, sar-e payâmbar sallallâho alayhe va âleh bar dâmân-e ali alayhessalâm bud va khorshid pish az ân ke ali namâz-e asr bekhânad ghorub kard."
  },
  {
   "id": "w-2e81624f",
@@ -3432,7 +3432,7 @@
  {
   "id": "w-14a25565",
   "fa": "امام حسن (ع)، نخستین نوهٔ پیامبر (ص)، در نیمهٔ رمضان در مدینه به دنیا آمد.",
-  "say": "emâm hasan, alayhessalâm, nokhostin nave-ye payâmbar, sallallâho alayhe va âleh, dar nime-ye ramezân dar madine be donyâ âmad."
+  "say": "emâm hasan alayhessalâm, nokhostin nave-ye payâmbar sallallâho alayhe va âleh, dar nime-ye ramezân dar madine be donyâ âmad."
  },
  {
   "id": "w-24c96c3c",
@@ -3452,7 +3452,7 @@
  {
   "id": "w-ed222792",
   "fa": "پس از شهادت امام علی (ع)، مردم کوفه با او بیعت کردند.",
-  "say": "pas az shahâdat-e emâm ali, alayhessalâm, mardom-e kufe bâ u bey'at kardand."
+  "say": "pas az shahâdat-e emâm ali alayhessalâm, mardom-e kufe bâ u bey'at kardand."
  },
  {
   "id": "w-849474b5",
@@ -3517,12 +3517,12 @@
  {
   "id": "w-4069cb10",
   "fa": "امام حسین (ع) در سوم شعبان در مدینه به دنیا آمد.",
-  "say": "emâm hoseyn, alayhessalâm, dar sevvom-e sha'bân dar madine be donyâ âmad."
+  "say": "emâm hoseyn alayhessalâm dar sevvom-e sha'bân dar madine be donyâ âmad."
  },
  {
   "id": "w-1d22267c",
   "fa": "پیامبر (ص) فرمود: «حسین از من است و من از حسینم.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, farmud: «hoseyn az man ast va man az hoseynam.»"
+  "say": "payâmbar sallallâho alayhe va âleh farmud: «hoseyn az man ast va man az hoseynam.»"
  },
  {
   "id": "w-046a5019",
@@ -3536,8 +3536,8 @@
  },
  {
   "id": "w-4dd97793",
-  "fa": "او از مدینه به مکه رفت و نوشت که برای اصلاح امت جدش قیام کرده است.",
-  "say": "u az madine be makke raft va nevesht ke barâye eslâh-e ommat-e jaddash ghiyâm karde ast."
+  "fa": "او از مدینه به مکه رفت، و نوشت که برای اصلاح امت جدش قیام کرده است.",
+  "say": "u az madine be makke raft, va nevesht ke barâye eslâh-e ommat-e jaddash ghiyâm karde ast."
  },
  {
   "id": "w-c8680041",
@@ -3547,7 +3547,7 @@
  {
   "id": "w-2eadd6e3",
   "fa": "امام، پسرعمویش مسلم بن عقیل (ع) را به کوفه فرستاد.",
-  "say": "emâm, pesar-amuyash moslem ebn-e aghil, alayhessalâm, râ be kufe ferestâd."
+  "say": "emâm, pesar-amuyash moslem ebn-e aghil alayhessalâm râ be kufe ferestâd."
  },
  {
   "id": "w-4511ee00",
@@ -3607,12 +3607,12 @@
  {
   "id": "w-a57fcd85",
   "fa": "امام سجاد (ع) در پنجم شعبان به دنیا آمد.",
-  "say": "emâm sajjâd, alayhessalâm, dar panjom-e sha'bân be donyâ âmad."
+  "say": "emâm sajjâd alayhessalâm dar panjom-e sha'bân be donyâ âmad."
  },
  {
   "id": "w-5b04e7b1",
-  "fa": "در کربلا بیمار بود و خدا او را زنده نگه داشت تا امامت ادامه یابد.",
-  "say": "dar karbalâ bimâr bud va khodâ u râ zende negah dâsht tâ emâmat edâme yâbad."
+  "fa": "در کربلا بیمار بود، و خدا او را زنده نگه داشت تا امامت ادامه یابد.",
+  "say": "dar karbalâ bimâr bud, va khodâ u râ zende negah dâsht tâ emâmat edâme yâbad."
  },
  {
   "id": "w-4af86ff4",
@@ -3627,7 +3627,7 @@
  {
   "id": "w-59099ce2",
   "fa": "وقتی مؤذن نام محمد (ص) را گفت، امام پرسید: «ای یزید، محمد جد من است یا جد تو؟»",
-  "say": "vaghti mo'azzen nâm-e mohammad, sallallâho alayhe va âleh, râ goft, emâm porsid: «ey yazid, mohammad jadd-e man ast yâ jadd-e to?»"
+  "say": "vaghti mo'azzen nâm-e mohammad sallallâho alayhe va âleh râ goft, emâm porsid: «ey yazid, mohammad jadd-e man ast yâ jadd-e to?»"
  },
  {
   "id": "w-8ca9add9",
@@ -3651,8 +3651,8 @@
  },
  {
   "id": "w-b3a48c3d",
-  "fa": "او در سال نود و پنج هجری با زهر به شهادت رسید و در بقیع آرمید.",
-  "say": "u dar sâl-e navad-o-panj-e hejri bâ zahr be shahâdat resid va dar baghi' ârmid."
+  "fa": "او در سال نود و پنج هجری با زهر به شهادت رسید، و در بقیع آرمید.",
+  "say": "u dar sâl-e navad-o-panj-e hejri bâ zahr be shahâdat resid, va dar baghi' ârmid."
  },
  {
   "id": "w-ffa9e84b",
@@ -3692,7 +3692,7 @@
  {
   "id": "w-25d40cc6",
   "fa": "امام محمد باقر (ع) در اول رجب در مدینه به دنیا آمد.",
-  "say": "emâm mohammad bâgher, alayhessalâm, dar avval-e rajab dar madine be donyâ âmad."
+  "say": "emâm mohammad bâgher alayhessalâm dar avval-e rajab dar madine be donyâ âmad."
  },
  {
   "id": "w-0f371e75",
@@ -3702,7 +3702,7 @@
  {
   "id": "w-1d979e6a",
   "fa": "پیامبر (ص) به جابر انصاری (ره) گفته بود: «پسری از نسل مرا می‌بینی که دانش را می‌شکافد؛ سلام مرا به او برسان.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, be jâber-e ansâri, rahmatollâh alayh, gofte bud: «pesari az nasl-e marâ mibini ke dânesh râ mishekâfad; salâm-e marâ be u beresân.»"
+  "say": "payâmbar sallallâho alayhe va âleh be jâber-e ansâri rahmatollâh alayh gofte bud: «pesari az nasl-e marâ mibini ke dânesh râ mishekâfad; salâm-e marâ be u beresân.»"
  },
  {
   "id": "w-3037546c",
@@ -3721,13 +3721,13 @@
  },
  {
   "id": "w-15563a13",
-  "fa": "اما ابوبصیر خودش خواست دوباره نابینا شود تا پاداش صبرش را در بهشت بگیرد.",
-  "say": "ammâ abubasir khodash khâst dobâre nâbinâ shavad tâ pâdâsh-e sabrash râ dar behesht begirad."
+  "fa": "اما ابوبصیر خودش خواست دوباره نابینا شود، تا پاداش صبرش را در بهشت بگیرد.",
+  "say": "ammâ abubasir khodash khâst dobâre nâbinâ shavad, tâ pâdâsh-e sabrash râ dar behesht begirad."
  },
  {
   "id": "w-e2157873",
-  "fa": "او در سال صد و چهارده هجری با زهر به شهادت رسید و در بقیع آرمید.",
-  "say": "u dar sâl-e sad-o-chahârdah-e hejri bâ zahr be shahâdat resid va dar baghi' ârmid."
+  "fa": "او در سال صد و چهارده هجری با زهر به شهادت رسید، و در بقیع آرمید.",
+  "say": "u dar sâl-e sad-o-chahârdah-e hejri bâ zahr be shahâdat resid, va dar baghi' ârmid."
  },
  {
   "id": "w-b6eb2d41",
@@ -3767,7 +3767,7 @@
  {
   "id": "w-25abddbf",
   "fa": "امام جعفر صادق (ع) در هفدهم ربیع‌الاول، همان روز تولد پیامبر (ص)، به دنیا آمد.",
-  "say": "emâm ja'far sâdegh, alayhessalâm, dar hefdahom-e rabi'-ol-avval, hamân ruz-e tavallod-e payâmbar, sallallâho alayhe va âleh, be donyâ âmad."
+  "say": "emâm ja'far sâdegh alayhessalâm dar hefdahom-e rabi'-ol-avval, hamân ruz-e tavallod-e payâmbar sallallâho alayhe va âleh, be donyâ âmad."
  },
  {
   "id": "w-b98c605b",
@@ -3842,7 +3842,7 @@
  {
   "id": "w-4e27e5b5",
   "fa": "امام موسی کاظم (ع) در هفتم صفر، در اَبواء میان مکه و مدینه، به دنیا آمد.",
-  "say": "emâm musâ kâzem, alayhessalâm, dar haftom-e safar, dar abvâ miyân-e makke va madine, be donyâ âmad."
+  "say": "emâm musâ kâzem alayhessalâm dar haftom-e safar, dar abvâ miyân-e makke va madine, be donyâ âmad."
  },
  {
   "id": "w-a8a2b36e",
@@ -3927,7 +3927,7 @@
  {
   "id": "w-8e813ef6",
   "fa": "امام رضا (ع) هشتمین امام شیعیان است.",
-  "say": "emâm rezâ, alayhessalâm, hashtomin emâm-e shi'iyân ast."
+  "say": "emâm rezâ alayhessalâm hashtomin emâm-e shi'iyân ast."
  },
  {
   "id": "w-37434fa8",
@@ -3947,7 +3947,7 @@
  {
   "id": "w-d45ef37e",
   "fa": "امام از پدرانش، از پیامبر (ص)، از جبرئیل و از خدا روایت کرد:",
-  "say": "emâm az pedarânash, az payâmbar, sallallâho alayhe va âleh, az jebra'il va az khodâ revâyat kard:"
+  "say": "emâm az pedarânash, az payâmbar sallallâho alayhe va âleh, az jebra'il va az khodâ revâyat kard:"
  },
  {
   "id": "w-742c3900",
@@ -4022,12 +4022,12 @@
  {
   "id": "w-d4c27044",
   "fa": "امام محمد تقی (ع) در دهم رجب در مدینه به دنیا آمد.",
-  "say": "emâm mohammad taghi, alayhessalâm, dar dahom-e rajab dar madine be donyâ âmad."
+  "say": "emâm mohammad taghi alayhessalâm dar dahom-e rajab dar madine be donyâ âmad."
  },
  {
   "id": "w-9fc14d0f",
   "fa": "امام رضا (ع) دربارهٔ او فرمود: «برای شیعیان ما نوزادی پربرکت‌تر از او به دنیا نیامده است.»",
-  "say": "emâm rezâ, alayhessalâm, darbâre-ye u farmud: «barâye shi'iyân-e mâ nowzâdi porbarakattar az u be donyâ nayâmade ast.»"
+  "say": "emâm rezâ alayhessalâm darbâre-ye u farmud: «barâye shi'iyân-e mâ nowzâdi porbarakattar az u be donyâ nayâmade ast.»"
  },
  {
   "id": "w-adc92319",
@@ -4056,8 +4056,8 @@
  },
  {
   "id": "w-9e42e873",
-  "fa": "روایت است که امام کنار درخت سِدری بی‌بار وضو گرفت و آن درخت میوه داد.",
-  "say": "revâyat ast ke emâm kenâr-e derakht-e sedri bibâr vozu gereft va ân derakht mive dâd."
+  "fa": "روایت است که امام کنار درخت سِدری بی‌بار وضو گرفت، و آن درخت میوه داد.",
+  "say": "revâyat ast ke emâm kenâr-e derakht-e sedri bibâr vozu gereft, va ân derakht mive dâd."
  },
  {
   "id": "w-96b4a11b",
@@ -4066,8 +4066,8 @@
  },
  {
   "id": "w-69281380",
-  "fa": "در بیست و پنج سالگی در بغداد با زهر به شهادت رسید و کنار جدش در کاظمین آرمید.",
-  "say": "dar bist-o-panj sâlegi dar baghdâd bâ zahr be shahâdat resid va kenâr-e jaddash dar kâzemeyn ârmid."
+  "fa": "در بیست و پنج سالگی در بغداد با زهر به شهادت رسید، و کنار جدش در کاظمین آرمید.",
+  "say": "dar bist-o-panj sâlegi dar baghdâd bâ zahr be shahâdat resid, va kenâr-e jaddash dar kâzemeyn ârmid."
  },
  {
   "id": "w-25d03bfc",
@@ -4107,7 +4107,7 @@
  {
   "id": "w-8161c98a",
   "fa": "امام هادی (ع) در نیمهٔ ذی‌الحجه، نزدیک مدینه، به دنیا آمد.",
-  "say": "emâm hâdi, alayhessalâm, dar nime-ye zel-hejje, nazdik-e madine, be donyâ âmad."
+  "say": "emâm hâdi alayhessalâm dar nime-ye zel-hejje, nazdik-e madine, be donyâ âmad."
  },
  {
   "id": "w-feb8c77d",
@@ -4116,8 +4116,8 @@
  },
  {
   "id": "w-0e9e7e4e",
-  "fa": "متوکل عباسی او را از مدینه به سامرا آورد تا زیر نظر سربازانش باشد.",
-  "say": "motevakkel-e abbâsi u râ az madine be sâmerrâ âvard tâ zir-e nazar-e sarbâzânash bâshad."
+  "fa": "متوکل عباسی او را از مدینه به سامرا آورد، تا زیر نظر سربازانش باشد.",
+  "say": "motevakkel-e abbâsi u râ az madine be sâmerrâ âvard, tâ zir-e nazar-e sarbâzânash bâshad."
  },
  {
   "id": "w-d268f498",
@@ -4126,8 +4126,8 @@
  },
  {
   "id": "w-48a16a4a",
-  "fa": "او را به مجلس شراب متوکل بردند و متوکل از او خواست شعر بخواند.",
-  "say": "u râ be majles-e sharâb-e motevakkel bordand va motevakkel az u khâst she'r bekhânad."
+  "fa": "او را به مجلس شراب متوکل بردند، و متوکل از او خواست شعر بخواند.",
+  "say": "u râ be majles-e sharâb-e motevakkel bordand, va motevakkel az u khâst she'r bekhânad."
  },
  {
   "id": "w-10cafd9a",
@@ -4142,12 +4142,12 @@
  {
   "id": "w-72d18afa",
   "fa": "امام هادی (ع) «زیارت جامعهٔ کبیره» را به شیعیان آموخت.",
-  "say": "emâm hâdi, alayhessalâm, «ziyârat-e jâme'e-ye kabire» râ be shi'iyân âmukht."
+  "say": "emâm hâdi alayhessalâm «ziyârat-e jâme'e-ye kabire» râ be shi'iyân âmukht."
  },
  {
   "id": "w-598fc0dd",
-  "fa": "او در سال دویست و پنجاه و چهار هجری با زهر به شهادت رسید و در خانه‌اش در سامرا به خاک سپرده شد.",
-  "say": "u dar sâl-e devist-o-panjâh-o-chahâr-e hejri bâ zahr be shahâdat resid va dar khâne-ash dar sâmerrâ be khâk seporde shod."
+  "fa": "او در سال دویست و پنجاه و چهار هجری با زهر به شهادت رسید، و در خانه‌اش در سامرا به خاک سپرده شد.",
+  "say": "u dar sâl-e devist-o-panjâh-o-chahâr-e hejri bâ zahr be shahâdat resid, va dar khâne-ash dar sâmerrâ be khâk seporde shod."
  },
  {
   "id": "w-3464e0a0",
@@ -4172,7 +4172,7 @@
  {
   "id": "w-7af40ff9",
   "fa": "امام حسن عسکری (ع) در ربیع‌الثانی در مدینه به دنیا آمد.",
-  "say": "emâm hasan askari, alayhessalâm, dar rabi'-os-sâni dar madine be donyâ âmad."
+  "say": "emâm hasan askari alayhessalâm dar rabi'-os-sâni dar madine be donyâ âmad."
  },
  {
   "id": "w-d9738737",
@@ -4201,8 +4201,8 @@
  },
  {
   "id": "w-f6dc787c",
-  "fa": "امام نشان داد که در دست راهب استخوان یکی از پیامبران است و باران به برکت آن بود.",
-  "say": "emâm neshân dâd ke dar dast-e râheb ostokhân-e yeki az payâmbarân ast va bârân be barakat-e ân bud."
+  "fa": "امام نشان داد که در دست راهب استخوان یکی از پیامبران است، و باران به برکت آن بود.",
+  "say": "emâm neshân dâd ke dar dast-e râheb ostokhân-e yeki az payâmbarân ast, va bârân be barakat-e ân bud."
  },
  {
   "id": "w-fa60fd9e",
@@ -4212,12 +4212,12 @@
  {
   "id": "w-7aef8f3a",
   "fa": "او تولد پسرش، امام مهدی (عج)، را از دشمنان پنهان کرد.",
-  "say": "u tavallod-e pesarash, emâm mahdi, ajjalallâho ta'âlâ farajah, râ az doshmanân penhân kard."
+  "say": "u tavallod-e pesarash, emâm mahdi ajjalallâho ta'âlâ farajah, râ az doshmanân penhân kard."
  },
  {
   "id": "w-c2e06379",
-  "fa": "در بیست و هشت سالگی، در هشتم ربیع‌الاول، با زهر به شهادت رسید و کنار پدرش در سامرا آرمید.",
-  "say": "dar bist-o-hasht sâlegi, dar hashtom-e rabi'-ol-avval, bâ zahr be shahâdat resid va kenâr-e pedarash dar sâmerrâ ârmid."
+  "fa": "در بیست و هشت سالگی، در هشتم ربیع‌الاول، با زهر به شهادت رسید، و کنار پدرش در سامرا آرمید.",
+  "say": "dar bist-o-hasht sâlegi, dar hashtom-e rabi'-ol-avval, bâ zahr be shahâdat resid, va kenâr-e pedarash dar sâmerrâ ârmid."
  },
  {
   "id": "w-e2ff7168",
@@ -4257,22 +4257,22 @@
  {
   "id": "w-d1f58047",
   "fa": "امام مهدی (عج) در سحرگاه نیمهٔ شعبان سال دویست و پنجاه و پنج، در سامرا به دنیا آمد.",
-  "say": "emâm mahdi, ajjalallâho ta'âlâ farajah, dar sahargâh-e nime-ye sha'bân-e sâl-e devist-o-panjâh-o-panj, dar sâmerrâ be donyâ âmad."
+  "say": "emâm mahdi ajjalallâho ta'âlâ farajah dar sahargâh-e nime-ye sha'bân-e sâl-e devist-o-panjâh-o-panj, dar sâmerrâ be donyâ âmad."
  },
  {
   "id": "w-2098b4e9",
   "fa": "مادرش حضرت نرجس (س) بود.",
-  "say": "mâdarash hazrat-e narjes, salâmollâh alayhâ, bud."
+  "say": "mâdarash hazrat-e narjes salâmollâh alayhâ bud."
  },
  {
   "id": "w-4ef06a63",
   "fa": "حکیمه خاتون (س)، عمهٔ امام عسکری (ع)، شب تولد او حاضر بود.",
-  "say": "hakime khâtun, salâmollâh alayhâ, amme-ye emâm askari, alayhessalâm, shab-e tavallod-e u hâzer bud."
+  "say": "hakime khâtun salâmollâh alayhâ, amme-ye emâm askari alayhessalâm, shab-e tavallod-e u hâzer bud."
  },
  {
   "id": "w-89f60c4b",
   "fa": "نام و کنیهٔ او همان نام و کنیهٔ پیامبر (ص) است.",
-  "say": "nâm va konye-ye u hamân nâm va konye-ye payâmbar, sallallâho alayhe va âleh, ast."
+  "say": "nâm va konye-ye u hamân nâm va konye-ye payâmbar sallallâho alayhe va âleh ast."
  },
  {
   "id": "w-140ca821",
@@ -4291,8 +4291,8 @@
  },
  {
   "id": "w-f4ef824d",
-  "fa": "او زنده است و مردم مانند خورشید پشت ابر از او بهره می‌برند.",
-  "say": "u zende ast va mardom mânand-e khorshid-e posht-e abr az u bahre mibarand."
+  "fa": "او زنده است، و مردم، مانند خورشید پشت ابر، از او بهره می‌برند.",
+  "say": "u zende ast, va mardom, mânand-e khorshid-e posht-e abr, az u bahre mibarand."
  },
  {
   "id": "w-6720d82d",
@@ -4301,8 +4301,8 @@
  },
  {
   "id": "w-c10f00a7",
-  "fa": "ایرانیان نیمهٔ شعبان را با چراغانی و شیرینی جشن می‌گیرند و صبح‌های جمعه دعای ندبه می‌خوانند.",
-  "say": "irâniyân nime-ye sha'bân râ bâ cherâghâni va shirini jashn migirand va sobh-hâ-ye jom'e do'â-ye nodbe mikhânand."
+  "fa": "ایرانیان نیمهٔ شعبان را با چراغانی و شیرینی جشن می‌گیرند، و صبح‌های جمعه دعای ندبه می‌خوانند.",
+  "say": "irâniyân nime-ye sha'bân râ bâ cherâghâni va shirini jashn migirand, va sobh-hâ-ye jom'e do'â-ye nodbe mikhânand."
  },
  {
   "id": "w-4ed68cd5",
@@ -4352,12 +4352,12 @@
  {
   "id": "w-52fe69a3",
   "fa": "در سال دهم هجری، پیامبر (ص) آخرین حج خود را به جا آورد که آن را «حجةالوداع» می‌نامند.",
-  "say": "dar sâl-e dahom-e hejri, payâmbar, sallallâho alayhe va âleh, âkharin hajj-e khod râ be jâ âvard ke ân râ «hajjat-ol-vedâ'» minâmand."
+  "say": "dar sâl-e dahom-e hejri, payâmbar sallallâho alayhe va âleh âkharin hajj-e khod râ be jâ âvard ke ân râ «hajjat-ol-vedâ'» minâmand."
  },
  {
   "id": "w-4501cd55",
   "fa": "در بازگشت، در غدیر خم، امام علی (ع) را جانشین خود معرفی کرد.",
-  "say": "dar bâzgasht, dar ghadir-e khom, emâm ali, alayhessalâm, râ jâneshin-e khod mo'arrefi kard."
+  "say": "dar bâzgasht, dar ghadir-e khom, emâm ali alayhessalâm râ jâneshin-e khod mo'arrefi kard."
  },
  {
   "id": "w-e6613a93",
@@ -4366,8 +4366,8 @@
  },
  {
   "id": "w-a653fdab",
-  "fa": "فرمود: «قلم و کاغذی بیاورید تا برایتان چیزی بنویسم که پس از من هرگز گمراه نشوید.»",
-  "say": "farmud: «ghalam va kâghazi biyâvarid tâ barâyetân chizi benevisam ke pas az man hargez gomrâh nashavid.»"
+  "fa": "فرمود: «قلم و کاغذی بیاورید، تا برایتان چیزی بنویسم که پس از من هرگز گمراه نشوید.»",
+  "say": "farmud: «ghalam va kâghazi biyâvarid, tâ barâyetân chizi benevisam ke pas az man hargez gomrâh nashavid.»"
  },
  {
   "id": "w-1a924b17",
@@ -4387,27 +4387,27 @@
  {
   "id": "w-c2c0ec9a",
   "fa": "بنا بر روایات شیعه، پیامبر (ص) با زهر به شهادت رسید.",
-  "say": "banâ bar revâyât-e shi'e, payâmbar, sallallâho alayhe va âleh, bâ zahr be shahâdat resid."
+  "say": "banâ bar revâyât-e shi'e, payâmbar sallallâho alayhe va âleh bâ zahr be shahâdat resid."
  },
  {
   "id": "w-9706963f",
   "fa": "در تفسیر عیاشی، امام صادق (ع) فرموده که دو تن از همسران پیامبر به او زهر دادند؛ علامه مجلسی (ره) آن دو را عایشه و حفصه دانسته است.",
-  "say": "dar tafsir-e ayyâshi, emâm sâdegh, alayhessalâm, farmude ke do tan az hamsarân-e payâmbar be u zahr dâdand; allâme majlesi, rahmatollâh alayh, ân do râ âyeshe va hafse dâneste ast."
+  "say": "dar tafsir-e ayyâshi, emâm sâdegh alayhessalâm farmude ke do tan az hamsarân-e payâmbar be u zahr dâdand; allâme majlesi rahmatollâh alayh ân do râ âyeshe va hafse dâneste ast."
  },
  {
   "id": "w-c4574bbf",
   "fa": "در بیست و هشتم صفر، پیامبر در حالی که سرش بر سینهٔ امام علی (ع) بود، از دنیا رفت.",
-  "say": "dar bist-o-hashtom-e safar, payâmbar dar hâli ke sarash bar sine-ye emâm ali, alayhessalâm, bud, az donyâ raft."
+  "say": "dar bist-o-hashtom-e safar, payâmbar dar hâli ke sarash bar sine-ye emâm ali alayhessalâm bud, az donyâ raft."
  },
  {
   "id": "w-f7f129a8",
   "fa": "امام علی (ع)، پیکر او را غسل داد و به خاک سپرد.",
-  "say": "emâm ali, alayhessalâm, peykar-e u râ ghosl dâd va be khâk sepord."
+  "say": "emâm ali alayhessalâm, peykar-e u râ ghosl dâd va be khâk sepord."
  },
  {
   "id": "w-6cbeffcb",
-  "fa": "رسول خدا (ص) جان سپرد در حالی که سرش بر سینهٔ من بود.",
-  "say": "rasul-e khodâ, sallallâho alayhe va âleh, jân sepord dar hâli ke sarash bar sine-ye man bud."
+  "fa": "رسول خدا (ص) جان سپرد، در حالی که سرش بر سینهٔ من بود.",
+  "say": "rasul-e khodâ sallallâho alayhe va âleh jân sepord, dar hâli ke sarash bar sine-ye man bud."
  },
  {
   "id": "w-68144fa9",
@@ -4447,27 +4447,27 @@
  {
   "id": "w-b133ba0c",
   "fa": "وقتی امام علی (ع) و خاندان پیامبر سرگرم غسل و کفن پیامبر (ص) بودند، گروهی در سقیفهٔ بنی‌ساعده جمع شدند.",
-  "say": "vaghti emâm ali, alayhessalâm, va khândân-e payâmbar sargarm-e ghosl va kafan-e payâmbar, sallallâho alayhe va âleh, budand, goruhi dar saghife-ye bani-sâ'ede jam' shodand."
+  "say": "vaghti emâm ali alayhessalâm va khândân-e payâmbar sargarm-e ghosl va kafan-e payâmbar sallallâho alayhe va âleh budand, goruhi dar saghife-ye bani-sâ'ede jam' shodand."
  },
  {
   "id": "w-a912bd5d",
-  "fa": "آن‌ها سفارش پیامبر در غدیر را کنار گذاشتند و با ابوبکر بیعت کردند.",
-  "say": "ân-hâ sefâresh-e payâmbar dar ghadir râ kenâr gozâshtand va bâ abubakr bey'at kardand."
+  "fa": "آن‌ها سفارش پیامبر در غدیر را کنار گذاشتند، و با ابوبکر بیعت کردند.",
+  "say": "ân-hâ sefâresh-e payâmbar dar ghadir râ kenâr gozâshtand, va bâ abubakr bey'at kardand."
  },
  {
   "id": "w-df485087",
   "fa": "امام علی (ع) و بنی‌هاشم، و سلمان و ابوذر و مقداد و عمار (رضوان‌الله‌علیهم)، بیعت نکردند.",
-  "say": "emâm ali, alayhessalâm, va bani-hâshem, va salmân va abuzar va meghdâd va ammâr, rezvânollâh alayhem, bey'at nakardand."
+  "say": "emâm ali alayhessalâm va bani-hâshem, va salmân va abuzar va meghdâd va ammâr rezvânollâh alayhem, bey'at nakardand."
  },
  {
   "id": "w-413cfc78",
   "fa": "بنا بر روایات شیعه، عمر با گروهی به خانهٔ حضرت فاطمه (س) آمد تا امام علی (ع) را به زور برای بیعت ببرد.",
-  "say": "banâ bar revâyât-e shi'e, omar bâ goruhi be khâne-ye hazrat-e fâteme, salâmollâh alayhâ, âmad tâ emâm ali, alayhessalâm, râ be zur barâye bey'at bebarad."
+  "say": "banâ bar revâyât-e shi'e, omar bâ goruhi be khâne-ye hazrat-e fâteme salâmollâh alayhâ âmad tâ emâm ali alayhessalâm râ be zur barâye bey'at bebarad."
  },
  {
   "id": "w-a55be76b",
-  "fa": "در خانه را آتش زدند؛ حضرت فاطمه (س) پشت در آسیب دید و فرزندش محسن از دست رفت.",
-  "say": "dar-e khâne râ âtash zadand; hazrat-e fâteme, salâmollâh alayhâ, posht-e dar âsib did va farzandash mohsen az dast raft."
+  "fa": "در خانه را آتش زدند؛ حضرت فاطمه (س) پشت در آسیب دید، و فرزندش محسن از دست رفت.",
+  "say": "dar-e khâne râ âtash zadand; hazrat-e fâteme salâmollâh alayhâ posht-e dar âsib did, va farzandash mohsen az dast raft."
  },
  {
   "id": "w-a554824a",
@@ -4476,8 +4476,8 @@
  },
  {
   "id": "w-4dc521c1",
-  "fa": "حضرت فاطمه (س) به مسجد رفت و در خطبهٔ فدکیه از حق خود دفاع کرد.",
-  "say": "hazrat-e fâteme, salâmollâh alayhâ, be masjed raft va dar khotbe-ye fadakiyye az hagh-e khod defâ' kard."
+  "fa": "حضرت فاطمه (س) به مسجد رفت، و در خطبهٔ فدکیه از حق خود دفاع کرد.",
+  "say": "hazrat-e fâteme salâmollâh alayhâ be masjed raft, va dar khotbe-ye fadakiyye az hagh-e khod defâ' kard."
  },
  {
   "id": "w-99b6a670",
@@ -4492,7 +4492,7 @@
  {
   "id": "w-5896bc1d",
   "fa": "به وصیت خودش، امام علی (ع) او را شبانه و پنهانی به خاک سپرد.",
-  "say": "be vasiyyat-e khodash, emâm ali, alayhessalâm, u râ shabâne va penhâni be khâk sepord."
+  "say": "be vasiyyat-e khodash, emâm ali alayhessalâm u râ shabâne va penhâni be khâk sepord."
  },
  {
   "id": "w-ffea8717",
@@ -4502,7 +4502,7 @@
  {
   "id": "w-e137e117",
   "fa": "ای مردم، بدانید که من فاطمه‌ام و پدرم محمد (ص) است.",
-  "say": "ey mardom, bedânid ke man fâteme-am va pedaram mohammad, sallallâho alayhe va âleh, ast."
+  "say": "ey mardom, bedânid ke man fâteme-am va pedaram mohammad sallallâho alayhe va âleh ast."
  },
  {
   "id": "w-4ddf29e6",
@@ -4542,7 +4542,7 @@
  {
   "id": "w-48340fc4",
   "fa": "وقتی مردم با امام علی (ع) بیعت کردند، او بیت‌المال را به عدالت و برابر میان همه تقسیم کرد.",
-  "say": "vaghti mardom bâ emâm ali, alayhessalâm, bey'at kardand, u beyt-ol-mâl râ be edâlat va barâbar miyân-e hame taghsim kard."
+  "say": "vaghti mardom bâ emâm ali alayhessalâm bey'at kardand, u beyt-ol-mâl râ be edâlat va barâbar miyân-e hame taghsim kard."
  },
  {
   "id": "w-458abe05",
@@ -4562,12 +4562,12 @@
  {
   "id": "w-6917cc80",
   "fa": "پیامبر (ص) به همسرانش هشدار داده بود که مبادا سگ‌های حوأب بر یکی از آن‌ها پارس کنند؛ اما عایشه بازنگشت.",
-  "say": "payâmbar, sallallâho alayhe va âleh, be hamsarânash hoshdâr dâde bud ke mabâdâ sag-hâ-ye haw'ab bar yeki az ân-hâ pâres konand; ammâ âyeshe bâznagasht."
+  "say": "payâmbar sallallâho alayhe va âleh be hamsarânash hoshdâr dâde bud ke mabâdâ sag-hâ-ye haw'ab bar yeki az ân-hâ pâres konand; ammâ âyeshe bâznagasht."
  },
  {
   "id": "w-6e7f7dc5",
-  "fa": "امام علی (ع) پیش از جنگ کوشید صلح کند و سخن پیامبر را به زبیر یادآوری کرد.",
-  "say": "emâm ali, alayhessalâm, pish az jang kushid solh konad va sokhan-e payâmbar râ be zobeyr yâdâvari kard."
+  "fa": "امام علی (ع) پیش از جنگ کوشید صلح کند، و سخن پیامبر را به زبیر یادآوری کرد.",
+  "say": "emâm ali alayhessalâm pish az jang kushid solh konad, va sokhan-e payâmbar râ be zobeyr yâdâvari kard."
  },
  {
   "id": "w-07d362a8",
@@ -4582,7 +4582,7 @@
  {
   "id": "w-11db3b05",
   "fa": "امام علی (ع) پیروز شد، شکست‌خوردگان را بخشید و عایشه را به مدینه بازگرداند.",
-  "say": "emâm ali, alayhessalâm, piruz shod, shekastkhordegân râ bakhshid va âyeshe râ be madine bâzgardând."
+  "say": "emâm ali alayhessalâm piruz shod, shekastkhordegân râ bakhshid va âyeshe râ be madine bâzgardând."
  },
  {
   "id": "w-c279ff44",
@@ -4627,7 +4627,7 @@
  {
   "id": "w-d2a13c8b",
   "fa": "معاویه، فرماندار شام، از امام علی (ع) فرمان نبرد.",
-  "say": "mo'âviye, farmândâr-e shâm, az emâm ali, alayhessalâm, farmân nabord."
+  "say": "mo'âviye, farmândâr-e shâm, az emâm ali alayhessalâm farmân nabord."
  },
  {
   "id": "w-8a2b43b5",
@@ -4647,12 +4647,12 @@
  {
   "id": "w-32ec2d00",
   "fa": "عمار یاسر (ره) در این جنگ به شهادت رسید، همان‌طور که پیامبر (ص) خبر داده بود.",
-  "say": "ammâr-e yâser, rahmatollâh alayh, dar in jang be shahâdat resid, hamântor ke payâmbar, sallallâho alayhe va âleh, khabar dâde bud."
+  "say": "ammâr-e yâser rahmatollâh alayh dar in jang be shahâdat resid, hamântor ke payâmbar sallallâho alayhe va âleh khabar dâde bud."
  },
  {
   "id": "w-871e01e5",
   "fa": "مالک اشتر (ره) تا نزدیکی خیمهٔ معاویه پیش رفت.",
-  "say": "mâlek-e ashtar, rahmatollâh alayh, tâ nazdiki-ye kheyme-ye mo'âviye pish raft."
+  "say": "mâlek-e ashtar rahmatollâh alayh tâ nazdiki-ye kheyme-ye mo'âviye pish raft."
  },
  {
   "id": "w-0b9524d8",
@@ -4661,8 +4661,8 @@
  },
  {
   "id": "w-db6f6fcf",
-  "fa": "گروهی از سپاه امام فریب خوردند و او را مجبور کردند جنگ را متوقف کند.",
-  "say": "goruhi az sepâh-e emâm farib khordand va u râ majbur kardand jang râ motavaghghef konad."
+  "fa": "گروهی از سپاه امام فریب خوردند، و او را مجبور کردند جنگ را متوقف کند.",
+  "say": "goruhi az sepâh-e emâm farib khordand, va u râ majbur kardand jang râ motavaghghef konad."
  },
  {
   "id": "w-85011386",
@@ -4712,7 +4712,7 @@
  {
   "id": "w-68ca0f17",
   "fa": "پس از داوری صفین، گروهی از سپاه امام علی (ع) جدا شدند.",
-  "say": "pas az dâvari-ye seffin, goruhi az sepâh-e emâm ali, alayhessalâm, jodâ shodand."
+  "say": "pas az dâvari-ye seffin, goruhi az sepâh-e emâm ali alayhessalâm jodâ shodand."
  },
  {
   "id": "w-3171a483",
@@ -4792,7 +4792,7 @@
  {
   "id": "w-67644c4e",
   "fa": "شب عاشورا، امام حسین (ع) به یارانش فرمود: «در تاریکی شب بروید؛ آن‌ها فقط مرا می‌خواهند.»",
-  "say": "shab-e âshurâ, emâm hoseyn, alayhessalâm, be yârânash farmud: «dar târiki-ye shab beravid; ân-hâ faghat marâ mikhâhand.»"
+  "say": "shab-e âshurâ, emâm hoseyn alayhessalâm be yârânash farmud: «dar târiki-ye shab beravid; ân-hâ faghat marâ mikhâhand.»"
  },
  {
   "id": "w-a61e1f44",
@@ -4802,7 +4802,7 @@
  {
   "id": "w-121f476c",
   "fa": "حضرت عباس (ع)، برادر و پرچم‌دار امام، برای کودکان تشنه به سوی فرات رفت.",
-  "say": "hazrat-e abbâs, alayhessalâm, barâdar va parchamdâr-e emâm, barâye kudakân-e teshne be su-ye forât raft."
+  "say": "hazrat-e abbâs alayhessalâm, barâdar va parchamdâr-e emâm, barâye kudakân-e teshne be su-ye forât raft."
  },
  {
   "id": "w-330ede3e",
@@ -4816,28 +4816,28 @@
  },
  {
   "id": "w-6a58783e",
-  "fa": "او کنار فرات به شهادت رسید و ایرانیان او را «ابوالفضل» و «سقای کربلا» می‌نامند.",
-  "say": "u kenâr-e forât be shahâdat resid va irâniyân u râ «abolfazl» va «saghghâ-ye karbalâ» minâmand."
+  "fa": "او کنار فرات به شهادت رسید، و ایرانیان او را «ابوالفضل» و «سقای کربلا» می‌نامند.",
+  "say": "u kenâr-e forât be shahâdat resid, va irâniyân u râ «abolfazl» va «saghghâ-ye karbalâ» minâmand."
  },
  {
   "id": "w-4ef79bb5",
   "fa": "علی اکبر (ع)، پسر امام، که شبیه‌ترین مردم به پیامبر (ص) بود، به شهادت رسید.",
-  "say": "ali akbar, alayhessalâm, pesar-e emâm, ke shabihtarin-e mardom be payâmbar, sallallâho alayhe va âleh, bud, be shahâdat resid."
+  "say": "ali akbar alayhessalâm, pesar-e emâm, ke shabihtarin-e mardom be payâmbar sallallâho alayhe va âleh bud, be shahâdat resid."
  },
  {
   "id": "w-d220733d",
   "fa": "قاسم (ع)، پسر نوجوان امام حسن (ع)، گفت مرگ در راه حق برایش «شیرین‌تر از عسل» است.",
-  "say": "ghâsem, alayhessalâm, pesar-e nowjavân-e emâm hasan, alayhessalâm, goft marg dar râh-e hagh barâyash «shirintar az asal» ast."
+  "say": "ghâsem alayhessalâm, pesar-e nowjavân-e emâm hasan alayhessalâm, goft marg dar râh-e hagh barâyash «shirintar az asal» ast."
  },
  {
   "id": "w-e66cef25",
   "fa": "امام، علی اصغر (ع)، کودک شیرخوارش را روی دست گرفت و برایش آب خواست؛ اما تیری گلوی کودک را درید.",
-  "say": "emâm, ali asghar, alayhessalâm, kudak-e shirkhârash râ ru-ye dast gereft va barâyash âb khâst; ammâ tiri galu-ye kudak râ darid."
+  "say": "emâm, ali asghar alayhessalâm, kudak-e shirkhârash râ ru-ye dast gereft va barâyash âb khâst; ammâ tiri galu-ye kudak râ darid."
  },
  {
   "id": "w-f3b9095c",
   "fa": "سرانجام امام حسین (ع)، تشنه و تنها، در عصر عاشورا به شهادت رسید.",
-  "say": "saranjâm emâm hoseyn, alayhessalâm, teshne va tanhâ, dar asr-e âshurâ be shahâdat resid."
+  "say": "saranjâm emâm hoseyn alayhessalâm, teshne va tanhâ, dar asr-e âshurâ be shahâdat resid."
  },
  {
   "id": "w-8da5eca9",
@@ -4877,7 +4877,7 @@
  {
   "id": "w-1104367d",
   "fa": "حمزه (ع) عموی پیامبر (ص) و شکارچی‌ای نیرومند و شجاع بود.",
-  "say": "hamze, alayhessalâm, amu-ye payâmbar, sallallâho alayhe va âleh, va shekârchi-i nirumand va shojâ' bud."
+  "say": "hamze alayhessalâm amu-ye payâmbar sallallâho alayhe va âleh va shekârchi-i nirumand va shojâ' bud."
  },
  {
   "id": "w-93a45b72",
@@ -4916,8 +4916,8 @@
  },
  {
   "id": "w-d1732045",
-  "fa": "پیامبر او را «سیدالشهدا» نامید و حضرت فاطمه (س) به زیارت مزارش می‌رفت.",
-  "say": "payâmbar u râ «seyyed-osh-shohadâ» nâmid va hazrat-e fâteme, salâmollâh alayhâ, be ziyârat-e mazârash miraft."
+  "fa": "پیامبر او را «سیدالشهدا» نامید، و حضرت فاطمه (س) به زیارت مزارش می‌رفت.",
+  "say": "payâmbar u râ «seyyed-osh-shohadâ» nâmid, va hazrat-e fâteme salâmollâh alayhâ be ziyârat-e mazârash miraft."
  },
  {
   "id": "w-b9865ee3",
@@ -4947,7 +4947,7 @@
  {
   "id": "w-9039878e",
   "fa": "جعفر (ع)، برادر امام علی (ع)، در چهره و اخلاق شبیه‌ترین مردم به پیامبر (ص) بود.",
-  "say": "ja'far, alayhessalâm, barâdar-e emâm ali, alayhessalâm, dar chehre va akhlâgh shabihtarin-e mardom be payâmbar, sallallâho alayhe va âleh, bud."
+  "say": "ja'far alayhessalâm, barâdar-e emâm ali alayhessalâm, dar chehre va akhlâgh shabihtarin-e mardom be payâmbar sallallâho alayhe va âleh bud."
  },
  {
   "id": "w-fb566e4d",
@@ -5022,7 +5022,7 @@
  {
   "id": "w-233000de",
   "fa": "سلمان (ره) اهل ایران بود و پیش از اسلام نامش «روزبه» بود.",
-  "say": "salmân, rahmatollâh alayh, ahl-e irân bud va pish az eslâm nâmash «ruzbeh» bud."
+  "say": "salmân rahmatollâh alayh ahl-e irân bud va pish az eslâm nâmash «ruzbeh» bud."
  },
  {
   "id": "w-4a9a6e7a",
@@ -5037,7 +5037,7 @@
  {
   "id": "w-62ebf33c",
   "fa": "سرانجام در مدینه پیامبر (ص) را دید و به او ایمان آورد.",
-  "say": "saranjâm dar madine payâmbar, sallallâho alayhe va âleh, râ did va be u imân âvard."
+  "say": "saranjâm dar madine payâmbar sallallâho alayhe va âleh râ did va be u imân âvard."
  },
  {
   "id": "w-243965d2",
@@ -5052,12 +5052,12 @@
  {
   "id": "w-e981b5b3",
   "fa": "پیامبر (ص) فرمود: «سلمان از ما اهل بیت است.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, farmud: «salmân az mâ ahl-e beyt ast.»"
+  "say": "payâmbar sallallâho alayhe va âleh farmud: «salmân az mâ ahl-e beyt ast.»"
  },
  {
   "id": "w-5bd178de",
   "fa": "پس از پیامبر، سلمان همیشه همراه امام علی (ع) ماند.",
-  "say": "pas az payâmbar, salmân hamishe hamrâh-e emâm ali, alayhessalâm, mând."
+  "say": "pas az payâmbar, salmân hamishe hamrâh-e emâm ali alayhessalâm mând."
  },
  {
   "id": "w-5bfce3fd",
@@ -5106,13 +5106,13 @@
  },
  {
   "id": "w-5f4be1db",
-  "fa": "ابوذر (ره) از قبیلهٔ غفار بود و حتی پیش از اسلام بت نمی‌پرستید.",
-  "say": "abuzar, rahmatollâh alayh, az ghabile-ye ghefâr bud va hattâ pish az eslâm bot nemiparastid."
+  "fa": "ابوذر (ره) از قبیلهٔ غفار بود، و حتی پیش از اسلام بت نمی‌پرستید.",
+  "say": "abuzar rahmatollâh alayh az ghabile-ye ghefâr bud, va hattâ pish az eslâm bot nemiparastid."
  },
  {
   "id": "w-d2a97ef6",
   "fa": "وقتی خبر پیامبر (ص) را شنید، به مکه آمد و مسلمان شد.",
-  "say": "vaghti khabar-e payâmbar, sallallâho alayhe va âleh, râ shenid, be makke âmad va mosalmân shod."
+  "say": "vaghti khabar-e payâmbar sallallâho alayhe va âleh râ shenid, be makke âmad va mosalmân shod."
  },
  {
   "id": "w-57349aa8",
@@ -5127,12 +5127,12 @@
  {
   "id": "w-43aaeb2b",
   "fa": "پیامبر (ص) فرمود: «آسمان بر راستگوتر از ابوذر سایه نینداخته است.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, farmud: «âsemân bar râstgutar az abuzar sâye nayandâkhte ast.»"
+  "say": "payâmbar sallallâho alayhe va âleh farmud: «âsemân bar râstgutar az abuzar sâye nayandâkhte ast.»"
  },
  {
   "id": "w-d8eca54f",
   "fa": "پس از پیامبر، ابوذر از امام علی (ع) پیروی کرد.",
-  "say": "pas az payâmbar, abuzar az emâm ali, alayhessalâm, peyravi kard."
+  "say": "pas az payâmbar, abuzar az emâm ali alayhessalâm peyravi kard."
  },
  {
   "id": "w-97860c81",
@@ -5156,8 +5156,8 @@
  },
  {
   "id": "w-1a865694",
-  "fa": "آسمان سبز بر کسی سایه نینداخته و زمین خاکی کسی را بر خود نبرده که از ابوذر راستگوتر باشد.",
-  "say": "âsemân-e sabz bar kasi sâye nayandâkhte va zamin-e khâki kasi râ bar khod nabarde ke az abuzar râstgutar bâshad."
+  "fa": "آسمان سبز بر کسی سایه نینداخته، و زمین خاکی کسی را بر خود نبرده، که از ابوذر راستگوتر باشد.",
+  "say": "âsemân-e sabz bar kasi sâye nayandâkhte, va zamin-e khâki kasi râ bar khod nabarde, ke az abuzar râstgutar bâshad."
  },
  {
   "id": "w-8dbba60a",
@@ -5177,7 +5177,7 @@
  {
   "id": "w-aaa43633",
   "fa": "مقداد (ره) از نخستین کسانی بود که به پیامبر (ص) ایمان آورد.",
-  "say": "meghdâd, rahmatollâh alayh, az nokhostin kasâni bud ke be payâmbar, sallallâho alayhe va âleh, imân âvard."
+  "say": "meghdâd rahmatollâh alayh az nokhostin kasâni bud ke be payâmbar sallallâho alayhe va âleh imân âvard."
  },
  {
   "id": "w-38db2f56",
@@ -5202,12 +5202,12 @@
  {
   "id": "w-9e430110",
   "fa": "پیامبر فرمود خدا به او فرمان داده چهار نفر را دوست بدارد: علی (ع)، ابوذر، مقداد و سلمان.",
-  "say": "payâmbar farmud khodâ be u farmân dâde chahâr nafar râ dust bedârad: ali, alayhessalâm, abuzar, meghdâd va salmân."
+  "say": "payâmbar farmud khodâ be u farmân dâde chahâr nafar râ dust bedârad: ali alayhessalâm, abuzar, meghdâd va salmân."
  },
  {
   "id": "w-5e07d1bf",
   "fa": "پس از پیامبر، مقداد لحظه‌ای از امام علی (ع) جدا نشد.",
-  "say": "pas az payâmbar, meghdâd lahze-i az emâm ali, alayhessalâm, jodâ nashod."
+  "say": "pas az payâmbar, meghdâd lahze-i az emâm ali alayhessalâm jodâ nashod."
  },
  {
   "id": "w-f8b03df3",
@@ -5251,8 +5251,8 @@
  },
  {
   "id": "w-604bc821",
-  "fa": "یاسر و همسرش سمیه و پسرشان عمار (رضوان‌الله‌علیهم) از نخستین مسلمانان مکه بودند.",
-  "say": "yâser va hamsarash somayye va pesarashân ammâr, rezvânollâh alayhem, az nokhostin mosalmânân-e makke budand."
+  "fa": "یاسر و همسرش سمیه و پسرشان عمار (رضوان‌الله‌علیهم)، از نخستین مسلمانان مکه بودند.",
+  "say": "yâser va hamsarash somayye va pesarashân ammâr rezvânollâh alayhem, az nokhostin mosalmânân-e makke budand."
  },
  {
   "id": "w-d6708690",
@@ -5267,7 +5267,7 @@
  {
   "id": "w-a9093e09",
   "fa": "پیامبر (ص) از کنارشان گذشت و فرمود: «صبر کنید ای خاندان یاسر؛ وعده‌گاه شما بهشت است.»",
-  "say": "payâmbar, sallallâho alayhe va âleh, az kenâreshân gozasht va farmud: «sabr konid ey khândân-e yâser; va'degâh-e shomâ behesht ast.»"
+  "say": "payâmbar sallallâho alayhe va âleh az kenâreshân gozasht va farmud: «sabr konid ey khândân-e yâser; va'degâh-e shomâ behesht ast.»"
  },
  {
   "id": "w-13232cd5",
@@ -5282,7 +5282,7 @@
  {
   "id": "w-42b9d893",
   "fa": "عمار بزرگ شد و همیشه کنار امام علی (ع) ماند.",
-  "say": "ammâr bozorg shod va hamishe kenâr-e emâm ali, alayhessalâm, mând."
+  "say": "ammâr bozorg shod va hamishe kenâr-e emâm ali alayhessalâm mând."
  },
  {
   "id": "w-8349139f",
@@ -5292,12 +5292,12 @@
  {
   "id": "w-8383f7c7",
   "fa": "عمار در نود و چند سالگی، در جنگ صفین، در سپاه امام علی (ع) به شهادت رسید.",
-  "say": "ammâr dar navad-o-chand sâlegi, dar jang-e seffin, dar sepâh-e emâm ali, alayhessalâm, be shahâdat resid."
+  "say": "ammâr dar navad-o-chand sâlegi, dar jang-e seffin, dar sepâh-e emâm ali alayhessalâm be shahâdat resid."
  },
  {
   "id": "w-4253c109",
   "fa": "شهادت او نشان داد که حق با امام علی (ع) است.",
-  "say": "shahâdat-e u neshân dâd ke hagh bâ emâm ali, alayhessalâm, ast."
+  "say": "shahâdat-e u neshân dâd ke hagh bâ emâm ali alayhessalâm ast."
  },
  {
   "id": "w-777d910f",
@@ -5337,7 +5337,7 @@
  {
   "id": "w-85aad886",
   "fa": "مالک اشتر (ره) شجاع‌ترین و وفادارترین فرماندهٔ امام علی (ع) بود.",
-  "say": "mâlek-e ashtar, rahmatollâh alayh, shojâ'tarin va vafâdârtarin farmânde-ye emâm ali, alayhessalâm, bud."
+  "say": "mâlek-e ashtar rahmatollâh alayh shojâ'tarin va vafâdârtarin farmânde-ye emâm ali alayhessalâm bud."
  },
  {
   "id": "w-4b02e6d9",
@@ -5346,13 +5346,13 @@
  },
  {
   "id": "w-b0855aea",
-  "fa": "در صفین تا پیروزی چند قدم فاصله داشت که امام او را فراخواند.",
-  "say": "dar seffin tâ piruzi chand ghadam fâsele dâsht ke emâm u râ farâkhând."
+  "fa": "در صفین، تا پیروزی چند قدم فاصله داشت که امام او را فراخواند.",
+  "say": "dar seffin, tâ piruzi chand ghadam fâsele dâsht ke emâm u râ farâkhând."
  },
  {
   "id": "w-a48249cd",
   "fa": "امام علی (ع) او را فرماندار مصر کرد.",
-  "say": "emâm ali, alayhessalâm, u râ farmândâr-e mesr kard."
+  "say": "emâm ali alayhessalâm u râ farmândâr-e mesr kard."
  },
  {
   "id": "w-13a0e2b0",
@@ -5377,7 +5377,7 @@
  {
   "id": "w-2bbbb762",
   "fa": "امام علی (ع) فرمود: «مالک! و چه مالکی! اگر کوه بود، کوهی بلند بود.»",
-  "say": "emâm ali, alayhessalâm, farmud: «mâlek! va che mâleki! agar kuh bud, kuhi boland bud.»"
+  "say": "emâm ali alayhessalâm farmud: «mâlek! va che mâleki! agar kuh bud, kuhi boland bud.»"
  },
  {
   "id": "w-70d16d49",
@@ -5407,7 +5407,7 @@
  {
   "id": "w-48cbdd2c",
   "fa": "کمیل بن زیاد (ره) از یاران نزدیک امام علی (ع) بود.",
-  "say": "komeyl ebn-e ziyâd, rahmatollâh alayh, az yârân-e nazdik-e emâm ali, alayhessalâm, bud."
+  "say": "komeyl ebn-e ziyâd rahmatollâh alayh az yârân-e nazdik-e emâm ali alayhessalâm bud."
  },
  {
   "id": "w-976a5c48",
@@ -5487,7 +5487,7 @@
  {
   "id": "w-c8cfb8a3",
   "fa": "میثم (ره) غلامی بود که امام علی (ع) او را خرید و آزاد کرد.",
-  "say": "meysam, rahmatollâh alayh, gholâmi bud ke emâm ali, alayhessalâm, u râ kharid va âzâd kard."
+  "say": "meysam rahmatollâh alayh gholâmi bud ke emâm ali alayhessalâm u râ kharid va âzâd kard."
  },
  {
   "id": "w-d79860b1",
@@ -5497,7 +5497,7 @@
  {
   "id": "w-7cf2f4bb",
   "fa": "امام فرمود: «پیامبر (ص) به من خبر داده که پدر و مادرت تو را میثم نامیده بودند.»",
-  "say": "emâm farmud: «payâmbar, sallallâho alayhe va âleh, be man khabar dâde ke pedar va mâdarat to râ meysam nâmide budand.»"
+  "say": "emâm farmud: «payâmbar sallallâho alayhe va âleh be man khabar dâde ke pedar va mâdarat to râ meysam nâmide budand.»"
  },
  {
   "id": "w-eff8d842",
@@ -5507,7 +5507,7 @@
  {
   "id": "w-02c16eb3",
   "fa": "امام علی (ع)، دانش بسیاری به او آموخت.",
-  "say": "emâm ali, alayhessalâm, dânesh-e besyâri be u âmukht."
+  "say": "emâm ali alayhessalâm, dânesh-e besyâri be u âmukht."
  },
  {
   "id": "w-973798ae",
@@ -5516,23 +5516,23 @@
  },
  {
   "id": "w-fb0a19c1",
-  "fa": "میثم آن درخت را پیدا کرد و سال‌ها کنارش نماز خواند و آبش داد.",
-  "say": "meysam ân derakht râ peydâ kard va sâl-hâ kenârash namâz khând va âbash dâd."
+  "fa": "میثم آن درخت را پیدا کرد، و سال‌ها کنارش نماز خواند و آبش داد.",
+  "say": "meysam ân derakht râ peydâ kard, va sâl-hâ kenârash namâz khând va âbash dâd."
  },
  {
   "id": "w-f377043e",
   "fa": "سال‌ها بعد، ابن زیاد او را گرفت و از او خواست از امام علی (ع) بیزاری بجوید.",
-  "say": "sâl-hâ ba'd, ebn-e ziyâd u râ gereft va az u khâst az emâm ali, alayhessalâm, bizâri bejuyad."
+  "say": "sâl-hâ ba'd, ebn-e ziyâd u râ gereft va az u khâst az emâm ali alayhessalâm bizâri bejuyad."
  },
  {
   "id": "w-f20e1630",
   "fa": "میثم نپذیرفت و حتی بالای دار، از فضیلت‌های اهل بیت (ع) سخن گفت.",
-  "say": "meysam napaziroft va hattâ bâlâ-ye dâr, az fazilat-hâ-ye ahl-e beyt, alayhemossalâm, sokhan goft."
+  "say": "meysam napaziroft va hattâ bâlâ-ye dâr, az fazilat-hâ-ye ahl-e beyt alayhemossalâm sokhan goft."
  },
  {
   "id": "w-be426745",
   "fa": "او ده روز پیش از رسیدن امام حسین (ع) به عراق، به شهادت رسید.",
-  "say": "u dah ruz pish az residan-e emâm hoseyn, alayhessalâm, be erâgh, be shahâdat resid."
+  "say": "u dah ruz pish az residan-e emâm hoseyn alayhessalâm be erâgh, be shahâdat resid."
  },
  {
   "id": "w-11311005",
@@ -5552,12 +5552,12 @@
  {
   "id": "w-fe0fc3dc",
   "fa": "حر (ره) فرماندهٔ سپاهی بود که راه امام حسین (ع) را بست.",
-  "say": "horr, rahmatollâh alayh, farmânde-ye sepâhi bud ke râh-e emâm hoseyn, alayhessalâm, râ bast."
+  "say": "horr rahmatollâh alayh farmânde-ye sepâhi bud ke râh-e emâm hoseyn alayhessalâm râ bast."
  },
  {
   "id": "w-5dbc65ee",
   "fa": "سپاه حر تشنه بود؛ امام حسین (ع) به آن‌ها و حتی به اسب‌هایشان آب داد.",
-  "say": "sepâh-e horr teshne bud; emâm hoseyn, alayhessalâm, be ân-hâ va hattâ be asb-hâyeshân âb dâd."
+  "say": "sepâh-e horr teshne bud; emâm hoseyn alayhessalâm be ân-hâ va hattâ be asb-hâyeshân âb dâd."
  },
  {
   "id": "w-8d48d861",
@@ -5577,7 +5577,7 @@
  {
   "id": "w-cd9a5a68",
   "fa": "اسبش را به سوی امام حسین (ع) راند و شرمنده پرسید: «آیا توبهٔ من پذیرفته است؟»",
-  "say": "asbash râ be su-ye emâm hoseyn, alayhessalâm, rând va sharmande porsid: «âyâ towbe-ye man pazirofte ast?»"
+  "say": "asbash râ be su-ye emâm hoseyn alayhessalâm rând va sharmande porsid: «âyâ towbe-ye man pazirofte ast?»"
  },
  {
   "id": "w-0df8b845",
@@ -5617,12 +5617,12 @@
  {
   "id": "w-39998771",
   "fa": "حضرت یوسف (ع) در خواب دید که یازده ستاره و خورشید و ماه به او سجده می‌کنند.",
-  "say": "hazrat-e yusof, alayhessalâm, dar khâb did ke yâzdah setâre va khorshid va mâh be u sajde mikonand."
+  "say": "hazrat-e yusof alayhessalâm dar khâb did ke yâzdah setâre va khorshid va mâh be u sajde mikonand."
  },
  {
   "id": "w-76bdb814",
   "fa": "پدرش، حضرت یعقوب (ع)، گفت خوابش را برای برادرانش تعریف نکند.",
-  "say": "pedarash, hazrat-e ya'ghub, alayhessalâm, goft khâbash râ barâye barâdarânash ta'rif nakonad."
+  "say": "pedarash, hazrat-e ya'ghub alayhessalâm, goft khâbash râ barâye barâdarânash ta'rif nakonad."
  },
  {
   "id": "w-3dd16675",
@@ -5641,8 +5641,8 @@
  },
  {
   "id": "w-4f553c43",
-  "fa": "او خواب پادشاه را تعبیر کرد و مردم را از قحطی نجات داد.",
-  "say": "u khâb-e pâdshâh râ ta'bir kard va mardom râ az ghahti nejât dâd."
+  "fa": "او خواب پادشاه را تعبیر کرد، و مردم را از قحطی نجات داد.",
+  "say": "u khâb-e pâdshâh râ ta'bir kard, va mardom râ az ghahti nejât dâd."
  },
  {
   "id": "w-a107dea0",
@@ -5657,7 +5657,7 @@
  {
   "id": "w-9efa5ff9",
   "fa": "پیراهن یوسف را بر چشمان یعقوب (ع) انداختند و چشمانش بینا شد.",
-  "say": "pirâhan-e yusof râ bar cheshmân-e ya'ghub, alayhessalâm, andâkhtand va cheshmânash binâ shod."
+  "say": "pirâhan-e yusof râ bar cheshmân-e ya'ghub alayhessalâm andâkhtand va cheshmânash binâ shod."
  },
  {
   "id": "w-9e7a42ee",
@@ -5702,7 +5702,7 @@
  {
   "id": "w-ea546054",
   "fa": "مادر حضرت موسی (ع) برای پسرش نگران بود.",
-  "say": "mâdar-e hazrat-e musâ, alayhessalâm, barâye pesarash negarân bud."
+  "say": "mâdar-e hazrat-e musâ alayhessalâm barâye pesarash negarân bud."
  },
  {
   "id": "w-a160ab50",
@@ -5731,8 +5731,8 @@
  },
  {
   "id": "w-b77dd4eb",
-  "fa": "پس او را پیش مادر خودش بردند و خدا به وعده‌اش وفا کرد.",
-  "say": "pas u râ pish-e mâdar-e khodash bordand va khodâ be va'de-ash vafâ kard."
+  "fa": "پس او را پیش مادر خودش بردند، و خدا به وعده‌اش وفا کرد.",
+  "say": "pas u râ pish-e mâdar-e khodash bordand, va khodâ be va'de-ash vafâ kard."
  },
  {
   "id": "w-693f3dbc",
@@ -5767,7 +5767,7 @@
  {
   "id": "w-6d4596da",
   "fa": "مردم شهر حضرت ابراهیم (ع) بت می‌پرستیدند.",
-  "say": "mardom-e shahr-e hazrat-e ebrâhim, alayhessalâm, bot miparastidand."
+  "say": "mardom-e shahr-e hazrat-e ebrâhim alayhessalâm bot miparastidand."
  },
  {
   "id": "w-62970cda",
@@ -5846,8 +5846,8 @@
  },
  {
   "id": "w-57d1e9f8",
-  "fa": "حضرت نوح (ع) نهصد و پنجاه سال مردم را به خدا دعوت کرد.",
-  "say": "hazrat-e nuh, alayhessalâm, nohsad-o-panjâh sâl mardom râ be khodâ da'vat kard."
+  "fa": "حضرت نوح (ع)، نهصد و پنجاه سال مردم را به خدا دعوت کرد.",
+  "say": "hazrat-e nuh alayhessalâm, nohsad-o-panjâh sâl mardom râ be khodâ da'vat kard."
  },
  {
   "id": "w-1546cfdc",
@@ -5896,8 +5896,8 @@
  },
  {
   "id": "w-c6da24d3",
-  "fa": "اهل بیت من مانند کشتی نوح‌اند؛ هر کس سوارش شد نجات یافت و هر کس از آن جا ماند غرق شد.",
-  "say": "ahl-e beyt-e man mânand-e kashti-ye nuh-and; har kas savârash shod nejât yâft va har kas az ân jâ mând gharg shod."
+  "fa": "اهل بیت من مانند کشتی نوح‌اند؛ هر کس سوارش شد نجات یافت، و هر کس از آن جا ماند غرق شد.",
+  "say": "ahl-e beyt-e man mânand-e kashti-ye nuh-and; har kas savârash shod nejât yâft, va har kas az ân jâ mând gharg shod."
  },
  {
   "id": "w-26286526",
@@ -5922,7 +5922,7 @@
  {
   "id": "w-74a5392a",
   "fa": "حضرت سلیمان (ع) پیامبر و پادشاهی دانا بود.",
-  "say": "hazrat-e soleymân, alayhessalâm, payâmbar va pâdshâhi dânâ bud."
+  "say": "hazrat-e soleymân alayhessalâm payâmbar va pâdshâhi dânâ bud."
  },
  {
   "id": "w-135423b7",
@@ -5977,7 +5977,7 @@
  {
   "id": "w-1b0c2704",
   "fa": "حضرت یونس (ع) از دست مردمش ناراحت شد و از شهر رفت.",
-  "say": "hazrat-e yunos, alayhessalâm, az dast-e mardomash nârâhat shod va az shahr raft."
+  "say": "hazrat-e yunos alayhessalâm az dast-e mardomash nârâhat shod va az shahr raft."
  },
  {
   "id": "w-6075ff29",
@@ -6037,7 +6037,7 @@
  {
   "id": "w-aa0aa89b",
   "fa": "حضرت مریم (س) بانویی پاک و مؤمن بود.",
-  "say": "hazrat-e maryam, salâmollâh alayhâ, bânuyi pâk va mo'men bud."
+  "say": "hazrat-e maryam salâmollâh alayhâ bânuyi pâk va mo'men bud."
  },
  {
   "id": "w-e1bde1d0",
@@ -6047,7 +6047,7 @@
  {
   "id": "w-a563b870",
   "fa": "هر بار که زکریا (ع) به محرابش می‌آمد، نزد او روزی تازه‌ای از طرف خدا می‌دید.",
-  "say": "har bâr ke zakariyyâ, alayhessalâm, be mehrâbash miâmad, nazd-e u ruzi-ye tâze-i az taraf-e khodâ midid."
+  "say": "har bâr ke zakariyyâ alayhessalâm be mehrâbash miâmad, nazd-e u ruzi-ye tâze-i az taraf-e khodâ midid."
  },
  {
   "id": "w-d09d3a2b",
@@ -6061,8 +6061,8 @@
  },
  {
   "id": "w-663e6204",
-  "fa": "«درخت خرما را تکان بده تا خرمای تازه برایت بریزد.»",
-  "say": "«derakht-e khormâ râ tekân bede tâ khormâ-ye tâze barâyat berizad.»"
+  "fa": "«درخت خرما را تکان بده، تا خرمای تازه برایت بریزد.»",
+  "say": "«derakht-e khormâ râ tekân bede, tâ khormâ-ye tâze barâyat berizad.»"
  },
  {
   "id": "w-a04bd736",
@@ -6072,12 +6072,12 @@
  {
   "id": "w-95bffae2",
   "fa": "فرزند او، حضرت عیسی (ع)، پیامبر خدا شد.",
-  "say": "farzand-e u, hazrat-e isâ, alayhessalâm, payâmbar-e khodâ shod."
+  "say": "farzand-e u, hazrat-e isâ alayhessalâm, payâmbar-e khodâ shod."
  },
  {
   "id": "w-e55a8a29",
-  "fa": "و تنهٔ درخت خرما را به سوی خود تکان بده تا خرمای تازه بر تو بریزد.",
-  "say": "va tane-ye derakht-e khormâ râ be su-ye khod tekân bede tâ khormâ-ye tâze bar to berizad."
+  "fa": "و تنهٔ درخت خرما را به سوی خود تکان بده، تا خرمای تازه بر تو بریزد.",
+  "say": "va tane-ye derakht-e khormâ râ be su-ye khod tekân bede, tâ khormâ-ye tâze bar to berizad."
  },
  {
   "id": "w-136e5039",
