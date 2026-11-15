@@ -87,8 +87,8 @@ Every request uses adaptive thinking, prompt caching for Shirin's long instructi
 
 iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (about 1,230 clips):
 
-- Voice: **Mana**, the open Persian Piper voice [`MahtaFetrat/Mana-Persian-Piper`](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper) (MIT), trained on [ManaTTS](https://huggingface.co/datasets/MahtaFetrat/Mana-TTS): 114 hours of one native narrator from Nasl-e-Mana, the magazine of Iran's blind community, released under CC-0. It is the voice of the Sharif University group behind the ezafe-aware Persian pronunciation models [GE2PE and Homo-GE2PE](https://github.com/MahtaFetrat/Homo-GE2PE-Persian).
-- **The grammar comes from the lesson, not from a guess.** Persian script leaves out the short vowels and the ezafe (کتاب من is *ketâb-e man*). A voice reading the script itself drops the ezafe — «نوش جان» came out "nush jân", «سال نو مبارک» "sâl no" — which is how earlier recordings went wrong in 365 lines. Every recording is now driven by the lesson's hand-checked transliteration, so the ezafe and the short vowels are said exactly as shown under the line. Whisper (large-v3-turbo) listens to up to three takes and the clearest is kept; scores and what it heard are in [`scripts/audio-report.json`](scripts/audio-report.json).
+- Voice: the open Piper voice **`fa_IR-ganji-medium`** (dataset CC0). The open Mana voice ([`MahtaFetrat/Mana-Persian-Piper`](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper), trained on 114 hours of a native narrator) was tried as well: it reads long sentences nicely, but single words and short clauses come out almost silent («سلام», «الحمدلله») or as a long babble, so it can't say the lessons' words.
+- **The grammar comes from the lesson, not from a guess.** Persian script leaves out the short vowels and the ezafe (کتاب من is *ketâb-e man*). A voice reading the script itself drops the ezafe — «نوش جان» came out "nush jân", «سال نو مبارک» "sâl no" — which is how earlier recordings went wrong in 365 lines. Every recording is now driven by the lesson's hand-checked transliteration, so the ezafe and the short vowels are said exactly as shown under the line. **Pauses follow the commas.** Read in one piece, a voice runs straight through most commas («نوح، مؤمنان» came out as one phrase), so each line is read clause by clause, at the pace of the whole line, with a real pause at every «،», «؛», «:» and sentence end, and none inside a clause. **Arabic words** keep their doubled letters (الله, محمّد, سیّد are written as the voice learned them) and Arabic blessings their Arabic stress. Whisper (large-v3-turbo) listens to up to two takes and the clearest is kept; scores and what it heard are in [`scripts/audio-report.json`](scripts/audio-report.json).
 - **A second check on the transliterations.** The ezafe-aware G2P model Homo-GE2PE was run over every line, and the places where it and the transliteration disagree about an ezafe were reviewed by hand.
 - Each recording's address carries a fingerprint of its contents, so when one is remade, phones fetch the new one instead of playing a saved old copy.
 
@@ -133,13 +133,13 @@ node scripts/build-files.mjs   # refresh docs/files.json (offline file list) aft
 
 **Real native speakers first.** `scripts/native_recordings.py` replaces the synthetic voice with a native speaker's recording for every word that has one on Wikimedia Commons (mostly from the Lingua Libre project, CC0 or CC BY-SA), after Whisper confirms it's the right word. It credits every speaker in [`docs/audio-credits.html`](docs/audio-credits.html) (More → Recording credits), and the voice scripts below never overwrite these words. Wikimedia throttles busy cloud addresses, so it runs on GitHub: **Actions → Native recordings → Run workflow**.
 
-Regenerating the recordings with the open Mana voice:
+Regenerating the recordings:
 
 ```bash
 pip install piper-tts faster-whisper     # plus ffmpeg
-# download fa_IR-mana-medium.onnx and .onnx.json from huggingface.co/MahtaFetrat/Mana-Persian-Piper
+# download fa_IR-ganji-medium.onnx and .onnx.json from huggingface.co/rhasspy/piper-voices
 node scripts/collect-audio.mjs
-python scripts/make_audio.py fa_IR-mana-medium.onnx --takes 3 --judge deepdml/faster-whisper-large-v3-turbo-ct2
+python scripts/make_audio.py fa_IR-ganji-medium.onnx --takes 2 --good 0.9 --judge deepdml/faster-whisper-large-v3-turbo-ct2
 # remake just some (e.g. words the family marked): --only w-1234abcd,w-5678ef01 --takes 3
 ```
 
@@ -161,4 +161,4 @@ test/                     offline tests
 
 ## Credits
 
-Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Mana Persian Piper](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper) (MIT; dataset [ManaTTS](https://huggingface.co/datasets/MahtaFetrat/Mana-TTS), CC-0, from [Nasl-e-Mana](https://naslemana.com/)) on [Piper](https://github.com/rhasspy/piper); pronunciation check: [Homo-GE2PE](https://github.com/MahtaFetrat/Homo-GE2PE-Persian) (MIT). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
+Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-ganji-medium` (dataset CC0); pronunciation check: [Homo-GE2PE](https://github.com/MahtaFetrat/Homo-GE2PE-Persian) (MIT). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).

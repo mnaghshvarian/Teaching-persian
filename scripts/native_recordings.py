@@ -261,10 +261,9 @@ by the family, and {commons} from recordings shared on
 <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> — most through the
 <a href="https://lingualibre.org/">Lingua Libre</a> project. Thank you to every speaker.
 The recordings were trimmed and their volume evened out; recordings under CC BY-SA keep that licence.
-The other words and sentences are read by <a href="https://huggingface.co/MahtaFetrat/Mana-Persian-Piper">Mana</a>,
-an open Persian voice (MIT) trained on <a href="https://huggingface.co/datasets/MahtaFetrat/Mana-TTS">ManaTTS</a> —
-recordings of a narrator from <a href="https://naslemana.com/">Nasl-e-Mana</a>, the magazine of Iran's blind community,
-shared under CC-0 — following each lesson's checked pronunciation.</p>
+The other words and sentences are read by the open Persian voice
+<a href="https://huggingface.co/rhasspy/piper-voices/tree/main/fa/fa_IR/ganji">ganji</a> (Piper, dataset CC0),
+following each lesson's checked pronunciation.</p>
 <table><thead><tr><th>Word</th><th>Speaker</th><th>Licence</th><th></th></tr></thead><tbody>
 {rows}
 </tbody></table></body></html>

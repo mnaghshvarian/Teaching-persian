@@ -1,19 +1,24 @@
 """Make the garden's Persian recordings.
 
-Uses the open-source Piper voice "fa_IR-mana-medium" (MahtaFetrat/Mana-Persian-Piper,
-MIT licence), trained on ManaTTS — 114 hours of one native narrator from
-Nasl-e-Mana, the magazine of Iran's blind community, released under CC-0.
+Uses the open-source Piper voice "fa_IR-ganji-medium" (rhasspy/piper-voices,
+dataset CC0). The open Mana voice (MahtaFetrat/Mana-Persian-Piper) was tried
+too: it reads long sentences well, but single words and short clauses come out
+almost silent («سلام», «الحمدلله») or as a long babble («نوح»), so it can't
+say the lessons' words or a line read clause by clause.
 
 Every recording is driven by the hand-checked transliteration, never by the
 voice's own reading of the script. Persian script leaves out the short vowels
 and the ezafe (کتاب من is ketâb-e man), so a voice reading the script on its
 own drops the ezafe — «نوش جان» comes out "nush jân" — and guesses vowels;
 the transliteration knows both. Whisper listens to a few takes and the
-clearest is kept. A blessing mark such as (ع) is said as its words
+clearest is kept. A line is read clause by clause with a real pause at each
+«،» «؛» «:» and sentence end. A doubled letter (shadda: الله، محمّد) is written
+twice, as the voice learned it, and Arabic blessings keep their Arabic stress.
+A blessing mark such as (ع) is said as its words
 (scripts/spoken.py), exactly as the transliteration shows.
 
   node scripts/collect-audio.mjs
-  python scripts/make_audio.py path/to/fa_IR-mana-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
+  python scripts/make_audio.py path/to/fa_IR-ganji-medium.onnx --takes 2 --good 0.9 --judge deepdml/faster-whisper-large-v3-turbo-ct2
   # remake only some items, with more takes:  --only w-1234abcd,w-5678ef01 --takes 3
 
 Needs: pip install piper-tts, and ffmpeg on the PATH.
@@ -59,6 +64,9 @@ STRESS = {
     "bâzam": 0, "pâsportam": 1, "chamedunam": 2, "saram": 0, "hâlam": 0, "hâlet": 0, "delam": 0, "delemun": 0,
     "shoghlet": 0, "khodet": 0, "azizam": 1, "montazeretim": 2, "forudgâhim": 2, "khoshbakhtam": 1,
     "khoshhâlam": 1, "khâram": 0, "kuchike": 1, "esmam": 1, "dastet": 0, "dastetun": 0, "ghorbunet": 1,
+    # Arabic blessings and prayers keep their Arabic stress, on the long or closed syllable
+    "sallallâho": 2, "alayhe": 1, "âleh": 0, "alayhâ": 1, "ajjalallâho": 3, "ta'âlâ": 1, "farajah": 1,
+    "allâhomma": 1, "salle": 0, "mohammadin": 1, "âle": 0, "rahmatollâh": 3,
     # adverbs and little words stressed at the front
     "lotfan": 0, "hatman": 0, "vâghe'an": 0, "faghat": 0, "âre": 0, "bale": 0, "ya'ni": 0,
 }
@@ -88,11 +96,11 @@ def word_phonemes(word: str) -> list[str]:
             ch = word[i]
             if ch in SINGLE:
                 ph = SINGLE[ch]
-                # doubled consonant (zorrat, hassâsiyat): one long consonant
-                if out and len(ph) == 1 and ph[0] == out[-1] and ph[0] not in VOWELS:
-                    out.append("ː")
-                else:
-                    out += ph
+                # a doubled consonant (shadda: allâh, mohammad, seyyed, omm) is written
+                # twice, as in the espeak phonemes the voice learned from (mohˈammad,
+                # ˈabbɑs); a length mark after a consonant is something it never saw,
+                # and it garbled every word with a shadda
+                out += ph
             i += 1
     return out
 
@@ -109,10 +117,15 @@ def stress_at(ph: list[str], syllable: int) -> list[str]:
     return ph[:v] + ["ˈ"] + ph[v:]
 
 
-# Silence added after each mark, in seconds (the voice adds a little of its own). A line is read clause by clause, with a
+# Silence after each mark, in seconds. A line is read clause by clause, with a
 # real pause at every «،» «؛» «:» and sentence end — exactly where the Persian
-# text has them — and none inside a clause.
-PAUSE = {",": 0.18, ";": 0.25, ":": 0.22, ".": 0.4, "?": 0.4, "!": 0.4}
+# text has them — and none inside a clause. (Read in one piece, the voice runs
+# straight through most commas: «نوح، مؤمنان» came out as one phrase.)
+PAUSE = {",": 0.3, ";": 0.45, ":": 0.4, ".": 0.55, "?": 0.55, "!": 0.55}
+# seconds per sound at a calm, clear pace: a short clause or a single word is
+# slowed to at least this, because the voice rushes short inputs
+# («alhamdolellâh» alone came out in 0.4 s)
+MIN_SOUND = 0.085
 
 
 def phonemes_for(say: str) -> list[str]:
@@ -147,9 +160,30 @@ def phonemes_for(say: str) -> list[str]:
     return out
 
 
-def speak(voice, ph: list[str], config):
-    """Say the phonemes clause by clause, with a real pause at each mark."""
+def _trim(audio, sr: int):
+    """Cut the silence the voice leaves before and after a clause."""
     import numpy as np
+
+    env = np.convolve(np.abs(audio), np.ones(220) / 220, mode="same")
+    loud = np.flatnonzero(env > 0.01)
+    if not len(loud):
+        return audio
+    return audio[max(0, loud[0] - int(0.02 * sr)) : loud[-1] + int(0.04 * sr)]
+
+
+def _sounds(ph: list[str]) -> int:
+    return sum(1 for p in ph if p not in PAUSE and p not in {" ", "ˈ", "ˌ", "ː", "1"})
+
+
+def speak(voice, ph: list[str], config):
+    """Say the phonemes clause by clause, each at the pace of the whole line,
+    with a real pause at each mark."""
+    import numpy as np
+    from piper import SynthesisConfig
+
+    sr = voice.config.sample_rate
+    synth = lambda chunk, ls: _trim(np.asarray(voice.phoneme_ids_to_audio(voice.phonemes_to_ids(chunk), SynthesisConfig(
+        length_scale=ls, noise_scale=config.noise_scale, noise_w_scale=config.noise_w_scale)), dtype=np.float32), sr)
 
     chunks, cur = [], []
     for p in ph:
@@ -157,20 +191,26 @@ def speak(voice, ph: list[str], config):
         if p in PAUSE:
             chunks.append(cur)
             cur = []
-    if [p for p in cur if p != " "]:
-        chunks.append(cur)
+    chunks.append(cur)
+    chunks = [c for c in ([p for p in c] for c in chunks) if _sounds(c)]
+    for c in chunks:
+        while c and c[0] == " ":
+            c.pop(0)
+        while c and c[-1] == " ":
+            c.pop()
+    # the pace the voice takes over the whole line, never faster than MIN_SOUND
+    whole = synth([p for c in chunks for p in c], config.length_scale)
+    pace = max(len(whole) / sr / max(1, _sounds(ph)), MIN_SOUND)
     parts = []
     for k, chunk in enumerate(chunks):
-        while chunk and chunk[0] == " ":
-            chunk = chunk[1:]
-        while chunk and chunk[-1] == " ":
-            chunk = chunk[:-1]
-        if not [p for p in chunk if p not in PAUSE]:
-            continue
-        parts.append(np.asarray(voice.phoneme_ids_to_audio(voice.phonemes_to_ids(chunk), config), dtype=np.float32))
-        if k < len(chunks) - 1 and chunk[-1] in PAUSE:
-            parts.append(np.zeros(int(PAUSE[chunk[-1]] * voice.config.sample_rate), np.float32))
-    return np.concatenate(parts) if parts else np.zeros(1, np.float32)
+        audio = synth(chunk, config.length_scale)
+        want = _sounds(chunk) * pace
+        if len(audio) / sr < 0.9 * want:  # rushed: say it again, slower
+            audio = synth(chunk, config.length_scale * min(2.2, want / max(0.05, len(audio) / sr)))
+        parts.append(audio)
+        if k < len(chunks) - 1:
+            parts.append(np.zeros(int(PAUSE.get(chunk[-1], 0.3) * sr), np.float32))
+    return np.concatenate(parts)
 
 
 def candidates(voice, item) -> list[tuple[str, list[str]]]:
