@@ -220,16 +220,26 @@ export async function saveForOffline() {
   );
   try {
     if (!("caches" in window)) throw new Error("This browser can't save pages for offline use.");
-    const index = await (await fetch("audio/index.json")).json();
-    const urls = [...(await shellFiles()), ...index.ids.map((id) => `audio/${id}.mp3`)];
+    const index = await (await fetch("audio/index.json", { cache: "no-cache" })).json();
+    const files = index.files ?? Object.fromEntries((index.ids ?? []).map((id) => [id, ""]));
+    const audioUrls = Object.entries(files).map(([id, v]) => `audio/${id}.mp3${v ? `?v=${v}` : ""}`);
+    const urls = [...(await shellFiles()), ...audioUrls];
     const cache = await caches.open(OFFLINE_CACHE);
+    // let go of recordings that have since been remade or removed
+    const current = new Set(audioUrls.map((u) => new URL(u, location.href).href));
+    for (const req of await cache.keys()) {
+      if (new URL(req.url).pathname.endsWith(".mp3") && !current.has(req.url)) await cache.delete(req);
+    }
     let n = 0;
     for (let i = 0; i < urls.length; i += 8) {
       await Promise.all(
         urls.slice(i, i + 8).map(async (u) => {
           try {
-            const res = await fetch(u, { cache: "no-cache" });
-            if (res.ok) await cache.put(u, res);
+            // a fingerprinted recording already saved is the current one
+            if (!(u.includes(".mp3?v=") && (await cache.match(u)))) {
+              const res = await fetch(u, { cache: "no-cache" });
+              if (res.ok) await cache.put(u, res);
+            }
           } catch {
             // skip one file; the rest still save
           }

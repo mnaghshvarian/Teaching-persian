@@ -2345,3 +2345,19 @@ h2[id] {
   margin: 6px 0 0;
   padding-inline-start: 20px;
 }
+
+/* checking the app's voice */
+.check-voice h2 {
+  margin-top: 0;
+}
+.rec-row.flagged {
+  background: color-mix(in srgb, var(--saffron) 14%, transparent);
+  border-radius: 12px;
+}
+.flag-btn[aria-pressed="true"] {
+  background: var(--saffron);
+  border-color: var(--saffron);
+}
+.rec-actions {
+  flex-wrap: wrap;
+}

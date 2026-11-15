@@ -89,20 +89,15 @@ def word_phonemes(word: str) -> list[str]:
 
 
 def stress_at(ph: list[str], syllable: int) -> list[str]:
+    """Mark the stressed vowel. The mark goes right before the vowel, as in the
+    espeak-ng phonemes the voices were trained on (salˈɑm, kˈetɑb) — a mark in
+    front of a consonant is something the voice never saw, and it garbles words."""
     vowel_positions = [k for k, p in enumerate(ph) if p in VOWELS]
     if not vowel_positions:
         return ph
     syllable = max(0, min(syllable, len(vowel_positions) - 1))
     v = vowel_positions[syllable]
-    # the onset is the single consonant right before the vowel (Persian syllables are CV(C)(C))
-    onset = v - 1 if v > 0 and ph[v - 1] not in VOWELS and ph[v - 1] not in {"ˈ", "ː"} else v
-    if onset > 0 and ph[onset] == "ʃ" and ph[onset - 1] == "t":  # ch = t ʃ
-        onset -= 1
-    if onset > 0 and ph[onset] == "ʒ" and ph[onset - 1] == "d":  # j = d ʒ
-        onset -= 1
-    if onset > 0 and ph[onset] == "1" and ph[onset - 1] == "q":  # gh = q 1
-        onset -= 1
-    return ph[:onset] + ["ˈ"] + ph[onset:]
+    return ph[:v] + ["ˈ"] + ph[v:]
 
 
 def phonemes_for(say: str) -> list[str]:
@@ -140,22 +135,25 @@ def phonemes_for(say: str) -> list[str]:
 NOISE = {"ˈ", "ˌ", "ː", " ", ".", ",", "?", "!", "‌"}
 
 
-def hybrid_phonemes(voice, item) -> list[str]:
-    """Use the voice's own reading (with its natural stress and vowel length)
-    when it says exactly the same sounds as the checked transliteration;
-    otherwise use the transliteration."""
+def own_reading(voice, fa: str) -> list[str]:
+    """The voice's own reading of the Persian text (espeak-ng), exactly what it was trained on."""
+    out: list[str] = []
+    for sentence in voice.phonemize(fa):
+        out += [p for p in sentence if p != "‌"] + [" "]
+    while out and out[-1] == " ":
+        out.pop()
+    return out
+
+
+def candidates(voice, item) -> list[tuple[str, list[str]]]:
+    """Ways of saying an item: the voice's own reading of the Persian, and the
+    checked transliteration (which knows the short vowels and everyday Tehran
+    forms the script leaves out). The judge keeps whichever comes out clearest."""
     mine = phonemes_for(item["say"])
-    theirs: list[str] = []
-    for sentence in voice.phonemize(item["fa"]):
-        theirs += [p for p in sentence if p != "‌"] + [" "]
-    while theirs and theirs[-1] == " ":
-        theirs.pop()
-    same = [p for p in theirs if p not in NOISE] == [p for p in mine if p not in NOISE]
-    if same and theirs:
-        if theirs[-1] not in {".", "?", "!"}:
-            theirs.append(mine[-1] if mine and mine[-1] in {".", "?", "!"} else ".")
-        return theirs
-    return mine
+    theirs = own_reading(voice, item["fa"])
+    if not theirs or [p for p in theirs if p not in NOISE] == [p for p in mine if p not in NOISE]:
+        return [("own", theirs or mine)]
+    return [("own", theirs), ("translit", mine)]
 
 
 def to_mp3(voice, audio, path: Path) -> None:
@@ -182,7 +180,7 @@ class Judge:
         s = s.replace("ي", "ی").replace("ك", "ک").replace("ة", "ه")
         return re.sub(r"[۰-۹0-9]", "", s)
 
-    def score(self, voice, audio, fa: str) -> tuple[float, str]:
+    def score(self, voice, audio, fa: str, beam: int = 1) -> tuple[float, str]:
         import difflib
 
         import numpy as np
@@ -193,7 +191,9 @@ class Judge:
              "-f", "s16le", "-ar", "16000", "-ac", "1", "-"],
             input=pcm, capture_output=True, check=True,
         ).stdout
-        segs, _ = self.model.transcribe(np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0, language="fa", beam_size=1, without_timestamps=True, condition_on_previous_text=False, max_new_tokens=min(120, 8 + 3 * len(fa)), vad_filter=False)
+        pcm16 = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+        pcm16 = np.concatenate([np.zeros(3200, np.float32), pcm16, np.zeros(4800, np.float32)])
+        segs, _ = self.model.transcribe(pcm16, language="fa", beam_size=beam, without_timestamps=True, condition_on_previous_text=False, max_new_tokens=min(120, 8 + 3 * len(fa)), vad_filter=False)
         heard = "".join(s.text for s in segs).strip()
         target = self.norm(fa)
         return difflib.SequenceMatcher(None, target, self.norm(heard)).ratio(), heard
@@ -201,57 +201,68 @@ class Judge:
 
 def main() -> None:
     import argparse
+    import hashlib
 
     ap = argparse.ArgumentParser()
     ap.add_argument("model")
-    ap.add_argument("--takes", type=int, default=1, help="candidate takes per item (keep the clearest)")
-    ap.add_argument("--judge", default="", help="Whisper size used to pick the clearest take, e.g. medium")
+    ap.add_argument("--takes", type=int, default=1, help="takes per way of saying it (keep the clearest)")
+    ap.add_argument("--judge", default="", help="Whisper model that picks the clearest take, e.g. deepdml/faster-whisper-large-v3-turbo-ct2")
     ap.add_argument("--only-missing", action="store_true", help="keep existing recordings; make only new ones")
+    ap.add_argument("--only", default="", help="comma-separated ids to remake")
     args = ap.parse_args()
 
     voice = PiperVoice.load(args.model)
+    voice_name = Path(args.model).name.removesuffix(".onnx")
     config = SynthesisConfig(length_scale=1.12, noise_scale=0.6, noise_w_scale=0.7)
-    judge = Judge(args.judge) if args.judge and args.takes > 1 else None
+    judge = Judge(args.judge) if args.judge else None
     items = json.loads((ROOT / "scripts" / "audio-items.json").read_text(encoding="utf8"))
+    only = set(filter(None, args.only.split(",")))
     OUT.mkdir(parents=True, exist_ok=True)
     known = set(voice.config.phoneme_id_map.keys())
-    ids, report = [], []
-    old_report = {}
     report_path = ROOT / "scripts" / "audio-report.json"
-    if args.only_missing and report_path.exists():
+    old_report = {}
+    if report_path.exists():
         old_report = {r["id"]: r for r in json.loads(report_path.read_text(encoding="utf8"))}
+    ids, report = [], []
     for n, item in enumerate(items, 1):
-        if args.only_missing and (OUT / f"{item['id']}.mp3").exists():
+        path = OUT / f"{item['id']}.mp3"
+        keep = (args.only_missing and path.exists()) or (only and item["id"] not in only)
+        if keep and path.exists():
             ids.append(item["id"])
             if item["id"] in old_report:
                 report.append(old_report[item["id"]])
             continue
-        ph = hybrid_phonemes(voice, item)
-        missing = [p for p in ph if p not in known]
-        if missing:
-            raise SystemExit(f"{item['say']}: unknown phonemes {missing}")
-        ids_for_voice = voice.phonemes_to_ids(ph)
-        best, best_score, best_heard = None, -1.0, ""
-        # Whisper judges phrases reliably but not single short words: those get one take.
-        takes = max(1, args.takes) if " " in item["say"].strip() else 1
-        for _ in range(takes):
-            audio = voice.phoneme_ids_to_audio(ids_for_voice, config)
-            if not judge or takes == 1:
-                best = audio
+        best, best_score, best_heard, best_way = None, -1.0, "", ""
+        for way, ph in candidates(voice, item):
+            missing = [p for p in ph if p not in known]
+            if missing:
+                raise SystemExit(f"{item['say']}: unknown phonemes {missing}")
+            ids_for_voice = voice.phonemes_to_ids(ph)
+            for _ in range(max(1, args.takes)):
+                audio = voice.phoneme_ids_to_audio(ids_for_voice, config)
+                if not judge:
+                    best, best_way = audio, way
+                    break
+                sc, heard = judge.score(voice, audio, item["fa"])
+                if sc > best_score:
+                    best, best_score, best_heard, best_way = audio, sc, heard, way
+                if sc >= 0.95:
+                    break
+            if not judge or best_score >= 0.95:
                 break
-            sc, heard = judge.score(voice, audio, item["fa"])
-            if sc > best_score:
-                best, best_score, best_heard = audio, sc, heard
-            if sc >= 0.85:
-                break
-        to_mp3(voice, best, OUT / f"{item['id']}.mp3")
+        to_mp3(voice, best, path)
         ids.append(item["id"])
-        if judge and best_score >= 0:
-            report.append({"id": item["id"], "fa": item["fa"], "score": round(best_score, 2), "heard": best_heard})
+        if judge:
+            report.append({"id": item["id"], "fa": item["fa"], "way": best_way, "score": round(best_score, 2), "heard": best_heard})
         if n % 25 == 0:
             print(f"{n}/{len(items)}", flush=True)
+            if report:
+                report_path.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+    # a short fingerprint of each recording goes in its address, so phones
+    # fetch a remade recording instead of playing a saved old copy
+    files = {i: hashlib.sha1((OUT / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in sorted(ids)}
     (OUT / "index.json").write_text(
-        json.dumps({"voice": "Piper fa_IR-amir-medium (CC0 data)", "ids": sorted(ids)}, separators=(",", ":")) + "\n",
+        json.dumps({"voice": f"Piper {voice_name}", "ids": sorted(ids), "files": files}, separators=(",", ":")) + "\n",
         encoding="utf8",
     )
     if report:

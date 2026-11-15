@@ -27,6 +27,7 @@ const DEFAULTS = {
   familyPin: "",
   apiKey: "", // her own Anthropic key, for the GitHub Pages version (stays on this device)
   installHintDismissed: false,
+  voiceFlags: {}, // fa → transliteration: built-in recordings someone marked as sounding wrong
 };
 
 let state = load();

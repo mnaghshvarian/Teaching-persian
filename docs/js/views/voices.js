@@ -1,5 +1,6 @@
-// Family voices: a Persian speaker at home records the words, so the app
-// plays a real, familiar voice instead of a robot.
+// Family voices: a Persian speaker at home checks the built-in voice, marks
+// any word it says wrong (to send to whoever looks after the app), and can
+// record the word themselves — then the app plays their voice instead.
 
 import { h, fa, icon, toast } from "../lib/dom.js";
 import { store } from "../lib/store.js";
@@ -7,9 +8,10 @@ import { ALPHABET } from "../data/alphabet.js";
 import { LESSONS } from "../data/lessons.js";
 import { READING } from "../data/reading.js";
 import { SPEAK, ESSENTIALS } from "../data/speak.js";
+import { STORIES, storyLines } from "../data/stories.js";
 import { voiceId } from "../lib/persian.js";
 import { saveVoice, deleteVoice, getStatus } from "../lib/api.js";
-import { refreshRecordings, hasRecording, markRecorded, sayPersian } from "../lib/speech.js";
+import { refreshRecordings, hasRecording, markRecorded, sayPersian, playBuiltIn, hasBundled, loadBundled } from "../lib/speech.js";
 
 const MAX_SECONDS = 8;
 
@@ -20,9 +22,30 @@ function pickMime() {
 
 let recorder = null;
 
+const flagged = () => store.get().voiceFlags ?? {};
+let onFlagsChange = () => {};
+
 function recordRow(item) {
   const status = h("span", { class: "rec-status" });
-  const playBtn = h("button", { class: "btn icon-btn", type: "button", "aria-label": `Play ${item.fa}`, title: "Play" }, icon("play"));
+  const builtInBtn = h("button", { class: "btn icon-btn", type: "button", "aria-label": `Hear the app's voice say ${item.fa}`, title: "The app's voice" }, icon("speaker"));
+  builtInBtn.addEventListener("click", () => playBuiltIn(item.fa) || toast("There's no built-in recording of this one yet."));
+  builtInBtn.hidden = !hasBundled(item.fa);
+  const flagBtn = h("button", { class: "btn icon-btn flag-btn", type: "button", "aria-label": `Mark ${item.fa} as said wrong`, title: "Said wrong? Mark it" }, "👎");
+  const showFlag = () => {
+    const on = Boolean(flagged()[item.fa]);
+    flagBtn.setAttribute("aria-pressed", String(on));
+    flagBtn.closest?.("li")?.classList.toggle("flagged", on);
+  };
+  flagBtn.addEventListener("click", () => {
+    store.update((st) => {
+      st.voiceFlags = { ...(st.voiceFlags ?? {}) };
+      if (st.voiceFlags[item.fa]) delete st.voiceFlags[item.fa];
+      else st.voiceFlags[item.fa] = item.translit ?? "";
+    });
+    showFlag();
+    onFlagsChange();
+  });
+  const playBtn = h("button", { class: "btn icon-btn", type: "button", "aria-label": `Play your recording of ${item.fa}`, title: "Your recording" }, icon("play"));
   const recBtn = h("button", { class: "btn rec", type: "button" }, "● Record");
   const delBtn = h("button", { class: "btn icon-btn", type: "button", "aria-label": `Delete recording of ${item.fa}`, title: "Delete" }, icon("trash"));
 
@@ -95,12 +118,32 @@ function recordRow(item) {
     recBtn.textContent = "■ Stop";
   });
 
-  return h(
+  const li = h(
     "li",
     { class: "rec-row" },
-    h("span", { class: "rec-word" }, fa(item.fa), h("small", {}, `${item.translit} — ${item.meaning}`)),
-    h("span", { class: "rec-actions" }, status, playBtn, recBtn, delBtn),
+    h("span", { class: "rec-word" }, fa(item.fa), h("small", {}, `${item.translit} — ${item.meaning ?? item.en ?? ""}`)),
+    h("span", { class: "rec-actions" }, builtInBtn, flagBtn, status, playBtn, recBtn, delBtn),
   );
+  queueMicrotask(showFlag);
+  return li;
+}
+
+/** Share the marked words (Messages, WhatsApp, email…) or copy them. */
+async function sendFlags() {
+  const list = Object.entries(flagged());
+  if (!list.length) return toast("Nothing marked yet — tap 👎 next to any word the app says wrong.");
+  const text = `Golestan — words the app's voice says wrong (${list.length}):\n\n${list.map(([w, t]) => `${w}${t ? `  (${t})` : ""}`).join("\n")}`;
+  try {
+    if (navigator.share) return await navigator.share({ title: "Golestan: words to fix", text });
+  } catch (err) {
+    if (err?.name === "AbortError") return;
+  }
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("Copied — paste it into a message.");
+  } catch {
+    prompt("Copy this list:", text);
+  }
 }
 
 export function voicesView() {
@@ -120,9 +163,25 @@ export function voicesView() {
       title: "Letter example words",
       items: ALPHABET.flatMap((l) => [l.word, l.extra]),
     },
+    ...STORIES.map((st) => ({ title: `Story: ${st.title}`, items: storyLines(st) })),
   ];
 
-  refreshRecordings().then(() => {
+  const flagCount = h("strong", {});
+  const showCount = () => {
+    const n = Object.keys(flagged()).length;
+    flagCount.textContent = n ? `${n} marked` : "none marked yet";
+  };
+  showCount();
+  onFlagsChange = showCount;
+  const checkCard = h(
+    "div",
+    { class: "card check-voice" },
+    h("h2", {}, "👂 Check the app's voice"),
+    h("p", {}, "Tap 🔊 to hear how the app says a word. If it's wrong, tap 👎. When you're done, send the list — or record the word yourself with ● Record, and the app will use your voice instead."),
+    h("p", { class: "row wrap" }, h("span", {}, "Words marked: ", flagCount), h("button", { class: "btn primary small", type: "button", onclick: sendFlags }, "Send the list")),
+  );
+
+  Promise.all([refreshRecordings(), loadBundled()]).then(() => {
     const seen = new Set();
     wrap.replaceChildren(
       ...groups.map((grp) => {
@@ -150,6 +209,7 @@ export function voicesView() {
         }`),
       getStatus().familyPinRequired ? h("label", { class: "pin" }, "Family PIN: ", pinInput) : null,
     ),
+    checkCard,
     wrap,
   );
 }

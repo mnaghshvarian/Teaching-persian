@@ -19,7 +19,7 @@ export function moreView(onChange) {
       link("#/letters", "الف", "The 32 letters", "In shape families, with tracing"),
       link("#/stories", "📜", "Stories", "Shahnameh, Saadi, Hafez, the Prophet's family, the Quran"),
       link("#/phrases", "📒", "Pocket phrasebook", "Every phrase, offline, with sound"),
-      link("#/voices", "🎙", "Family voices", "Record a loved one saying the words"),
+      link("#/voices", "🎙", "Family voices", "Check the app's voice, mark wrong words, record your own"),
       action("📲", "Put it on your Home Screen", "Use it like an app on iPhone", () => installHelp()),
       action("✈️", "Save for offline", "Take everything to Iran, no internet needed", () => saveForOffline()),
       action("⚙︎", "Settings", status.ai ? "Shirin is awake 🌿" : "Wake Shirin with an API key", () => openSettings(onChange)),

@@ -121,16 +121,21 @@ export function listenErrorMessage(err) {
 
 // --- bundled recordings -------------------------------------------------------
 
-let bundled = null;
+// audio/index.json lists every recording with a short fingerprint of its
+// contents; the fingerprint goes in the address, so when a recording is
+// remade, phones fetch the new one instead of a saved old copy.
+let bundled = null; // Map id → fingerprint ("" when the index has none)
 let bundledLoad = null;
 export function loadBundled() {
   bundledLoad ??= fetch("audio/index.json")
-    .then((r) => (r.ok ? r.json() : { ids: [] }))
-    .then((j) => (bundled = new Set(j.ids ?? [])))
-    .catch(() => (bundled = new Set()));
+    .then((r) => (r.ok ? r.json() : {}))
+    .then((j) => (bundled = new Map(j.files ? Object.entries(j.files) : (j.ids ?? []).map((id) => [id, ""]))))
+    .catch(() => (bundled = new Map()));
   return bundledLoad;
 }
 export const hasBundled = (fa) => Boolean(bundled?.has(voiceId(fa)));
+/** The address of a built-in recording, with its fingerprint. */
+export const bundledUrl = (id) => `audio/${id}.mp3${bundled?.get(id) ? `?v=${bundled.get(id)}` : ""}`;
 
 // --- family recordings --------------------------------------------------------
 
@@ -199,7 +204,7 @@ function playUrl(url, slow) {
 function clipFor(fa) {
   const id = voiceId(fa);
   if (blobCache.has(id)) return { url: blobCache.get(id), source: "family" };
-  if (bundled?.has(id)) return { url: `audio/${id}.mp3`, source: "garden" };
+  if (bundled?.has(id)) return { url: bundledUrl(id), source: "garden" };
   return null;
 }
 
@@ -252,6 +257,15 @@ export function sayPersian(fa, { slow = false } = {}) {
     return Promise.resolve(clip.source);
   }
   return speakWithDevice(fa, "fa", slow ? 0.6 : 0.85).then((ok) => (ok ? "device" : null));
+}
+
+/** Play the built-in recording of a word, even when a family recording exists (for checking it). */
+export function playBuiltIn(fa) {
+  synth?.cancel();
+  const id = voiceId(fa);
+  if (!bundled?.has(id)) return false;
+  playUrl(bundledUrl(id), false).catch(() => {});
+  return true;
 }
 
 /** Play a Persian line and wait until it has finished (for conversations). */

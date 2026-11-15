@@ -38,7 +38,9 @@ self.addEventListener("fetch", (event) => {
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE);
-      const cached = await cache.match(req, { ignoreSearch: true });
+      // Recordings carry a fingerprint (?v=…) that changes when they are remade,
+      // so they are matched exactly; everything else ignores the query.
+      const cached = await cache.match(req, { ignoreSearch: !url.pathname.endsWith(".mp3") });
       const refresh = fetch(req)
         .then((res) => {
           if (res && (res.ok || res.type === "opaque")) cache.put(req, res.clone());
