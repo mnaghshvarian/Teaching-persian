@@ -2308,3 +2308,40 @@ h2[id] {
   max-height: calc(100dvh - 32px);
   overflow-y: auto;
 }
+
+/* verses, hadith and prayers in the religious stories */
+.quotes {
+  margin-top: 22px;
+}
+.quote-card {
+  margin: 12px 0;
+  border-inline-start: 4px solid var(--saffron);
+}
+.quote-ar {
+  font-family: "Noto Naskh Arabic", Vazirmatn, serif;
+  font-size: 1.45rem;
+  line-height: 2.2;
+  text-align: center;
+  color: var(--lapis);
+}
+.quote-card .line-fa {
+  font-size: 1.15rem;
+}
+.quote-source {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.story-sources {
+  margin: 18px 0 4px;
+  font-size: 0.9rem;
+  color: var(--ink-2);
+}
+.story-sources summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.story-sources ul {
+  margin: 6px 0 0;
+  padding-inline-start: 20px;
+}

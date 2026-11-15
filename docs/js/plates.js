@@ -288,6 +288,84 @@ const MOTIFS = {
     ),
     ...[[134, 210], [162, 212], [140, 222], [158, 224], [148, 216], [128, 220], [168, 220]].map(([x, y]) => circle(x, y, 4, { fill: "#b8562b" })),
   ],
+
+  // Taq-e Kasra at Mada'in, where Salman the Persian governed and rests
+  arch: (c) => [
+    crescent(204, 142, 11, c.gold, c.field),
+    path("M70 306 q20 -7 40 0 t40 0 t40 0 t40 0", { stroke: "#8cc6e6", "stroke-width": 2.5, fill: "none", opacity: 0.8 }),
+    path("M70 318 q20 -7 40 0 t40 0 t40 0 t40 0", { stroke: "#8cc6e6", "stroke-width": 2.5, fill: "none", opacity: 0.55 }),
+    path("M74 298 V250 l7 -7 l6 6 l7 -9 V298 Z", { fill: "#b08a4a" }),
+    path("M206 298 V238 h9 v-8 h8 v12 h5 V298 Z", { fill: "#b08a4a" }),
+    path("M94 298 V214 C94 150 116 116 150 110 C184 116 206 150 206 214 V298 Z", { fill: "#c9a35b", stroke: c.gold, "stroke-width": 1.6 }),
+    path("M114 298 V226 C114 170 128 144 150 138 C172 144 186 170 186 226 V298 Z", { fill: c.field }),
+    ...[214, 232, 250, 268, 286].map((y) => path(`M94 ${y} h20 M186 ${y} h20`, { stroke: "#94733a", "stroke-width": 1 })),
+    ...[[80, 262], [212, 252], [220, 270]].map(([x, y]) => s("rect", { x, y, width: 5, height: 9, rx: 2.5, fill: "#7a5a2a" })),
+    path("M70 298 h160", { stroke: c.gold, "stroke-width": 1.5 }),
+    star(150, 190, 6, 2.4, 8, { fill: c.gold }),
+  ],
+
+  // Rabadha: a lone tent under one bright star, for Abu Dharr the truthful
+  tent: (c) => [
+    circle(150, 156, 30, { fill: c.gold, opacity: 0.14 }),
+    star(150, 156, 15, 5, 8, { fill: c.gold }),
+    path("M70 286 Q120 260 170 282 T230 272 L230 330 L70 330 Z", { fill: c.sand, opacity: 0.8 }),
+    path("M70 302 Q140 290 230 304 L230 330 L70 330 Z", { fill: "#a9813f", opacity: 0.85 }),
+    path("M100 292 L150 232 L200 292 Z", { fill: "#5a3b22", stroke: c.gold, "stroke-width": 2 }),
+    path("M150 232 L136 292 h28 Z", { fill: "#24170c" }),
+    path("M150 232 v-12", { stroke: c.gold, "stroke-width": 2 }),
+    path("M100 292 l-18 8 M200 292 l18 8", { stroke: c.gold, "stroke-width": 1.2 }),
+    path("M204 292 c2 -22 0 -40 4 -56", { stroke: "#7a5a2a", "stroke-width": 3, fill: "none" }),
+    ...[-60, -20, 20, 60].map((a) => path("M208 236 q12 -8 24 -2", { stroke: "#4f8a55", "stroke-width": 3, fill: "none", "stroke-linecap": "round", transform: `rotate(${a} 208 236)` })),
+  ],
+
+  // the open gate of Paradise — “your meeting place is Paradise”
+  gate: (c) => [
+    circle(150, 214, 72, { fill: "url(#glow)" }),
+    path("M70 282 Q150 254 230 282 L230 330 L70 330 Z", { fill: "#3f7a49", opacity: 0.85 }),
+    path("M150 262 c-9 -22 -9 -48 0 -76 c9 28 9 54 0 76 Z", { fill: "#2f6a45" }),
+    path("M124 268 c-6 -14 -6 -30 0 -48 c6 18 6 34 0 48 Z M176 268 c-6 -14 -6 -30 0 -48 c6 18 6 34 0 48 Z", { fill: "#2f6a45", opacity: 0.85 }),
+    path("M140 330 L146 262 h8 L160 330 Z", { fill: c.sand, opacity: 0.85 }),
+    s("rect", { x: 94, y: 178, width: 16, height: 140, fill: c.gold }),
+    s("rect", { x: 190, y: 178, width: 16, height: 140, fill: c.gold }),
+    path("M98 182 C98 132 202 132 202 182", { fill: "none", stroke: c.gold, "stroke-width": 8 }),
+    star(150, 146, 7, 3, 8, { fill: c.gold }),
+    path("M110 194 L128 204 L128 306 L110 314 Z", { fill: "#8a5a2b", stroke: c.gold, "stroke-width": 1.5 }),
+    path("M190 194 L172 204 L172 306 L190 314 Z", { fill: "#8a5a2b", stroke: c.gold, "stroke-width": 1.5 }),
+    ...[[82, 304], [218, 306], [98, 318], [204, 320], [134, 296], [166, 298]].map(([x, y]) => star(x, y, 5, 2, 5, { fill: "#f0b8c8" })),
+  ],
+
+  // dawn over Karbala, the morning Hurr chose the light
+  sunrise: (c) => [
+    ...Array.from({ length: 13 }, (_, i) => {
+      const a = Math.PI + (i * Math.PI) / 12;
+      return s("line", { x1: (150 + 44 * Math.cos(a)).toFixed(1), y1: (276 + 44 * Math.sin(a)).toFixed(1), x2: (150 + 130 * Math.cos(a)).toFixed(1), y2: (276 + 130 * Math.sin(a)).toFixed(1), stroke: "#ffd36b", "stroke-width": i % 2 ? 1.2 : 2.4, opacity: 0.55 });
+    }),
+    path("M108 276 a42 42 0 0 1 84 0 Z", { fill: "#ffd36b" }),
+    path("M70 276 h160 v54 H70 Z", { fill: "#c9a35b" }),
+    path("M70 292 q20 -7 40 0 t40 0 t40 0 t40 0", { stroke: "#8cc6e6", "stroke-width": 2.5, fill: "none" }),
+    path("M70 306 q20 -7 40 0 t40 0 t40 0 t40 0", { stroke: "#8cc6e6", "stroke-width": 2.5, fill: "none", opacity: 0.7 }),
+    ...[[84, 276, 1], [214, 276, 0.85]].map(([x, y, k]) =>
+      g({ transform: `translate(${x} ${y}) scale(${k})` }, [
+        path("M0 0 c1 -20 -1 -40 2 -58", { stroke: "#5a3b22", "stroke-width": 3.5, fill: "none" }),
+        ...[-70, -30, 10, 50, 90].map((a) => path("M2 -58 q12 -8 26 -3", { stroke: "#2f5a3a", "stroke-width": 3.5, fill: "none", "stroke-linecap": "round", transform: `rotate(${a} 2 -58)` })),
+      ]),
+    ),
+  ],
+
+  // a turquoise tasbih: 33 beads, for the little prayers said every day
+  beads: (c) => [
+    crescent(202, 140, 11, c.gold, c.field),
+    ...Array.from({ length: 33 }, (_, i) => {
+      const a = (i / 33) * 2 * Math.PI - Math.PI / 2;
+      return circle((150 + 60 * Math.cos(a)).toFixed(1), (212 + 60 * Math.sin(a)).toFixed(1), 5.4, { fill: i % 11 === 0 ? "#f6dc95" : "#3aa6a0", stroke: c.gold, "stroke-width": 0.8 });
+    }),
+    star(150, 212, 18, 8, 8, { fill: c.gold }),
+    circle(150, 212, 5, { fill: c.field }),
+    path("M150 272 v18", { stroke: c.gold, "stroke-width": 2 }),
+    circle(150, 292, 5, { fill: "#3aa6a0", stroke: c.gold, "stroke-width": 0.8 }),
+    path("M144 297 h12 l5 24 h-22 Z", { fill: c.gold }),
+    ...[0, 1, 2, 3, 4].map((k) => path(`M${141 + k * 4.5} 321 v8`, { stroke: c.gold, "stroke-width": 1.2 })),
+  ],
 };
 
 const PALETTE = {
@@ -295,8 +373,9 @@ const PALETTE = {
   dusk: { field: "#2a2353", field2: "#4a2f5f" },
   sea: { field: "#0f3a52", field2: "#1d5a72" },
   garden: { field: "#173d3a", field2: "#24605a" },
+  dawn: { field: "#2c2350", field2: "#b65a45" },
 };
-const MOTIF_SKY = { kaaba: "night", caravan: "dusk", lamp: "night", bread: "night", tulips: "dusk", deer: "garden", twelve: "night", stars: "night", river: "sea", fire: "dusk", ark: "sea", ant: "garden", fish: "sea", palm: "garden" };
+const MOTIF_SKY = { kaaba: "night", caravan: "dusk", lamp: "night", bread: "night", tulips: "dusk", deer: "garden", twelve: "night", stars: "night", river: "sea", fire: "dusk", ark: "sea", ant: "garden", fish: "sea", palm: "garden", arch: "dusk", tent: "night", gate: "garden", sunrise: "dawn", beads: "night" };
 
 /** Build an illuminated plate. `title` is the Persian title for the cartouche. */
 export function plateSvg(motif, title = "") {

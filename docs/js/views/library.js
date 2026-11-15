@@ -136,6 +136,25 @@ function lineItem(line, { poem = false } = {}) {
   return li;
 }
 
+/** A verse, hadith or prayer: the Arabic as it is recited, then its Persian meaning to read and hear. */
+function quoteCard(q) {
+  const card = h(
+    "figure",
+    { class: "card quote-card story-line" },
+    h("p", { class: "quote-ar", lang: "ar", dir: "rtl" }, q.ar),
+    h("p", { class: "line-fa", lang: "fa", dir: "rtl" }, q.fa),
+    h("p", { class: "line-translit translit" }, q.translit),
+    h("p", { class: "line-en" }, q.en),
+    h("figcaption", { class: "quote-source" }, q.source),
+    h("button", { class: "btn icon-btn line-play", type: "button", "aria-label": "Listen", title: "Listen", onclick: (e) => { e.stopPropagation(); sayPersian(q.fa); } }, icon("speaker")),
+  );
+  card.addEventListener("click", () => {
+    card.classList.toggle("open");
+    sayPersian(q.fa);
+  });
+  return card;
+}
+
 function falDialog(story) {
   const result = h("div", { class: "fal-result", hidden: true });
   const take = h("button", { class: "btn primary", type: "button" }, "🌙 Open the Divan");
@@ -275,6 +294,15 @@ export function storyView(id) {
           ),
         )
       : null,
+    story.quotes
+      ? h(
+          "section",
+          { class: "quotes" },
+          h("h2", {}, story.quotesTitle ?? "From the Quran, the hadith and the prayers"),
+          h("p", { class: "small" }, "The Arabic as it is recited, then its meaning in Persian. Tap a card to hear the Persian."),
+          story.quotes.map((q) => quoteCard(q)),
+        )
+      : null,
     story.moral
       ? h(
           "div",
@@ -298,6 +326,9 @@ export function storyView(id) {
         ),
       ),
     ),
+    story.sources
+      ? h("details", { class: "story-sources" }, h("summary", {}, "Sources"), h("ul", {}, story.sources.map((x) => h("li", {}, x))))
+      : null,
     h("h2", {}, "A little check"),
     quiz.map((q) => question(q)),
     h(

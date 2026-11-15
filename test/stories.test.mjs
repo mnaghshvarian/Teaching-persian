@@ -36,11 +36,34 @@ test("every story has its picture", () => {
   }
 });
 
+const RELIGIOUS = new Set(["ahlulbayt", "yaran", "quran"]);
+
 test("religious stories never show figurative paintings", () => {
-  for (const s of STORIES.filter((x) => x.collection === "ahlulbayt" || x.collection === "quran")) {
+  for (const s of STORIES.filter((x) => RELIGIOUS.has(x.collection))) {
     assert.equal(s.image, undefined, `${s.id} must use an illuminated plate, not a painting`);
     assert.ok(s.plate, `${s.id} has a plate`);
   }
+});
+
+test("religious stories carry their verses, hadith or prayers, with sources", () => {
+  for (const s of STORIES.filter((x) => RELIGIOUS.has(x.collection))) {
+    assert.ok(s.quotes?.length >= 1, `${s.id}: at least one verse, hadith or prayer`);
+    for (const q of s.quotes) {
+      assert.ok(q.ar && q.fa && q.translit && q.en && q.source, `${s.id}: complete quote ${q.fa}`);
+      assert.match(q.ar, /[\u064B-\u0652]/, `${s.id}: the Arabic is written with its vowel marks`);
+    }
+    if (s.collection !== "quran" && s.id !== "everyday-prayers") assert.ok(s.sources?.length >= 1, `${s.id}: names its sources`);
+  }
+});
+
+test("Lady Khadijeh's story follows the Shia narrations", () => {
+  const k = STORIES.find((s) => s.id === "khadijeh");
+  const text = k.sentences.map((l) => l.fa).join(" ");
+  assert.match(text, /بیست و پنج/, "about twenty-five at her marriage");
+  assert.match(text, /ازدواج نکرده بود/, "her first marriage");
+  assert.match(text, /خواهرش هاله/, "the daughters of her sister Hala");
+  assert.match(text, /ام‌المؤمنین/, "Mother of the Believers");
+  assert.doesNotMatch(text, /چهل/, "no 'forty years old'");
 });
 
 test("story Persian uses Persian letters and half-spaces", () => {
