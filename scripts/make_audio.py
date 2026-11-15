@@ -152,6 +152,13 @@ def phonemes_for(say: str) -> list[str]:
             if k == stressed:
                 ph = stress_at(ph, STRESS.get(part, 10_000))
             word += ph
+        # a word that begins with a vowel, right after one that ends in a vowel, starts
+        # with a light catch (ء), as Persian says it: «ام‌ابیها» is omm-e ʼabihâ, not
+        # "ommebiha", and «به او» is be ʼu — the words don't melt into each other
+        before = [p for p in out if p not in {"ˈ", "ˌ", "ː"}]
+        first = next((p for p in word if p not in {"ˈ", "ˌ"}), "")
+        if first in VOWELS and len(before) >= 2 and before[-1] == " " and before[-2] in VOWELS:
+            word = ["ʔ"] + word
         out += word + [" "]
     while out and out[-1] == " ":
         out.pop()
