@@ -138,7 +138,7 @@ export const READING = [
       { fa: "ته‌دیگ", translit: "tahdig", meaning: "crispy golden rice" },
       { fa: "آش رشته", translit: "âsh-e reshte", meaning: "thick noodle and herb soup" },
       { fa: "ماست", translit: "mâst", meaning: "yogurt" },
-      { fa: "سالاد شیرازی", translit: "sâlâd shirâzi", meaning: "Shirazi salad (cucumber, tomato, onion)" },
+      { fa: "سالاد شیرازی", translit: "sâlâd-e shirâzi", meaning: "Shirazi salad (cucumber, tomato, onion)" },
       { fa: "بستنی سنتی", translit: "bastani sonnati", meaning: "traditional saffron ice cream" },
       { fa: "فالوده", translit: "fâlude", meaning: "rosewater noodle sorbet" },
     ],
