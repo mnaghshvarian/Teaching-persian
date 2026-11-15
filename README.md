@@ -124,7 +124,14 @@ npm run build:sdk    # rebuild docs/vendor/anthropic-sdk.js (the official SDK, b
 node scripts/build-files.mjs   # refresh docs/files.json (offline file list) after changing files
 ```
 
-Regenerating the recordings after adding Persian content:
+Regenerating the recordings with **Microsoft Azure's native Persian voice** (recommended; needs a free Azure Speech key, Canada Central region, the free tier covers the whole app):
+
+```bash
+node scripts/collect-audio.mjs
+AZURE_SPEECH_KEY=... python scripts/make_audio_azure.py        # all; --only w-1234abcd,... for some
+```
+
+Or with the open Piper voice:
 
 ```bash
 pip install piper-tts faster-whisper     # plus ffmpeg
