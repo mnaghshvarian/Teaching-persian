@@ -1574,7 +1574,7 @@ export const STORIES = [
     level: 2,
     plate: "tent",
     about:
-      "Abu Dharr al-Ghifari was one of the first to accept Islam and the most truthful of the companions. He stood by Imam Ali (ع) after the Prophet (ص), and would not keep quiet while some piled up wealth and the poor went hungry — so he was exiled to Rabadha, a lonely place in the desert, where he died just as the Prophet had foretold.",
+      "Abu Dharr al-Ghifari was one of the first to accept Islam and the most truthful of the companions. He stood by Imam Ali (ع) after the Prophet (ص), and would not keep quiet while some piled up wealth and the poor went hungry — so Uthman exiled him to Rabadha, a lonely place in the desert, where he died just as the Prophet had foretold.",
     sentences: [
       { fa: "ابوذر از قبیلهٔ غفار بود و حتی پیش از اسلام بت نمی‌پرستید.", translit: "abuzar az ghabile-ye ghefâr bud va hattâ pish az eslâm bot nemiparastid.", en: "Abu Dharr was from the tribe of Ghifar, and even before Islam he did not worship idols." },
       { fa: "وقتی خبر پیامبر (ص) را شنید، به مکه آمد و مسلمان شد.", translit: "vaghti khabar-e payâmbar, sallallâho alayhe va âleh, râ shenid, be makke âmad va mosalmân shod.", en: "When he heard about the Prophet (peace be upon him and his family), he came to Mecca and became a Muslim." },
@@ -1583,7 +1583,7 @@ export const STORIES = [
       { fa: "پیامبر (ص) فرمود: «آسمان بر راستگوتر از ابوذر سایه نینداخته است.»", translit: "payâmbar farmud: «âsemân bar râstgutar az abuzar sâye nayandâkhte ast.»", en: "The Prophet (ص) said: “The sky has never shaded anyone more truthful than Abu Dharr.”" },
       { fa: "پس از پیامبر، ابوذر از امام علی (ع) پیروی کرد.", translit: "pas az payâmbar, abuzar az emâm ali, alayhessalâm, peyravi kard.", en: "After the Prophet, Abu Dharr followed Imam Ali (peace be upon him)." },
       { fa: "او می‌دید عده‌ای ثروت جمع می‌کنند و فقیران گرسنه‌اند، و ساکت نماند.", translit: "u midid edde-i servat jam' mikonand va faghirân gorosne-and, va sâket namând.", en: "He saw some people piling up wealth while the poor went hungry, and he would not keep quiet." },
-      { fa: "برای همین او را به ربذه، بیابانی دور و تنها، تبعید کردند.", translit: "barâye hamin u râ be rabaze, biyâbâni dur va tanhâ, tab'id kardand.", en: "So they exiled him to Rabadha, a far and lonely desert." },
+      { fa: "برای همین عثمان او را به ربذه، بیابانی دور و تنها، تبعید کرد.", translit: "barâye hamin osmân u râ be rabaze, biyâbâni dur va tanhâ, tab'id kard.", en: "So Uthman exiled him to Rabadha, a far and lonely desert." },
       { fa: "پیامبر فرموده بود: «ابوذر تنها راه می‌رود، تنها می‌میرد و تنها برانگیخته می‌شود.»", translit: "payâmbar farmude bud: «abuzar tanhâ râh miravad, tanhâ mimirad va tanhâ barangikhte mishavad.»", en: "The Prophet had said: “Abu Dharr walks alone, dies alone, and will be raised alone.”" },
       { fa: "و همان‌طور شد: ابوذر در ربذه، تنها، از دنیا رفت.", translit: "va hamântor shod: abuzar dar rabaze, tanhâ, az donyâ raft.", en: "And so it was: Abu Dharr passed away in Rabadha, alone." },
     ],
