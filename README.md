@@ -26,10 +26,31 @@ The whole garden is a static website in [`docs/`](docs/), so GitHub hosts it for
 | 🌿 **Learn → The alphabet** | 13 calm stops through all 32 letters, grouped by shape ("same shape, different dots"). Letter cards with all four forms, tracing, real words with the new letter glowing, gentle games, and a story from Iran in each stop. Each grows a plant. |
 | 📖 **Learn → The Reading Room** | Real Persian, read first and peeked at after: the vowel-guessing tricks, **numbers and prices** (toman!), **street signs**, a **menu**, **family text messages**, and a first little story. Each tiles an arch. |
 | 🗣 **Speak in Iran** | Ten real situations in everyday Tehran Persian: *when you don't understand* (the key to never needing a translator), meeting family, arriving, taxis, the bazaar, cafés, being a dinner guest (ta'ârof!), asking the way, health, small talk. Each has phrases, a conversation to listen to, and **a practice where she plays her part out loud** — it works with no AI and offline. Each hangs a lantern. |
-| 📒 **Phrases** | A searchable pocket phrasebook with sound. Tap ⤢ to show a phrase **in big letters to a taxi driver or shopkeeper**. |
+| 📒 **Pocket phrasebook** (top of *Speak*) | Every phrase, searchable, with sound. Tap ⤢ to show a phrase **in big letters to a taxi driver or shopkeeper**. |
+| 📜 **Stories** | **29 stories to read in Persian**, each with a picture — see *The Story Library* below. |
 | 💬 **Shirin** | Chat by typing or speaking — English, Persian or a mix — and **free role-play**: Shirin plays the taxi driver, the aunt, the shopkeeper, and adapts to whatever she says. |
 | 🔁 **Review** | Two minutes a day: words she has met come back (Persian first) just before she'd forget them. |
-| ✨ **More** | The 32-letter chart, Stories from Iran, Family voices, install help, offline saving, settings. |
+| ✨ **More** | The 32-letter chart, tea-time history, Family voices, install help, offline saving, settings. |
+
+## The Story Library
+
+![The Story Library](docs/img/stories.png)
+
+Stories are how Persian is really learned at home, so the Stories tab is a little library. Every story is told in **short, simple Persian sentences** with a sound recording for each line. A switch at the top sets how much help she sees — **Persian only**, **+ sounds** (transliteration), or **+ English** — and tapping any line reveals its help and plays it. Each story ends with its key words (which join her daily Review) and three gentle questions.
+
+| Collection | Stories |
+|---|---|
+| 🐉 **Shahnameh** (Ferdowsi) | Zal and the Simorgh · Kaveh the Blacksmith · Rostam and Rakhsh |
+| 🌹 **Persian love stories** | Zal and Rudabeh · Bijan and Manijeh · Khosrow, Shirin and Farhad · Leyli and Majnun |
+| 🦁 **Kalileh va Demneh** | The Lion and the Clever Hare · The Ringdove and the Mouse · Four Friends · The Monkey Who Played Carpenter |
+| 🌷 **Saadi** (Golestan & Bustan) | The Fragrant Clay (*goli khoshbuy dar hammâm ruzi*) · The Raindrop and the Pearl · No Shoes |
+| 🍷 **Hafez** | Six famous couplets, read slowly — and a **fâl-e Hâfez** (open the Divan with a wish, as Iranians do on Yalda night) |
+| 🕌 **The Prophet and his Family** | The Trustworthy One (the Prophet's life) · Lady Khadijeh · Lady Fatima's Kindness · Imam Ali and the Orphans · Lady Zeinab and Karbala · Imam Reza, Guarantor of the Deer · The Twelve Imams |
+| 📖 **Stories from the Quran** | Prophet Yusuf · Baby Musa on the Nile · Ibrahim and the Fire · Nuh's Ark · Sulayman and the Ant · Yunus and the Great Fish · Lady Maryam and the Date Palm |
+
+**Pictures.** The Shahnameh, love-story, Kalileh, Saadi and Hafez pages use real **Persian miniatures** — Safavid and Timurid paintings, including leaves of Shah Tahmasp's Shahnameh — from The Metropolitan Museum of Art's [Open Access](https://www.metmuseum.org/about-the-met/policies-and-procedures/image-resources) collection (public domain, CC0), each with a credit line linking to the museum's page. In keeping with Shia tradition, **the Prophet, his family and the prophets are never pictured**: their stories have illuminated plates instead (gold, lapis and a mihrab arch, in the style of Quran illumination), drawn in code in [`docs/js/plates.js`](docs/js/plates.js), with a symbol such as Lady Fatima's lamp, Imam Reza's deer, the tulips of Karbala or Yunus's great fish.
+
+**Religious stories** follow well-known Twelver Shia narrations, gently and reverently, with the customary blessings (ص، ع، س، عج) written and spoken. They are simple tellings for a learner, not scholarship — it is worth reading them through once with a trusted teacher or family member who follows the Akhbari school, and changing anything in [`docs/js/data/stories.js`](docs/js/data/stories.js) to match the family's tradition. Shirin follows the same rules when she talks about these stories: reverent, no descriptions of holy figures' faces, no role-playing them, no sectarian argument, and "ask a trusted scholar" when unsure.
 
 ## Shirin, and how she listens
 
@@ -59,7 +80,7 @@ Every request uses adaptive thinking, prompt caching for Shirin's long instructi
 
 ## Real Persian sound on iPhone
 
-iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (335 clips, ~4 MB):
+iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (706 clips):
 
 - Voice: the open-source Piper voice **`fa_IR-amir-medium`**, trained on a CC0 (public-domain) dataset.
 - Pronunciation: instead of letting the engine guess from Persian script (which leaves out short vowels and reads formal spellings), it's driven by the **hand-checked transliterations** in the lessons, so it says everyday Tehran Persian (*dustet dâram*, not the engine's *dustat*). Where the engine's own reading has exactly the same sounds, its natural stress and rhythm are kept.
@@ -92,7 +113,7 @@ With a server key, everyone using that server gets Shirin without entering a key
 ## Development
 
 ```bash
-npm test             # 24 offline tests (Claude replaced by a local mock)
+npm test             # offline tests (Claude replaced by a local mock)
 npm run typecheck    # server + shared Shirin module, checked against the Anthropic SDK types
 npm run build:sdk    # rebuild docs/vendor/anthropic-sdk.js (the official SDK, bundled for the browser)
 node scripts/build-files.mjs   # refresh docs/files.json (offline file list) after changing files
@@ -110,9 +131,11 @@ python scripts/make_audio.py fa_IR-amir-medium.onnx --takes 3 --judge medium
 ```
 docs/                     the website (GitHub Pages serves this folder)
   index.html, css/, icons/, manifest.webmanifest, sw.js (offline)
-  js/data/                alphabet, alphabet lessons, Reading Room, Speak in Iran
+  js/data/                alphabet, alphabet lessons, Reading Room, Speak in Iran, stories
+  stories/img/            the museum miniatures (public domain)
   js/shared/shirin.js     Shirin's instructions, model routing, request shapes
-  js/views/               garden, learn, lesson, reading, speak, phrasebook, review, talk…
+  js/views/               garden, learn, lesson, reading, speak, library (stories), review, talk…
+  js/plates.js            the illuminated plates for the religious stories
   js/lib/                 speech (listen / play), Persian helpers, review, storage, API
   audio/                  the recordings
   vendor/                 the official Anthropic SDK, bundled for the browser
@@ -123,4 +146,4 @@ test/                     offline tests
 
 ## Credits
 
-Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-amir-medium` (dataset CC0). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
+Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-amir-medium` (dataset CC0). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).

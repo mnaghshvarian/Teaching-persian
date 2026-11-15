@@ -9,6 +9,7 @@ const DEFAULTS = {
   lessonsDone: [],
   readingDone: [],
   speakingDone: [],
+  storiesRead: [],
   lettersSeen: [],
   wordsSeen: [],
   review: {}, // fa → { box, due } — gentle spaced repetition
@@ -20,6 +21,7 @@ const DEFAULTS = {
     speakReplies: false,
     theme: "auto",
     ambience: false,
+    storyHelp: "translit", // how much help stories show: "fa", "translit" or "all"
   },
   passcode: "",
   familyPin: "",

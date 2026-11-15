@@ -8,6 +8,7 @@ import { ALPHABET } from "../docs/js/data/alphabet.js";
 import { LESSONS, PROVERBS } from "../docs/js/data/lessons.js";
 import { READING } from "../docs/js/data/reading.js";
 import { SPEAK, ESSENTIALS } from "../docs/js/data/speak.js";
+import { STORIES, storyLines } from "../docs/js/data/stories.js";
 import { voiceId } from "../docs/js/lib/persian.js";
 
 /** Every built-in Persian word and phrase, with the pronunciation for its recording. */
@@ -17,6 +18,7 @@ const items = new Map();
 /** The pronunciation to synthesise: an explicit `say`, a "(said 'joon')" hint, or the transliteration. */
 function pronunciation(translit, say) {
   if (say) return say;
+  if (/\n/.test(translit ?? "")) translit = translit.replace(/\n/g, ", ");
   const said = /\(said '([^']+)'\)/.exec(translit ?? "");
   if (said) return said[1];
   return String(translit ?? "").replace(/\(.*?\)/g, "").trim();
@@ -45,6 +47,7 @@ for (const unit of SPEAK) {
   for (const line of unit.dialogue) add(items, line.fa, line.translit, line.say);
 }
 for (const e of ESSENTIALS) add(items, e.fa, e.translit, e.say);
+for (const st of STORIES) for (const line of storyLines(st)) add(items, line.fa, line.translit, line.say);
 for (const g of [
   ["صبح بخیر", "sobh bekheyr"],
   ["عصر بخیر", "asr bekheyr"],

@@ -7,6 +7,7 @@ import { ALPHABET } from "../data/alphabet.js";
 import { LESSONS } from "../data/lessons.js";
 import { READING } from "../data/reading.js";
 import { SPEAK, ESSENTIALS } from "../data/speak.js";
+import { STORIES } from "../data/stories.js";
 
 const DAY = 86_400_000;
 const GAPS = [0, 1, 2, 4, 7, 15, 30];
@@ -25,6 +26,7 @@ export function itemsByFa() {
   for (const r of READING) r.items.forEach((w) => add(w, r.title));
   for (const s of SPEAK) s.phrases.forEach((w) => add(w, s.title));
   ESSENTIALS.forEach((w) => add(w, "Essentials"));
+  for (const st of STORIES) st.words.forEach((w) => add(w, st.title));
   return catalog;
 }
 

@@ -1660,6 +1660,1861 @@
   "say": "dastshuyi kojâst?"
  },
  {
+  "id": "w-5cd6e57c",
+  "fa": "سام پهلوان پسری داشت به نام زال.",
+  "say": "sâm-e pahlavân pesari dâsht be nâm-e zâl."
+ },
+ {
+  "id": "w-8d7d8a5e",
+  "fa": "موهای زال از روز اول سفید بود.",
+  "say": "muhâ-ye zâl az ruz-e avval sefid bud."
+ },
+ {
+  "id": "w-5390e0a9",
+  "fa": "سام ترسید و پسرش را در کوه البرز رها کرد.",
+  "say": "sâm tarsid va pesarash râ dar kuh-e alborz rahâ kard."
+ },
+ {
+  "id": "w-53202dba",
+  "fa": "سیمرغ، پرندهٔ بزرگ و دانا، او را پیدا کرد.",
+  "say": "simorgh, parande-ye bozorg va dânâ, u râ peydâ kard."
+ },
+ {
+  "id": "w-cfb9a7d6",
+  "fa": "سیمرغ زال را مثل بچهٔ خودش بزرگ کرد.",
+  "say": "simorgh zâl râ mesl-e bachche-ye khodash bozorg kard."
+ },
+ {
+  "id": "w-88b93558",
+  "fa": "سال‌ها بعد، سام پشیمان شد و به دنبال پسرش آمد.",
+  "say": "sâl-hâ ba'd, sâm pashimân shod va be donbâl-e pesarash âmad."
+ },
+ {
+  "id": "w-dd969fc6",
+  "fa": "سیمرغ یک پَر به زال داد و گفت: «هر وقت به من نیاز داشتی، این پر را آتش بزن.»",
+  "say": "simorgh yek par be zâl dâd va goft: «har vaght be man niyâz dâshti, in par râ âtash bezan.»"
+ },
+ {
+  "id": "w-92dd0287",
+  "fa": "پهلوان",
+  "say": "pahlavân"
+ },
+ {
+  "id": "w-c0ac0e00",
+  "fa": "سفید",
+  "say": "sefid"
+ },
+ {
+  "id": "w-93b43d59",
+  "fa": "کوه",
+  "say": "kuh"
+ },
+ {
+  "id": "w-7d577d60",
+  "fa": "دانا",
+  "say": "dânâ"
+ },
+ {
+  "id": "w-7f5f70f0",
+  "fa": "پَر",
+  "say": "par"
+ },
+ {
+  "id": "w-c7d1afb7",
+  "fa": "ضحاک پادشاهی ستمگر بود.",
+  "say": "zahhâk pâdshâhi setamgar bud."
+ },
+ {
+  "id": "w-d98aa20d",
+  "fa": "روی شانه‌های او دو مار روییده بود.",
+  "say": "ru-ye shâne-hâ-ye u do mâr ruyide bud."
+ },
+ {
+  "id": "w-490a0b33",
+  "fa": "مردم از ستم ضحاک خسته شده بودند.",
+  "say": "mardom az setam-e zahhâk khaste shode budand."
+ },
+ {
+  "id": "w-3eb05df8",
+  "fa": "کاوه آهنگری ساده و شجاع بود.",
+  "say": "kâve âhangari sâde va shojâ' bud."
+ },
+ {
+  "id": "w-caad2474",
+  "fa": "او پیش‌بند چرمی‌اش را سر نیزه کرد و مردم را صدا زد.",
+  "say": "u pishband-e charmi-ash râ sar-e neyze kard va mardom râ sedâ zad."
+ },
+ {
+  "id": "w-49c88ee7",
+  "fa": "مردم با کاوه رفتند و فریدون، شاهزادهٔ جوان، ضحاک را شکست داد.",
+  "say": "mardom bâ kâve raftand va fereydun, shâhzâde-ye javân, zahhâk râ shekast dâd."
+ },
+ {
+  "id": "w-7bcae742",
+  "fa": "آن پیش‌بند چرمی پرچم ایران شد: درفش کاویانی.",
+  "say": "ân pishband-e charmi parcham-e irân shod: derafsh-e kâviyâni."
+ },
+ {
+  "id": "w-b7cd8af7",
+  "fa": "پادشاه",
+  "say": "pâdshâh"
+ },
+ {
+  "id": "w-f17bb42b",
+  "fa": "ستمگر",
+  "say": "setamgar"
+ },
+ {
+  "id": "w-477491bc",
+  "fa": "مار",
+  "say": "mâr"
+ },
+ {
+  "id": "w-d6466624",
+  "fa": "آهنگر",
+  "say": "âhangar"
+ },
+ {
+  "id": "w-7f7fdc95",
+  "fa": "شجاع",
+  "say": "shojâ'"
+ },
+ {
+  "id": "w-f28a9b85",
+  "fa": "پرچم",
+  "say": "parcham"
+ },
+ {
+  "id": "w-3eabdbec",
+  "fa": "رستم پهلوان بزرگ ایران بود.",
+  "say": "rostam pahlavân-e bozorg-e irân bud."
+ },
+ {
+  "id": "w-60428a0d",
+  "fa": "اسب او رخش نام داشت و خیلی باهوش و وفادار بود.",
+  "say": "asb-e u rakhsh nâm dâsht va kheyli bâhush va vafâdâr bud."
+ },
+ {
+  "id": "w-0a9f3a6f",
+  "fa": "یک روز رستم در دشت خسته شد و زیر درختی خوابید.",
+  "say": "yek ruz rostam dar dasht khaste shod va zir-e derakhti khâbid."
+ },
+ {
+  "id": "w-de3913e8",
+  "fa": "شیری بزرگ آمد تا به رستم حمله کند.",
+  "say": "shiri bozorg âmad tâ be rostam hamle konad."
+ },
+ {
+  "id": "w-affa7ba1",
+  "fa": "رخش با شیر جنگید و آن را شکست داد.",
+  "say": "rakhsh bâ shir jangid va ân râ shekast dâd."
+ },
+ {
+  "id": "w-5a368223",
+  "fa": "وقتی رستم بیدار شد، دید که رخش او را نجات داده است.",
+  "say": "vaghti rostam bidâr shod, did ke rakhsh u râ nejât dâde ast."
+ },
+ {
+  "id": "w-747b1863",
+  "fa": "این اولین خانِ هفت‌خانِ رستم بود.",
+  "say": "in avvalin khân-e haft-khân-e rostam bud."
+ },
+ {
+  "id": "w-6ae2a785",
+  "fa": "اسب",
+  "say": "asb"
+ },
+ {
+  "id": "w-19d2cbcc",
+  "fa": "وفادار",
+  "say": "vafâdâr"
+ },
+ {
+  "id": "w-81a1c71c",
+  "fa": "دشت",
+  "say": "dasht"
+ },
+ {
+  "id": "w-5fc1dca4",
+  "fa": "شیر",
+  "say": "shir"
+ },
+ {
+  "id": "w-430598f9",
+  "fa": "خوابیدن",
+  "say": "khâbidan"
+ },
+ {
+  "id": "w-2c5882b2",
+  "fa": "بیدار",
+  "say": "bidâr"
+ },
+ {
+  "id": "w-889dedc4",
+  "fa": "زال دربارهٔ رودابه، دختر پادشاه کابل، شنید و عاشق او شد.",
+  "say": "zâl darbâre-ye rudâbe, dokhtar-e pâdshâh-e kâbol, shenid va âshegh-e u shod."
+ },
+ {
+  "id": "w-6aa3b715",
+  "fa": "رودابه هم دربارهٔ زال شنیده بود و دلش پیش او بود.",
+  "say": "rudâbe ham darbâre-ye zâl shenide bud va delash pish-e u bud."
+ },
+ {
+  "id": "w-98c96b6f",
+  "fa": "یک شب، زال به پای قصر رودابه آمد.",
+  "say": "yek shab, zâl be pâ-ye ghasr-e rudâbe âmad."
+ },
+ {
+  "id": "w-7cf9b4a8",
+  "fa": "رودابه گیسوی بلندش را از بام پایین انداخت و گفت: «با گیسوی من بالا بیا!»",
+  "say": "rudâbe gisu-ye bolandash râ az bâm pâyin andâkht va goft: «bâ gisu-ye man bâlâ biyâ!»"
+ },
+ {
+  "id": "w-3f805b2e",
+  "fa": "زال گیسوی او را بوسید، اما نخواست به او آسیبی برسد.",
+  "say": "zâl gisu-ye u râ busid, ammâ nakhâst be u âsibi beresad."
+ },
+ {
+  "id": "w-a100b552",
+  "fa": "او کمندش را انداخت و با کمند بالا رفت.",
+  "say": "u kamandash râ andâkht va bâ kamand bâlâ raft."
+ },
+ {
+  "id": "w-bdf38e98",
+  "fa": "سرانجام خانواده‌ها راضی شدند و پسر آن‌ها رستم بود.",
+  "say": "saranjâm khânevâde-hâ râzi shodand va pesar-e ân-hâ rostam bud."
+ },
+ {
+  "id": "w-4832d83f",
+  "fa": "عاشق",
+  "say": "âshegh"
+ },
+ {
+  "id": "w-afd75bf3",
+  "fa": "قصر",
+  "say": "ghasr"
+ },
+ {
+  "id": "w-cea27d15",
+  "fa": "گیسو",
+  "say": "gisu"
+ },
+ {
+  "id": "w-0e7ed256",
+  "fa": "بلند",
+  "say": "boland"
+ },
+ {
+  "id": "w-b589fe60",
+  "fa": "کمند",
+  "say": "kamand"
+ },
+ {
+  "id": "w-13647be7",
+  "fa": "خانواده",
+  "say": "khânevâde"
+ },
+ {
+  "id": "w-6afe2233",
+  "fa": "بیژن پهلوانی جوان از ایران بود.",
+  "say": "bizhan pahlavâni javân az irân bud."
+ },
+ {
+  "id": "w-e011bc28",
+  "fa": "منیژه دختر افراسیاب، پادشاه توران، بود.",
+  "say": "manizhe dokhtar-e afrâsiyâb, pâdshâh-e turân, bud."
+ },
+ {
+  "id": "w-525cd52c",
+  "fa": "آن دو عاشق هم شدند، اما ایران و توران دشمن بودند.",
+  "say": "ân do âshegh-e ham shodand, ammâ irân va turân doshman budand."
+ },
+ {
+  "id": "w-4a4deea4",
+  "fa": "افراسیاب خشمگین شد و بیژن را در چاهی تاریک انداخت.",
+  "say": "afrâsiyâb khashmgin shod va bizhan râ dar châhi târik andâkht."
+ },
+ {
+  "id": "w-dd54c076",
+  "fa": "منیژه هر روز برای او نان می‌آورد و کنار چاه می‌ماند.",
+  "say": "manizhe har ruz barâye u nân miâvard va kenâr-e châh mimând."
+ },
+ {
+  "id": "w-68055e32",
+  "fa": "رستم آمد، سنگ بزرگ را از سر چاه برداشت و بیژن را نجات داد.",
+  "say": "rostam âmad, sang-e bozorg râ az sar-e châh bardâsht va bizhan râ nejât dâd."
+ },
+ {
+  "id": "w-65e6b9b5",
+  "fa": "بیژن و منیژه با هم به ایران رفتند.",
+  "say": "bizhan va manizhe bâ ham be irân raftand."
+ },
+ {
+  "id": "w-6ed35134",
+  "fa": "جوان",
+  "say": "javân"
+ },
+ {
+  "id": "w-3cd376c5",
+  "fa": "دشمن",
+  "say": "doshman"
+ },
+ {
+  "id": "w-51cb6c87",
+  "fa": "چاه",
+  "say": "châh"
+ },
+ {
+  "id": "w-611b2d0e",
+  "fa": "تاریک",
+  "say": "târik"
+ },
+ {
+  "id": "w-e4e20359",
+  "fa": "سنگ",
+  "say": "sang"
+ },
+ {
+  "id": "w-b683d7e5",
+  "fa": "نجات دادن",
+  "say": "nejât dâdan"
+ },
+ {
+  "id": "w-872306a3",
+  "fa": "شیرین شاهزاده‌ای زیبا و دانا بود.",
+  "say": "shirin shâhzâde-i zibâ va dânâ bud."
+ },
+ {
+  "id": "w-757aa46a",
+  "fa": "خسرو، پادشاه ایران، عاشق شیرین شد.",
+  "say": "khosrow, pâdshâh-e irân, âshegh-e shirin shod."
+ },
+ {
+  "id": "w-df8614c2",
+  "fa": "فرهاد سنگ‌تراشی هنرمند بود و او هم دل به شیرین بست.",
+  "say": "farhâd sangtarâshi honarmand bud va u ham del be shirin bast."
+ },
+ {
+  "id": "w-acb4f419",
+  "fa": "شیرین شیر تازه می‌خواست، اما گله‌ها در کوهی دور بودند.",
+  "say": "shirin shir-e tâze mikhâst, ammâ gale-hâ dar kuhi dur budand."
+ },
+ {
+  "id": "w-8770c0d2",
+  "fa": "فرهاد در سنگ جوی شیری کند تا شیر به قصر شیرین برسد.",
+  "say": "farhâd dar sang ju-ye shiri kand tâ shir be ghasr-e shirin beresad."
+ },
+ {
+  "id": "w-e1e3300f",
+  "fa": "بعد، کوه بیستون را کند تا راهی باز کند.",
+  "say": "ba'd, kuh-e bisotun râ kand tâ râhi bâz konad."
+ },
+ {
+  "id": "w-621f10bd",
+  "fa": "داستان آن‌ها هنوز در ایران زنده است.",
+  "say": "dâstân-e ân-hâ hanuz dar irân zende ast."
+ },
+ {
+  "id": "w-2385dd78",
+  "fa": "شاهزاده",
+  "say": "shâhzâde"
+ },
+ {
+  "id": "w-120da389",
+  "fa": "هنرمند",
+  "say": "honarmand"
+ },
+ {
+  "id": "w-f6e4bce9",
+  "fa": "تازه",
+  "say": "tâze"
+ },
+ {
+  "id": "w-77d9aa52",
+  "fa": "راه",
+  "say": "râh"
+ },
+ {
+  "id": "w-b66cea2f",
+  "fa": "زنده",
+  "say": "zende"
+ },
+ {
+  "id": "w-a6397142",
+  "fa": "قیس و لیلی در مکتب با هم درس می‌خواندند.",
+  "say": "gheys va leyli dar maktab bâ ham dars mikhândand."
+ },
+ {
+  "id": "w-b5a2f809",
+  "fa": "آن‌ها از کودکی عاشق هم شدند.",
+  "say": "ân-hâ az kudaki âshegh-e ham shodand."
+ },
+ {
+  "id": "w-d07dec67",
+  "fa": "خانوادهٔ لیلی اجازه نداد که با هم ازدواج کنند.",
+  "say": "khânevâde-ye leyli ejâze nadâd ke bâ ham ezdevâj konand."
+ },
+ {
+  "id": "w-dbcf0918",
+  "fa": "قیس از غم به بیابان رفت و با حیوانات زندگی کرد.",
+  "say": "gheys az gham be biyâbân raft va bâ heyvânât zendegi kard."
+ },
+ {
+  "id": "w-59a5528d",
+  "fa": "مردم او را «مجنون» یعنی دیوانهٔ عشق صدا زدند.",
+  "say": "mardom u râ «majnun» ya'ni divâne-ye eshgh sedâ zadand."
+ },
+ {
+  "id": "w-706481e1",
+  "fa": "مجنون برای لیلی شعر می‌گفت و نامش را روی شن می‌نوشت.",
+  "say": "majnun barâye leyli she'r migoft va nâmash râ ru-ye shen minevesht."
+ },
+ {
+  "id": "w-de93a3d0",
+  "fa": "عشق آن‌ها در این دنیا به هم نرسید، اما داستانشان نزدیک هزار سال است که زنده مانده است.",
+  "say": "eshgh-e ân-hâ dar in donyâ be ham naresid, ammâ dâstânashân nazdik-e hezâr sâl ast ke zende mânde ast."
+ },
+ {
+  "id": "w-eb6f2e41",
+  "fa": "مکتب",
+  "say": "maktab"
+ },
+ {
+  "id": "w-faadbe8a",
+  "fa": "درس",
+  "say": "dars"
+ },
+ {
+  "id": "w-95ae72ac",
+  "fa": "کودکی",
+  "say": "kudaki"
+ },
+ {
+  "id": "w-e703c877",
+  "fa": "بیابان",
+  "say": "biyâbân"
+ },
+ {
+  "id": "w-bee25545",
+  "fa": "حیوان",
+  "say": "heyvân"
+ },
+ {
+  "id": "w-e2e9214d",
+  "fa": "شعر",
+  "say": "she'r"
+ },
+ {
+  "id": "w-1a9bb723",
+  "fa": "در جنگلی، شیری زورگو زندگی می‌کرد.",
+  "say": "dar jangali, shiri zurgu zendegi mikard."
+ },
+ {
+  "id": "w-925081ac",
+  "fa": "حیوانات قرار گذاشتند هر روز یکی از آن‌ها پیش شیر برود.",
+  "say": "heyvânât gharâr gozâshtand har ruz yeki az ân-hâ pish-e shir beravad."
+ },
+ {
+  "id": "w-c76fc88a",
+  "fa": "یک روز نوبت خرگوش کوچک شد.",
+  "say": "yek ruz nobat-e khargush-e kuchak shod."
+ },
+ {
+  "id": "w-f1c7172b",
+  "fa": "خرگوش دیر رفت و گفت: «شیر دیگری در راه بود!»",
+  "say": "khargush dir raft va goft: «shir-e digari dar râh bud!»"
+ },
+ {
+  "id": "w-fcb73d73",
+  "fa": "شیر خشمگین شد و گفت: «آن شیر را به من نشان بده!»",
+  "say": "shir khashmgin shod va goft: «ân shir râ be man neshân bede!»"
+ },
+ {
+  "id": "w-597b3110",
+  "fa": "خرگوش او را کنار چاهی برد و شیر عکس خودش را در آب دید.",
+  "say": "khargush u râ kenâr-e châhi bord va shir aks-e khodash râ dar âb did."
+ },
+ {
+  "id": "w-00ae0988",
+  "fa": "شیر به چاه پرید و حیوانات آزاد شدند.",
+  "say": "shir be châh parid va heyvânât âzâd shodand."
+ },
+ {
+  "id": "w-ef7dc278",
+  "fa": "عقل از زور بهتر است.",
+  "say": "aghl az zur behtar ast."
+ },
+ {
+  "id": "w-4c8f3724",
+  "fa": "جنگل",
+  "say": "jangal"
+ },
+ {
+  "id": "w-45038a81",
+  "fa": "خرگوش",
+  "say": "khargush"
+ },
+ {
+  "id": "w-deda9afd",
+  "fa": "کوچک",
+  "say": "kuchak"
+ },
+ {
+  "id": "w-7d6650fc",
+  "fa": "عکس",
+  "say": "aks"
+ },
+ {
+  "id": "w-508ef5fb",
+  "fa": "آزاد",
+  "say": "âzâd"
+ },
+ {
+  "id": "w-8c861f72",
+  "fa": "عقل",
+  "say": "aghl"
+ },
+ {
+  "id": "w-69599e96",
+  "fa": "شکارچی دامی پهن کرد و رویش دانه ریخت.",
+  "say": "shekârchi dâmi pahn kard va ruyash dâne rikht."
+ },
+ {
+  "id": "w-c02dd07d",
+  "fa": "گروهی کبوتر آمدند و در دام افتادند.",
+  "say": "goruhi kabutar âmadand va dar dâm oftâdand."
+ },
+ {
+  "id": "w-8c90137b",
+  "fa": "رئیس آن‌ها، کبوتر طوقدار، گفت: «همه با هم پرواز کنیم!»",
+  "say": "ra'is-e ân-hâ, kabutar-e toghdâr, goft: «hame bâ ham parvâz konim!»"
+ },
+ {
+  "id": "w-4b2cfe4f",
+  "fa": "کبوترها با هم پریدند و دام را با خود بردند.",
+  "say": "kabutar-hâ bâ ham paridand va dâm râ bâ khod bordand."
+ },
+ {
+  "id": "w-00209e94",
+  "fa": "آن‌ها پیش دوستشان، موش، رفتند.",
+  "say": "ân-hâ pish-e dustashân, mush, raftand."
+ },
+ {
+  "id": "w-449cdd32",
+  "fa": "کبوتر طوقدار گفت: «اول بند دوستانم را ببُر، بعد بند مرا.»",
+  "say": "kabutar-e toghdâr goft: «avval band-e dustânam râ bebor, ba'd band-e marâ.»"
+ },
+ {
+  "id": "w-38a4860b",
+  "fa": "موش همهٔ بندها را جوید و کبوترها آزاد شدند.",
+  "say": "mush hame-ye band-hâ râ javid va kabutar-hâ âzâd shodand."
+ },
+ {
+  "id": "w-eb4e52d3",
+  "fa": "با هم بودن، قدرت است.",
+  "say": "bâ ham budan, ghodrat ast."
+ },
+ {
+  "id": "w-5ad7d24c",
+  "fa": "شکارچی",
+  "say": "shekârchi"
+ },
+ {
+  "id": "w-68c6709a",
+  "fa": "دام",
+  "say": "dâm"
+ },
+ {
+  "id": "w-9d57afc0",
+  "fa": "دانه",
+  "say": "dâne"
+ },
+ {
+  "id": "w-7e8251a1",
+  "fa": "کبوتر",
+  "say": "kabutar"
+ },
+ {
+  "id": "w-ab0adbfd",
+  "fa": "پرواز",
+  "say": "parvâz"
+ },
+ {
+  "id": "w-52b9fb84",
+  "fa": "موش",
+  "say": "mush"
+ },
+ {
+  "id": "w-cdfa1f5a",
+  "fa": "یک کلاغ، یک موش، یک لاک‌پشت و یک آهو با هم دوست بودند.",
+  "say": "yek kalâgh, yek mush, yek lâkposht va yek âhu bâ ham dust budand."
+ },
+ {
+  "id": "w-02602edd",
+  "fa": "یک روز شکارچی لاک‌پشت را گرفت و با طناب بست.",
+  "say": "yek ruz shekârchi lâkposht râ gereft va bâ tanâb bast."
+ },
+ {
+  "id": "w-5b624aad",
+  "fa": "دوستانش با هم نقشه کشیدند.",
+  "say": "dustânash bâ ham naghshe keshidand."
+ },
+ {
+  "id": "w-b3e09f00",
+  "fa": "آهو جلوی شکارچی دوید، انگار که زخمی است.",
+  "say": "âhu jelo-ye shekârchi david, engâr ke zakhmi ast."
+ },
+ {
+  "id": "w-f36ed634",
+  "fa": "شکارچی به دنبال آهو رفت.",
+  "say": "shekârchi be donbâl-e âhu raft."
+ },
+ {
+  "id": "w-98049c32",
+  "fa": "در این مدت، موش طناب لاک‌پشت را جوید.",
+  "say": "dar in moddat, mush tanâb-e lâkposht râ javid."
+ },
+ {
+  "id": "w-7c3d6923",
+  "fa": "وقتی شکارچی برگشت، هیچ‌کس آنجا نبود!",
+  "say": "vaghti shekârchi bargasht, hichkas ânjâ nabud!"
+ },
+ {
+  "id": "w-765b028a",
+  "fa": "دوست واقعی در سختی کمک می‌کند.",
+  "say": "dust-e vâghe'i dar sakhti komak mikonad."
+ },
+ {
+  "id": "w-6887164d",
+  "fa": "کلاغ",
+  "say": "kalâgh"
+ },
+ {
+  "id": "w-4a212d2d",
+  "fa": "لاک‌پشت",
+  "say": "lâkposht"
+ },
+ {
+  "id": "w-a999a48a",
+  "fa": "آهو",
+  "say": "âhu"
+ },
+ {
+  "id": "w-eddc4987",
+  "fa": "طناب",
+  "say": "tanâb"
+ },
+ {
+  "id": "w-82ed44d8",
+  "fa": "نقشه",
+  "say": "naghshe"
+ },
+ {
+  "id": "w-1c43954f",
+  "fa": "درودگری چوبی بزرگ را می‌برید.",
+  "say": "darudgari chubi bozorg râ miborid."
+ },
+ {
+  "id": "w-b1ea3946",
+  "fa": "او یک میخ در شکاف چوب گذاشت تا باز بماند.",
+  "say": "u yek mikh dar shekâf-e chub gozâsht tâ bâz bemânad."
+ },
+ {
+  "id": "w-19d48f30",
+  "fa": "بوزینه‌ای از روی درخت نگاه می‌کرد.",
+  "say": "buzine-i az ru-ye derakht negâh mikard."
+ },
+ {
+  "id": "w-291e6491",
+  "fa": "وقتی درودگر رفت، بوزینه روی چوب نشست و میخ را بیرون کشید.",
+  "say": "vaghti darudgar raft, buzine ru-ye chub neshast va mikh râ birun keshid."
+ },
+ {
+  "id": "w-4a5efeea",
+  "fa": "شکاف چوب بسته شد و دُم بوزینه لای چوب گیر کرد!",
+  "say": "shekâf-e chub baste shod va dom-e buzine lâ-ye chub gir kard!"
+ },
+ {
+  "id": "w-55212d1a",
+  "fa": "درودگر برگشت و بوزینه از کارش پشیمان شد.",
+  "say": "darudgar bargasht va buzine az kârash pashimân shod."
+ },
+ {
+  "id": "w-111bd28b",
+  "fa": "کاری را که بلد نیستی، انجام نده.",
+  "say": "kâri râ ke balad nisti, anjâm nade."
+ },
+ {
+  "id": "w-c86f0651",
+  "fa": "چوب",
+  "say": "chub"
+ },
+ {
+  "id": "w-bb93003e",
+  "fa": "میخ",
+  "say": "mikh"
+ },
+ {
+  "id": "w-47e67f81",
+  "fa": "دُم",
+  "say": "dom"
+ },
+ {
+  "id": "w-cbc12afd",
+  "fa": "پشیمان",
+  "say": "pashimân"
+ },
+ {
+  "id": "w-080f8ef2",
+  "fa": "بلد",
+  "say": "balad"
+ },
+ {
+  "id": "w-bd5afc69",
+  "fa": "گِلی خوشبوی در حمام روزی",
+  "say": "geli khoshbuy dar hammâm ruzi"
+ },
+ {
+  "id": "w-6219b8d3",
+  "fa": "رسید از دست محبوبی به دستم",
+  "say": "resid az dast-e mahbubi be dastam"
+ },
+ {
+  "id": "w-c9f3d3e6",
+  "fa": "بدو گفتم که مشکی یا عبیری",
+  "say": "bedu goftam ke moshki yâ abiri"
+ },
+ {
+  "id": "w-7ac173c5",
+  "fa": "که از بوی دلاویز تو مستم",
+  "say": "ke az buy-e delâviz-e to mastam"
+ },
+ {
+  "id": "w-163633e1",
+  "fa": "بگفتا من گِلی ناچیز بودم",
+  "say": "begoftâ man geli nâchiz budam"
+ },
+ {
+  "id": "w-ab8f737a",
+  "fa": "ولیکن مدتی با گُل نشستم",
+  "say": "valikan moddati bâ gol neshastam"
+ },
+ {
+  "id": "w-176c46ff",
+  "fa": "کمال همنشین در من اثر کرد",
+  "say": "kamâl-e hamneshin dar man asar kard"
+ },
+ {
+  "id": "w-0cc84168",
+  "fa": "وگرنه من همان خاکم که هستم",
+  "say": "vagarna man hamân khâkam ke hastam"
+ },
+ {
+  "id": "w-248500e5",
+  "fa": "خوشبو",
+  "say": "khoshbu"
+ },
+ {
+  "id": "w-03af9b87",
+  "fa": "دست",
+  "say": "dast"
+ },
+ {
+  "id": "w-87aa6b29",
+  "fa": "همنشین",
+  "say": "hamneshin"
+ },
+ {
+  "id": "w-3f36d411",
+  "fa": "خاک",
+  "say": "khâk"
+ },
+ {
+  "id": "w-0f4ce96e",
+  "fa": "یکی قطره باران ز ابری چکید",
+  "say": "yeki ghatre bârân ze abri chekid"
+ },
+ {
+  "id": "w-b44c530b",
+  "fa": "خجل شد چو پهنای دریا بدید",
+  "say": "khejel shod cho pahnâ-ye daryâ bedid"
+ },
+ {
+  "id": "w-ccaaf8ca",
+  "fa": "که جایی که دریاست من کیستم؟",
+  "say": "ke jâyi ke daryâst man kistam?"
+ },
+ {
+  "id": "w-9dd721ad",
+  "fa": "گر او هست حقا که من نیستم",
+  "say": "gar u hast haghghâ ke man nistam"
+ },
+ {
+  "id": "w-63c0aa27",
+  "fa": "چو خود را به چشم حقارت بدید",
+  "say": "cho khod râ be cheshm-e heghârat bedid"
+ },
+ {
+  "id": "w-b7b22606",
+  "fa": "صدف در کنارش به جان پرورید",
+  "say": "sadaf dar kenârash be jân parvarid"
+ },
+ {
+  "id": "w-e604d13f",
+  "fa": "سپهرش به جایی رسانید کار",
+  "say": "sepehrash be jâyi resânid kâr"
+ },
+ {
+  "id": "w-8886a1db",
+  "fa": "که شد نامور لؤلؤ شاهوار",
+  "say": "ke shod nâmvar lo'lo'-e shâhvâr"
+ },
+ {
+  "id": "w-1afb49e6",
+  "fa": "قطره",
+  "say": "ghatre"
+ },
+ {
+  "id": "w-31f6a40e",
+  "fa": "باران",
+  "say": "bârân"
+ },
+ {
+  "id": "w-79d7c201",
+  "fa": "ابر",
+  "say": "abr"
+ },
+ {
+  "id": "w-cc703e44",
+  "fa": "صدف",
+  "say": "sadaf"
+ },
+ {
+  "id": "w-5ba1f6f0",
+  "fa": "مروارید",
+  "say": "morvârid"
+ },
+ {
+  "id": "w-40506eac",
+  "fa": "سعدی هیچ‌وقت از روزگار شکایت نمی‌کرد.",
+  "say": "sa'di hichvaght az ruzegâr shekâyat nemikard."
+ },
+ {
+  "id": "w-d122c74f",
+  "fa": "اما یک بار کفش نداشت و پولی هم برای خرید کفش نداشت.",
+  "say": "ammâ yek bâr kafsh nadâsht va puli ham barâye kharid-e kafsh nadâsht."
+ },
+ {
+  "id": "w-10ff138e",
+  "fa": "با دلی گرفته به مسجد کوفه رفت.",
+  "say": "bâ deli gerefte be masjed-e kufe raft."
+ },
+ {
+  "id": "w-d0a825d2",
+  "fa": "آنجا مردی را دید که پا نداشت.",
+  "say": "ânjâ mardi râ did ke pâ nadâsht."
+ },
+ {
+  "id": "w-3c47cc3f",
+  "fa": "سعدی خدا را شکر کرد و بر بی‌کفشی صبر کرد.",
+  "say": "sa'di khodâ râ shokr kard va bar bi-kafshi sabr kard."
+ },
+ {
+  "id": "w-19a03a21",
+  "fa": "شکر نعمت، نعمتت افزون کند.",
+  "say": "shokr-e ne'mat, ne'matat afzun konad."
+ },
+ {
+  "id": "w-56af2c31",
+  "fa": "کفش",
+  "say": "kafsh"
+ },
+ {
+  "id": "w-ece1b4dd",
+  "fa": "پول",
+  "say": "pul"
+ },
+ {
+  "id": "w-a0e0daf0",
+  "fa": "مسجد",
+  "say": "masjed"
+ },
+ {
+  "id": "w-755f6132",
+  "fa": "پا",
+  "say": "pâ"
+ },
+ {
+  "id": "w-63fe7cdd",
+  "fa": "شکر",
+  "say": "shokr"
+ },
+ {
+  "id": "w-f465801b",
+  "fa": "صبر",
+  "say": "sabr"
+ },
+ {
+  "id": "w-a511afa7",
+  "fa": "حافظ شاعری از شیراز بود.",
+  "say": "hâfez shâ'eri az shirâz bud."
+ },
+ {
+  "id": "w-7887d0ee",
+  "fa": "او قرآن را از حفظ می‌دانست؛ برای همین «حافظ» نام گرفت.",
+  "say": "u ghor'ân râ az hefz midânest; barâye hamin «hâfez» nâm gereft."
+ },
+ {
+  "id": "w-96f1b53f",
+  "fa": "ایرانیان دیوان حافظ را در خانه نگه می‌دارند.",
+  "say": "irâniyân divân-e hâfez râ dar khâne negah midârand."
+ },
+ {
+  "id": "w-b226bfad",
+  "fa": "در شب یلدا، نیت می‌کنند و فال حافظ می‌گیرند.",
+  "say": "dar shab-e yaldâ, niyyat mikonand va fâl-e hâfez migirand."
+ },
+ {
+  "id": "w-f8e015ab",
+  "fa": "یوسف گم‌گشته بازآید به کنعان، غم مخور\nکلبهٔ احزان شود روزی گلستان، غم مخور",
+  "say": "yusof-e gomgashte bâz âyad be kan'ân, gham makhor, kolbe-ye ahzân shavad ruzi golestân, gham makhor"
+ },
+ {
+  "id": "w-cac231b0",
+  "fa": "هرگز نمیرد آن که دلش زنده شد به عشق\nثبت است بر جریدهٔ عالم دوام ما",
+  "say": "hargez namirad ân ke delash zende shod be eshgh, sabt ast bar jaride-ye âlam davâm-e mâ"
+ },
+ {
+  "id": "w-782f36ce",
+  "fa": "اگر آن ترک شیرازی به دست آرد دل ما را\nبه خال هندویش بخشم سمرقند و بخارا را",
+  "say": "agar ân tork-e shirâzi be dast ârad del-e mâ râ, be khâl-e hendu-yash bakhsham samarghand o bokhârâ râ"
+ },
+ {
+  "id": "w-3e025ccd",
+  "fa": "خوشا شیراز و وضع بی‌مثالش\nخداوندا نگه دار از زوالش",
+  "say": "khoshâ shirâz o vaz'-e bi-mesâlash, khodâvandâ negah dâr az zavâlash"
+ },
+ {
+  "id": "w-03d6b549",
+  "fa": "دل می‌رود ز دستم صاحب‌دلان خدا را\nدردا که راز پنهان خواهد شد آشکارا",
+  "say": "del miravad ze dastam sâhebdelân khodâ râ, dardâ ke râz-e penhân khâhad shod âshkârâ"
+ },
+ {
+  "id": "w-f44b0b27",
+  "fa": "عاشق شو ار نه روزی کار جهان سر آید\nناخوانده نقش مقصود از کارگاه هستی",
+  "say": "âshegh sho ar na ruzi kâr-e jahân sar âyad, nâkhânde naghsh-e maghsud az kârgâh-e hasti"
+ },
+ {
+  "id": "w-63a9c5fa",
+  "fa": "شاعر",
+  "say": "shâ'er"
+ },
+ {
+  "id": "w-3dd5c1b3",
+  "fa": "دیوان",
+  "say": "divân"
+ },
+ {
+  "id": "w-f6c02f5f",
+  "fa": "نیت",
+  "say": "niyyat"
+ },
+ {
+  "id": "w-64143af8",
+  "fa": "غم",
+  "say": "gham"
+ },
+ {
+  "id": "w-8117e2da",
+  "fa": "حضرت محمد (ص) در مکه به دنیا آمد.",
+  "say": "hazrat-e mohammad, sallallâho alayhe va âleh, dar makke be donyâ âmad."
+ },
+ {
+  "id": "w-919034a0",
+  "fa": "مردم مکه او را «امین» یعنی امانت‌دار صدا می‌زدند.",
+  "say": "mardom-e makke u râ «amin» ya'ni amânatdâr sedâ mizadand."
+ },
+ {
+  "id": "w-0fddd8fb",
+  "fa": "یک بار قبیله‌ها کعبه را دوباره ساختند.",
+  "say": "yek bâr ghabile-hâ ka'be râ dobâre sâkhtand."
+ },
+ {
+  "id": "w-bbd28645",
+  "fa": "هر قبیله می‌خواست خودش حجرالاسود را سر جایش بگذارد.",
+  "say": "har ghabile mikhâst khodash hajar-ol-asvad râ sar-e jâyash begozârad."
+ },
+ {
+  "id": "w-33eff2a6",
+  "fa": "نزدیک بود دعوا شود، اما همه قبول کردند که او داوری کند.",
+  "say": "nazdik bud da'vâ shavad, ammâ hame ghabul kardand ke u dâvari konad."
+ },
+ {
+  "id": "w-95575d2f",
+  "fa": "او پارچه‌ای پهن کرد و سنگ را روی آن گذاشت.",
+  "say": "u pârche-i pahn kard va sang râ ru-ye ân gozâsht."
+ },
+ {
+  "id": "w-f582feb4",
+  "fa": "همهٔ قبیله‌ها گوشهٔ پارچه را گرفتند و سنگ را با هم بالا بردند.",
+  "say": "hame-ye ghabile-hâ gushe-ye pârche râ gereftand va sang râ bâ ham bâlâ bordand."
+ },
+ {
+  "id": "w-e1c3ebff",
+  "fa": "سپس خودش سنگ را سر جایش گذاشت و صلح برگشت.",
+  "say": "sepas khodash sang râ sar-e jâyash gozâsht va solh bargasht."
+ },
+ {
+  "id": "w-e32771cb",
+  "fa": "امین",
+  "say": "amin"
+ },
+ {
+  "id": "w-5375c908",
+  "fa": "قبیله",
+  "say": "ghabile"
+ },
+ {
+  "id": "w-80fb82ce",
+  "fa": "کعبه",
+  "say": "ka'be"
+ },
+ {
+  "id": "w-8d6638de",
+  "fa": "پارچه",
+  "say": "pârche"
+ },
+ {
+  "id": "w-e297ad10",
+  "fa": "دعوا",
+  "say": "da'vâ"
+ },
+ {
+  "id": "w-ff673703",
+  "fa": "صلح",
+  "say": "solh"
+ },
+ {
+  "id": "w-0abcc651",
+  "fa": "حضرت خدیجه (س) بانویی بزرگوار و ثروتمند در مکه بود.",
+  "say": "hazrat-e khadije, salâmollâh alayhâ, bânuyi bozorgvâr va servatmand dar makke bud."
+ },
+ {
+  "id": "w-95f18f93",
+  "fa": "او تجارت می‌کرد و کاروان‌هایش تا شام می‌رفتند.",
+  "say": "u tejârat mikard va kârvân-hâyash tâ shâm miraftand."
+ },
+ {
+  "id": "w-42fc4313",
+  "fa": "او حضرت محمد (ص) را برای امانت‌داری‌اش برگزید.",
+  "say": "u hazrat-e mohammad râ barâye amânatdâri-ash bargozid."
+ },
+ {
+  "id": "w-d02097a8",
+  "fa": "آن‌ها با هم ازدواج کردند و زندگی پرمهری داشتند.",
+  "say": "ân-hâ bâ ham ezdevâj kardand va zendegi-ye pormehri dâshtand."
+ },
+ {
+  "id": "w-22640c88",
+  "fa": "خدیجه اولین زنی بود که به پیامبر ایمان آورد.",
+  "say": "khadije avvalin zani bud ke be payâmbar imân âvard."
+ },
+ {
+  "id": "w-474bdbac",
+  "fa": "او ثروتش را در راه خدا و برای کمک به مردم بخشید.",
+  "say": "u servatash râ dar râh-e khodâ va barâye komak be mardom bakhshid."
+ },
+ {
+  "id": "w-b78f1ced",
+  "fa": "پیامبر همیشه او را با محبت یاد می‌کرد.",
+  "say": "payâmbar hamishe u râ bâ mohabbat yâd mikard."
+ },
+ {
+  "id": "w-d471c670",
+  "fa": "دخترشان، حضرت فاطمه (س)، یادگار این عشق بود.",
+  "say": "dokhtarashân, hazrat-e fâteme, yâdgâr-e in eshgh bud."
+ },
+ {
+  "id": "w-67edee9e",
+  "fa": "بانو",
+  "say": "bânu"
+ },
+ {
+  "id": "w-a3dcea79",
+  "fa": "ثروتمند",
+  "say": "servatmand"
+ },
+ {
+  "id": "w-0b1e8cb7",
+  "fa": "تجارت",
+  "say": "tejârat"
+ },
+ {
+  "id": "w-89df7729",
+  "fa": "کاروان",
+  "say": "kârvân"
+ },
+ {
+  "id": "w-75c88cdc",
+  "fa": "ایمان",
+  "say": "imân"
+ },
+ {
+  "id": "w-f889da45",
+  "fa": "محبت",
+  "say": "mohabbat"
+ },
+ {
+  "id": "w-747c5b43",
+  "fa": "حضرت فاطمه (س) دختر پیامبر (ص) و حضرت خدیجه (س) بود.",
+  "say": "hazrat-e fâteme, salâmollâh alayhâ, dokhtar-e payâmbar va hazrat-e khadije bud."
+ },
+ {
+  "id": "w-a1c1292b",
+  "fa": "شب عروسی‌اش، زنی فقیر از او لباس خواست.",
+  "say": "shab-e arusi-ash, zani faghir az u lebâs khâst."
+ },
+ {
+  "id": "w-983cfe99",
+  "fa": "حضرت فاطمه لباس نو عروسی‌اش را به او بخشید.",
+  "say": "hazrat-e fâteme lebâs-e no-ye arusi-ash râ be u bakhshid."
+ },
+ {
+  "id": "w-86e1fd16",
+  "fa": "یک بار خانوادهٔ او سه روز روزه گرفتند.",
+  "say": "yek bâr khânevâde-ye u se ruz ruze gereftand."
+ },
+ {
+  "id": "w-d8bb0278",
+  "fa": "هر شب، هنگام افطار، کسی در زد و غذا خواست.",
+  "say": "har shab, hengâm-e eftâr, kasi dar zad va ghazâ khâst."
+ },
+ {
+  "id": "w-aeadcd67",
+  "fa": "شب اول فقیری بود، شب دوم یتیمی و شب سوم اسیری.",
+  "say": "shab-e avval faghiri bud, shab-e dovvom yatimi va shab-e sevvom asiri."
+ },
+ {
+  "id": "w-1b5532c9",
+  "fa": "آن‌ها هر سه شب نانشان را بخشیدند و خودشان با آب افطار کردند.",
+  "say": "ân-hâ har se shab nânashân râ bakhshidand va khodeshân bâ âb eftâr kardand."
+ },
+ {
+  "id": "w-02fba94f",
+  "fa": "در سورهٔ «انسان» از این بخشش یاد شده است.",
+  "say": "dar sure-ye «ensân» az in bakhshesh yâd shode ast."
+ },
+ {
+  "id": "w-c666502d",
+  "fa": "دختر",
+  "say": "dokhtar"
+ },
+ {
+  "id": "w-5dc5c21a",
+  "fa": "عروسی",
+  "say": "arusi"
+ },
+ {
+  "id": "w-7fb14213",
+  "fa": "لباس",
+  "say": "lebâs"
+ },
+ {
+  "id": "w-53526837",
+  "fa": "روزه",
+  "say": "ruze"
+ },
+ {
+  "id": "w-38c016f6",
+  "fa": "افطار",
+  "say": "eftâr"
+ },
+ {
+  "id": "w-d61a29d8",
+  "fa": "یتیم",
+  "say": "yatim"
+ },
+ {
+  "id": "w-354a546a",
+  "fa": "امام علی (ع) اولین امام شیعیان است.",
+  "say": "emâm ali, alayhessalâm, avvalin emâm-e shi'iyân ast."
+ },
+ {
+  "id": "w-51ed4629",
+  "fa": "او به عدالت و مهربانی معروف بود.",
+  "say": "u be edâlat va mehrabâni ma'ruf bud."
+ },
+ {
+  "id": "w-d545b052",
+  "fa": "شب‌ها، کیسه‌ای نان و خرما بر دوش می‌گذاشت.",
+  "say": "shab-hâ, kise-i nân va khormâ bar dush migozâsht."
+ },
+ {
+  "id": "w-1fcf6b34",
+  "fa": "او ناشناس به خانهٔ یتیمان و فقیران می‌رفت.",
+  "say": "u nâshenâs be khâne-ye yatimân va faghirân miraft."
+ },
+ {
+  "id": "w-088c46f7",
+  "fa": "با بچه‌های یتیم بازی می‌کرد تا خندان شوند.",
+  "say": "bâ bachche-hâ-ye yatim bâzi mikard tâ khandân shavand."
+ },
+ {
+  "id": "w-441c2caa",
+  "fa": "کسی نمی‌دانست آن مرد مهربان کیست.",
+  "say": "kasi nemidânest ân mard-e mehrabân kist."
+ },
+ {
+  "id": "w-8acf24d9",
+  "fa": "وقتی او از دنیا رفت، دیگر کسی برایشان نان نیاورد؛ آن وقت فهمیدند او امام علی بود.",
+  "say": "vaghti u az donyâ raft, digar kasi barâyeshân nân nayâvard; ân vaght fahmidand u emâm ali bud."
+ },
+ {
+  "id": "w-070c3898",
+  "fa": "عدالت",
+  "say": "edâlat"
+ },
+ {
+  "id": "w-ba594f4b",
+  "fa": "مهربانی",
+  "say": "mehrabâni"
+ },
+ {
+  "id": "w-afc17e82",
+  "fa": "کیسه",
+  "say": "kise"
+ },
+ {
+  "id": "w-f84d5d68",
+  "fa": "خرما",
+  "say": "khormâ"
+ },
+ {
+  "id": "w-ab6e9dfe",
+  "fa": "بازی",
+  "say": "bâzi"
+ },
+ {
+  "id": "w-a55f244c",
+  "fa": "امام حسین (ع) نوهٔ پیامبر (ص) بود.",
+  "say": "emâm hoseyn, alayhessalâm, nave-ye payâmbar bud."
+ },
+ {
+  "id": "w-ccd92748",
+  "fa": "او در برابر ستم یزید سر خم نکرد.",
+  "say": "u dar barâbar-e setam-e yazid sar kham nakard."
+ },
+ {
+  "id": "w-f63bca70",
+  "fa": "در کربلا، کنار رود فرات، دشمن آب را بر آن‌ها بست.",
+  "say": "dar karbalâ, kenâr-e rud-e forât, doshman âb râ bar ân-hâ bast."
+ },
+ {
+  "id": "w-e9518d7a",
+  "fa": "در روز عاشورا، امام حسین و یارانش با شجاعت به شهادت رسیدند.",
+  "say": "dar ruz-e âshurâ, emâm hoseyn va yârânash bâ shojâ'at be shahâdat residand."
+ },
+ {
+  "id": "w-f53de241",
+  "fa": "خواهرش، حضرت زینب (س)، از زنان و کودکان نگهداری کرد.",
+  "say": "khâharash, hazrat-e zeynab, salâmollâh alayhâ, az zanân va kudakân negahdâri kard."
+ },
+ {
+  "id": "w-f48bb2da",
+  "fa": "او در برابر ستمگران، با شجاعت حقیقت را گفت.",
+  "say": "u dar barâbar-e setamgarân, bâ shojâ'at haghighat râ goft."
+ },
+ {
+  "id": "w-196ad5d5",
+  "fa": "حضرت زینب گفت: «جز زیبایی چیزی ندیدم.»",
+  "say": "hazrat-e zeynab goft: «joz zibâyi chizi nadidam.»"
+ },
+ {
+  "id": "w-520bcb18",
+  "fa": "ایرانیان هر سال در ماه محرم از آن‌ها یاد می‌کنند.",
+  "say": "irâniyân har sâl dar mâh-e moharram az ân-hâ yâd mikonand."
+ },
+ {
+  "id": "w-4878f02c",
+  "fa": "نوه",
+  "say": "nave"
+ },
+ {
+  "id": "w-6be5eb47",
+  "fa": "ستم",
+  "say": "setam"
+ },
+ {
+  "id": "w-4017bae9",
+  "fa": "رود",
+  "say": "rud"
+ },
+ {
+  "id": "w-75455aad",
+  "fa": "شجاعت",
+  "say": "shojâ'at"
+ },
+ {
+  "id": "w-c2ff5df2",
+  "fa": "حقیقت",
+  "say": "haghighat"
+ },
+ {
+  "id": "w-8e813ef6",
+  "fa": "امام رضا (ع) هشتمین امام شیعیان است.",
+  "say": "emâm rezâ, alayhessalâm, hashtomin emâm-e shi'iyân ast."
+ },
+ {
+  "id": "w-9f1c4d5a",
+  "fa": "روزی شکارچی‌ای آهویی را گرفت.",
+  "say": "ruzi shekârchi-i âhuyi râ gereft."
+ },
+ {
+  "id": "w-ad4a8e37",
+  "fa": "آهو به امام رضا پناه آورد و گفت: «بچه‌هایم گرسنه‌اند.»",
+  "say": "âhu be emâm rezâ panâh âvard va goft: «bachche-hâyam gorosne-and.»"
+ },
+ {
+  "id": "w-01870cab",
+  "fa": "«بگذارید بروم به آن‌ها شیر بدهم و برگردم.»",
+  "say": "«begozârid beravam be ân-hâ shir bedaham va bargardam.»"
+ },
+ {
+  "id": "w-4ae57ef7",
+  "fa": "امام به شکارچی گفت: «من ضامن او می‌شوم.»",
+  "say": "emâm be shekârchi goft: «man zâmen-e u mishavam.»"
+ },
+ {
+  "id": "w-cbc67e70",
+  "fa": "آهو رفت و همان‌طور که قول داده بود، با بچه‌هایش برگشت.",
+  "say": "âhu raft va hamântor ke ghol dâde bud, bâ bachche-hâyash bargasht."
+ },
+ {
+  "id": "w-7b9dc86f",
+  "fa": "شکارچی شرمنده شد و آهو را آزاد کرد.",
+  "say": "shekârchi sharmande shod va âhu râ âzâd kard."
+ },
+ {
+  "id": "w-ef5cedea",
+  "fa": "از آن روز، امام رضا را «ضامن آهو» می‌نامند.",
+  "say": "az ân ruz, emâm rezâ râ «zâmen-e âhu» minâmand."
+ },
+ {
+  "id": "w-1293a963",
+  "fa": "هشتم",
+  "say": "hashtom"
+ },
+ {
+  "id": "w-3744cf59",
+  "fa": "گرسنه",
+  "say": "gorosne"
+ },
+ {
+  "id": "w-00b151e1",
+  "fa": "ضامن",
+  "say": "zâmen"
+ },
+ {
+  "id": "w-292c1589",
+  "fa": "قول",
+  "say": "ghol"
+ },
+ {
+  "id": "w-10dee7c3",
+  "fa": "شرمنده",
+  "say": "sharmande"
+ },
+ {
+  "id": "w-779e8672",
+  "fa": "امام علی (ع)، امیرالمؤمنین: پدر یتیمان و الگوی عدالت.",
+  "say": "emâm ali, amir-ol-mo'menin: pedar-e yatimân va olgu-ye edâlat."
+ },
+ {
+  "id": "w-3f4a0d7d",
+  "fa": "امام حسن (ع)، مجتبی: کریم اهل بیت، بسیار بخشنده.",
+  "say": "emâm hasan, mojtabâ: karim-e ahl-e beyt, besyâr bakhshande."
+ },
+ {
+  "id": "w-19f0d443",
+  "fa": "امام حسین (ع)، سیدالشهدا: سرور شهیدان در کربلا.",
+  "say": "emâm hoseyn, seyyed-osh-shohadâ: sarvar-e shahidân dar karbalâ."
+ },
+ {
+  "id": "w-a7ac9793",
+  "fa": "امام سجاد (ع)، زین‌العابدین: زینت عبادت‌کنندگان، با دعاهای زیبای صحیفهٔ سجادیه.",
+  "say": "emâm sajjâd, zeyn-ol-âbedin: zinat-e ebâdatkonandegân, bâ do'â-hâ-ye zibâ-ye sahife-ye sajjâdiyye."
+ },
+ {
+  "id": "w-2ec350c2",
+  "fa": "امام محمد باقر (ع)، باقرالعلوم: شکافندهٔ دانش‌ها.",
+  "say": "emâm mohammad bâgher, bâgher-ol-olum: shekâfande-ye dânesh-hâ."
+ },
+ {
+  "id": "w-bffb3f53",
+  "fa": "امام جعفر صادق (ع)، صادق: راستگو، استاد هزاران شاگرد.",
+  "say": "emâm ja'far sâdegh, sâdegh: râstgu, ostâd-e hezârân shâgerd."
+ },
+ {
+  "id": "w-59067d8d",
+  "fa": "امام موسی کاظم (ع)، کاظم: فروبرندهٔ خشم، بسیار صبور.",
+  "say": "emâm musâ kâzem, kâzem: forubarande-ye khashm, besyâr sabur."
+ },
+ {
+  "id": "w-31c6192f",
+  "fa": "امام رضا (ع)، ضامن آهو: تنها امامی که آرامگاهش در ایران، در مشهد، است.",
+  "say": "emâm rezâ, zâmen-e âhu: tanhâ emâmi ke ârâmgâhash dar irân, dar mashhad, ast."
+ },
+ {
+  "id": "w-60fc77cf",
+  "fa": "امام محمد تقی (ع)، جواد: بسیار بخشنده، که در کودکی امام شد.",
+  "say": "emâm mohammad taghi, javâd: besyâr bakhshande, ke dar kudaki emâm shod."
+ },
+ {
+  "id": "w-20e9bb2f",
+  "fa": "امام علی نقی (ع)، هادی: راهنمای مردم.",
+  "say": "emâm ali naghi, hâdi: râhnamâ-ye mardom."
+ },
+ {
+  "id": "w-ad8ba03a",
+  "fa": "امام حسن عسکری (ع)، عسکری: امامی که در شهر سامرا زندگی کرد.",
+  "say": "emâm hasan askari, askari: emâmi ke dar shahr-e sâmerrâ zendegi kard."
+ },
+ {
+  "id": "w-9f3b5abe",
+  "fa": "امام مهدی (عج)، قائم: امام زنده و پنهان که روزی جهان را پر از عدالت می‌کند.",
+  "say": "emâm mahdi, ghâ'em: emâm-e zende va penhân ke ruzi jahân râ por az edâlat mikonad."
+ },
+ {
+  "id": "w-1977b83d",
+  "fa": "دوازده",
+  "say": "davâzdah"
+ },
+ {
+  "id": "w-afa56d97",
+  "fa": "بخشنده",
+  "say": "bakhshande"
+ },
+ {
+  "id": "w-fbaa652b",
+  "fa": "راستگو",
+  "say": "râstgu"
+ },
+ {
+  "id": "w-5131df83",
+  "fa": "صبور",
+  "say": "sabur"
+ },
+ {
+  "id": "w-b5676f94",
+  "fa": "راهنما",
+  "say": "râhnamâ"
+ },
+ {
+  "id": "w-70e8f5f5",
+  "fa": "شاگرد",
+  "say": "shâgerd"
+ },
+ {
+  "id": "w-39998771",
+  "fa": "حضرت یوسف (ع) در خواب دید که یازده ستاره و خورشید و ماه به او سجده می‌کنند.",
+  "say": "hazrat-e yusof, alayhessalâm, dar khâb did ke yâzdah setâre va khorshid va mâh be u sajde mikonand."
+ },
+ {
+  "id": "w-3dd16675",
+  "fa": "برادرانش به او حسادت کردند و او را در چاه انداختند.",
+  "say": "barâdarânash be u hesâdat kardand va u râ dar châh andâkhtand."
+ },
+ {
+  "id": "w-e57140df",
+  "fa": "کاروانی او را پیدا کرد و به مصر برد.",
+  "say": "kârvâni u râ peydâ kard va be mesr bord."
+ },
+ {
+  "id": "w-07a290ec",
+  "fa": "یوسف سال‌ها صبر کرد و همیشه درستکار ماند.",
+  "say": "yusof sâl-hâ sabr kard va hamishe dorostkâr mând."
+ },
+ {
+  "id": "w-4f553c43",
+  "fa": "او خواب پادشاه را تعبیر کرد و مردم را از قحطی نجات داد.",
+  "say": "u khâb-e pâdshâh râ ta'bir kard va mardom râ az ghahti nejât dâd."
+ },
+ {
+  "id": "w-a107dea0",
+  "fa": "سال‌ها بعد، برادرانش برای گندم به مصر آمدند.",
+  "say": "sâl-hâ ba'd, barâdarânash barâye gandom be mesr âmadand."
+ },
+ {
+  "id": "w-c9d414fc",
+  "fa": "یوسف آن‌ها را بخشید و پدرش، حضرت یعقوب (ع)، را دوباره دید.",
+  "say": "yusof ân-hâ râ bakhshid va pedarash, hazrat-e ya'ghub, râ dobâre did."
+ },
+ {
+  "id": "w-45d27509",
+  "fa": "ستاره",
+  "say": "setâre"
+ },
+ {
+  "id": "w-5e9fd69b",
+  "fa": "خورشید",
+  "say": "khorshid"
+ },
+ {
+  "id": "w-aea7f726",
+  "fa": "بخشیدن",
+  "say": "bakhshidan"
+ },
+ {
+  "id": "w-72084734",
+  "fa": "فرعون پادشاهی ستمگر در مصر بود.",
+  "say": "fer'own pâdshâhi setamgar dar mesr bud."
+ },
+ {
+  "id": "w-ea546054",
+  "fa": "مادر حضرت موسی (ع) برای پسرش نگران بود.",
+  "say": "mâdar-e hazrat-e musâ, alayhessalâm, barâye pesarash negarân bud."
+ },
+ {
+  "id": "w-a160ab50",
+  "fa": "خدا به دلش انداخت که او را در صندوقی روی رود نیل بگذارد.",
+  "say": "khodâ be delash andâkht ke u râ dar sandughi ru-ye rud-e nil begozârad."
+ },
+ {
+  "id": "w-f9031303",
+  "fa": "آب صندوق را به قصر فرعون برد.",
+  "say": "âb sanduq râ be ghasr-e fer'own bord."
+ },
+ {
+  "id": "w-f6767cdc",
+  "fa": "همسر فرعون، آسیه، بچه را دید و او را دوست داشت.",
+  "say": "hamsar-e fer'own, âsiye, bachche râ did va u râ dust dâsht."
+ },
+ {
+  "id": "w-1d31ed00",
+  "fa": "موسی از هیچ دایه‌ای شیر نخورد.",
+  "say": "musâ az hich dâye-i shir nakhord."
+ },
+ {
+  "id": "w-da1dc98d",
+  "fa": "پس او را پیش مادر خودش بردند و خدا او را به مادرش برگرداند.",
+  "say": "pas u râ pish-e mâdar-e khodash bordand va khodâ u râ be mâdarash bargardând."
+ },
+ {
+  "id": "w-59d2c2e4",
+  "fa": "نگران",
+  "say": "negarân"
+ },
+ {
+  "id": "w-f1f38dbd",
+  "fa": "صندوق",
+  "say": "sanduq"
+ },
+ {
+  "id": "w-20a2bc4c",
+  "fa": "بچه",
+  "say": "bachche"
+ },
+ {
+  "id": "w-b69fe8eb",
+  "fa": "دوست داشتن",
+  "say": "dust dâshtan"
+ },
+ {
+  "id": "w-6d4596da",
+  "fa": "مردم شهر حضرت ابراهیم (ع) بت می‌پرستیدند.",
+  "say": "mardom-e shahr-e hazrat-e ebrâhim, alayhessalâm, bot miparastidand."
+ },
+ {
+  "id": "w-62970cda",
+  "fa": "ابراهیم گفت: «بت‌ها نه می‌شنوند و نه کمکی می‌کنند.»",
+  "say": "ebrâhim goft: «bot-hâ na mishenavand va na komaki mikonand.»"
+ },
+ {
+  "id": "w-ffb1c909",
+  "fa": "پادشاه خشمگین شد و دستور داد آتشی بزرگ روشن کنند.",
+  "say": "pâdshâh khashmgin shod va dastur dâd âtashi bozorg roshan konand."
+ },
+ {
+  "id": "w-3f40a322",
+  "fa": "آن‌ها ابراهیم را در آتش انداختند.",
+  "say": "ân-hâ ebrâhim râ dar âtash andâkhtand."
+ },
+ {
+  "id": "w-c830cf69",
+  "fa": "خدا فرمود: «ای آتش، بر ابراهیم سرد و سلامت باش.»",
+  "say": "khodâ farmud: «ey âtash, bar ebrâhim sard va salâmat bâsh.»"
+ },
+ {
+  "id": "w-116fa382",
+  "fa": "آتش سرد شد و ابراهیم سالم بیرون آمد.",
+  "say": "âtash sard shod va ebrâhim sâlem birun âmad."
+ },
+ {
+  "id": "w-67e1483b",
+  "fa": "شاعران فارسی می‌گویند آتش برای او گلستان شد.",
+  "say": "shâ'erân-e fârsi miguyand âtash barâye u golestân shod."
+ },
+ {
+  "id": "w-de56b727",
+  "fa": "شهر",
+  "say": "shahr"
+ },
+ {
+  "id": "w-22dbb007",
+  "fa": "بت",
+  "say": "bot"
+ },
+ {
+  "id": "w-9ab97b8b",
+  "fa": "آتش",
+  "say": "âtash"
+ },
+ {
+  "id": "w-e5faa2d2",
+  "fa": "سرد",
+  "say": "sard"
+ },
+ {
+  "id": "w-bd12f6ac",
+  "fa": "سالم",
+  "say": "sâlem"
+ },
+ {
+  "id": "w-b9e640c2",
+  "fa": "گلستان",
+  "say": "golestân"
+ },
+ {
+  "id": "w-3d3b1bd3",
+  "fa": "حضرت نوح (ع) سال‌های زیادی مردم را به خوبی دعوت کرد.",
+  "say": "hazrat-e nuh, alayhessalâm, sâl-hâ-ye ziyâdi mardom râ be khubi da'vat kard."
+ },
+ {
+  "id": "w-1546cfdc",
+  "fa": "خدا به او گفت یک کشتی بزرگ بسازد.",
+  "say": "khodâ be u goft yek kashti-ye bozorg besâzad."
+ },
+ {
+  "id": "w-85ee94bb",
+  "fa": "بعضی از مردم به او می‌خندیدند.",
+  "say": "ba'zi az mardom be u mikhandidand."
+ },
+ {
+  "id": "w-4ce5efe5",
+  "fa": "نوح مؤمنان و از هر حیوان یک جفت را سوار کشتی کرد.",
+  "say": "nuh mo'menân va az har heyvân yek joft râ savâr-e kashti kard."
+ },
+ {
+  "id": "w-9041b782",
+  "fa": "باران بارید و آب همه‌جا را گرفت.",
+  "say": "bârân bârid va âb hamejâ râ gereft."
+ },
+ {
+  "id": "w-06684606",
+  "fa": "کشتی روی موج‌ها رفت و همه در آن سالم ماندند.",
+  "say": "kashti ru-ye mowj-hâ raft va hame dar ân sâlem mândand."
+ },
+ {
+  "id": "w-39136ec9",
+  "fa": "سرانجام آب پایین رفت و کشتی بر کوه جودی نشست.",
+  "say": "saranjâm âb pâyin raft va kashti bar kuh-e judi neshast."
+ },
+ {
+  "id": "w-26286526",
+  "fa": "کشتی",
+  "say": "kashti"
+ },
+ {
+  "id": "w-5aba081c",
+  "fa": "موج",
+  "say": "mowj"
+ },
+ {
+  "id": "w-7638a57c",
+  "fa": "جفت",
+  "say": "joft"
+ },
+ {
+  "id": "w-047eab17",
+  "fa": "خندیدن",
+  "say": "khandidan"
+ },
+ {
+  "id": "w-a30ef23f",
+  "fa": "سوار شدن",
+  "say": "savâr shodan"
+ },
+ {
+  "id": "w-74a5392a",
+  "fa": "حضرت سلیمان (ع) پیامبر و پادشاهی دانا بود.",
+  "say": "hazrat-e soleymân, alayhessalâm, payâmbar va pâdshâhi dânâ bud."
+ },
+ {
+  "id": "w-135423b7",
+  "fa": "او زبان پرندگان و حیوانات را می‌فهمید.",
+  "say": "u zabân-e parandegân va heyvânât râ mifahmid."
+ },
+ {
+  "id": "w-74b976b5",
+  "fa": "روزی سلیمان با سپاهش به درهٔ مورچه‌ها رسید.",
+  "say": "ruzi soleymân bâ sepâhash be darre-ye murche-hâ resid."
+ },
+ {
+  "id": "w-21ae493f",
+  "fa": "مورچه‌ای کوچک گفت: «ای مورچه‌ها، به خانه‌هایتان بروید تا زیر پا نمانید!»",
+  "say": "murche-i kuchak goft: «ey murche-hâ, be khâne-hâyetân beravid tâ zir-e pâ namânid!»"
+ },
+ {
+  "id": "w-09a14a99",
+  "fa": "سلیمان حرف مورچه را شنید و لبخند زد.",
+  "say": "soleymân harf-e murche râ shenid va labkhand zad."
+ },
+ {
+  "id": "w-16be5f2e",
+  "fa": "او خدا را برای همهٔ نعمت‌هایش شکر کرد.",
+  "say": "u khodâ râ barâye hame-ye ne'mat-hâyash shokr kard."
+ },
+ {
+  "id": "w-8fc4a492",
+  "fa": "زبان",
+  "say": "zabân"
+ },
+ {
+  "id": "w-d76c0d50",
+  "fa": "مورچه",
+  "say": "murche"
+ },
+ {
+  "id": "w-66ae688e",
+  "fa": "دره",
+  "say": "darre"
+ },
+ {
+  "id": "w-37c0fbef",
+  "fa": "نعمت",
+  "say": "ne'mat"
+ },
+ {
+  "id": "w-1b0c2704",
+  "fa": "حضرت یونس (ع) از دست مردمش ناراحت شد و از شهر رفت.",
+  "say": "hazrat-e yunos, alayhessalâm, az dast-e mardomash nârâhat shod va az shahr raft."
+ },
+ {
+  "id": "w-6075ff29",
+  "fa": "او سوار کشتی شد، اما دریا طوفانی شد.",
+  "say": "u savâr-e kashti shod, ammâ daryâ tufâni shod."
+ },
+ {
+  "id": "w-7d1c8b50",
+  "fa": "یونس به دریا افتاد و ماهی بزرگی او را بلعید.",
+  "say": "yunos be daryâ oftâd va mâhi-ye bozorgi u râ bal'id."
+ },
+ {
+  "id": "w-7ae7b57f",
+  "fa": "در تاریکی شکم ماهی، او به درگاه خدا دعا و توبه کرد.",
+  "say": "dar târiki-ye shekam-e mâhi, u be dargâh-e khodâ do'â va towbe kard."
+ },
+ {
+  "id": "w-0bce4c5d",
+  "fa": "خدا دعای او را شنید و ماهی او را به ساحل انداخت.",
+  "say": "khodâ do'â-ye u râ shenid va mâhi u râ be sâhel andâkht."
+ },
+ {
+  "id": "w-2b1e56c4",
+  "fa": "بوتهٔ کدویی بر او سایه انداخت تا حالش خوب شد.",
+  "say": "bute-ye kadu-i bar u sâye andâkht tâ hâlash khub shod."
+ },
+ {
+  "id": "w-6da6fc08",
+  "fa": "یونس به شهرش برگشت و این بار مردم ایمان آوردند.",
+  "say": "yunos be shahrash bargasht va in bâr mardom imân âvardand."
+ },
+ {
+  "id": "w-9009dcfe",
+  "fa": "ماهی",
+  "say": "mâhi"
+ },
+ {
+  "id": "w-335aa2bc",
+  "fa": "طوفان",
+  "say": "tufân"
+ },
+ {
+  "id": "w-9fc5e266",
+  "fa": "تاریکی",
+  "say": "târiki"
+ },
+ {
+  "id": "w-d68d6626",
+  "fa": "دعا",
+  "say": "do'â"
+ },
+ {
+  "id": "w-a0594c96",
+  "fa": "ساحل",
+  "say": "sâhel"
+ },
+ {
+  "id": "w-aa0aa89b",
+  "fa": "حضرت مریم (س) بانویی پاک و مؤمن بود.",
+  "say": "hazrat-e maryam, salâmollâh alayhâ, bânuyi pâk va mo'men bud."
+ },
+ {
+  "id": "w-e1bde1d0",
+  "fa": "او تنها زنی است که نامش در قرآن آمده است.",
+  "say": "u tanhâ zani ast ke nâmash dar ghor'ân âmade ast."
+ },
+ {
+  "id": "w-d09d3a2b",
+  "fa": "وقتی تولد فرزندش نزدیک شد، کنار درخت خرمایی نشست.",
+  "say": "vaghti tavallod-e farzandash nazdik shod, kenâr-e derakht-e khormâyi neshast."
+ },
+ {
+  "id": "w-7605ae6e",
+  "fa": "ندایی به او گفت: «غمگین نباش.»",
+  "say": "nedâyi be u goft: «ghamgin nabâsh.»"
+ },
+ {
+  "id": "w-a33f8dac",
+  "fa": "«خدا زیر پایت چشمه‌ای جاری کرده است.»",
+  "say": "«khodâ zir-e pâyat cheshme-i jâri karde ast.»"
+ },
+ {
+  "id": "w-663e6204",
+  "fa": "«درخت خرما را تکان بده تا خرمای تازه برایت بریزد.»",
+  "say": "«derakht-e khormâ râ tekân bede tâ khormâ-ye tâze barâyat berizad.»"
+ },
+ {
+  "id": "w-95bffae2",
+  "fa": "فرزند او، حضرت عیسی (ع)، پیامبر خدا شد.",
+  "say": "farzand-e u, hazrat-e isâ, alayhessalâm, payâmbar-e khodâ shod."
+ },
+ {
+  "id": "w-60301901",
+  "fa": "پاک",
+  "say": "pâk"
+ },
+ {
+  "id": "w-79b25bed",
+  "fa": "نام",
+  "say": "nâm"
+ },
+ {
+  "id": "w-15ae58fa",
+  "fa": "تولد",
+  "say": "tavallod"
+ },
+ {
+  "id": "w-b2f96323",
+  "fa": "چشمه",
+  "say": "cheshme"
+ },
+ {
+  "id": "w-1378c147",
+  "fa": "غمگین",
+  "say": "ghamgin"
+ },
+ {
   "id": "w-3a45fc12",
   "fa": "صبح بخیر",
   "say": "sobh bekheyr"

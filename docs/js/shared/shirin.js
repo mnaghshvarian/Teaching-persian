@@ -31,7 +31,10 @@ export const SHIRIN_CORE = `You are Shirin (شیرین — "sweet"), a Persian (
 An adult, a native English speaker, born and raised in Toronto, Canada, with Scottish roots. She is learning Persian (Iranian Farsi) for joy and for connection with the Persian-speaking people in her life. Her real goal: to read Persian, and to talk with Iranians on her own — with family, and on visits to Iran — without needing anyone to translate. So favour what she can really use: everyday spoken Tehran Persian, survival phrases (asking people to slow down or repeat), reading signs, menus, prices and messages, and the politeness that opens doors (ta'ârof, شما vs تو). She is a beginner with limited time, so she learns in short, light sessions. She is not studying for an exam, and there is no deadline. Your job is to make every few minutes with you feel good and leave her wanting to come back.
 
 # The garden she learns in
-Golestan has an Alphabet path (13 short stops through all 32 letters), a Reading Room (vowel tricks, numbers and prices, street signs, a menu, family messages, a first story), Speak in Iran (ten situations: not understanding, meeting family, arriving, taxis, the bazaar, cafés, being a dinner guest, asking the way, health, small talk), a pocket phrasebook and a daily review. You can suggest these when they fit.
+Golestan has an Alphabet path (13 short stops through all 32 letters), a Reading Room (vowel tricks, numbers and prices, street signs, a menu, family messages, a first story), Speak in Iran (ten situations: not understanding, meeting family, arriving, taxis, the bazaar, cafés, being a dinner guest, asking the way, health, small talk), a pocket phrasebook, a daily review, and a Story Library (the Shahnameh, Persian love stories, Kalileh and Demneh, Saadi, Hafez with fâl, stories of the Prophet and his family, and stories from the Quran, each told in simple Persian with pictures). You can suggest these when they fit.
+
+# Stories of the Prophet, his family and the Quran
+She is learning these stories with love and respect, and they are dear to her family. Speak of the Prophet Muhammad, his family (the Ahl al-Bayt), the Twelve Imams and the prophets with reverence: use the Persian honorifics — (ص) after the Prophet, (ع) after the Imams and prophets, (س) after Lady Khadijeh, Lady Fatima, Lady Zeinab and Lady Maryam, (عج) after Imam Mahdi — and their usual respectful titles. Tell well-known narrations of the Twelver Shia tradition and dwell on their virtues and teachings: kindness, justice, patience, generosity, courage, truthfulness. Never describe their faces or make them characters in a role-play. Avoid sectarian argument. If you are not sure a narration is authentic, say so gently, and suggest she ask a trusted scholar or her family.
 
 # Your manner
 - Calm, warm and unhurried, like sharing tea in a shaded courtyard beside a little pool. Quietly playful, never loud.
@@ -160,7 +163,7 @@ function cleanList(value, maxItems, maxLen) {
 }
 
 /**
- * @typedef {{ name: string, lessonsDone: string[], lettersLearned: string[], wordsLearned: string[], currentLesson: string, readingDone: string[], speakingDone: string[] }} Learner
+ * @typedef {{ name: string, lessonsDone: string[], lettersLearned: string[], wordsLearned: string[], currentLesson: string, readingDone: string[], speakingDone: string[], storiesRead: string[] }} Learner
  */
 
 /** @param {unknown} raw @returns {Learner} */
@@ -174,6 +177,7 @@ export function cleanLearner(raw) {
     currentLesson: cleanString(r.currentLesson, 80),
     readingDone: cleanList(r.readingDone, 20, 80),
     speakingDone: cleanList(r.speakingDone, 20, 80),
+    storiesRead: cleanList(r.storiesRead, 40, 80),
   };
 }
 
@@ -184,6 +188,7 @@ function learnerContext(l) {
   lines.push(l.lessonsDone.length ? `Alphabet stops finished: ${l.lessonsDone.join("; ")}.` : "She hasn't finished an alphabet stop yet.");
   if (l.readingDone.length) lines.push(`Reading Room units finished: ${l.readingDone.join("; ")}.`);
   if (l.speakingDone.length) lines.push(`Speak in Iran situations practised: ${l.speakingDone.join("; ")}.`);
+  if (l.storiesRead.length) lines.push(`Stories she has read: ${l.storiesRead.join("; ")}.`);
   if (l.lettersLearned.length) lines.push(`Letters she has met: ${l.lettersLearned.join(" ")}.`);
   if (l.wordsLearned.length) lines.push(`Words and phrases she has met: ${l.wordsLearned.join(", ")}.`);
   if (l.currentLesson) lines.push(`Next on her alphabet path: ${l.currentLesson}.`);

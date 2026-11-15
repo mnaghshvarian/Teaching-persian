@@ -8,6 +8,7 @@ import { store } from "./store.js";
 import { LESSONS } from "../data/lessons.js";
 import { BY_READING } from "../data/reading.js";
 import { BY_SPEAK } from "../data/speak.js";
+import { BY_STORY } from "../data/stories.js";
 import { DEFAULT_ROUTES } from "../shared/shirin.js";
 import * as local from "./localvoices.js";
 
@@ -79,6 +80,7 @@ export function learnerSnapshot() {
     currentLesson: next ? next.title : "the whole alphabet path is finished",
     readingDone: s.readingDone.map((id) => BY_READING[id]?.title).filter(Boolean),
     speakingDone: s.speakingDone.map((id) => BY_SPEAK[id]?.title).filter(Boolean),
+    storiesRead: (s.storiesRead ?? []).map((id) => BY_STORY[id]?.title).filter(Boolean),
   };
 }
 

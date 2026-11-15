@@ -252,6 +252,13 @@ export function speakListView() {
       ),
     ),
     h(
+      "a",
+      { class: "card continue phrasebook-call", href: "#/phrases" },
+      h("span", { class: "continue-fa", "aria-hidden": "true" }, "📒"),
+      h("span", { class: "continue-text" }, h("strong", {}, "Pocket phrasebook"), h("small", {}, "Every phrase, with sound, offline — and big letters to show people")),
+      h("span", { class: "btn soft" }, "Open"),
+    ),
+    h(
       "div",
       { class: "scenario-grid" },
       SPEAK.map((u, i) =>

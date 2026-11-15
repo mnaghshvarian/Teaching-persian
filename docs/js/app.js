@@ -14,6 +14,7 @@ import { reviewView } from "./views/review.js";
 import { lettersView, letterView } from "./views/letters.js";
 import { talkView } from "./views/talk.js";
 import { storiesView } from "./views/stories.js";
+import { libraryView, storyView } from "./views/library.js";
 import { voicesView } from "./views/voices.js";
 import { moreView } from "./views/more.js";
 import { applyTheme, openOnboarding, openSettings, openPasscode } from "./views/settings.js";
@@ -28,12 +29,14 @@ const ROUTES = [
   [/^\/read\/([\w-]+)$/, (m) => readingView(m[1]), "learn"],
   [/^\/speak$/, () => speakListView(), "speak"],
   [/^\/speak\/([\w-]+)$/, (m) => speakView(m[1]), "speak"],
-  [/^\/phrases$/, () => phrasebookView(), "phrases"],
+  [/^\/phrases$/, () => phrasebookView(), "speak"],
   [/^\/review$/, () => reviewView(), "more"],
   [/^\/letters$/, () => lettersView(), "learn"],
   [/^\/letter\/([\w-]+)$/, (m) => letterView(m[1]), "learn"],
   [/^\/talk$/, (_m, params) => talkView(params), "talk"],
-  [/^\/stories$/, () => storiesView(), "more"],
+  [/^\/stories$/, () => libraryView(), "stories"],
+  [/^\/story\/([\w-]+)$/, (m) => storyView(m[1]), "stories"],
+  [/^\/history$/, () => storiesView(), "stories"],
   [/^\/voices$/, () => voicesView(), "more"],
   [/^\/more$/, () => moreView(route), "more"],
 ];

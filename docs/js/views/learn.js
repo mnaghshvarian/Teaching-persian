@@ -5,6 +5,7 @@ import { designLesson, getStatus } from "../lib/api.js";
 import { chime } from "../lib/sound.js";
 import { READING } from "../data/reading.js";
 import { SPEAK } from "../data/speak.js";
+import { STORIES } from "../data/stories.js";
 import { readingList } from "./reading.js";
 
 const IDEAS = [
@@ -64,7 +65,7 @@ export function learnView() {
       "header",
       { class: "page-head" },
       h("h1", {}, "Learn"),
-      h("p", { class: "lede" }, "Three gentle paths to reading and speaking Persian on your own. Wander in any order — nothing is locked, and there's no clock ticking."),
+      h("p", { class: "lede" }, "Four gentle paths to reading and speaking Persian on your own. Wander in any order — nothing is locked, and there's no clock ticking."),
     ),
     h(
       "div",
@@ -72,6 +73,7 @@ export function learnView() {
       track("#/learn#alphabet", "الف", "1 · The alphabet", "All 32 letters, a plant for each stop", lettersDone, LESSONS.length),
       track("#/learn#reading", "📖", "2 · The Reading Room", "Signs, menus, prices, messages, a story", readDone, READING.length),
       track("#/speak", "🗣", "3 · Speak in Iran", "Ten real situations, with practice", speakDone, SPEAK.length),
+      track("#/stories", "📜", "4 · Stories", "Shahnameh, Saadi, Hafez, the Prophet's family, the Quran", (s.storiesRead ?? []).length, STORIES.length),
     ),
     h("h2", { id: "alphabet" }, "The alphabet path"),
     h("p", { class: "lede" }, "Thirteen calm stops. Each one brings something new to your garden. ", h("a", { href: "#/letters" }, "See all 32 letters →")),

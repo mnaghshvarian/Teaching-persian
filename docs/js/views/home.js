@@ -4,6 +4,7 @@ import { LESSONS, PROVERBS } from "../data/lessons.js";
 import { gardenSvg, allDone } from "../garden.js";
 import { READING } from "../data/reading.js";
 import { SPEAK } from "../data/speak.js";
+import { STORIES } from "../data/stories.js";
 import { dueCount } from "../lib/review.js";
 import { installHelp, isStandalone } from "./settings.js";
 import { highlightedWord, sayIt, listenButtons, avatar } from "../components.js";
@@ -28,6 +29,7 @@ export function homeView() {
   const grown = LESSONS.filter((l) => done.has(l.id)).length;
   const nextSpeak = SPEAK.find((u) => !s.speakingDone.includes(u.id)) ?? SPEAK[0];
   const nextRead = READING.find((u) => !s.readingDone.includes(u.id)) ?? READING[0];
+  const story = STORIES[dayIndex() % STORIES.length];
 
   return h(
     "section",
@@ -93,7 +95,7 @@ export function homeView() {
       { class: "quick-links" },
       h("a", { class: "card link-card", href: `#/speak/${nextSpeak.id}` }, h("span", { class: "link-emoji" }, nextSpeak.icon), h("strong", {}, "Speak in Iran"), h("small", {}, `Next: ${nextSpeak.title}`)),
       h("a", { class: "card link-card", href: `#/read/${nextRead.id}` }, h("span", { class: "link-emoji" }, "📖"), h("strong", {}, "Reading Room"), h("small", {}, `Next: ${nextRead.title}`)),
-      h("a", { class: "card link-card", href: "#/phrases" }, h("span", { class: "link-emoji" }, "📒"), h("strong", {}, "Pocket phrasebook"), h("small", {}, "Every phrase, offline, with sound")),
+      h("a", { class: "card link-card", href: `#/story/${story.id}` }, h("span", { class: "link-emoji" }, "📜"), h("strong", {}, "Story of the day"), h("small", {}, story.title)),
       h("a", { class: "card link-card", href: "#/talk" }, h("span", { class: "link-emoji" }, "💬"), h("strong", {}, "Talk with Shirin"), h("small", {}, "Ask anything, or just chat")),
     ),
   );

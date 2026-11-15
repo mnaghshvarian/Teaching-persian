@@ -206,6 +206,7 @@ def main() -> None:
     ap.add_argument("model")
     ap.add_argument("--takes", type=int, default=1, help="candidate takes per item (keep the clearest)")
     ap.add_argument("--judge", default="", help="Whisper size used to pick the clearest take, e.g. medium")
+    ap.add_argument("--only-missing", action="store_true", help="keep existing recordings; make only new ones")
     args = ap.parse_args()
 
     voice = PiperVoice.load(args.model)
@@ -215,7 +216,16 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     known = set(voice.config.phoneme_id_map.keys())
     ids, report = [], []
+    old_report = {}
+    report_path = ROOT / "scripts" / "audio-report.json"
+    if args.only_missing and report_path.exists():
+        old_report = {r["id"]: r for r in json.loads(report_path.read_text(encoding="utf8"))}
     for n, item in enumerate(items, 1):
+        if args.only_missing and (OUT / f"{item['id']}.mp3").exists():
+            ids.append(item["id"])
+            if item["id"] in old_report:
+                report.append(old_report[item["id"]])
+            continue
         ph = hybrid_phonemes(voice, item)
         missing = [p for p in ph if p not in known]
         if missing:
@@ -245,7 +255,7 @@ def main() -> None:
         encoding="utf8",
     )
     if report:
-        (ROOT / "scripts" / "audio-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
+        report_path.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
         print("mean clarity score:", round(sum(r["score"] for r in report) / len(report), 3))
     print(f"done: {len(ids)} recordings in docs/audio/")
 

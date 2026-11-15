@@ -5,7 +5,7 @@ export function storiesView() {
   return h(
     "section",
     { class: "view stories" },
-    h("header", { class: "page-head" }, h("h1", {}, "Stories from Iran"), h("p", { class: "lede" }, "A little history and culture, one cup of tea at a time. Each story also lives inside a lesson on the path.")),
+    h("header", { class: "page-head" }, h("a", { class: "back-link", href: "#/stories" }, "← All stories"), h("h1", {}, "Tea-time history"), h("p", { class: "lede" }, "A little history and culture, one cup of tea at a time — the stories from the alphabet path.")),
     h(
       "div",
       { class: "story-grid" },
