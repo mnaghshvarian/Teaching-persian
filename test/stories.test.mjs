@@ -90,3 +90,25 @@ test("every Imam has a story of his own, in order", () => {
   const imams = STORIES.filter((s) => s.collection === "imams").map((s) => s.id);
   assert.deepEqual(imams, ["twelve-imams", "imam-ali", "imam-hasan", "imam-husayn", "imam-sajjad", "imam-baqir", "imam-sadiq", "imam-kazim", "imam-reza", "imam-jawad", "imam-hadi", "imam-askari", "imam-mahdi"]);
 });
+
+test("every blessing mark is said, and the help under the line shows it", () => {
+  // (ص) (ع) (س) (عج) are abbreviations: the recording says the words (scripts/spoken.py)
+  // and the transliteration must show the same words, in the same place
+  const SAID = /sallallâho alayhe va âleh|alayhessalâm|alayhemassalâm|alayhemossalâm|salâmollâh alayhâ|ajjalallâho ta'âlâ farajah/g;
+  for (const st of STORIES) {
+    for (const line of storyLines(st)) {
+      const marks = (line.fa.match(/\((ص|ع|س|عج)\)/g) ?? []).length;
+      if (!marks) continue;
+      const said = (line.translit.match(SAID) ?? []).length;
+      const pairs = (line.translit.match(/alayhemassalâm/g) ?? []).length; // one for two names
+      assert.equal(said + pairs, marks, `${st.id}: ${line.fa} — ${line.translit}`);
+    }
+  }
+});
+
+test("a subject is not run into the next noun as if joined by ezafe", () => {
+  const lines = STORIES.flatMap(storyLines).map((l) => l.fa);
+  for (const fixed of ["نوح، مؤمنان را سوار کشتی کرد.", "سیمرغ، زال را", "امام در زندان، خدا را شکر"]) {
+    assert.ok(lines.some((l) => l.includes(fixed)), fixed);
+  }
+});

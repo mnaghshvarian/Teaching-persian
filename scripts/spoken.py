@@ -2,54 +2,44 @@
 
 The written Persian carries blessing marks after holy names — (ص), (ع), (س),
 (عج) — which are abbreviations, not letters. A voice reading the text as
-written says «ع» as the letter "ein" (حضرت نوح «این» …). Here each mark
-becomes the words a reader actually says, exactly where the lesson's
-transliteration says them (usually the first mention), and is left silent
-elsewhere, so the recording matches the help shown under the line.
+written says «ع» as the letter "ein" (حضرت نوح «این» …). Here every mark
+becomes the words a reader says in its place, as the lesson's
+transliteration shows them:
+
+  (ص)  صلی‌الله‌علیه‌وآله      sallallâho alayhe va âleh
+  (ع)  علیه‌السلام            alayhessalâm
+       علیهم‌السلام           alayhemossalâm   after «اهل بیت»
+       علیهماالسلام           alayhemassalâm   once, after a pair, where the
+                                                transliteration says it that way
+  (س)  سلام‌الله‌علیها         salâmollâh alayhâ
+  (عج) عجل‌الله‌تعالی‌فرجه      ajjalallâho ta'âlâ farajah
 """
 
 import re
 
-# (how the transliteration writes it, which mark it belongs to, the words said)
-BLESSINGS = [
-    ("sallallâho alayhe va âleh", "ص", "صلی‌الله‌علیه‌وآله"),
-    ("alayhemassalâm", "ع+", "علیهماالسلام"),  # after a pair: Imam Hasan and Imam Husayn
-    ("alayhessalâm", "ع", "علیه‌السلام"),
-    ("salâmollâh alayhâ", "س", "سلام‌الله‌علیها"),
-    ("ajjalallâho ta'âlâ farajah", "عج", "عجل‌الله‌تعالی‌فرجه"),
-]
+WORDS = {"ص": "صلی‌الله‌علیه‌وآله", "ع": "علیه‌السلام", "س": "سلام‌الله‌علیها", "عج": "عجل‌الله‌تعالی‌فرجه"}
+PLURAL = "علیهم‌السلام"
+PAIR = "علیهماالسلام"
 MARK = re.compile(r"\s*\((ص|ع|س|عج)\)")
+# «امام حسن (ع) و امام حسین (ع)»: the first mark of a pair, when the pair is blessed together
+PAIR_FIRST = re.compile(r"\s+و\s+\S+(?:\s+\S+)?\s*\(ع\)")
 
 
-def said_blessings(translit: str) -> list[tuple[str, str]]:
-    found = []
-    for latin, kind, words in BLESSINGS:
-        for m in re.finditer(re.escape(latin), translit):
-            found.append((m.start(), kind, words))
-    found.sort()
-    # "alayhessalâm" is inside "alayhemassalâm"? no — but keep each position once
-    out, seen = [], set()
-    for pos, kind, words in found:
-        if pos not in seen:
-            seen.add(pos)
-            out.append((kind, words))
-    return out
-
-
-def spoken_fa(fa: str, translit: str) -> str:
-    queue = said_blessings(translit)
-    out, pos = [], 0
+def spoken_fa(fa: str, translit: str = "") -> str:
+    pairs_said_together = "alayhemassalâm" in translit
+    out, pos, skip_next_as_pair = [], 0, False
     for m in MARK.finditer(fa):
         out.append(fa[pos : m.start()])
         pos = m.end()
         kind = m.group(1)
-        if queue and queue[0][0] == kind:
-            out.append(" " + queue.pop(0)[1])
-        elif queue and queue[0][0] == "ع+" and kind == "ع":
-            # a pair (امام حسن (ع) و امام حسین (ع)): the blessing is said once, after the second name
-            if MARK.search(fa[pos : pos + 40]):
-                continue
-            out.append(" " + queue.pop(0)[1])
-        # otherwise the mark isn't read aloud here
+        if kind == "ع" and skip_next_as_pair:
+            out.append(" " + PAIR)
+            skip_next_as_pair = False
+        elif kind == "ع" and pairs_said_together and PAIR_FIRST.match(fa[pos:]):
+            skip_next_as_pair = True  # said once, after the second name
+        elif kind == "ع" and fa[: m.start()].endswith("اهل بیت"):
+            out.append(" " + PLURAL)
+        else:
+            out.append(" " + WORDS[kind])
     out.append(fa[pos:])
     return re.sub(r"\s+([،,.!?؟»])", r"\1", " ".join("".join(out).split()))

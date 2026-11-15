@@ -126,7 +126,9 @@ node scripts/build-files.mjs   # refresh docs/files.json (offline file list) aft
 
 **The family's own voices.** In **More → Family voices**, anyone at home can record a word or story line and tap **🎙 Send my recordings**; the files (named by line) go out through the share sheet. `python scripts/add_family_recordings.py <files>` then adds them to the app for every phone, credited as family recordings, and the voice scripts never overwrite them. A recording made elsewhere can be added to one line with `--id w-… --start … --end …`.
 
-**Blessing marks are read as words.** «(ع)», «(ص)», «(س)» and «(عج)» are abbreviations; `scripts/spoken.py` turns them into «علیه‌السلام», «صلی‌الله‌علیه‌وآله», «سلام‌الله‌علیها» and «عجل‌الله‌تعالی‌فرجه» wherever the line's transliteration says them, so no voice reads «ع» as the letter.
+**Blessing marks are read as words.** «(ع)», «(ص)», «(س)» and «(عج)» are abbreviations; `scripts/spoken.py` turns them into «علیه‌السلام», «صلی‌الله‌علیه‌وآله», «سلام‌الله‌علیها» and «عجل‌الله‌تعالی‌فرجه» every time they are written («علیهم‌السلام» after «اهل بیت», and «علیهماالسلام» once after a pair of Imams), so no voice reads «ع» as the letter. The transliteration under each line shows the same words in the same place, and a test keeps the two together.
+
+**Commas follow the reading.** Where a name is followed straight away by another noun, a comma after the subject keeps it from being read as one phrase joined by ezafe: «نوح، مؤمنان را سوار کشتی کرد», not «نوحِ مؤمنان…».
 
 **Real native speakers first.** `scripts/native_recordings.py` replaces the synthetic voice with a native speaker's recording for every word that has one on Wikimedia Commons (mostly from the Lingua Libre project, CC0 or CC BY-SA), after Whisper confirms it's the right word. It credits every speaker in [`docs/audio-credits.html`](docs/audio-credits.html) (More → Recording credits), and the voice scripts below never overwrite these words. Wikimedia throttles busy cloud addresses, so it runs on GitHub: **Actions → Native recordings → Run workflow**.
 
