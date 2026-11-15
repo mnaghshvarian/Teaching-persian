@@ -234,6 +234,7 @@ def main() -> None:
     ap.add_argument("--only", default="", help="comma-separated ids to remake")
     ap.add_argument("--force", action="store_true", help="with --only: replace even if the old recording scored higher")
     ap.add_argument("--good", type=float, default=0.95, help="stop taking more takes once one scores this well")
+    ap.add_argument("--out", type=Path, default=OUT, help="folder to write to (a copy of docs/audio, to swap in when done)")
     args = ap.parse_args()
 
     voice = PiperVoice.load(args.model)
@@ -242,9 +243,14 @@ def main() -> None:
     judge = Judge(args.judge) if args.judge else None
     items = json.loads((ROOT / "scripts" / "audio-items.json").read_text(encoding="utf8"))
     only = set(filter(None, args.only.split(",")))
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir = args.out
+    out_dir.mkdir(parents=True, exist_ok=True)
     known = set(voice.config.phoneme_id_map.keys())
     report_path = ROOT / "scripts" / "audio-report.json"
+    if out_dir != OUT:
+        if not (out_dir / "audio-report.json").exists() and report_path.exists():
+            (out_dir / "audio-report.json").write_text(report_path.read_text(encoding="utf8"), encoding="utf8")
+        report_path = out_dir / "audio-report.json"  # swapped in with the recordings
     old_report = {}
     if report_path.exists():
         old_report = {r["id"]: r for r in json.loads(report_path.read_text(encoding="utf8"))}
@@ -252,7 +258,7 @@ def main() -> None:
     native = set(json.loads(sources_path.read_text(encoding="utf8"))) if sources_path.exists() else set()
     ids, report = [], []
     for n, item in enumerate(items, 1):
-        path = OUT / f"{item['id']}.mp3"
+        path = out_dir / f"{item['id']}.mp3"
         # a native speaker's recording (scripts/native_recordings.py) is never replaced by the synthetic voice
         keep = item["id"] in native or (args.only_missing and path.exists()) or (only and item["id"] not in only)
         if keep and path.exists():
@@ -293,8 +299,8 @@ def main() -> None:
                 report_path.write_text(json.dumps(report, ensure_ascii=False, indent=1) + "\n", encoding="utf8")
     # a short fingerprint of each recording goes in its address, so phones
     # fetch a remade recording instead of playing a saved old copy
-    files = {i: hashlib.sha1((OUT / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in sorted(ids)}
-    (OUT / "index.json").write_text(
+    files = {i: hashlib.sha1((out_dir / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in sorted(ids)}
+    (out_dir / "index.json").write_text(
         json.dumps({"voice": f"Piper {voice_name}", "ids": sorted(ids), "files": files, "native": sorted(native & set(ids))}, separators=(",", ":")) + "\n",
         encoding="utf8",
     )
