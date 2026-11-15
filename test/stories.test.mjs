@@ -36,7 +36,7 @@ test("every story has its picture", () => {
   }
 });
 
-const RELIGIOUS = new Set(["ahlulbayt", "yaran", "quran"]);
+const RELIGIOUS = new Set(["ahlulbayt", "imams", "tarikh", "yaran", "quran"]);
 
 test("religious stories never show figurative paintings", () => {
   for (const s of STORIES.filter((x) => RELIGIOUS.has(x.collection))) {
@@ -84,4 +84,9 @@ test("no file of the website is left out of git", (t) => {
     return;
   }
   assert.equal(ignored, "", `ignored by .gitignore, so GitHub Pages would not get them:\n${ignored}`);
+});
+
+test("every Imam has a story of his own, in order", () => {
+  const imams = STORIES.filter((s) => s.collection === "imams").map((s) => s.id);
+  assert.deepEqual(imams, ["twelve-imams", "imam-ali", "imam-hasan", "imam-husayn", "imam-sajjad", "imam-baqir", "imam-sadiq", "imam-kazim", "imam-reza", "imam-jawad", "imam-hadi", "imam-askari", "imam-mahdi"]);
 });

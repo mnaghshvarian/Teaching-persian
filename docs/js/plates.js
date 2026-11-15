@@ -30,6 +30,25 @@ function crescent(cx, cy, r, fill, bg) {
   return g({}, [circle(cx, cy, r, { fill }), circle(cx + r * 0.38, cy - r * 0.12, r * 0.86, { fill: bg })]);
 }
 
+/** A camel in profile, facing right, about 56 × 45 before scaling. */
+function camelShape(x, y, k, fill) {
+  return path(
+    "M5 30 C5 22 12 18 18 18 C22 8 32 8 36 18 C40 18 44 16 46 10 L50 4 C52 2 56 3 56 6 L54 9 C52 12 50 16 48 22 C48 26 47 30 46 32 L46 45 L43 45 L42 33 L36 34 L35 45 L32 45 L31 34 L20 34 L19 45 L16 45 L15 34 L12 34 L11 45 L8 45 L8 33 C6 33 5 32 5 30 Z",
+    { fill, transform: `translate(${x} ${y}) scale(${k})` },
+  );
+}
+
+/** A date palm whose trunk stands at (x, y). */
+function palmTree(x, y, k, c) {
+  return g({ transform: `translate(${x} ${y}) scale(${k})` }, [
+    path("M0 0 c1 -20 -1 -40 2 -58", { stroke: "#5a3b22", "stroke-width": 3.5, fill: "none" }),
+    ...[-70, -30, 10, 50, 90].map((a) => path("M2 -58 q12 -8 26 -3", { stroke: "#2f5a3a", "stroke-width": 3.5, fill: "none", "stroke-linecap": "round", transform: `rotate(${a} 2 -58)` })),
+  ]);
+}
+
+const waves = (y0, n = 2) =>
+  Array.from({ length: n }, (_, k) => path(`M70 ${y0 + k * 13} q20 -7 40 0 t40 0 t40 0 t40 0`, { stroke: "#8cc6e6", "stroke-width": 2.5, fill: "none", opacity: 1 - k * 0.3 }));
+
 // ---------------------------------------------------------------- motifs
 // Each draws into the niche (roughly x 70–230, y 120–320). `c` holds colours.
 
@@ -366,6 +385,223 @@ const MOTIFS = {
     path("M144 297 h12 l5 24 h-22 Z", { fill: c.gold }),
     ...[0, 1, 2, 3, 4].map((k) => path(`M${141 + k * 4.5} 321 v8`, { stroke: c.gold, "stroke-width": 1.2 })),
   ],
+
+  // the green dome of the Prophet's mosque in Medina
+  greendome: (c) => [
+    crescent(204, 140, 11, c.gold, c.field),
+    ...[84, 206].map((x) => g({}, [
+      s("rect", { x, y: 168, width: 10, height: 138, fill: "#efe6cf" }),
+      path(`M${x} 168 l5 -18 l5 18 Z`, { fill: c.gold }),
+      s("rect", { x: x - 2, y: 196, width: 14, height: 4, fill: c.gold }),
+      s("rect", { x: x - 2, y: 236, width: 14, height: 4, fill: c.gold }),
+    ])),
+    path("M112 262 C112 214 132 194 150 182 C168 194 188 214 188 262 Z", { fill: "#2f8a52", stroke: c.gold, "stroke-width": 1.6 }),
+    s("line", { x1: 150, y1: 164, x2: 150, y2: 184, stroke: c.gold, "stroke-width": 2 }),
+    star(150, 160, 5, 2, 8, { fill: c.gold }),
+    s("rect", { x: 104, y: 262, width: 92, height: 46, fill: "#efe6cf" }),
+    ...[116, 140, 164].map((x) => path(`M${x} 308 v-22 a10 10 0 0 1 20 0 v22 Z`, { fill: "#c9a35b", opacity: 0.7 })),
+    path("M70 308 h160 v30 H70 Z", { fill: c.sand, opacity: 0.55 }),
+  ],
+
+  // a door in a wall, a lamp beside it, embers at its foot — Lady Fatima's house
+  door: (c) => [
+    crescent(106, 142, 11, c.gold, c.field),
+    path("M70 336 V214 H230 V336 Z", { fill: "#b8924a" }),
+    ...[232, 250, 268, 286, 304, 322].map((y) => path(`M70 ${y} h44 M186 ${y} h44`, { stroke: "#94733a", "stroke-width": 1 })),
+    path("M114 336 V240 C114 218 130 206 150 206 C170 206 186 218 186 240 V336 Z", { fill: "#5a3b22", stroke: c.gold, "stroke-width": 2 }),
+    path("M150 207 V336", { stroke: "#2d1d10", "stroke-width": 2 }),
+    ...[126, 138, 162, 174].map((x) => path(`M${x} 226 V336`, { stroke: "#47301a", "stroke-width": 1 })),
+    circle(143, 276, 3, { fill: c.gold }),
+    circle(157, 276, 3, { fill: c.gold }),
+    s("ellipse", { cx: 150, cy: 336, rx: 50, ry: 12, fill: "#e9622b", opacity: 0.45 }),
+    s("ellipse", { cx: 150, cy: 336, rx: 26, ry: 6, fill: "#ffd36b", opacity: 0.6 }),
+    path("M208 218 v14", { stroke: c.gold, "stroke-width": 1.2 }),
+    circle(208, 240, 16, { fill: "#ffe9a8", opacity: 0.22 }),
+    circle(208, 240, 8, { fill: "#ffd36b" }),
+  ],
+
+  // a camel bearing a howdah — the Battle of the Camel
+  howdah: (c) => [
+    star(204, 146, 6, 2.4, 8, { fill: c.gold }),
+    path("M70 298 Q150 282 230 298 L230 338 L70 338 Z", { fill: c.sand, opacity: 0.75 }),
+    camelShape(90, 198, 2.1, "#b08a4a"),
+    path("M124 216 h46 v-18 C170 176 124 176 124 198 Z", { fill: "#a8323e", stroke: c.gold, "stroke-width": 1.6 }),
+    path("M124 204 h46 M147 182 v-8", { stroke: c.gold, "stroke-width": 1.4 }),
+    circle(147, 172, 3, { fill: c.gold }),
+  ],
+
+  // two banners facing each other by the Euphrates — Siffin
+  banners: (c) => [
+    circle(150, 146, 16, { fill: c.gold, opacity: 0.85 }),
+    path("M70 286 h160 v52 H70 Z", { fill: c.sand, opacity: 0.6 }),
+    ...waves(300),
+    path("M108 292 L116 176", { stroke: c.gold, "stroke-width": 3 }),
+    path("M192 292 L184 176", { stroke: c.gold, "stroke-width": 3 }),
+    circle(116, 174, 3.5, { fill: c.gold }),
+    circle(184, 174, 3.5, { fill: c.gold }),
+    path("M116 182 q14 -4 28 4 q-14 8 -28 14 Z", { fill: "#2f8a52", stroke: c.gold, "stroke-width": 1 }),
+    path("M184 182 q-14 -4 -28 4 q14 8 28 14 Z", { fill: "#7a2a3a", stroke: c.gold, "stroke-width": 1 }),
+    palmTree(82, 288, 0.8, c),
+    palmTree(218, 288, 0.75, c),
+  ],
+
+  // Dhu al-Fiqar, the two-pointed sword of Imam Ali
+  zulfiqar: (c) => [
+    crescent(204, 142, 11, c.gold, c.field),
+    circle(150, 214, 64, { fill: "url(#glow)" }),
+    path("M142 300 L142 156 L134 124 L150 148 L166 124 L158 156 L158 300 Z", { fill: "#dfe4ec", stroke: c.gold, "stroke-width": 1.5 }),
+    path("M150 152 V296", { stroke: "#9aa3b2", "stroke-width": 1 }),
+    path("M116 300 h68 q-6 9 -34 9 q-28 0 -34 -9 Z", { fill: c.gold }),
+    s("rect", { x: 144, y: 309, width: 12, height: 22, rx: 3, fill: "#5a3b22" }),
+    circle(150, 333, 6, { fill: c.gold }),
+  ],
+
+  // the pierced waterskin of Abbas by the river
+  mashk: (c) => [
+    crescent(106, 142, 11, c.gold, c.field),
+    ...waves(304),
+    palmTree(84, 298, 0.85, c),
+    palmTree(218, 298, 0.8, c),
+    path("M122 218 c-10 30 -6 62 28 70 c34 -8 38 -40 28 -70 c-8 -10 -48 -10 -56 0 Z", { fill: "#c9a35b", stroke: c.gold, "stroke-width": 2 }),
+    path("M136 208 h28 v12 h-28 Z", { fill: "#8a5a2b" }),
+    path("M128 212 q22 -44 44 0", { stroke: c.gold, "stroke-width": 2, fill: "none" }),
+    path("M94 236 L170 262", { stroke: "#4a2e18", "stroke-width": 2.4 }),
+    path("M170 262 l-10 -1 l3 -7 Z", { fill: "#4a2e18" }),
+    path("M94 236 l-6 -7 M94 236 l-9 2", { stroke: "#8a5a2b", "stroke-width": 2 }),
+    ...[[160, 292], [169, 300], [153, 302]].map(([x, y]) => path(`M${x} ${y} q-4 6 0 9 q4 -3 0 -9 Z`, { fill: "#8cc6e6" })),
+  ],
+
+  // an open book on a Quran stand
+  book: (c) => [
+    circle(150, 196, 64, { fill: "url(#glow)" }),
+    star(150, 146, 8, 3, 8, { fill: c.gold }),
+    path("M112 304 L188 250 M188 304 L112 250", { stroke: "#8a5a2b", "stroke-width": 7, "stroke-linecap": "round" }),
+    path("M150 258 C130 246 104 246 92 252 L92 202 C104 196 130 196 150 208 Z", { fill: "#f3e6c8", stroke: c.gold, "stroke-width": 2 }),
+    path("M150 258 C170 246 196 246 208 252 L208 202 C196 196 170 196 150 208 Z", { fill: "#f3e6c8", stroke: c.gold, "stroke-width": 2 }),
+    ...[214, 224, 234, 244].map((y) => path(`M100 ${y} q22 -6 44 4 M156 ${y + 4} q22 -10 44 -4`, { stroke: "#8a6420", "stroke-width": 1, fill: "none" })),
+  ],
+
+  // a reed pen in an inkwell, beside a written page
+  pen: (c) => [
+    ...[[96, 150], [130, 132], [176, 140], [210, 168], [112, 184]].map(([x, y], i) => star(x, y, i % 2 ? 4 : 6, 2, 8, { fill: c.gold })),
+    path("M80 200 h58 v84 h-58 Z", { fill: "#f3e6c8", stroke: c.gold, "stroke-width": 1.6 }),
+    ...[214, 226, 238, 250, 262].map((y) => path(`M88 ${y} h42`, { stroke: "#8a6420", "stroke-width": 1 })),
+    path("M154 268 L204 158 L211 161 L161 271 Z", { fill: "#c9973f", stroke: "#8a6420", "stroke-width": 1 }),
+    path("M130 306 h52 l-7 -34 h-38 Z", { fill: "#1d2a4a", stroke: c.gold, "stroke-width": 2 }),
+    s("ellipse", { cx: 156, cy: 272, rx: 19, ry: 4.5, fill: c.gold }),
+    path("M70 306 h160", { stroke: c.gold, "stroke-width": 1, opacity: 0.6 }),
+  ],
+
+  // a lote tree in fruit, water drops at its foot
+  tree: (c) => [
+    crescent(204, 140, 11, c.gold, c.field),
+    path("M70 300 Q150 286 230 300 L230 338 L70 338 Z", { fill: "#3f7a49", opacity: 0.85 }),
+    path("M144 300 c2 -30 -2 -50 2 -76 h8 c4 26 0 46 2 76 Z", { fill: "#6a4220" }),
+    ...[[150, 196, 50], [118, 214, 30], [182, 214, 30], [132, 178, 28], [168, 178, 28]].map(([x, y, r]) => circle(x, y, r, { fill: "#4f8a55" })),
+    ...[[124, 204], [146, 182], [170, 196], [186, 222], [114, 230], [158, 222], [136, 228], [176, 170], [128, 170]].map(([x, y]) => circle(x, y, 4.5, { fill: "#f0b23a", stroke: "#a86f20", "stroke-width": 0.8 })),
+    ...[[120, 312], [132, 318], [168, 316], [180, 310]].map(([x, y]) => path(`M${x} ${y} q-4 6 0 9 q4 -3 0 -9 Z`, { fill: "#8cc6e6" })),
+  ],
+
+  // Samarra: the spiral minaret and the golden dome
+  samarra: (c) => [
+    crescent(110, 140, 11, c.gold, c.field),
+    path("M78 306 L96 170 L112 170 L130 306 Z", { fill: "#c9a35b" }),
+    ...[0, 1, 2, 3, 4].map((k) => path(`M${80 + k * 3} ${296 - k * 26} L${128 - k * 3} ${278 - k * 26}`, { stroke: "#94733a", "stroke-width": 2 })),
+    s("rect", { x: 98, y: 156, width: 12, height: 14, fill: "#c9a35b" }),
+    path("M150 268 C150 226 168 208 186 198 C204 208 222 226 222 268 Z", { fill: c.gold }),
+    s("line", { x1: 186, y1: 180, x2: 186, y2: 198, stroke: c.gold, "stroke-width": 2 }),
+    circle(186, 178, 3, { fill: c.gold }),
+    s("rect", { x: 144, y: 268, width: 84, height: 40, fill: "#efe6cf" }),
+    ...[152, 176, 200].map((x) => path(`M${x} 308 v-20 a10 10 0 0 1 20 0 v20 Z`, { fill: "#2f6a8a", opacity: 0.75 })),
+    path("M70 308 h160 v30 H70 Z", { fill: c.sand, opacity: 0.55 }),
+  ],
+
+  // rain falling on a thirsty land
+  rain: (c) => [
+    ...Array.from({ length: 22 }, (_, i) => {
+      const x = 78 + (i % 11) * 15 + (i > 10 ? 7 : 0);
+      const y = 196 + (i > 10 ? 30 : 0);
+      return path(`M${x} ${y} l-6 18`, { stroke: "#8cc6e6", "stroke-width": 2, "stroke-linecap": "round", opacity: 0.85 });
+    }),
+    ...[[110, 176, 26], [146, 164, 32], [186, 176, 26], [128, 186, 22], [168, 188, 22]].map(([x, y, r]) => circle(x, y, r, { fill: "#d9e1ec" })),
+    path("M70 290 Q150 272 230 290 L230 338 L70 338 Z", { fill: "#3f7a49", opacity: 0.85 }),
+    palmTree(92, 292, 0.7, c),
+    palmTree(206, 292, 0.65, c),
+    ...[[124, 300], [150, 306], [176, 300]].map(([x, y]) => path(`M${x} ${y} q-6 -10 0 -18 q6 8 0 18 Z`, { fill: "#6fb36a" })),
+  ],
+
+  // the sun behind the clouds — the hidden Imam
+  cloudsun: (c) => [
+    ...Array.from({ length: 16 }, (_, i) => {
+      const a = (i * Math.PI) / 8;
+      return s("line", { x1: (150 + 44 * Math.cos(a)).toFixed(1), y1: (200 + 44 * Math.sin(a)).toFixed(1), x2: (150 + 100 * Math.cos(a)).toFixed(1), y2: (200 + 100 * Math.sin(a)).toFixed(1), stroke: "#ffd36b", "stroke-width": i % 2 ? 1.2 : 2.6, opacity: 0.6 });
+    }),
+    circle(150, 200, 36, { fill: "#ffd36b" }),
+    ...[[104, 238, 26], [138, 228, 32], [176, 232, 28], [208, 244, 22], [120, 252, 22], [160, 254, 26], [86, 254, 18]].map(([x, y, r]) => circle(x, y, r, { fill: "#eef2f8" })),
+    path("M70 300 Q150 286 230 300 L230 338 L70 338 Z", { fill: "#3f7a49", opacity: 0.8 }),
+    ...[[96, 296], [204, 296]].map(([x, y]) => g({}, [path(`M${x} ${y} v-14`, { stroke: c.gold, "stroke-width": 1 }), circle(x, y - 18, 5, { fill: "#ffd36b" })])),
+  ],
+
+  // a round shield and crossed spears — Miqdad, the horseman of Badr
+  shield: (c) => [
+    crescent(204, 140, 11, c.gold, c.field),
+    path("M96 300 L204 160 M204 300 L96 160", { stroke: "#8a5a2b", "stroke-width": 4, "stroke-linecap": "round" }),
+    path("M204 160 l-4 -14 l12 6 Z M96 160 l4 -14 l-12 6 Z", { fill: "#dfe4ec" }),
+    circle(150, 232, 52, { fill: "#8a5a2b", stroke: c.gold, "stroke-width": 3 }),
+    circle(150, 232, 40, { fill: "none", stroke: c.gold, "stroke-width": 1.2 }),
+    star(150, 232, 30, 14, 8, { fill: c.gold }),
+    circle(150, 232, 8, { fill: "#8a5a2b" }),
+  ],
+
+  // a bow and the mountain of Uhud — Hamza
+  bow: (c) => [
+    star(110, 146, 6, 2.4, 8, { fill: c.gold }),
+    path("M70 300 L118 226 L148 262 L184 206 L230 300 Z", { fill: "#8a6a4a", opacity: 0.85 }),
+    path("M70 300 h160 v38 H70 Z", { fill: c.sand, opacity: 0.7 }),
+    path("M196 150 C150 170 150 270 196 290", { stroke: c.gold, "stroke-width": 4, fill: "none", "stroke-linecap": "round" }),
+    path("M196 150 L196 290", { stroke: "#efe2c4", "stroke-width": 1.2 }),
+    path("M128 220 L214 220", { stroke: "#5a3b22", "stroke-width": 2.4 }),
+    path("M128 220 l12 -6 l0 12 Z", { fill: "#dfe4ec" }),
+    path("M214 220 l8 -6 M214 220 l8 6", { stroke: "#a8323e", "stroke-width": 2 }),
+  ],
+
+  // two golden wings — Ja'far al-Tayyar
+  wings: (c) => {
+    const wing = (dir) =>
+      g({ transform: dir < 0 ? "" : "translate(300 0) scale(-1 1)" }, [
+        path("M146 240 C116 240 88 220 74 184 C94 198 112 200 126 196 C106 186 94 172 88 152 C108 170 126 176 140 174 C128 162 122 148 124 130 C136 150 146 162 148 184 Z", { fill: c.gold, stroke: "#8a6420", "stroke-width": 1 }),
+        path("M140 226 C118 222 100 210 90 194 M138 208 C120 202 108 190 102 174 M140 192 C130 182 126 170 126 158", { stroke: "#8a6420", "stroke-width": 1.2, fill: "none" }),
+      ]);
+    return [
+      circle(150, 206, 72, { fill: "url(#glow)" }),
+      wing(-1),
+      wing(1),
+      star(150, 252, 10, 4, 8, { fill: c.gold }),
+      ...[[96, 132], [204, 132], [150, 118], [104, 296], [196, 296], [150, 306]].map(([x, y]) => star(x, y, 4, 1.6, 4, { fill: c.gold })),
+    ];
+  },
+
+  // a letter, rolled open, with its seal — Imam Ali's letter to Malik
+  scroll: (c) => [
+    crescent(204, 140, 11, c.gold, c.field),
+    path("M96 176 h108 v118 h-108 Z", { fill: "#f3e6c8", stroke: c.gold, "stroke-width": 1.6 }),
+    s("rect", { x: 88, y: 168, width: 124, height: 14, rx: 7, fill: "#c9a35b", stroke: c.gold, "stroke-width": 1.2 }),
+    s("rect", { x: 88, y: 288, width: 124, height: 14, rx: 7, fill: "#c9a35b", stroke: c.gold, "stroke-width": 1.2 }),
+    ...[196, 210, 224, 238, 252].map((y, i) => path(`M${108 + (i % 2) * 8} ${y} h${84 - (i % 2) * 16}`, { stroke: "#8a6420", "stroke-width": 1.1 })),
+    circle(178, 270, 9, { fill: "#a8323e" }),
+    star(178, 270, 5, 2, 8, { fill: c.gold }),
+    ...waves(316),
+  ],
+
+  // a night in the desert beyond Kufa — Kumayl
+  night: (c) => [
+    crescent(184, 158, 24, c.gold, c.field),
+    ...[[96, 140, 5], [124, 176, 3], [216, 210, 4], [100, 216, 3], [150, 132, 4], [212, 134, 3], [134, 214, 2.5]].map(([x, y, r]) => star(x, y, r, r * 0.4, 4, { fill: "#f6dc95" })),
+    path("M70 280 Q120 258 170 278 T230 268 L230 338 L70 338 Z", { fill: c.sand, opacity: 0.8 }),
+    path("M70 300 Q140 288 230 302 L230 338 L70 338 Z", { fill: "#a9813f", opacity: 0.85 }),
+    palmTree(98, 286, 0.75, c),
+    path("M150 338 q10 -20 4 -36 q-6 -12 8 -24", { stroke: "#efe2c4", "stroke-width": 2, fill: "none", "stroke-dasharray": "3 4", opacity: 0.7 }),
+  ],
 };
 
 const PALETTE = {
@@ -375,7 +611,7 @@ const PALETTE = {
   garden: { field: "#173d3a", field2: "#24605a" },
   dawn: { field: "#2c2350", field2: "#b65a45" },
 };
-const MOTIF_SKY = { kaaba: "night", caravan: "dusk", lamp: "night", bread: "night", tulips: "dusk", deer: "garden", twelve: "night", stars: "night", river: "sea", fire: "dusk", ark: "sea", ant: "garden", fish: "sea", palm: "garden", arch: "dusk", tent: "night", gate: "garden", sunrise: "dawn", beads: "night" };
+const MOTIF_SKY = { kaaba: "night", caravan: "dusk", lamp: "night", bread: "night", tulips: "dusk", deer: "garden", twelve: "night", stars: "night", river: "sea", fire: "dusk", ark: "sea", ant: "garden", fish: "sea", palm: "garden", arch: "dusk", tent: "night", gate: "garden", sunrise: "dawn", beads: "night", greendome: "night", door: "dusk", howdah: "dusk", banners: "dawn", zulfiqar: "night", mashk: "dawn", book: "night", pen: "night", tree: "garden", samarra: "dusk", rain: "sea", cloudsun: "dawn", shield: "night", bow: "dusk", wings: "night", scroll: "sea", night: "night" };
 
 /** Build an illuminated plate. `title` is the Persian title for the cartouche. */
 export function plateSvg(motif, title = "") {
