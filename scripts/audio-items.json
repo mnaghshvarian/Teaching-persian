@@ -5755,9 +5755,14 @@
   "say": "ba'zi az mardom be u mikhandidand."
  },
  {
-  "id": "w-4ce5efe5",
-  "fa": "نوح مؤمنان و از هر حیوان یک جفت را سوار کشتی کرد.",
-  "say": "nuh mo'menân va az har heyvân yek joft râ savâr-e kashti kard."
+  "id": "w-871fa120",
+  "fa": "نوح، مؤمنان را سوار کشتی کرد.",
+  "say": "nuh, mo'menân râ savâr-e kashti kard."
+ },
+ {
+  "id": "w-5e001baa",
+  "fa": "از هر حیوان هم یک جفت سوار کرد.",
+  "say": "az har heyvân ham yek joft savâr kard."
  },
  {
   "id": "w-9041b782",

@@ -31,6 +31,9 @@ import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from spoken import spoken_fa  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "audio"
 
@@ -46,9 +49,10 @@ def ssml(text: str, voice: str, rate: str) -> str:
 
 
 def spoken_text(item: dict) -> str:
-    """What the voice reads: the Persian as written, with the guillemets and
+    """What the voice reads: the Persian as written, with blessing marks such as
+    (ع) turned into the words said (scripts/spoken.py), and the guillemets and
     ellipses that only matter on the page tidied away."""
-    text = item["fa"].replace("«", "").replace("»", "").replace("…", "، ")
+    text = spoken_fa(item["fa"], item["say"]).replace("«", "").replace("»", "").replace("…", "، ")
     return " ".join(text.split())
 
 

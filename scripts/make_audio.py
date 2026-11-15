@@ -23,6 +23,9 @@ from pathlib import Path
 
 from piper import PiperVoice, SynthesisConfig
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from spoken import spoken_fa  # noqa: E402  (blessing marks → the words said)
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs" / "audio"
 
@@ -150,7 +153,7 @@ def candidates(voice, item) -> list[tuple[str, list[str]]]:
     checked transliteration (which knows the short vowels and everyday Tehran
     forms the script leaves out). The judge keeps whichever comes out clearest."""
     mine = phonemes_for(item["say"])
-    theirs = own_reading(voice, item["fa"])
+    theirs = own_reading(voice, spoken_fa(item["fa"], item["say"]))
     if not theirs or [p for p in theirs if p not in NOISE] == [p for p in mine if p not in NOISE]:
         return [("own", theirs or mine)]
     return [("own", theirs), ("translit", mine)]
@@ -209,6 +212,7 @@ def main() -> None:
     ap.add_argument("--judge", default="", help="Whisper model that picks the clearest take, e.g. deepdml/faster-whisper-large-v3-turbo-ct2")
     ap.add_argument("--only-missing", action="store_true", help="keep existing recordings; make only new ones")
     ap.add_argument("--only", default="", help="comma-separated ids to remake")
+    ap.add_argument("--force", action="store_true", help="with --only: replace even if the old recording scored higher")
     args = ap.parse_args()
 
     voice = PiperVoice.load(args.model)
@@ -246,7 +250,7 @@ def main() -> None:
                 if not judge:
                     best, best_way = audio, way
                     break
-                sc, heard = judge.score(voice, audio, item["fa"])
+                sc, heard = judge.score(voice, audio, spoken_fa(item["fa"], item["say"]))
                 if sc > best_score:
                     best, best_score, best_heard, best_way = audio, sc, heard, way
                 if sc >= 0.95:
@@ -254,7 +258,7 @@ def main() -> None:
             if not judge or best_score >= 0.95:
                 break
         prev = old_report.get(item["id"])
-        if judge and only and path.exists() and prev and prev.get("score", -1) >= best_score:
+        if judge and only and not args.force and path.exists() and prev and prev.get("score", -1) >= best_score:
             # remaking on request: keep the current recording unless the new one is clearer
             ids.append(item["id"])
             report.append(prev)

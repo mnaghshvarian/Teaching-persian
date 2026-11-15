@@ -187,10 +187,11 @@ def main() -> None:
 
     # earlier runs' choices stay; this run adds the words still missing
     sources = json.loads(SOURCES.read_text(encoding="utf8")) if SOURCES.exists() else {}
-    sources = {k: v for k, v in sources.items() if k in wanted and (OUT / f"{k}.mp3").exists()}
+    # the family's own recordings (scripts/add_family_recordings.py) always stay
+    sources = {k: v for k, v in sources.items() if (v.get("family") or k in wanted) and (OUT / f"{k}.mp3").exists()}
     throttled = 0
     for n, (iid, item) in enumerate(sorted(wanted.items()), 1):
-        if iid in sources:
+        if iid in sources:  # already a native or family recording
             continue
         if time.monotonic() > deadline:
             print("time's up for this run; saving what's done", flush=True)
@@ -239,9 +240,13 @@ def main() -> None:
 def write_credits(sources: dict) -> None:
     rows = "\n".join(
         f"<tr><td lang='fa' dir='rtl'>{html.escape(s['fa'])}</td><td>{html.escape(s['speaker'])}</td>"
-        f"<td>{html.escape(s['license'])}</td><td><a href='{html.escape(s['page'])}'>source</a></td></tr>"
-        for s in sorted(sources.values(), key=lambda s: s["fa"])
+        f"<td>{html.escape(s['license'])}</td><td>"
+        + (f"<a href='{html.escape(s['page'])}'>source</a>" if s.get("page") else "")
+        + "</td></tr>"
+        for s in sorted(sources.values(), key=lambda s: (not s.get("family"), s["fa"]))
     )
+    family = sum(1 for s in sources.values() if s.get("family"))
+    commons = len(sources) - family
     CREDITS.write_text(
         f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -251,7 +256,8 @@ table{{border-collapse:collapse;width:100%}}td,th{{padding:6px 8px;border-bottom
 td[lang=fa]{{font-size:1.2rem;text-align:right}}a{{color:#1f6f6a}}</style></head><body>
 <p><a href="./#/more">← Back to Golestan</a></p>
 <h1>Recording credits</h1>
-<p>{len(sources)} words in Golestan are said by native Persian speakers, from recordings shared on
+<p>{len(sources)} words and lines in Golestan are said by native Persian speakers: {family} recorded
+by the family, and {commons} from recordings shared on
 <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> — most through the
 <a href="https://lingualibre.org/">Lingua Libre</a> project. Thank you to every speaker.
 The recordings were trimmed and their volume evened out; recordings under CC BY-SA keep that licence.

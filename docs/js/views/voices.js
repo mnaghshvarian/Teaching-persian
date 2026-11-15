@@ -10,10 +10,10 @@ import { READING } from "../data/reading.js";
 import { SPEAK, ESSENTIALS } from "../data/speak.js";
 import { STORIES, storyLines } from "../data/stories.js";
 import { voiceId } from "../lib/persian.js";
-import { saveVoice, deleteVoice, getStatus } from "../lib/api.js";
+import { saveVoice, deleteVoice, getStatus, listVoices, fetchVoice } from "../lib/api.js";
 import { refreshRecordings, hasRecording, markRecorded, sayPersian, playBuiltIn, hasBundled, loadBundled } from "../lib/speech.js";
 
-const MAX_SECONDS = 8;
+const MAX_SECONDS = 20; // long enough for a story sentence
 
 function pickMime() {
   const options = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"];
@@ -128,6 +128,38 @@ function recordRow(item) {
   return li;
 }
 
+/** Send the family's recordings (Messages, WhatsApp, AirDrop, email…), so they can be
+ * added to the app for every phone. Each file is named by its line's id, with a list
+ * of ids and lines alongside. */
+async function sendRecordings() {
+  const list = await listVoices().catch(() => []);
+  if (!list.length) return toast("No recordings yet — tap ● Record next to a line first.");
+  const files = [];
+  for (const v of list) {
+    const blob = await fetchVoice(v.id).catch(() => null);
+    if (!blob) continue;
+    const ext = /mp4|m4a|aac/.test(blob.type) ? "m4a" : /ogg/.test(blob.type) ? "ogg" : /wav/.test(blob.type) ? "wav" : "webm";
+    files.push(new File([blob], `${v.id}.${ext}`, { type: blob.type || "audio/mp4" }));
+  }
+  const lines = list.map((v) => `${v.id}\t${v.text ?? ""}`).join("\n");
+  files.push(new File([`Golestan family recordings\n\n${lines}\n`], "golestan-recordings.txt", { type: "text/plain" }));
+  try {
+    if (navigator.canShare?.({ files })) {
+      await navigator.share({ files, title: "Golestan recordings", text: `${list.length} recordings for Golestan` });
+      return;
+    }
+  } catch (err) {
+    if (err?.name === "AbortError") return;
+  }
+  for (const f of files) {
+    const a = h("a", { href: URL.createObjectURL(f), download: f.name });
+    document.body.append(a);
+    a.click();
+    a.remove();
+  }
+  toast("Saved the recordings to your downloads — send them on from there.");
+}
+
 /** Share the marked words (Messages, WhatsApp, email…) or copy them. */
 async function sendFlags() {
   const list = Object.entries(flagged());
@@ -179,6 +211,8 @@ export function voicesView() {
     h("h2", {}, "👂 Check the app's voice"),
     h("p", {}, "Tap 🔊 to hear how the app says a word. If it's wrong, tap 👎. When you're done, send the list — or record the word yourself with ● Record, and the app will use your voice instead."),
     h("p", { class: "row wrap" }, h("span", {}, "Words marked: ", flagCount), h("button", { class: "btn primary small", type: "button", onclick: sendFlags }, "Send the list")),
+    h("p", { class: "small" }, "Recorded some lines yourself? Send them too — they'll be added to Golestan so your voice plays on every phone, not just this one."),
+    h("p", { class: "row wrap" }, h("button", { class: "btn soft small", type: "button", onclick: sendRecordings }, "🎙 Send my recordings")),
   );
 
   Promise.all([refreshRecordings(), loadBundled()]).then(() => {
