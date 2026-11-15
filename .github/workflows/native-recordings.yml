@@ -35,8 +35,21 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           pip install --quiet faster-whisper
 
+      # keep Wikimedia's replies between runs, so a run that was throttled picks up where it stopped
+      - uses: actions/cache/restore@v4
+        with:
+          path: .wm-cache
+          key: wm-cache-${{ github.run_id }}
+          restore-keys: wm-cache-
+
       - name: Fetch, check and prepare the recordings
-        run: python -u scripts/native_recordings.py --check deepdml/faster-whisper-large-v3-turbo-ct2 --cache .wm-cache
+        run: python -u scripts/native_recordings.py --check deepdml/faster-whisper-large-v3-turbo-ct2 --cache .wm-cache --minutes 100
+
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .wm-cache
+          key: wm-cache-${{ github.run_id }}
 
       - name: Refresh the offline file list
         run: node scripts/build-files.mjs
@@ -48,4 +61,5 @@ jobs:
           git add docs/audio docs/audio-credits.html docs/files.json scripts/audio-sources.json
           if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
           git commit -m "Use native speakers' recordings from Wikimedia Commons"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

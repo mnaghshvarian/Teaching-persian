@@ -47,11 +47,16 @@ CACHE: Path | None = None
 SPEAKERS = ["Diako1971", "commons", "Mazanin (مازنین)", "Afsham23", "Darafsh"]
 
 
-def get(url: str, binary: bool = False):
+class Throttled(Exception):
+    """Wikimedia asked us to wait longer than we're willing to, this run."""
+
+
+def get(url: str, binary: bool = False, patience: float = 3600):
     cached = CACHE / hashlib.sha1(url.encode()).hexdigest() if CACHE else None
     if cached and cached.exists():
         data = cached.read_bytes()
         return data if binary else json.loads(data)
+    waited = 0.0
     for _ in range(60):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=90) as r:
@@ -61,7 +66,11 @@ def get(url: str, binary: bool = False):
                 return data if binary else json.loads(data)
         except urllib.error.HTTPError as err:
             if err.code in (429, 502, 503):
-                time.sleep(float(err.headers.get("Retry-After") or 20) + 1)
+                wait = float(err.headers.get("Retry-After") or 20) + 1
+                if waited + wait > patience:
+                    raise Throttled(url) from err
+                time.sleep(wait)
+                waited += wait
                 continue
             raise
         except urllib.error.URLError:
@@ -159,7 +168,9 @@ def main() -> None:
     ap.add_argument("--check", default="", help="Whisper model that confirms each recording is the right word")
     ap.add_argument("--min-match", type=float, default=0.5)
     ap.add_argument("--cache", default="", help="folder that keeps every Wikimedia reply, so reruns are quick")
+    ap.add_argument("--minutes", type=float, default=0, help="stop fetching after this long and save what's done (0 = no limit)")
     args = ap.parse_args()
+    deadline = time.monotonic() + args.minutes * 60 if args.minutes else float("inf")
     global CACHE
     if args.cache:
         CACHE = Path(args.cache)
@@ -173,15 +184,29 @@ def main() -> None:
     check = Check(args.check) if args.check else None
     rank = lambda c: SPEAKERS.index("Diako1971") if info.get(c[0], {}).get("speaker") == "Diako1971" else SPEAKERS.index(c[1])
 
-    sources = {}
+    # earlier runs' choices stay; this run adds the words still missing
+    sources = json.loads(SOURCES.read_text(encoding="utf8")) if SOURCES.exists() else {}
+    sources = {k: v for k, v in sources.items() if k in wanted and (OUT / f"{k}.mp3").exists()}
+    throttled = 0
     for n, (iid, item) in enumerate(sorted(wanted.items()), 1):
+        if iid in sources:
+            continue
+        if time.monotonic() > deadline:
+            print("time's up for this run; saving what's done", flush=True)
+            break
         for title, _who in sorted(found[norm(item["fa"])], key=rank):
             meta = info.get(title)
             if not meta or not meta.get("url") or not re.match(r"CC0|CC BY(-SA)? [34]\.0|Public domain", meta["license"]):
                 continue
             path = OUT / f"{iid}.mp3"
             tmp = OUT / f"{iid}.native.mp3"
-            prepare(get(meta["url"], binary=True), tmp)
+            try:
+                raw = get(meta["url"], binary=True, patience=180)
+            except Throttled:
+                throttled += 1
+                print(f"  later: {title} (Wikimedia asked us to wait)", flush=True)
+                break
+            prepare(raw, tmp)
             if check:
                 heard = check.heard(tmp)
                 match = difflib.SequenceMatcher(None, norm(item["fa"]).replace(" ", ""), norm(heard).replace(" ", "")).ratio()
@@ -202,7 +227,8 @@ def main() -> None:
     index["files"] = {i: hashlib.sha1((OUT / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in index["ids"]}
     index["native"] = sorted(sources)
     (OUT / "index.json").write_text(json.dumps(index, separators=(",", ":")) + "\n", encoding="utf8")
-    print(f"done: {len(sources)} words now use a native speaker's recording")
+    left = len(wanted) - len(sources)
+    print(f"done: {len(sources)} words now use a native speaker's recording ({throttled} put off by throttling; run again to fetch them)" if throttled else f"done: {len(sources)} words now use a native speaker's recording ({left} have none that passed the check)")
 
 
 def write_credits(sources: dict) -> None:
