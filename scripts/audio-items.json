@@ -1,0 +1,1677 @@
+[
+ {
+  "id": "w-c0d2e7a5",
+  "fa": "الف",
+  "say": "alef"
+ },
+ {
+  "id": "w-b22ae2bc",
+  "fa": "انار",
+  "say": "anâr"
+ },
+ {
+  "id": "w-00d2bbf7",
+  "fa": "آب",
+  "say": "âb"
+ },
+ {
+  "id": "w-2d097617",
+  "fa": "بِ",
+  "say": "be"
+ },
+ {
+  "id": "w-12b6ab1d",
+  "fa": "بابا",
+  "say": "bâbâ"
+ },
+ {
+  "id": "w-12b9329e",
+  "fa": "باغ",
+  "say": "bâgh"
+ },
+ {
+  "id": "w-fb092761",
+  "fa": "پِ",
+  "say": "pe"
+ },
+ {
+  "id": "w-7f69194e",
+  "fa": "پنیر",
+  "say": "panir"
+ },
+ {
+  "id": "w-f6c8c530",
+  "fa": "پرنده",
+  "say": "parande"
+ },
+ {
+  "id": "w-2f09793d",
+  "fa": "تِ",
+  "say": "te"
+ },
+ {
+  "id": "w-0489a0df",
+  "fa": "توت",
+  "say": "tut"
+ },
+ {
+  "id": "w-83a820b2",
+  "fa": "تاب",
+  "say": "tâb"
+ },
+ {
+  "id": "w-2e0977aa",
+  "fa": "ثِ",
+  "say": "se"
+ },
+ {
+  "id": "w-be54638e",
+  "fa": "ثانیه",
+  "say": "sâniye"
+ },
+ {
+  "id": "w-34854d2f",
+  "fa": "مثل",
+  "say": "mesl"
+ },
+ {
+  "id": "w-67ee54c0",
+  "fa": "جیم",
+  "say": "jim"
+ },
+ {
+  "id": "w-6b25d966",
+  "fa": "جان",
+  "say": "joon"
+ },
+ {
+  "id": "w-0fb6a958",
+  "fa": "جوجه",
+  "say": "juje"
+ },
+ {
+  "id": "w-83086a79",
+  "fa": "چِ",
+  "say": "che"
+ },
+ {
+  "id": "w-caca9802",
+  "fa": "چای",
+  "say": "chây"
+ },
+ {
+  "id": "w-43a85476",
+  "fa": "چشم",
+  "say": "cheshm"
+ },
+ {
+  "id": "w-28096e38",
+  "fa": "حِ",
+  "say": "he"
+ },
+ {
+  "id": "w-0dc181ab",
+  "fa": "حال",
+  "say": "hâl"
+ },
+ {
+  "id": "w-cae281e9",
+  "fa": "حلوا",
+  "say": "halvâ"
+ },
+ {
+  "id": "w-2b0972f1",
+  "fa": "خِ",
+  "say": "khe"
+ },
+ {
+  "id": "w-5fe958e9",
+  "fa": "خوب",
+  "say": "khub"
+ },
+ {
+  "id": "w-0a363a71",
+  "fa": "خانه",
+  "say": "khâne"
+ },
+ {
+  "id": "w-69c6722d",
+  "fa": "دال",
+  "say": "dâl"
+ },
+ {
+  "id": "w-46e67dee",
+  "fa": "دل",
+  "say": "del"
+ },
+ {
+  "id": "w-c185a979",
+  "fa": "درخت",
+  "say": "derakht"
+ },
+ {
+  "id": "w-c723bcd4",
+  "fa": "ذال",
+  "say": "zâl"
+ },
+ {
+  "id": "w-9d5348b0",
+  "fa": "ذرت",
+  "say": "zorrat"
+ },
+ {
+  "id": "w-dd4281ed",
+  "fa": "لذیذ",
+  "say": "laziz"
+ },
+ {
+  "id": "w-3409811c",
+  "fa": "رِ",
+  "say": "re"
+ },
+ {
+  "id": "w-3b17b30a",
+  "fa": "روز",
+  "say": "ruz"
+ },
+ {
+  "id": "w-a01f7d93",
+  "fa": "رنگ",
+  "say": "rang"
+ },
+ {
+  "id": "w-370985d5",
+  "fa": "زِ",
+  "say": "ze"
+ },
+ {
+  "id": "w-60fa9b6a",
+  "fa": "زیبا",
+  "say": "zibâ"
+ },
+ {
+  "id": "w-d2800df9",
+  "fa": "زرد",
+  "say": "zard"
+ },
+ {
+  "id": "w-9d089367",
+  "fa": "ژِ",
+  "say": "zhe"
+ },
+ {
+  "id": "w-c979aeb3",
+  "fa": "ژاکت",
+  "say": "zhâkat"
+ },
+ {
+  "id": "w-74b5c2d1",
+  "fa": "ژاله",
+  "say": "zhâle"
+ },
+ {
+  "id": "w-0d377a24",
+  "fa": "سین",
+  "say": "sin"
+ },
+ {
+  "id": "w-1df9fb3e",
+  "fa": "سلام",
+  "say": "salâm"
+ },
+ {
+  "id": "w-e3373806",
+  "fa": "سیب",
+  "say": "sib"
+ },
+ {
+  "id": "w-4ec1c1e1",
+  "fa": "شین",
+  "say": "shin"
+ },
+ {
+  "id": "w-137204da",
+  "fa": "شیرین",
+  "say": "shirin"
+ },
+ {
+  "id": "w-7ceb8411",
+  "fa": "شب",
+  "say": "shab"
+ },
+ {
+  "id": "w-0269a38e",
+  "fa": "صاد",
+  "say": "sâd"
+ },
+ {
+  "id": "w-e065609f",
+  "fa": "صبح",
+  "say": "sobh"
+ },
+ {
+  "id": "w-ea706d7e",
+  "fa": "صدا",
+  "say": "sedâ"
+ },
+ {
+  "id": "w-1538741f",
+  "fa": "ضاد",
+  "say": "zâd"
+ },
+ {
+  "id": "w-6e8aca92",
+  "fa": "حوض",
+  "say": "howz"
+ },
+ {
+  "id": "w-8817863b",
+  "fa": "راضی",
+  "say": "râzi"
+ },
+ {
+  "id": "w-95edea03",
+  "fa": "طا",
+  "say": "tâ"
+ },
+ {
+  "id": "w-8c371081",
+  "fa": "طوطی",
+  "say": "tuti"
+ },
+ {
+  "id": "w-4943c7c3",
+  "fa": "طلا",
+  "say": "talâ"
+ },
+ {
+  "id": "w-76034220",
+  "fa": "ظا",
+  "say": "zâ"
+ },
+ {
+  "id": "w-d2240e22",
+  "fa": "خداحافظ",
+  "say": "khodâhâfez"
+ },
+ {
+  "id": "w-d736a423",
+  "fa": "ظهر",
+  "say": "zohr"
+ },
+ {
+  "id": "w-d94de2ea",
+  "fa": "عین",
+  "say": "eyn"
+ },
+ {
+  "id": "w-8568c566",
+  "fa": "عشق",
+  "say": "eshgh"
+ },
+ {
+  "id": "w-8973c8d3",
+  "fa": "عسل",
+  "say": "asal"
+ },
+ {
+  "id": "w-3d0dc06f",
+  "fa": "غین",
+  "say": "gheyn"
+ },
+ {
+  "id": "w-3b527cc0",
+  "fa": "غذا",
+  "say": "ghazâ"
+ },
+ {
+  "id": "w-c408d0cc",
+  "fa": "فِ",
+  "say": "fe"
+ },
+ {
+  "id": "w-9e9da61f",
+  "fa": "فارسی",
+  "say": "fârsi"
+ },
+ {
+  "id": "w-f1e4ebef",
+  "fa": "فال",
+  "say": "fâl"
+ },
+ {
+  "id": "w-cbc7d9c5",
+  "fa": "قاف",
+  "say": "ghâf"
+ },
+ {
+  "id": "w-4e12b7e2",
+  "fa": "قند",
+  "say": "ghand"
+ },
+ {
+  "id": "w-4d148521",
+  "fa": "قلب",
+  "say": "ghalb"
+ },
+ {
+  "id": "w-7d4ea288",
+  "fa": "کاف",
+  "say": "kâf"
+ },
+ {
+  "id": "w-bdcc46cd",
+  "fa": "کتاب",
+  "say": "ketâb"
+ },
+ {
+  "id": "w-628a1863",
+  "fa": "کباب",
+  "say": "kabâb"
+ },
+ {
+  "id": "w-d3afd8ce",
+  "fa": "گاف",
+  "say": "gâf"
+ },
+ {
+  "id": "w-4596656e",
+  "fa": "گل",
+  "say": "gol"
+ },
+ {
+  "id": "w-86170b58",
+  "fa": "گربه",
+  "say": "gorbe"
+ },
+ {
+  "id": "w-6655dbdb",
+  "fa": "لام",
+  "say": "lâm"
+ },
+ {
+  "id": "w-6f677530",
+  "fa": "لیمو",
+  "say": "limu"
+ },
+ {
+  "id": "w-fdf08d6a",
+  "fa": "لبخند",
+  "say": "labkhand"
+ },
+ {
+  "id": "w-12938933",
+  "fa": "میم",
+  "say": "mim"
+ },
+ {
+  "id": "w-2d75b334",
+  "fa": "مرسی",
+  "say": "mersi"
+ },
+ {
+  "id": "w-15744306",
+  "fa": "ماه",
+  "say": "mâh"
+ },
+ {
+  "id": "w-4978f1bf",
+  "fa": "نون",
+  "say": "nun"
+ },
+ {
+  "id": "w-76b25734",
+  "fa": "نان",
+  "say": "nân"
+ },
+ {
+  "id": "w-9f62d458",
+  "fa": "نوروز",
+  "say": "nowruz"
+ },
+ {
+  "id": "w-a98a4328",
+  "fa": "واو",
+  "say": "vâv"
+ },
+ {
+  "id": "w-d1bc784b",
+  "fa": "دوست",
+  "say": "dust"
+ },
+ {
+  "id": "w-b54dbc1f",
+  "fa": "وقت",
+  "say": "vaght"
+ },
+ {
+  "id": "w-c208cda6",
+  "fa": "هِ",
+  "say": "he"
+ },
+ {
+  "id": "w-959d70f7",
+  "fa": "هوا",
+  "say": "havâ"
+ },
+ {
+  "id": "w-49080f2b",
+  "fa": "یِ",
+  "say": "ye"
+ },
+ {
+  "id": "w-79a6f7a6",
+  "fa": "یک",
+  "say": "yek"
+ },
+ {
+  "id": "w-bc44568c",
+  "fa": "دریا",
+  "say": "daryâ"
+ },
+ {
+  "id": "w-7d543afb",
+  "fa": "خوش آمدی",
+  "say": "khosh âmadi"
+ },
+ {
+  "id": "w-d5063620",
+  "fa": "آسمان",
+  "say": "âsemân"
+ },
+ {
+  "id": "w-3ee94798",
+  "fa": "ایران",
+  "say": "irân"
+ },
+ {
+  "id": "w-76498ed5",
+  "fa": "آفرین",
+  "say": "âfarin"
+ },
+ {
+  "id": "w-6f4a0662",
+  "fa": "عالی بود",
+  "say": "âli bud"
+ },
+ {
+  "id": "w-50174eb6",
+  "fa": "نوش جان",
+  "say": "nush-e jân"
+ },
+ {
+  "id": "w-cfe5245a",
+  "fa": "دستت درد نکنه",
+  "say": "dastet dard nakone"
+ },
+ {
+  "id": "w-a06d07f9",
+  "fa": "سبزه",
+  "say": "sabze"
+ },
+ {
+  "id": "w-8818f871",
+  "fa": "سال نو مبارک",
+  "say": "sâl-e no mobârak"
+ },
+ {
+  "id": "w-16ebd423",
+  "fa": "به امید دیدار",
+  "say": "be omid-e didâr"
+ },
+ {
+  "id": "w-156bbba5",
+  "fa": "یلدا مبارک",
+  "say": "yaldâ mobârak"
+ },
+ {
+  "id": "w-79376d3c",
+  "fa": "چه خوب!",
+  "say": "che khub!"
+ },
+ {
+  "id": "w-017b98a6",
+  "fa": "قربونت برم",
+  "say": "ghorbunet beram"
+ },
+ {
+  "id": "w-355afd58",
+  "fa": "شب بخیر",
+  "say": "shab bekheyr"
+ },
+ {
+  "id": "w-60de3591",
+  "fa": "تبریک!",
+  "say": "tabrik!"
+ },
+ {
+  "id": "w-461e1d4c",
+  "fa": "حالت چطوره؟",
+  "say": "hâlet chetore?"
+ },
+ {
+  "id": "w-a1ce3d19",
+  "fa": "خوبم، مرسی",
+  "say": "khubam, mersi"
+ },
+ {
+  "id": "w-d5cd35df",
+  "fa": "اسم من … است",
+  "say": "esm-e man … e"
+ },
+ {
+  "id": "w-366bd11a",
+  "fa": "خوشبختم",
+  "say": "khoshbakhtam"
+ },
+ {
+  "id": "w-d0eafa28",
+  "fa": "خسته نباشی",
+  "say": "khaste nabâshi"
+ },
+ {
+  "id": "w-dc1c4ed7",
+  "fa": "دوستت دارم",
+  "say": "dustet dâram"
+ },
+ {
+  "id": "w-7ec64860",
+  "fa": "قطره قطره جمع گردد، وانگهی دریا شود",
+  "say": "ghatre ghatre jam' gardad, vângahi daryâ shavad"
+ },
+ {
+  "id": "w-1f176c59",
+  "fa": "کار نیکو کردن از پر کردن است",
+  "say": "kâr-e niku kardan az por kardan ast"
+ },
+ {
+  "id": "w-bfa020fc",
+  "fa": "صبر تلخ است ولیکن بر شیرین دارد",
+  "say": "sabr talkh ast valikan bar-e shirin dârad"
+ },
+ {
+  "id": "w-3147f3dd",
+  "fa": "یک دست صدا ندارد",
+  "say": "yek dast sedâ nadârad"
+ },
+ {
+  "id": "w-28c7d9b5",
+  "fa": "از دل برآید، لاجرم بر دل نشیند",
+  "say": "az del barâyad, lâjaram bar del neshinad"
+ },
+ {
+  "id": "w-9c7d1a46",
+  "fa": "دوست آن باشد که گیرد دست دوست",
+  "say": "dust ân bâshad ke girad dast-e dust"
+ },
+ {
+  "id": "w-8d71cadd",
+  "fa": "مادر",
+  "say": "mâdar"
+ },
+ {
+  "id": "w-5836fc21",
+  "fa": "پدر",
+  "say": "pedar"
+ },
+ {
+  "id": "w-232055a3",
+  "fa": "برادر",
+  "say": "barâdar"
+ },
+ {
+  "id": "w-43bd3848",
+  "fa": "خواهر",
+  "say": "khâhar"
+ },
+ {
+  "id": "w-63641174",
+  "fa": "خواب",
+  "say": "khâb"
+ },
+ {
+  "id": "w-b8020490",
+  "fa": "لطفاً",
+  "say": "lotfan"
+ },
+ {
+  "id": "w-5d31d73c",
+  "fa": "ایرانی",
+  "say": "irâni"
+ },
+ {
+  "id": "w-268e43fa",
+  "fa": "کتابِ من",
+  "say": "ketâb-e man"
+ },
+ {
+  "id": "w-009799db",
+  "fa": "۱ یک",
+  "say": "yek"
+ },
+ {
+  "id": "w-c0c645f2",
+  "fa": "۲ دو",
+  "say": "do"
+ },
+ {
+  "id": "w-86ff7e6c",
+  "fa": "۳ سه",
+  "say": "se"
+ },
+ {
+  "id": "w-ba581b04",
+  "fa": "۴ چهار",
+  "say": "chahâr"
+ },
+ {
+  "id": "w-805ec578",
+  "fa": "۵ پنج",
+  "say": "panj"
+ },
+ {
+  "id": "w-91212b89",
+  "fa": "۶ شش",
+  "say": "shesh"
+ },
+ {
+  "id": "w-7124b7c4",
+  "fa": "۷ هفت",
+  "say": "haft"
+ },
+ {
+  "id": "w-a6845602",
+  "fa": "۸ هشت",
+  "say": "hasht"
+ },
+ {
+  "id": "w-335c3863",
+  "fa": "۹ نه",
+  "say": "noh"
+ },
+ {
+  "id": "w-b70f0602",
+  "fa": "۱۰ ده",
+  "say": "dah"
+ },
+ {
+  "id": "w-f9109636",
+  "fa": "۲۰ بیست",
+  "say": "bist"
+ },
+ {
+  "id": "w-083dc8ce",
+  "fa": "۵۰ پنجاه",
+  "say": "panjâh"
+ },
+ {
+  "id": "w-fbec006c",
+  "fa": "۱۰۰ صد",
+  "say": "sad"
+ },
+ {
+  "id": "w-8bbfd889",
+  "fa": "۱۰۰۰ هزار",
+  "say": "hezâr"
+ },
+ {
+  "id": "w-317c1327",
+  "fa": "۵۰ هزار تومان",
+  "say": "panjâh hezâr tomân"
+ },
+ {
+  "id": "w-c94ec840",
+  "fa": "قیمت",
+  "say": "gheymat"
+ },
+ {
+  "id": "w-abdee373",
+  "fa": "ورود",
+  "say": "vorud"
+ },
+ {
+  "id": "w-6d5b1d5c",
+  "fa": "خروج",
+  "say": "khoruj"
+ },
+ {
+  "id": "w-7dcbbd2e",
+  "fa": "ورود ممنوع",
+  "say": "vorud mamnu'"
+ },
+ {
+  "id": "w-cd33c6c7",
+  "fa": "بکشید",
+  "say": "bekeshid"
+ },
+ {
+  "id": "w-29d80ebf",
+  "fa": "فشار دهید",
+  "say": "feshâr dahid"
+ },
+ {
+  "id": "w-0ab92606",
+  "fa": "باز",
+  "say": "bâz"
+ },
+ {
+  "id": "w-7101caef",
+  "fa": "بسته",
+  "say": "baste"
+ },
+ {
+  "id": "w-c640e987",
+  "fa": "آقایان",
+  "say": "âghâyân"
+ },
+ {
+  "id": "w-8af22bc7",
+  "fa": "بانوان",
+  "say": "bânovân"
+ },
+ {
+  "id": "w-4f5423f1",
+  "fa": "سرویس بهداشتی",
+  "say": "servis-e behdâshti"
+ },
+ {
+  "id": "w-74ee0d31",
+  "fa": "خیابان",
+  "say": "khiyâbân"
+ },
+ {
+  "id": "w-70db80d3",
+  "fa": "کوچه",
+  "say": "kuche"
+ },
+ {
+  "id": "w-c00e904c",
+  "fa": "میدان",
+  "say": "meydân"
+ },
+ {
+  "id": "w-68d39f98",
+  "fa": "ایستگاه مترو",
+  "say": "istgâh-e metro"
+ },
+ {
+  "id": "w-0bd92fbe",
+  "fa": "داروخانه",
+  "say": "dârukhâne"
+ },
+ {
+  "id": "w-9e0b9954",
+  "fa": "بیمارستان",
+  "say": "bimârestân"
+ },
+ {
+  "id": "w-966dc589",
+  "fa": "نانوایی",
+  "say": "nânvâyi"
+ },
+ {
+  "id": "w-70457b89",
+  "fa": "فرودگاه",
+  "say": "forudgâh"
+ },
+ {
+  "id": "w-2f5934d7",
+  "fa": "قهوه",
+  "say": "ghahve"
+ },
+ {
+  "id": "w-e8c4d248",
+  "fa": "دوغ",
+  "say": "dugh"
+ },
+ {
+  "id": "w-4e941e2b",
+  "fa": "چلوکباب",
+  "say": "chelo kabâb"
+ },
+ {
+  "id": "w-c59de51e",
+  "fa": "جوجه‌کباب",
+  "say": "juje kabâb"
+ },
+ {
+  "id": "w-69599a36",
+  "fa": "کوبیده",
+  "say": "kubide"
+ },
+ {
+  "id": "w-6b92b16b",
+  "fa": "قورمه‌سبزی",
+  "say": "ghorme sabzi"
+ },
+ {
+  "id": "w-d1b71932",
+  "fa": "فسنجان",
+  "say": "fesenjân"
+ },
+ {
+  "id": "w-f30849a6",
+  "fa": "ته‌دیگ",
+  "say": "tahdig"
+ },
+ {
+  "id": "w-cc908cd9",
+  "fa": "آش رشته",
+  "say": "âsh-e reshte"
+ },
+ {
+  "id": "w-6a8310d8",
+  "fa": "ماست",
+  "say": "mâst"
+ },
+ {
+  "id": "w-9bb2b249",
+  "fa": "سالاد شیرازی",
+  "say": "sâlâd shirâzi"
+ },
+ {
+  "id": "w-ad8d52ab",
+  "fa": "بستنی سنتی",
+  "say": "bastani sonnati"
+ },
+ {
+  "id": "w-9a05cb3b",
+  "fa": "فالوده",
+  "say": "fâlude"
+ },
+ {
+  "id": "w-9aa5684a",
+  "fa": "سلام عزیزم!",
+  "say": "salâm azizam!"
+ },
+ {
+  "id": "w-df0d421f",
+  "fa": "کی می‌رسی؟",
+  "say": "key mirasi?"
+ },
+ {
+  "id": "w-b42b4450",
+  "fa": "منتظرتیم",
+  "say": "montazeretim"
+ },
+ {
+  "id": "w-a7c566f4",
+  "fa": "دلمون برات تنگ شده",
+  "say": "delemun barât tang shode"
+ },
+ {
+  "id": "w-f145c839",
+  "fa": "فردا ساعت ۸ فرودگاهیم",
+  "say": "fardâ sâ'at-e hasht forudgâhim"
+ },
+ {
+  "id": "w-5d470f6f",
+  "fa": "شام بیا خونه‌ی ما",
+  "say": "shâm biyâ khune-ye mâ"
+ },
+ {
+  "id": "w-256c921d",
+  "fa": "مواظب خودت باش",
+  "say": "movâzeb-e khodet bâsh"
+ },
+ {
+  "id": "w-2427841a",
+  "fa": "بوس!",
+  "say": "bus!"
+ },
+ {
+  "id": "w-c4c08057",
+  "fa": "امروز جمعه است.",
+  "say": "emruz jom'e ast."
+ },
+ {
+  "id": "w-75a3496a",
+  "fa": "ما خانهٔ مادربزرگ هستیم.",
+  "say": "mâ khâne-ye mâdarbozorg hastim."
+ },
+ {
+  "id": "w-59e629a3",
+  "fa": "مادربزرگ چای می‌آورد.",
+  "say": "mâdarbozorg chây miâvarad."
+ },
+ {
+  "id": "w-af681438",
+  "fa": "چای داغ و خوشبو است.",
+  "say": "chây dâgh va khoshbu ast."
+ },
+ {
+  "id": "w-35a2c692",
+  "fa": "من می‌گویم: «مرسی، خیلی خوشمزه است!»",
+  "say": "man miguyam: «mersi, kheyli khoshmaze ast!»"
+ },
+ {
+  "id": "w-036f6be0",
+  "fa": "مادربزرگ می‌خندد و می‌گوید: «نوش جان!»",
+  "say": "mâdarbozorg mikhandad va miguyad: «nush-e jân!»"
+ },
+ {
+  "id": "w-05417420",
+  "fa": "ببخشید، متوجه نشدم.",
+  "say": "bebakhshid, motevajjeh nashodam."
+ },
+ {
+  "id": "w-0aa4fe8c",
+  "fa": "لطفاً آهسته‌تر صحبت کنید.",
+  "say": "lotfan âheste-tar sohbat konid."
+ },
+ {
+  "id": "w-c2dae6ca",
+  "fa": "دوباره بگید، لطفاً.",
+  "say": "dobâre begid, lotfan."
+ },
+ {
+  "id": "w-2de0760c",
+  "fa": "من فقط کمی فارسی بلدم.",
+  "say": "man faghat kami fârsi baladam."
+ },
+ {
+  "id": "w-91da5e25",
+  "fa": "این به فارسی چی می‌شه؟",
+  "say": "in be fârsi chi mishe?"
+ },
+ {
+  "id": "w-8af2fc0e",
+  "fa": "یعنی چی؟",
+  "say": "ya'ni chi?"
+ },
+ {
+  "id": "w-b085f1bd",
+  "fa": "می‌شه بنویسید؟",
+  "say": "mishe benevisid?"
+ },
+ {
+  "id": "w-2d7d540e",
+  "fa": "انگلیسی بلدید؟",
+  "say": "engilisi baladid?"
+ },
+ {
+  "id": "w-e4217062",
+  "fa": "آهان، فهمیدم!",
+  "say": "âhân, fahmidam!"
+ },
+ {
+  "id": "w-9380960e",
+  "fa": "سلام خانم، خوش اومدید! چی لازم دارید؟",
+  "say": "salâm khânom, khosh umadid! chi lâzem dârid?"
+ },
+ {
+  "id": "w-18d0e325",
+  "fa": "ببخشید، من فقط کمی فارسی بلدم.",
+  "say": "bebakhshid, man faghat kami fârsi baladam."
+ },
+ {
+  "id": "w-27acdde1",
+  "fa": "اِ، چه خوب! چی لازم دارید؟",
+  "say": "e, che khub! chi lâzem dârid?"
+ },
+ {
+  "id": "w-3cb16374",
+  "fa": "چشم! چی... لازم... دارید؟",
+  "say": "cheshm! chi, lâzem, dârid?"
+ },
+ {
+  "id": "w-68107506",
+  "fa": "زعفرون. بهترین زعفرون ایران!",
+  "say": "za'farun. behtarin za'farun-e irân!"
+ },
+ {
+  "id": "w-422f7b83",
+  "fa": "آهان، فهمیدم! مرسی.",
+  "say": "âhân, fahmidam! mersi."
+ },
+ {
+  "id": "w-7c6514b7",
+  "fa": "سلام، حال شما چطوره؟",
+  "say": "salâm, hâl-e shomâ chetore?"
+ },
+ {
+  "id": "w-e0a772cc",
+  "fa": "خیلی خوشبختم.",
+  "say": "kheyli khoshbakhtam."
+ },
+ {
+  "id": "w-cae3502e",
+  "fa": "من اهل کانادا هستم.",
+  "say": "man ahl-e kânâdâ hastam."
+ },
+ {
+  "id": "w-181057b7",
+  "fa": "دارم فارسی یاد می‌گیرم.",
+  "say": "dâram fârsi yâd migiram."
+ },
+ {
+  "id": "w-b6495faa",
+  "fa": "خوشحالم که می‌بینمتون.",
+  "say": "khoshhâlam ke mibinametun."
+ },
+ {
+  "id": "w-530b3fff",
+  "fa": "خانواده خوبن؟",
+  "say": "khânevâde khuban?"
+ },
+ {
+  "id": "w-abed81ef",
+  "fa": "ممنون، شما لطف دارید.",
+  "say": "mamnun, shomâ lotf dârid."
+ },
+ {
+  "id": "w-c577eb64",
+  "fa": "جای شما خالی بود.",
+  "say": "jâ-ye shomâ khâli bud."
+ },
+ {
+  "id": "w-10d305fd",
+  "fa": "سلام عزیزم! خوش اومدی!",
+  "say": "salâm azizam! khosh umadi!"
+ },
+ {
+  "id": "w-b4218e55",
+  "fa": "خوبم عزیزم، مرسی. تو چطوری؟",
+  "say": "khubam azizam, mersi. to chetori?"
+ },
+ {
+  "id": "w-aff22611",
+  "fa": "منم خوبم، ممنون. خیلی خوشبختم.",
+  "say": "manam khubam, mamnun. kheyli khoshbakhtam."
+ },
+ {
+  "id": "w-4ade0be0",
+  "fa": "وای، فارسی حرف می‌زنی!",
+  "say": "vây, fârsi harf mizani!"
+ },
+ {
+  "id": "w-cbed7bd4",
+  "fa": "یه کم! دارم فارسی یاد می‌گیرم.",
+  "say": "ye kam! dâram fârsi yâd migiram."
+ },
+ {
+  "id": "w-a8ac70d3",
+  "fa": "آفرین! خیلی خوب حرف می‌زنی.",
+  "say": "âfarin! kheyli khub harf mizani."
+ },
+ {
+  "id": "w-2aea5d04",
+  "fa": "بفرمایید، اینم پاسپورتم.",
+  "say": "befarmâyid, inam pâsportam."
+ },
+ {
+  "id": "w-757c96d5",
+  "fa": "برای دیدن خانواده اومدم.",
+  "say": "barâye didan-e khânevâde umadam."
+ },
+ {
+  "id": "w-608e2cd0",
+  "fa": "دو هفته می‌مونم.",
+  "say": "do hafte mimunam."
+ },
+ {
+  "id": "w-58b4eab5",
+  "fa": "چمدونم کجاست؟",
+  "say": "chamedunam kojâst?"
+ },
+ {
+  "id": "w-7a90d824",
+  "fa": "صرافی کجاست؟",
+  "say": "sarrâfi kojâst?"
+ },
+ {
+  "id": "w-3ba73dab",
+  "fa": "سیم‌کارت از کجا بخرم؟",
+  "say": "simkârt az kojâ bekharam?"
+ },
+ {
+  "id": "w-7ff24ee8",
+  "fa": "وای‌فای دارید؟",
+  "say": "vây-fây dârid?"
+ },
+ {
+  "id": "w-2ed2054a",
+  "fa": "سلام. پاسپورت لطفاً.",
+  "say": "salâm. pâsport lotfan."
+ },
+ {
+  "id": "w-91cc704b",
+  "fa": "سلام. بفرمایید، اینم پاسپورتم.",
+  "say": "salâm. befarmâyid, inam pâsportam."
+ },
+ {
+  "id": "w-ae8a80c0",
+  "fa": "برای چی اومدید ایران؟",
+  "say": "barâye chi umadid irân?"
+ },
+ {
+  "id": "w-1b293f8d",
+  "fa": "چند وقت می‌مونید؟",
+  "say": "chand vaght mimunid?"
+ },
+ {
+  "id": "w-db0f8d55",
+  "fa": "خوش اومدید. سفر خوبی داشته باشید!",
+  "say": "khosh umadid. safar-e khubi dâshte bâshid!"
+ },
+ {
+  "id": "w-1a280f63",
+  "fa": "خیلی ممنون!",
+  "say": "kheyli mamnun!"
+ },
+ {
+  "id": "w-4b25f8d8",
+  "fa": "لطفاً برید میدون آزادی.",
+  "say": "lotfan berid meydun-e âzâdi."
+ },
+ {
+  "id": "w-6a2a6aa4",
+  "fa": "خیلی دوره؟",
+  "say": "kheyli dure?"
+ },
+ {
+  "id": "w-1ac38358",
+  "fa": "مستقیم برید.",
+  "say": "mostaghim berid."
+ },
+ {
+  "id": "w-b666ab65",
+  "fa": "بپیچید دست راست.",
+  "say": "bepichid dast-e râst."
+ },
+ {
+  "id": "w-8f8f5144",
+  "fa": "بپیچید دست چپ.",
+  "say": "bepichid dast-e chap."
+ },
+ {
+  "id": "w-8244d404",
+  "fa": "اینجا نگه دارید، لطفاً.",
+  "say": "injâ negah dârid, lotfan."
+ },
+ {
+  "id": "w-87ec16a1",
+  "fa": "چقدر می‌شه؟",
+  "say": "cheghadr mishe?"
+ },
+ {
+  "id": "w-22f3564d",
+  "fa": "ممنون، خسته نباشید.",
+  "say": "mamnun, khaste nabâshid."
+ },
+ {
+  "id": "w-a01dd4fa",
+  "fa": "سلام، بفرمایید. کجا می‌رید؟",
+  "say": "salâm, befarmâyid. kojâ mirid?"
+ },
+ {
+  "id": "w-113e346f",
+  "fa": "سلام. لطفاً برید میدون آزادی.",
+  "say": "salâm. lotfan berid meydun-e âzâdi."
+ },
+ {
+  "id": "w-8766765d",
+  "fa": "نه، ده دقیقه‌ست.",
+  "say": "na, dah daghighe-st."
+ },
+ {
+  "id": "w-0dec7488",
+  "fa": "اینجا نگه دارید، لطفاً. چقدر می‌شه؟",
+  "say": "injâ negah dârid, lotfan. cheghadr mishe?"
+ },
+ {
+  "id": "w-d7c36eaa",
+  "fa": "قابل نداره.",
+  "say": "ghâbel nadâre."
+ },
+ {
+  "id": "w-50f2103b",
+  "fa": "نه، خواهش می‌کنم. چقدر می‌شه؟",
+  "say": "na, khâhesh mikonam. cheghadr mishe?"
+ },
+ {
+  "id": "w-7329651a",
+  "fa": "صد و پنجاه تومن.",
+  "say": "sad o panjâh tomen."
+ },
+ {
+  "id": "w-4fc41880",
+  "fa": "بفرمایید. ممنون، خسته نباشید.",
+  "say": "befarmâyid. mamnun, khaste nabâshid."
+ },
+ {
+  "id": "w-397d70aa",
+  "fa": "فقط نگاه می‌کنم، مرسی.",
+  "say": "faghat negâh mikonam, mersi."
+ },
+ {
+  "id": "w-ecf36cc2",
+  "fa": "این چنده؟",
+  "say": "in chande?"
+ },
+ {
+  "id": "w-0f04d4d6",
+  "fa": "خیلی گرونه!",
+  "say": "kheyli gerune!"
+ },
+ {
+  "id": "w-5f3a1db6",
+  "fa": "تخفیف می‌دید؟",
+  "say": "takhfif midid?"
+ },
+ {
+  "id": "w-6ebfc663",
+  "fa": "رنگ دیگه‌ای دارید؟",
+  "say": "rang-e dige-i dârid?"
+ },
+ {
+  "id": "w-6cfdf40f",
+  "fa": "اینو می‌خوام.",
+  "say": "ino mikhâm."
+ },
+ {
+  "id": "w-588b6958",
+  "fa": "باشه، می‌خرمش.",
+  "say": "bâshe, mikharamesh."
+ },
+ {
+  "id": "w-cb78edb3",
+  "fa": "بفرمایید خانم، چی می‌خواید؟",
+  "say": "befarmâyid khânom, chi mikhâyd?"
+ },
+ {
+  "id": "w-c0d17c54",
+  "fa": "این روسری‌ها خیلی قشنگن!",
+  "say": "in rusari-hâ kheyli ghashangan!"
+ },
+ {
+  "id": "w-524585be",
+  "fa": "پونصد تومن.",
+  "say": "punsad tomen."
+ },
+ {
+  "id": "w-bcd3e851",
+  "fa": "خیلی گرونه! تخفیف می‌دید؟",
+  "say": "kheyli gerune! takhfif midid?"
+ },
+ {
+  "id": "w-781b44e4",
+  "fa": "برای شما، چهارصد.",
+  "say": "barâye shomâ, chahârsad."
+ },
+ {
+  "id": "w-24dbb2bb",
+  "fa": "منو، لطفاً.",
+  "say": "menu, lotfan."
+ },
+ {
+  "id": "w-821abef8",
+  "fa": "یه چای، لطفاً.",
+  "say": "ye chây, lotfan."
+ },
+ {
+  "id": "w-c725e84f",
+  "fa": "این چیه؟",
+  "say": "in chiye?"
+ },
+ {
+  "id": "w-22456aa4",
+  "fa": "من گیاه‌خوارم.",
+  "say": "man giyâh-khâram."
+ },
+ {
+  "id": "w-6de3bd5a",
+  "fa": "خیلی خوشمزه بود!",
+  "say": "kheyli khoshmaze bud!"
+ },
+ {
+  "id": "w-235661b1",
+  "fa": "صورت‌حساب، لطفاً.",
+  "say": "surat-hesâb, lotfan."
+ },
+ {
+  "id": "w-abaf5580",
+  "fa": "بیرون‌بر، لطفاً.",
+  "say": "birunbar, lotfan."
+ },
+ {
+  "id": "w-266e5b8d",
+  "fa": "سلام، خوش اومدید. چی میل دارید؟",
+  "say": "salâm, khosh umadid. chi meyl dârid?"
+ },
+ {
+  "id": "w-80fd5522",
+  "fa": "بفرمایید.",
+  "say": "befarmâyid."
+ },
+ {
+  "id": "w-7f5249a0",
+  "fa": "دیزیه؛ آبگوشت سنتی. خیلی خوشمزه‌ست.",
+  "say": "dizi-ye; âbgusht-e sonnati. kheyli khoshmaze-st."
+ },
+ {
+  "id": "w-5835c9f8",
+  "fa": "باشه، یه دیزی و یه دوغ، لطفاً.",
+  "say": "bâshe, ye dizi o ye dugh, lotfan."
+ },
+ {
+  "id": "w-ba67f71e",
+  "fa": "خیلی خوشمزه بود! صورت‌حساب، لطفاً.",
+  "say": "kheyli khoshmaze bud! surat-hesâb, lotfan."
+ },
+ {
+  "id": "w-8f186085",
+  "fa": "قابل شما رو نداره.",
+  "say": "ghâbel-e shomâ ro nadâre."
+ },
+ {
+  "id": "w-fe3c5648",
+  "fa": "خونه‌تون خیلی قشنگه.",
+  "say": "khune-tun kheyli ghashange."
+ },
+ {
+  "id": "w-0fe9b07c",
+  "fa": "خیلی خوشمزه‌ست!",
+  "say": "kheyli khoshmaze-st!"
+ },
+ {
+  "id": "w-21ac65f5",
+  "fa": "نه مرسی، سیر شدم.",
+  "say": "na mersi, sir shodam."
+ },
+ {
+  "id": "w-9a30bfb9",
+  "fa": "فقط یه کم، لطفاً.",
+  "say": "faghat ye kam, lotfan."
+ },
+ {
+  "id": "w-3fceb3aa",
+  "fa": "زحمت کشیدید.",
+  "say": "zahmat keshidid."
+ },
+ {
+  "id": "w-eb36c1dc",
+  "fa": "دستتون درد نکنه.",
+  "say": "dastetun dard nakone."
+ },
+ {
+  "id": "w-67c6f302",
+  "fa": "شب خیلی خوبی بود.",
+  "say": "shab-e kheyli khubi bud."
+ },
+ {
+  "id": "w-b9060d9e",
+  "fa": "خوش اومدی عزیزم! بفرما بشین.",
+  "say": "khosh umadi azizam! befarmâ beshin."
+ },
+ {
+  "id": "w-c6ad3da0",
+  "fa": "مرسی. این یه هدیه‌ی کوچیکه، قابل شما رو نداره.",
+  "say": "mersi. in ye hedye-ye kuchike, ghâbel-e shomâ ro nadâre."
+ },
+ {
+  "id": "w-647caea0",
+  "fa": "وای، چرا زحمت کشیدی؟",
+  "say": "vây, cherâ zahmat keshidi?"
+ },
+ {
+  "id": "w-5e150636",
+  "fa": "بازم برنج برات بکشم؟",
+  "say": "bâzam berenj barât bekesham?"
+ },
+ {
+  "id": "w-b96ac6cc",
+  "fa": "نه مرسی، سیر شدم. خیلی خوشمزه‌ست!",
+  "say": "na mersi, sir shodam. kheyli khoshmaze-st!"
+ },
+ {
+  "id": "w-8a858455",
+  "fa": "تعارف نکن دیگه!",
+  "say": "ta'ârof nakon dige!"
+ },
+ {
+  "id": "w-b1151540",
+  "fa": "فقط یه کم، لطفاً. دستتون درد نکنه.",
+  "say": "faghat ye kam, lotfan. dastetun dard nakone."
+ },
+ {
+  "id": "w-2a080b64",
+  "fa": "ببخشید آقا، مترو کجاست؟",
+  "say": "bebakhshid âghâ, metro kojâst?"
+ },
+ {
+  "id": "w-698a8d74",
+  "fa": "دوره یا نزدیکه؟",
+  "say": "dure yâ nazdike?"
+ },
+ {
+  "id": "w-016e680e",
+  "fa": "پیاده می‌شه رفت؟",
+  "say": "piyâde mishe raft?"
+ },
+ {
+  "id": "w-3ade3eb0",
+  "fa": "می‌شه رو نقشه نشونم بدید؟",
+  "say": "mishe ru naghshe neshunam bedid?"
+ },
+ {
+  "id": "w-bb4e175f",
+  "fa": "گم شدم.",
+  "say": "gom shodam."
+ },
+ {
+  "id": "w-657426bb",
+  "fa": "مستقیم برید، بعد بپیچید دست چپ.",
+  "say": "mostaghim berid, ba'd bepichid dast-e chap."
+ },
+ {
+  "id": "w-fca4129f",
+  "fa": "نزدیکه، پنج دقیقه پیاده.",
+  "say": "nazdike, panj daghighe piyâde."
+ },
+ {
+  "id": "w-1236b418",
+  "fa": "آره، ایناهاش. اینجاست.",
+  "say": "âre, inâhâsh. injâst."
+ },
+ {
+  "id": "w-8c64f324",
+  "fa": "خواهش می‌کنم.",
+  "say": "khâhesh mikonam."
+ },
+ {
+  "id": "w-599fea8e",
+  "fa": "کمک!",
+  "say": "komak!"
+ },
+ {
+  "id": "w-5b8e6e0f",
+  "fa": "حالم خوب نیست.",
+  "say": "hâlam khub nist."
+ },
+ {
+  "id": "w-6af6cdf4",
+  "fa": "سرم درد می‌کنه.",
+  "say": "saram dard mikone."
+ },
+ {
+  "id": "w-251ca2d8",
+  "fa": "دکتر لازم دارم.",
+  "say": "doktor lâzem dâram."
+ },
+ {
+  "id": "w-e04be9fd",
+  "fa": "داروخانه کجاست؟",
+  "say": "dârukhâne kojâst?"
+ },
+ {
+  "id": "w-bae1bdba",
+  "fa": "به آجیل حساسیت دارم.",
+  "say": "be âjil hassâsiyat dâram."
+ },
+ {
+  "id": "w-d58fecff",
+  "fa": "اورژانس",
+  "say": "urzhâns"
+ },
+ {
+  "id": "w-d933e355",
+  "fa": "سلام، بفرمایید.",
+  "say": "salâm, befarmâyid."
+ },
+ {
+  "id": "w-980bc219",
+  "fa": "سلام. حالم خوب نیست. سرم درد می‌کنه.",
+  "say": "salâm. hâlam khub nist. saram dard mikone."
+ },
+ {
+  "id": "w-64c0e519",
+  "fa": "از کی؟",
+  "say": "az key?"
+ },
+ {
+  "id": "w-d2920f1b",
+  "fa": "از دیشب.",
+  "say": "az dishab."
+ },
+ {
+  "id": "w-dd3a1429",
+  "fa": "این قرص رو بخورید، هر شش ساعت یکی.",
+  "say": "in ghors ro bokhorid, har shesh sâ'at yeki."
+ },
+ {
+  "id": "w-011170d9",
+  "fa": "ممنون. چقدر می‌شه؟",
+  "say": "mamnun. cheghadr mishe?"
+ },
+ {
+  "id": "w-2e318863",
+  "fa": "پنجاه تومن. ان‌شاءالله زود خوب بشید.",
+  "say": "panjâh tomen. inshâllâ zud khub beshid."
+ },
+ {
+  "id": "w-3758d55d",
+  "fa": "مرسی، خداحافظ.",
+  "say": "mersi, khodâhâfez."
+ },
+ {
+  "id": "w-bd0581f2",
+  "fa": "هوا خیلی خوبه!",
+  "say": "havâ kheyli khube!"
+ },
+ {
+  "id": "w-5a8415ec",
+  "fa": "ایران خیلی قشنگه.",
+  "say": "irân kheyli ghashange."
+ },
+ {
+  "id": "w-8be69f90",
+  "fa": "من عاشق غذای ایرانی‌ام.",
+  "say": "man âshegh-e ghazâ-ye irâni-am."
+ },
+ {
+  "id": "w-54141a58",
+  "fa": "شغلت چیه؟",
+  "say": "shoghlet chiye?"
+ },
+ {
+  "id": "w-8f53a780",
+  "fa": "واقعاً؟ چه جالب!",
+  "say": "vâghe'an? che jâleb!"
+ },
+ {
+  "id": "w-bd9b4432",
+  "fa": "خیلی خوش گذشت.",
+  "say": "kheyli khosh gozasht."
+ },
+ {
+  "id": "w-f5a49298",
+  "fa": "دلم برات تنگ می‌شه.",
+  "say": "delam barât tang mishe."
+ },
+ {
+  "id": "w-e0772732",
+  "fa": "خب، ایران رو دوست داری؟",
+  "say": "khob, irân ro dust dâri?"
+ },
+ {
+  "id": "w-5b876879",
+  "fa": "آره، ایران خیلی قشنگه! من عاشق غذای ایرانی‌ام.",
+  "say": "âre, irân kheyli ghashange! man âshegh-e ghazâ-ye irâni-am."
+ },
+ {
+  "id": "w-81bbc7ff",
+  "fa": "واقعاً؟ کدوم غذا رو بیشتر دوست داری؟",
+  "say": "vâghe'an? kodum ghazâ ro bishtar dust dâri?"
+ },
+ {
+  "id": "w-f667b5fc",
+  "fa": "هاها، همه ته‌دیگ دوست دارن!",
+  "say": "hâhâ, hame tahdig dust dâran!"
+ },
+ {
+  "id": "w-e107dfba",
+  "fa": "امشب خیلی خوش گذشت.",
+  "say": "emshab kheyli khosh gozasht."
+ },
+ {
+  "id": "w-001bcd70",
+  "fa": "به ما هم خوش گذشت. بازم بیا!",
+  "say": "be mâ ham khosh gozasht. bâzam biyâ!"
+ },
+ {
+  "id": "w-49cd7f67",
+  "fa": "حتماً! دلم برات تنگ می‌شه.",
+  "say": "hatman! delam barât tang mishe."
+ },
+ {
+  "id": "w-8ca2d84a",
+  "fa": "ببخشید",
+  "say": "bebakhshid"
+ },
+ {
+  "id": "w-701032aa",
+  "fa": "بله",
+  "say": "bale"
+ },
+ {
+  "id": "w-0bc56661",
+  "fa": "آره",
+  "say": "âre"
+ },
+ {
+  "id": "w-84d5315a",
+  "fa": "نه",
+  "say": "na"
+ },
+ {
+  "id": "w-7285a571",
+  "fa": "باشه",
+  "say": "bâshe"
+ },
+ {
+  "id": "w-b3e45412",
+  "fa": "نمی‌دونم",
+  "say": "nemidunam"
+ },
+ {
+  "id": "w-34dfc15e",
+  "fa": "دستشویی کجاست؟",
+  "say": "dastshuyi kojâst?"
+ },
+ {
+  "id": "w-3a45fc12",
+  "fa": "صبح بخیر",
+  "say": "sobh bekheyr"
+ },
+ {
+  "id": "w-88b45163",
+  "fa": "عصر بخیر",
+  "say": "asr bekheyr"
+ },
+ {
+  "id": "w-adc7bc81",
+  "fa": "عالی",
+  "say": "âli"
+ }
+]

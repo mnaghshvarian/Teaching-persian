@@ -4,20 +4,13 @@ import path from "node:path";
 import { timingSafeEqual } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { ROUTES, APP_PASSCODE, FAMILY_PIN, aiConfigured } from "./config.ts";
-import {
-  Anthropic,
-  DeclinedError,
-  cleanHistory,
-  cleanLearner,
-  streamChat,
-  judgeSpeech,
-  designLesson,
-} from "./claude.ts";
-import type { SpeechGuess } from "./claude.ts";
+import Anthropic from "@anthropic-ai/sdk";
+import { streamChat, judgeSpeech, designLesson } from "./claude.ts";
+import { DeclinedError, cleanHistory, cleanLearner, cleanGuesses } from "../docs/js/shared/shirin.js";
 import { VoiceStore } from "./voices.ts";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const PUBLIC_DIR = path.join(here, "..", "public");
+const PUBLIC_DIR = path.join(here, "..", "docs");
 
 function sameSecret(given: unknown, expected: string): boolean {
   if (typeof given !== "string") return false;
@@ -109,7 +102,8 @@ export function createApp(options: { voiceDir?: string } = {}) {
     const abort = new AbortController();
     res.on("close", () => abort.abort());
     try {
-      const { stopReason } = await streamChat(history, learner, (text) => send({ type: "text", text }), abort.signal);
+      const scenario = typeof req.body?.scenario === "string" ? req.body.scenario.slice(0, 20) : null;
+      const { stopReason } = await streamChat(history, learner, scenario, (text) => send({ type: "text", text }), abort.signal);
       if (stopReason === "refusal") {
         send({ type: "text", text: "\n\nI'm not able to help with that one — shall we go back to the garden? 🌿" });
       }
@@ -134,14 +128,7 @@ export function createApp(options: { voiceDir?: string } = {}) {
       res.status(400).json({ error: "bad-request", message: "Missing the word to practise." });
       return;
     }
-    const guesses: SpeechGuess[] = (Array.isArray(req.body?.heard) ? req.body.heard : [])
-      .slice(0, 8)
-      .map((g: Record<string, unknown>) => ({
-        text: String(g?.text ?? "").slice(0, 200),
-        confidence: Math.max(0, Math.min(1, Number(g?.confidence) || 0)),
-        lang: String(g?.lang ?? "").slice(0, 12),
-      }))
-      .filter((g: SpeechGuess) => g.text);
+    const guesses = cleanGuesses(req.body?.heard);
     const attempt = Math.max(1, Math.min(10, Number(req.body?.attempt) || 1));
     try {
       res.json(await judgeSpeech(target, guesses, attempt, cleanLearner(req.body?.learner)));

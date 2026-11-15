@@ -128,6 +128,16 @@ test("chat streams Shirin's reply using Opus 5.5 at medium effort", async () => 
   assert.ok(!("temperature" in body));
 });
 
+test("role-play: Shirin plays a situation from Speak in Iran", async () => {
+  requests.length = 0;
+  const res = await post("/api/chat", { messages: [{ role: "user", content: "Let's start" }], scenario: "s4", learner: {} });
+  await events(res);
+  const { body } = requests[0];
+  assert.equal(body.output_config.effort, "medium");
+  assert.match(body.system[1].text, /Role-play: Taxi and getting around/);
+  assert.match(body.system[1].text, /taxi driver/);
+});
+
 test("lesson design uses Opus 5.5 at xhigh effort with a JSON schema", async () => {
   requests.length = 0;
   const res = await post("/api/lesson", { topic: "Buying bread", learner: {} });

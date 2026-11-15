@@ -1,4 +1,6 @@
-// Model routing for Shirin.
+import { DEFAULT_ROUTES } from "../docs/js/shared/shirin.js";
+
+// Model routing for Shirin (defaults live in docs/js/shared/shirin.js).
 //
 // Two jobs, two settings — both on Claude Opus 5.5:
 //   • "design" — preparing lessons and teaching material. Runs at effort "xhigh"
@@ -29,12 +31,12 @@ export interface Route {
 
 export const ROUTES: { design: Route; talk: Route } = {
   design: {
-    model: process.env.DESIGN_MODEL?.trim() || "claude-opus-5-5",
-    effort: effortFrom(process.env.DESIGN_EFFORT, "xhigh"),
+    model: process.env.DESIGN_MODEL?.trim() || DEFAULT_ROUTES.design.model,
+    effort: effortFrom(process.env.DESIGN_EFFORT, DEFAULT_ROUTES.design.effort),
   },
   talk: {
-    model: process.env.TALK_MODEL?.trim() || "claude-opus-5-5",
-    effort: effortFrom(process.env.TALK_EFFORT, "medium"),
+    model: process.env.TALK_MODEL?.trim() || DEFAULT_ROUTES.talk.model,
+    effort: effortFrom(process.env.TALK_EFFORT, DEFAULT_ROUTES.talk.effort),
   },
 };
 

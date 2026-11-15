@@ -7,9 +7,9 @@ import {
   highlightSegments,
   letterForms,
   voiceId,
-} from "../public/js/lib/persian.js";
-import { ALPHABET } from "../public/js/data/alphabet.js";
-import { LESSONS } from "../public/js/data/lessons.js";
+} from "../docs/js/lib/persian.js";
+import { ALPHABET } from "../docs/js/data/alphabet.js";
+import { LESSONS } from "../docs/js/data/lessons.js";
 
 test("normalizeFa unifies Arabic and Persian letter variants", () => {
   assert.equal(normalizeFa("كتاب"), normalizeFa("کتاب"));
