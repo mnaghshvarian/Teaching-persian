@@ -169,6 +169,7 @@ def main() -> None:
     ap.add_argument("--min-match", type=float, default=0.5)
     ap.add_argument("--cache", default="", help="folder that keeps every Wikimedia reply, so reruns are quick")
     ap.add_argument("--minutes", type=float, default=0, help="stop fetching after this long and save what's done (0 = no limit)")
+    ap.add_argument("--pace", type=float, default=20, help="seconds between downloads, to stay under Wikimedia's limits")
     args = ap.parse_args()
     deadline = time.monotonic() + args.minutes * 60 if args.minutes else float("inf")
     global CACHE
@@ -200,12 +201,16 @@ def main() -> None:
                 continue
             path = OUT / f"{iid}.mp3"
             tmp = OUT / f"{iid}.native.mp3"
+            fresh = not (CACHE and (CACHE / hashlib.sha1(meta["url"].encode()).hexdigest()).exists())
             try:
-                raw = get(meta["url"], binary=True, patience=180)
+                # wait out Wikimedia's pauses as long as this run has time for
+                raw = get(meta["url"], binary=True, patience=max(0.0, deadline - time.monotonic()))
             except Throttled:
                 throttled += 1
-                print(f"  later: {title} (Wikimedia asked us to wait)", flush=True)
+                print(f"  later: {title} (no time left to wait for Wikimedia)", flush=True)
                 break
+            if fresh:
+                time.sleep(args.pace)
             prepare(raw, tmp)
             if check:
                 heard = check.heard(tmp)
