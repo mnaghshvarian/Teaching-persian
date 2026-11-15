@@ -23,6 +23,7 @@ export function moreView(onChange) {
       action("📲", "Put it on your Home Screen", "Use it like an app on iPhone", () => installHelp()),
       action("✈️", "Save for offline", "Take everything to Iran, no internet needed", () => saveForOffline()),
       action("⚙︎", "Settings", status.ai ? "Shirin is awake 🌿" : "Wake Shirin with an API key", () => openSettings(onChange)),
+      link("audio-credits.html", "🙏", "Recording credits", "The native speakers whose voices you hear"),
     ),
   );
 }

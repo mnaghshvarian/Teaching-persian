@@ -97,9 +97,14 @@ def main() -> None:
     key = os.environ.get("AZURE_SPEECH_KEY", "added-by-the-session-proxy")
     items = json.loads((ROOT / "scripts" / "audio-items.json").read_text(encoding="utf8"))
     only = set(filter(None, args.only.split(",")))
+    sources_path = ROOT / "scripts" / "audio-sources.json"
+    # words said by a native speaker (scripts/native_recordings.py) keep their real recording
+    native = set(json.loads(sources_path.read_text(encoding="utf8"))) if sources_path.exists() else set()
     todo = [
         it for it in items
-        if (not only or it["id"] in only) and not (args.only_missing and (OUT / f"{it['id']}.mp3").exists())
+        if it["id"] not in native
+        and (not only or it["id"] in only)
+        and not (args.only_missing and (OUT / f"{it['id']}.mp3").exists())
     ]
     print(f"{len(todo)} of {len(items)} recordings to make with {args.voice}", flush=True)
     if args.dry_run:
@@ -124,7 +129,7 @@ def main() -> None:
     ids = sorted(it["id"] for it in items if (OUT / f"{it['id']}.mp3").exists())
     files = {i: hashlib.sha1((OUT / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in ids}
     (OUT / "index.json").write_text(
-        json.dumps({"voice": f"Microsoft Azure {args.voice}", "ids": ids, "files": files}, separators=(",", ":")) + "\n",
+        json.dumps({"voice": f"Microsoft Azure {args.voice}", "ids": ids, "files": files, "native": sorted(native & set(ids))}, separators=(",", ":")) + "\n",
         encoding="utf8",
     )
     print(f"done: {len(ids)} recordings in docs/audio/")

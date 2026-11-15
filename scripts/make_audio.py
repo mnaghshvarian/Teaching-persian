@@ -223,10 +223,13 @@ def main() -> None:
     old_report = {}
     if report_path.exists():
         old_report = {r["id"]: r for r in json.loads(report_path.read_text(encoding="utf8"))}
+    sources_path = ROOT / "scripts" / "audio-sources.json"
+    native = set(json.loads(sources_path.read_text(encoding="utf8"))) if sources_path.exists() else set()
     ids, report = [], []
     for n, item in enumerate(items, 1):
         path = OUT / f"{item['id']}.mp3"
-        keep = (args.only_missing and path.exists()) or (only and item["id"] not in only)
+        # a native speaker's recording (scripts/native_recordings.py) is never replaced by the synthetic voice
+        keep = item["id"] in native or (args.only_missing and path.exists()) or (only and item["id"] not in only)
         if keep and path.exists():
             ids.append(item["id"])
             if item["id"] in old_report:
@@ -268,7 +271,7 @@ def main() -> None:
     # fetch a remade recording instead of playing a saved old copy
     files = {i: hashlib.sha1((OUT / f"{i}.mp3").read_bytes()).hexdigest()[:8] for i in sorted(ids)}
     (OUT / "index.json").write_text(
-        json.dumps({"voice": f"Piper {voice_name}", "ids": sorted(ids), "files": files}, separators=(",", ":")) + "\n",
+        json.dumps({"voice": f"Piper {voice_name}", "ids": sorted(ids), "files": files, "native": sorted(native & set(ids))}, separators=(",", ":")) + "\n",
         encoding="utf8",
     )
     if report:

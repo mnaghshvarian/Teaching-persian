@@ -1,0 +1,51 @@
+# Replace the synthetic voice with real native speakers' recordings wherever
+# Wikimedia Commons has one (see scripts/native_recordings.py), then commit them.
+# Run it by hand: Actions → Native recordings → Run workflow.
+
+name: Native recordings
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: native-recordings
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install ffmpeg and Whisper
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --quiet faster-whisper
+
+      - name: Fetch, check and prepare the recordings
+        run: python -u scripts/native_recordings.py --check deepdml/faster-whisper-large-v3-turbo-ct2 --cache .wm-cache
+
+      - name: Refresh the offline file list
+        run: node scripts/build-files.mjs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/audio docs/audio-credits.html docs/files.json scripts/audio-sources.json
+          if git diff --cached --quiet; then echo "Nothing changed."; exit 0; fi
+          git commit -m "Use native speakers' recordings from Wikimedia Commons"
+          git push
