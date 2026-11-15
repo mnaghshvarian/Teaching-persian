@@ -1,13 +1,19 @@
 """Make the garden's Persian recordings.
 
-Uses the open-source Piper voice "fa_IR-ganji-medium" (trained on a CC0
-dataset). Each item is tried two ways: the voice's own reading of the Persian
-script, and a reading driven by the hand-checked transliteration (which knows
-the short vowels and everyday Tehran forms the script leaves out). Whisper
-listens to each and the clearest is kept.
+Uses the open-source Piper voice "fa_IR-mana-medium" (MahtaFetrat/Mana-Persian-Piper,
+MIT licence), trained on ManaTTS — 114 hours of one native narrator from
+Nasl-e-Mana, the magazine of Iran's blind community, released under CC-0.
+
+Every recording is driven by the hand-checked transliteration, never by the
+voice's own reading of the script. Persian script leaves out the short vowels
+and the ezafe (کتاب من is ketâb-e man), so a voice reading the script on its
+own drops the ezafe — «نوش جان» comes out "nush jân" — and guesses vowels;
+the transliteration knows both. Whisper listens to a few takes and the
+clearest is kept. A blessing mark such as (ع) is said as its words
+(scripts/spoken.py), exactly as the transliteration shows.
 
   node scripts/collect-audio.mjs
-  python scripts/make_audio.py path/to/fa_IR-ganji-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
+  python scripts/make_audio.py path/to/fa_IR-mana-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
   # remake only some items, with more takes:  --only w-1234abcd,w-5678ef01 --takes 3
 
 Needs: pip install piper-tts, and ffmpeg on the PATH.
@@ -135,28 +141,10 @@ def phonemes_for(say: str) -> list[str]:
     return out
 
 
-NOISE = {"ˈ", "ˌ", "ː", " ", ".", ",", "?", "!", "‌"}
-
-
-def own_reading(voice, fa: str) -> list[str]:
-    """The voice's own reading of the Persian text (espeak-ng), exactly what it was trained on."""
-    out: list[str] = []
-    for sentence in voice.phonemize(fa):
-        out += [p for p in sentence if p != "‌"] + [" "]
-    while out and out[-1] == " ":
-        out.pop()
-    return out
-
-
 def candidates(voice, item) -> list[tuple[str, list[str]]]:
-    """Ways of saying an item: the voice's own reading of the Persian, and the
-    checked transliteration (which knows the short vowels and everyday Tehran
-    forms the script leaves out). The judge keeps whichever comes out clearest."""
-    mine = phonemes_for(item["say"])
-    theirs = own_reading(voice, spoken_fa(item["fa"], item["say"]))
-    if not theirs or [p for p in theirs if p not in NOISE] == [p for p in mine if p not in NOISE]:
-        return [("own", theirs or mine)]
-    return [("own", theirs), ("translit", mine)]
+    """How an item is said: always from the checked transliteration, which
+    carries the ezafe and the short vowels the script leaves out."""
+    return [("translit", phonemes_for(item["say"]))]
 
 
 def to_mp3(voice, audio, path: Path) -> None:
@@ -213,6 +201,7 @@ def main() -> None:
     ap.add_argument("--only-missing", action="store_true", help="keep existing recordings; make only new ones")
     ap.add_argument("--only", default="", help="comma-separated ids to remake")
     ap.add_argument("--force", action="store_true", help="with --only: replace even if the old recording scored higher")
+    ap.add_argument("--good", type=float, default=0.95, help="stop taking more takes once one scores this well")
     args = ap.parse_args()
 
     voice = PiperVoice.load(args.model)
@@ -253,9 +242,9 @@ def main() -> None:
                 sc, heard = judge.score(voice, audio, spoken_fa(item["fa"], item["say"]))
                 if sc > best_score:
                     best, best_score, best_heard, best_way = audio, sc, heard, way
-                if sc >= 0.95:
+                if sc >= args.good:
                     break
-            if not judge or best_score >= 0.95:
+            if not judge or best_score >= args.good:
                 break
         prev = old_report.get(item["id"])
         if judge and only and not args.force and path.exists() and prev and prev.get("score", -1) >= best_score:

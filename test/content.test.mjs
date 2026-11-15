@@ -13,8 +13,8 @@ import { listFiles } from "../scripts/build-files.mjs";
 
 const docs = new URL("../docs/", import.meta.url);
 
-test("Reading Room: six units, every item complete", () => {
-  assert.equal(READING.length, 6);
+test("Reading Room: eight units, every item complete", () => {
+  assert.equal(READING.length, 8);
   for (const unit of READING) {
     assert.ok(unit.title && unit.titleFa && unit.intro, unit.id);
     assert.ok(unit.items.length >= 6, `${unit.id} has enough to read`);

@@ -85,10 +85,11 @@ Every request uses adaptive thinking, prompt caching for Shirin's long instructi
 
 ## Real Persian sound on iPhone
 
-iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (1,205 clips, ~25 MB):
+iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (about 1,230 clips):
 
-- Voice: the open-source Piper voice **`fa_IR-ganji-medium`**, trained on a CC0 (public-domain) dataset. It replaced `fa_IR-amir-medium` after a family member heard many words said wrong. In a test of 80 words and phrases from the app, judged by a speech recognizer (Whisper large-v3-turbo), ganji was recognised as the right word far more often: 0.71 against 0.49 for single words, 0.91 against 0.83 for phrases. After remaking all 1,205 recordings this way, the 756 phrases score 0.95 (they scored 0.80 before) and the 449 single words 0.81.
-- How each recording is made: two readings are tried (and, for any that still came out unclear, three takes of each), the voice's own reading of the Persian script and one driven by the lesson's hand-checked transliteration, which knows the short vowels and everyday Tehran forms the script leaves out. Whisper listens to both, and the clearer one is kept. Scores and what Whisper heard are in [`scripts/audio-report.json`](scripts/audio-report.json).
+- Voice: **Mana**, the open Persian Piper voice [`MahtaFetrat/Mana-Persian-Piper`](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper) (MIT), trained on [ManaTTS](https://huggingface.co/datasets/MahtaFetrat/Mana-TTS): 114 hours of one native narrator from Nasl-e-Mana, the magazine of Iran's blind community, released under CC-0. It is the voice of the Sharif University group behind the ezafe-aware Persian pronunciation models [GE2PE and Homo-GE2PE](https://github.com/MahtaFetrat/Homo-GE2PE-Persian).
+- **The grammar comes from the lesson, not from a guess.** Persian script leaves out the short vowels and the ezafe (کتاب من is *ketâb-e man*). A voice reading the script itself drops the ezafe — «نوش جان» came out "nush jân", «سال نو مبارک» "sâl no" — which is how earlier recordings went wrong in 365 lines. Every recording is now driven by the lesson's hand-checked transliteration, so the ezafe and the short vowels are said exactly as shown under the line. Whisper (large-v3-turbo) listens to up to three takes and the clearest is kept; scores and what it heard are in [`scripts/audio-report.json`](scripts/audio-report.json).
+- **A second check on the transliterations.** The ezafe-aware G2P model Homo-GE2PE was run over every line, and the places where it and the transliteration disagree about an ezafe were reviewed by hand.
 - Each recording's address carries a fingerprint of its contents, so when one is remade, phones fetch the new one instead of playing a saved old copy.
 
 A synthetic voice is still a synthetic voice, and a speech recognizer is not a native ear. **Family voices** (More → Family voices) lets a Persian speaker at home check them: tap 🔊 to hear the app's voice, tap 👎 on any word it says wrong, then **Send the list** (it opens the share sheet, so it can go by Messages or WhatsApp) to have them fixed. They can also tap **● Record** to say the word themselves, and their recording then plays everywhere. On GitHub Pages, recordings stay on the device they were made on, so record on her phone; with the server, they're shared across devices.
@@ -126,26 +127,19 @@ node scripts/build-files.mjs   # refresh docs/files.json (offline file list) aft
 
 **The family's own voices.** In **More → Family voices**, anyone at home can record a word or story line and tap **🎙 Send my recordings**; the files (named by line) go out through the share sheet. `python scripts/add_family_recordings.py <files>` then adds them to the app for every phone, credited as family recordings, and the voice scripts never overwrite them. A recording made elsewhere can be added to one line with `--id w-… --start … --end …`.
 
-**Blessing marks are read as words.** «(ع)», «(ص)», «(س)» and «(عج)» are abbreviations; `scripts/spoken.py` turns them into «علیه‌السلام», «صلی‌الله‌علیه‌وآله», «سلام‌الله‌علیها» and «عجل‌الله‌تعالی‌فرجه» every time they are written («علیهم‌السلام» after «اهل بیت», and «علیهماالسلام» once after a pair of Imams), so no voice reads «ع» as the letter. The transliteration under each line shows the same words in the same place, and a test keeps the two together.
+**Blessing marks are written short and read in full.** «(ص)», «(ع)», «(س)», «(عج)» and «(ره)» are abbreviations; `scripts/spoken.py` turns them into «صلی‌الله‌علیه‌وآله», «علیه‌السلام», «سلام‌الله‌علیها», «عجل‌الله‌تعالی‌فرجه» and «رحمة‌الله‌علیه» every time they are written («علیهم‌السلام» after «اهل بیت», and «علیهماالسلام» once after a pair of Imams), so no voice reads «ع» as the letter. Each holy person gets their mark at their first mention in a story — (ره) for the loyal companions and the scholars — and the Reading Room's lesson *Written short, read in full* teaches every mark, the words it stands for and what they mean. The transliteration under each line shows the same words in the same place, and a test keeps the two together.
 
 **Commas follow the reading.** Where a name is followed straight away by another noun, a comma after the subject keeps it from being read as one phrase joined by ezafe: «نوح، مؤمنان را سوار کشتی کرد», not «نوحِ مؤمنان…».
 
 **Real native speakers first.** `scripts/native_recordings.py` replaces the synthetic voice with a native speaker's recording for every word that has one on Wikimedia Commons (mostly from the Lingua Libre project, CC0 or CC BY-SA), after Whisper confirms it's the right word. It credits every speaker in [`docs/audio-credits.html`](docs/audio-credits.html) (More → Recording credits), and the voice scripts below never overwrite these words. Wikimedia throttles busy cloud addresses, so it runs on GitHub: **Actions → Native recordings → Run workflow**.
 
-Regenerating the recordings with **Microsoft Azure's native Persian voice** (recommended; needs a free Azure Speech key, Canada Central region, the free tier covers the whole app):
-
-```bash
-node scripts/collect-audio.mjs
-AZURE_SPEECH_KEY=... python scripts/make_audio_azure.py        # all; --only w-1234abcd,... for some
-```
-
-Or with the open Piper voice:
+Regenerating the recordings with the open Mana voice:
 
 ```bash
 pip install piper-tts faster-whisper     # plus ffmpeg
-# download fa_IR-ganji-medium.onnx and .onnx.json from huggingface.co/rhasspy/piper-voices
+# download fa_IR-mana-medium.onnx and .onnx.json from huggingface.co/MahtaFetrat/Mana-Persian-Piper
 node scripts/collect-audio.mjs
-python scripts/make_audio.py fa_IR-ganji-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
+python scripts/make_audio.py fa_IR-mana-medium.onnx --takes 3 --judge deepdml/faster-whisper-large-v3-turbo-ct2
 # remake just some (e.g. words the family marked): --only w-1234abcd,w-5678ef01 --takes 3
 ```
 
@@ -167,4 +161,4 @@ test/                     offline tests
 
 ## Credits
 
-Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-ganji-medium` (dataset CC0, [tts.datacula.com](https://tts.datacula.com/)). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
+Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Mana Persian Piper](https://huggingface.co/MahtaFetrat/Mana-Persian-Piper) (MIT; dataset [ManaTTS](https://huggingface.co/datasets/MahtaFetrat/Mana-TTS), CC-0, from [Nasl-e-Mana](https://naslemana.com/)) on [Piper](https://github.com/rhasspy/piper); pronunciation check: [Homo-GE2PE](https://github.com/MahtaFetrat/Homo-GE2PE-Persian) (MIT). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
