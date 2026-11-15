@@ -359,7 +359,7 @@ export const BY_LESSON = Object.fromEntries(LESSONS.map((l) => [l.id, l]));
 export const PROVERBS = [
   { fa: "قطره قطره جمع گردد، وانگهی دریا شود", translit: "ghatre ghatre jam' gardad, vângahi daryâ shavad", meaning: "Drop by drop it gathers, and then it becomes a sea." },
   { fa: "کار نیکو کردن از پر کردن است", translit: "kâr-e niku kardan az por kardan ast", meaning: "Doing something well comes from doing it again and again." },
-  { fa: "صبر تلخ است ولیکن بر شیرین دارد", translit: "sabr talkh ast valikan bar-e shirin dârad", meaning: "Patience is bitter, but its fruit is sweet." },
+  { fa: "صبر تلخ است، ولیکن بر شیرین دارد", translit: "sabr talkh ast, valikan bar-e shirin dârad", meaning: "Patience is bitter, but its fruit is sweet." },
   { fa: "یک دست صدا ندارد", translit: "yek dast sedâ nadârad", meaning: "One hand makes no sound — we do things together." },
   { fa: "از دل برآید، لاجرم بر دل نشیند", translit: "az del barâyad, lâjaram bar del neshinad", meaning: "What comes from the heart, surely settles in the heart." },
   { fa: "دوست آن باشد که گیرد دست دوست", translit: "dust ân bâshad ke girad dast-e dust", meaning: "A friend is one who takes a friend's hand. — Saadi" },

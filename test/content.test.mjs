@@ -77,7 +77,7 @@ test("Shirin's shared requests: medium for talk and role-play, xhigh for lessons
 test("the pronunciation pauses exactly where the Persian does", () => {
   // the voice pauses at the transliteration's punctuation, so it must match the
   // Persian's: a comma under the line with no «،» above it is a pause no reader makes
-  const fa = (s) => [...s.replace(/\.\.\.|…|\n/g, "،")].filter((c) => "،؛؟:.!".includes(c)).map((c) => ({ "،": ",", "؛": ";", "؟": "?" })[c] ?? c).join("");
+  const fa = (s) => [...s.replace(/\.\.\.|…/g, "،").replace(/([،؛:.!؟])?\n/g, (_, m) => m ?? "،")].filter((c) => "،؛؟:.!".includes(c)).map((c) => ({ "،": ",", "؛": ";", "؟": "?" })[c] ?? c).join("");
   const tr = (s) => [...s.replace(/\.\.\.|…/g, ",")].filter((c) => ",;?:.!".includes(c)).join("");
   for (const it of collectItems()) assert.equal(tr(it.say), fa(it.fa), `${it.fa} — ${it.say}`);
 });

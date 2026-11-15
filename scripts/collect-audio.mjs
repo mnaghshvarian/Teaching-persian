@@ -18,7 +18,8 @@ const items = new Map();
 /** The pronunciation to synthesise: an explicit `say`, a "(said 'joon')" hint, or the transliteration. */
 function pronunciation(translit, say) {
   if (say) return say;
-  if (/\n/.test(translit ?? "")) translit = translit.replace(/\n/g, ", ");
+  // a line break between two half-verses is a pause; where a mark already ends the line, that mark is the pause
+  if (/\n/.test(translit ?? "")) translit = translit.replace(/([,.;:!?])?\n/g, (_, mark) => (mark ? `${mark} ` : ", "));
   const said = /\(said '([^']+)'\)/.exec(translit ?? "");
   if (said) return said[1];
   return String(translit ?? "").replace(/\(.*?\)/g, "").trim();

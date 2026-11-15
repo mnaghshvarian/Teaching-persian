@@ -112,3 +112,19 @@ test("a subject is not run into the next noun as if joined by ezafe", () => {
     assert.ok(lines.some((l) => l.includes(fixed)), fixed);
   }
 });
+
+test("poems pause where a reader pauses: every half-verse ends with a mark", () => {
+  // a comma after the first half-verse, a full stop (or ؟ !) at the end of the verse
+  for (const st of STORIES) {
+    for (const l of [...(st.poem ?? []), ...(st.couplets ?? [])]) {
+      for (const half of l.fa.split("\n")) assert.match(half, /[،؛:.!؟]$/, `${st.id}: «${half}» needs its pause mark`);
+    }
+  }
+});
+
+test("a word explained with «یعنی» is set off by commas, and every sentence ends with a mark", () => {
+  for (const st of STORIES) {
+    for (const l of storyLines(st)) assert.ok(!/»\s+یعنی/.test(l.fa), `${st.id}: ${l.fa} — a comma goes before «یعنی»`);
+    for (const l of [...(st.sentences ?? []), ...(st.quotes ?? [])]) assert.match(l.fa, /[.!؟?»:]$/, `${st.id}: ${l.fa}`);
+  }
+});
