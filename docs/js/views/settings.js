@@ -166,14 +166,24 @@ export function openSettings(onChange) {
 const isIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 export const isStandalone = () => window.matchMedia?.("(display-mode: standalone)").matches || navigator.standalone === true;
 
+/**
+ * On an iPhone, a link tapped inside WhatsApp, Instagram, Gmail and the like
+ * opens in that app's own little browser, which cannot add to the Home Screen.
+ * Safari and Chrome name themselves in the user agent; those little browsers don't.
+ */
+export const inOtherAppsBrowser = () => isIOS() && !isStandalone() && !/Safari\/|CriOS|FxiOS|EdgiOS/.test(navigator.userAgent);
+
 /** How to put the garden on the Home Screen, like an app. */
 export function installHelp() {
   const steps = isIOS()
     ? [
-        "Open this page in Safari.",
-        "Tap the Share button (the square with an arrow ⬆︎) at the bottom of the screen.",
-        "Scroll down and tap “Add to Home Screen”, then “Add”.",
-        "Open Golestan from its new icon — it opens full-screen, like an app.",
+        ...(inOtherAppsBrowser()
+          ? ["You're inside another app's browser. Tap ⋯ or the compass 🧭 and choose “Open in Safari” — then follow these steps there."]
+          : []),
+        "In Safari, tap the Share button (a square with an arrow ⬆︎). On newer iPhones, tap ⋯ at the bottom first, then Share.",
+        "Scroll down and tap “Add to Home Screen”. If you see “Open as Web App”, leave it switched on.",
+        "Tap “Add”. A Golestan icon appears on your Home Screen.",
+        "From now on, always open Golestan from that icon — your garden and progress live there.",
       ]
     : [
         "Open the browser menu (⋮ or ⋯).",

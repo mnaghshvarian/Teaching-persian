@@ -15,9 +15,11 @@ The whole garden is a static website in [`docs/`](docs/), so GitHub hosts it for
 1. On GitHub, open this repository → **Settings** → **Pages**.
 2. Under *Build and deployment*: **Source = Deploy from a branch**, **Branch = `claude/lucid-planck-luft8x`**, folder **`/docs`** → **Save**. (If you later merge into `main`, pick `main` here instead.)
 3. After a minute the page shows the address — it will be **https://mnaghshvarian.github.io/Teaching-persian/**.
-4. On her iPhone, open that address in **Safari** → tap **Share ⬆︎** → **Add to Home Screen**. Golestan gets its own icon and opens full-screen.
-5. In the app: **More → Save for offline**. Now every lesson, phrase and recording works without internet — on the plane and in Iran.
-6. *(Optional)* **More → Settings → Shirin's AI**: paste an Anthropic API key to wake Shirin for conversation, role-play and custom lessons (see below).
+4. Send her that address in a message. On her iPhone she taps it, and if it opens inside WhatsApp or another app, taps ⋯ / 🧭 → **Open in Safari**.
+5. In Safari: **Share ⬆︎** (on newer iPhones, tap **⋯** first) → **Add to Home Screen** → leave **Open as Web App** on → **Add**. Golestan gets its own icon and opens full-screen. The app itself shows these steps the first time.
+6. **From now on, open it from the icon.** On iPhones the icon keeps its own storage, separate from Safari, so do everything below *inside the icon's app*:
+   - **More → Save for offline** (on Wi-Fi, once — and again after big updates). Then every lesson, story and recording works without internet, on the plane and in Iran.
+   - *(Optional)* **More → Settings → Shirin's AI**: paste an Anthropic API key to wake Shirin for conversation, role-play and custom lessons (see below). Easiest if you do this once on her phone for her.
 
 ## What's inside
 
