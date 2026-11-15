@@ -1,14 +1,14 @@
 """Make the garden's Persian recordings.
 
-Uses the open-source Piper voice "fa_IR-amir-medium" (trained on a CC0
-dataset). Instead of letting the engine guess how to read Persian script
-(which drops the unwritten vowels and often reads formal spellings), it is
-driven by the hand-checked transliterations in the lesson data, converted to
-the same phoneme symbols the voice was trained on. So every word is said the
-way it is taught: everyday Tehran Persian.
+Uses the open-source Piper voice "fa_IR-ganji-medium" (trained on a CC0
+dataset). Each item is tried two ways: the voice's own reading of the Persian
+script, and a reading driven by the hand-checked transliteration (which knows
+the short vowels and everyday Tehran forms the script leaves out). Whisper
+listens to each and the clearest is kept.
 
   node scripts/collect-audio.mjs
-  python scripts/make_audio.py path/to/fa_IR-amir-medium.onnx --takes 3 --judge medium
+  python scripts/make_audio.py path/to/fa_IR-ganji-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
+  # remake only some items, with more takes:  --only w-1234abcd,w-5678ef01 --takes 3
 
 Needs: pip install piper-tts, and ffmpeg on the PATH.
 Writes docs/audio/<id>.mp3 and docs/audio/index.json.
@@ -250,6 +250,12 @@ def main() -> None:
                     break
             if not judge or best_score >= 0.95:
                 break
+        prev = old_report.get(item["id"])
+        if judge and only and path.exists() and prev and prev.get("score", -1) >= best_score:
+            # remaking on request: keep the current recording unless the new one is clearer
+            ids.append(item["id"])
+            report.append(prev)
+            continue
         to_mp3(voice, best, path)
         ids.append(item["id"])
         if judge:

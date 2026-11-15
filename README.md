@@ -32,7 +32,7 @@ The whole garden is a static website in [`docs/`](docs/), so GitHub hosts it for
 | 📜 **Stories** | **56 stories to read in Persian**, each with a picture — see *The Story Library* below. |
 | 💬 **Shirin** | Chat by typing or speaking — English, Persian or a mix — and **free role-play**: Shirin plays the taxi driver, the aunt, the shopkeeper, and adapts to whatever she says. |
 | 🔁 **Review** | Two minutes a day: words she has met come back (Persian first) just before she'd forget them. |
-| ✨ **More** | The 32-letter chart, tea-time history, Family voices, install help, offline saving, settings. |
+| ✨ **More** | The 32-letter chart, tea-time history, Family voices (check and record the voice), install help, offline saving, settings. |
 
 ## The Story Library
 
@@ -87,11 +87,11 @@ Every request uses adaptive thinking, prompt caching for Shirin's long instructi
 
 iPhones have no built-in Persian voice, so **every built-in word and phrase has its own recording** in [`docs/audio/`](docs/audio/) (1,205 clips, ~25 MB):
 
-- Voice: the open-source Piper voice **`fa_IR-amir-medium`**, trained on a CC0 (public-domain) dataset.
-- Pronunciation: instead of letting the engine guess from Persian script (which leaves out short vowels and reads formal spellings), it's driven by the **hand-checked transliterations** in the lessons, so it says everyday Tehran Persian (*dustet dâram*, not the engine's *dustat*). Where the engine's own reading has exactly the same sounds, its natural stress and rhythm are kept.
-- Quality check: for each phrase three takes are made and an independent speech recognizer (Whisper) picks the clearest; scores are in [`scripts/audio-report.json`](scripts/audio-report.json).
+- Voice: the open-source Piper voice **`fa_IR-ganji-medium`**, trained on a CC0 (public-domain) dataset. It replaced `fa_IR-amir-medium` after a family member heard many words said wrong. In a test of 80 words and phrases from the app, judged by a speech recognizer (Whisper large-v3-turbo), ganji was recognised as the right word far more often: 0.71 against 0.49 for single words, 0.91 against 0.83 for phrases. After remaking all 1,205 recordings this way, the 756 phrases score 0.95 (they scored 0.80 before) and the 449 single words 0.81.
+- How each recording is made: two readings are tried (and, for any that still came out unclear, three takes of each), the voice's own reading of the Persian script and one driven by the lesson's hand-checked transliteration, which knows the short vowels and everyday Tehran forms the script leaves out. Whisper listens to both, and the clearer one is kept. Scores and what Whisper heard are in [`scripts/audio-report.json`](scripts/audio-report.json).
+- Each recording's address carries a fingerprint of its contents, so when one is remade, phones fetch the new one instead of playing a saved old copy.
 
-A synthetic voice is still a synthetic voice. **Family voices** (More → Family voices) lets a Persian speaker at home record any word with one tap; their recording then plays instead, everywhere. On GitHub Pages recordings stay on the device they were made on; with the server, they're shared across devices.
+A synthetic voice is still a synthetic voice, and a speech recognizer is not a native ear. **Family voices** (More → Family voices) lets a Persian speaker at home check them: tap 🔊 to hear the app's voice, tap 👎 on any word it says wrong, then **Send the list** (it opens the share sheet, so it can go by Messages or WhatsApp) to have them fixed. They can also tap **● Record** to say the word themselves, and their recording then plays everywhere. On GitHub Pages, recordings stay on the device they were made on, so record on her phone; with the server, they're shared across devices.
 
 ## Best browsers
 
@@ -128,9 +128,10 @@ Regenerating the recordings after adding Persian content:
 
 ```bash
 pip install piper-tts faster-whisper     # plus ffmpeg
-# download fa_IR-amir-medium.onnx and .onnx.json from huggingface.co/rhasspy/piper-voices
+# download fa_IR-ganji-medium.onnx and .onnx.json from huggingface.co/rhasspy/piper-voices
 node scripts/collect-audio.mjs
-python scripts/make_audio.py fa_IR-amir-medium.onnx --takes 3 --judge medium
+python scripts/make_audio.py fa_IR-ganji-medium.onnx --judge deepdml/faster-whisper-large-v3-turbo-ct2
+# remake just some (e.g. words the family marked): --only w-1234abcd,w-5678ef01 --takes 3
 ```
 
 ```
@@ -151,4 +152,4 @@ test/                     offline tests
 
 ## Credits
 
-Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-amir-medium` (dataset CC0). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
+Paintings: [The Metropolitan Museum of Art](https://www.metmuseum.org/), Open Access (CC0) — titles and dates on each story. Voice: [Piper](https://github.com/rhasspy/piper) `fa_IR-ganji-medium` (dataset CC0, [tts.datacula.com](https://tts.datacula.com/)). Fonts: Vazirmatn, Noto Nastaliq Urdu, Fraunces, Nunito (SIL Open Font License). Claude via the official [Anthropic SDK](https://github.com/anthropics/anthropic-sdk-typescript) (MIT).
