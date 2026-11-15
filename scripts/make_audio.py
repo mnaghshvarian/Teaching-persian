@@ -307,13 +307,16 @@ def main() -> None:
                 report.append(old_report[item["id"]])
             continue
         best, best_score, best_heard, best_way = None, -1.0, "", ""
+        # Whisper can't judge a word said on its own (it hears "music" in a clear «علیه‌السلام»),
+        # so single words are made once, from their checked pronunciation, without a judge
+        judge_this = judge if " " in item["say"].strip() else None
         for way, ph in candidates(voice, item):
             missing = [p for p in ph if p not in known]
             if missing:
                 raise SystemExit(f"{item['say']}: unknown phonemes {missing}")
             for _ in range(max(1, args.takes)):
                 audio = speak(voice, ph, config)
-                if not judge:
+                if not judge_this:
                     best, best_way = audio, way
                     break
                 sc, heard = judge.score(voice, audio, spoken_fa(item["fa"], item["say"]))
@@ -321,17 +324,17 @@ def main() -> None:
                     best, best_score, best_heard, best_way = audio, sc, heard, way
                 if sc >= args.good:
                     break
-            if not judge or best_score >= args.good:
+            if not judge_this or best_score >= args.good:
                 break
         prev = old_report.get(item["id"])
-        if judge and only and not args.force and path.exists() and prev and prev.get("score", -1) >= best_score:
+        if judge_this and only and not args.force and path.exists() and prev and (prev.get("score") or -1) >= best_score:
             # remaking on request: keep the current recording unless the new one is clearer
             ids.append(item["id"])
             report.append(prev)
             continue
         to_mp3(voice, best, path)
         ids.append(item["id"])
-        if judge:
+        if judge_this:
             report.append({"id": item["id"], "fa": item["fa"], "way": best_way, "score": round(best_score, 2), "heard": best_heard})
         if n % 25 == 0:
             print(f"{n}/{len(items)}", flush=True)
