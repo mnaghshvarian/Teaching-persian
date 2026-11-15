@@ -145,7 +145,12 @@ class Check:
         self.model = WhisperModel(model, device="cpu", compute_type="int8", cpu_threads=4)
 
     def heard(self, path: Path) -> str:
-        segs, _ = self.model.transcribe(str(path), language="fa", beam_size=5, without_timestamps=True, condition_on_previous_text=False)
+        import numpy as np
+
+        # decode with ffmpeg ourselves: faster-whisper's own decoder depends on a PyAV version that isn't always installed
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", str(path), "-f", "s16le", "-ac", "1", "-ar", "16000", "-"], capture_output=True, check=True).stdout
+        pcm = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+        segs, _ = self.model.transcribe(pcm, language="fa", beam_size=5, without_timestamps=True, condition_on_previous_text=False)
         return "".join(s.text for s in segs).strip()
 
 
