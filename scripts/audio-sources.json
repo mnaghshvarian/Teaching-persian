@@ -244,6 +244,13 @@
   "speaker": "Afsham23",
   "license": "CC BY-SA 4.0"
  },
+ "w-36098442": {
+  "fa": "(س)",
+  "file": "Fa-س.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%B3.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
  "w-370985d5": {
   "fa": "زِ",
   "file": "Fa-ز.ogg",
@@ -460,5 +467,474 @@
   "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%DA%A9%D9%81%D8%B4.wav",
   "speaker": "Mazanin",
   "license": "CC0"
+ },
+ "w-5836fc21": {
+  "fa": "پدر",
+  "file": "Fa-پدر.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%BE%D8%AF%D8%B1.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-599fea8e": {
+  "fa": "کمک!",
+  "file": "Fa-كمك.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%83%D9%85%D9%83.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-59d2c2e4": {
+  "fa": "نگران",
+  "file": "LL-Q9168 (fas)-Afsham23-نِگَران.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%86%D9%90%DA%AF%D9%8E%D8%B1%D8%A7%D9%86.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-5aba081c": {
+  "fa": "موج",
+  "file": "Fa-موج.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%85%D9%88%D8%AC.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-5ba1f6f0": {
+  "fa": "مروارید",
+  "file": "LL-Q9168 (fas)-Afsham23-مُروارید.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%85%D9%8F%D8%B1%D9%88%D8%A7%D8%B1%DB%8C%D8%AF.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-5d31d73c": {
+  "fa": "ایرانی",
+  "file": "Fa-ایرانی.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-5dc5c21a": {
+  "fa": "عروسی",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-عروسی.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%B9%D8%B1%D9%88%D8%B3%DB%8C.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-5fc1dca4": {
+  "fa": "شیر",
+  "file": "LL-Q9168 (fas)-Afsham23-شیر.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%B4%DB%8C%D8%B1.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-5fe958e9": {
+  "fa": "خوب",
+  "file": "Fa-خوب.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AE%D9%88%D8%A8.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-60fa9b6a": {
+  "fa": "زیبا",
+  "file": "Fa-زيبا.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%B2%D9%8A%D8%A8%D8%A7.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-611b2d0e": {
+  "fa": "تاریک",
+  "file": "Fa-تاريك.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AA%D8%A7%D8%B1%D9%8A%D9%83.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-628a1863": {
+  "fa": "کباب",
+  "file": "LL-Q9168 (fas)-Darafsh-کباب.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Darafsh-%DA%A9%D8%A8%D8%A7%D8%A8.wav",
+  "speaker": "Darafsh",
+  "license": "CC0"
+ },
+ "w-63a9c5fa": {
+  "fa": "شاعر",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-شاعر.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%B4%D8%A7%D8%B9%D8%B1.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-68c6709a": {
+  "fa": "دام",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-دام.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AF%D8%A7%D9%85.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6a8310d8": {
+  "fa": "ماست",
+  "file": "LL-Q9168 (fas)-Afsham23-ماست.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%85%D8%A7%D8%B3%D8%AA.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-6b25d966": {
+  "fa": "جان",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-جان.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AC%D8%A7%D9%86.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6e8aca92": {
+  "fa": "حوض",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-حوض.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AD%D9%88%D8%B6.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6ed35134": {
+  "fa": "جوان",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-جوان.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AC%D9%88%D8%A7%D9%86.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6ef71b62": {
+  "fa": "حکومت",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-حکومت.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AD%DA%A9%D9%88%D9%85%D8%AA.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6f07989a": {
+  "fa": "پیراهن",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-پیراهن.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%BE%DB%8C%D8%B1%D8%A7%D9%87%D9%86.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-6f677530": {
+  "fa": "لیمو",
+  "file": "LL-Q9168 (fas)-Afsham23-لیمو.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%84%DB%8C%D9%85%D9%88.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-701032aa": {
+  "fa": "بله",
+  "file": "Fa-بله.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A8%D9%84%D9%87.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-70457b89": {
+  "fa": "فرودگاه",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-فرودگاه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%81%D8%B1%D9%88%D8%AF%DA%AF%D8%A7%D9%87.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-70db80d3": {
+  "fa": "کوچه",
+  "file": "LL-Q9168 (fas)-Afsham23-کوچه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%DA%A9%D9%88%DA%86%D9%87.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-70e8f5f5": {
+  "fa": "شاگرد",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-شاگرد.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%B4%D8%A7%DA%AF%D8%B1%D8%AF.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-7101caef": {
+  "fa": "بسته",
+  "file": "Fa-بسته.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A8%D8%B3%D8%AA%D9%87.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-732feab4": {
+  "fa": "عادلانه",
+  "file": "LL-Q9168 (fas)-Darafsh-عادلانه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Darafsh-%D8%B9%D8%A7%D8%AF%D9%84%D8%A7%D9%86%D9%87.wav",
+  "speaker": "Darafsh",
+  "license": "CC0"
+ },
+ "w-734bf488": {
+  "fa": "جنگ",
+  "file": "LL-Q9168 (fas)-Darafsh-جنگ.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Darafsh-%D8%AC%D9%86%DA%AF.wav",
+  "speaker": "Darafsh",
+  "license": "CC0"
+ },
+ "w-73e518e8": {
+  "fa": "کودک",
+  "file": "Fa-كودك.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%83%D9%88%D8%AF%D9%83.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-74b5c2d1": {
+  "fa": "ژاله",
+  "file": "Fa-ژاله.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%DA%98%D8%A7%D9%84%D9%87.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-74ee0d31": {
+  "fa": "خیابان",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-خیابان.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AE%DB%8C%D8%A7%D8%A8%D8%A7%D9%86.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-7530fa31": {
+  "fa": "اخلاق",
+  "file": "LL-Q9168 (fas)-Darafsh-اخلاق.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Darafsh-%D8%A7%D8%AE%D9%84%D8%A7%D9%82.wav",
+  "speaker": "Darafsh",
+  "license": "CC0"
+ },
+ "w-755f6132": {
+  "fa": "پا",
+  "file": "Fa-پا.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%BE%D8%A7.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-75c88cdc": {
+  "fa": "ایمان",
+  "file": "LL-Q9168 (fas)-Afsham23-ایمان.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%A7%DB%8C%D9%85%D8%A7%D9%86.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-76498ed5": {
+  "fa": "آفرین",
+  "file": "LL-Q9168 (fas)-Afsham23-آفَرین.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%A2%D9%81%D9%8E%D8%B1%DB%8C%D9%86.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-76b25734": {
+  "fa": "نان",
+  "file": "Fa-نان.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%86%D8%A7%D9%86.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-77d9aa52": {
+  "fa": "راه",
+  "file": "LL-Q9168 (fas)-Afsham23-راه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%B1%D8%A7%D9%87.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-79a6f7a6": {
+  "fa": "یک",
+  "file": "LL-Q9168 (fas)-Afsham23-یِک.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%DB%8C%D9%90%DA%A9.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-79b25bed": {
+  "fa": "نام",
+  "file": "Fa-نام.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%86%D8%A7%D9%85.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-79d7c201": {
+  "fa": "ابر",
+  "file": "Fa-ابر.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A7%D8%A8%D8%B1.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-7d543afb": {
+  "fa": "خوش آمدی",
+  "file": "LL-Q9168 (fas)-Afsham23-خوش آمدی.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%AE%D9%88%D8%B4_%D8%A2%D9%85%D8%AF%DB%8C.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-7d577d60": {
+  "fa": "دانا",
+  "file": "Fa-دانا.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AF%D8%A7%D9%86%D8%A7.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-7d6650fc": {
+  "fa": "عکس",
+  "file": "LL-Q9168 (fas)-Afsham23-عَکس.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%B9%D9%8E%DA%A9%D8%B3.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-7f69194e": {
+  "fa": "پنیر",
+  "file": "LL-Q9168 (fas)-Afsham23-پَنیر.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%BE%D9%8E%D9%86%DB%8C%D8%B1.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-7fb14213": {
+  "fa": "لباس",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-لباس.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%84%D8%A8%D8%A7%D8%B3.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-82ed44d8": {
+  "fa": "نقشه",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-نقشه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%86%D9%82%D8%B4%D9%87.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-83a820b2": {
+  "fa": "تاب",
+  "file": "Fa-تاب.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AA%D8%A7%D8%A8.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-84d5315a": {
+  "fa": "نه",
+  "file": "Fa-(9)نه.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-(9)%D9%86%D9%87.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-8568c566": {
+  "fa": "عشق",
+  "file": "Fa-عشق.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%B9%D8%B4%D9%82.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-86170b58": {
+  "fa": "گربه",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-گربه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%DA%AF%D8%B1%D8%A8%D9%87.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-86c9ab16": {
+  "fa": "تیر",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-تیر.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AA%DB%8C%D8%B1.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-89e7218d": {
+  "fa": "اشک",
+  "file": "Fa-اشک.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A7%D8%B4%DA%A9.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-8ca2d84a": {
+  "fa": "ببخشید",
+  "file": "LL-Q9168 (fas)-Afsham23-بِبَخشید.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%A8%D9%90%D8%A8%D9%8E%D8%AE%D8%B4%DB%8C%D8%AF.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-8d71cadd": {
+  "fa": "مادر",
+  "file": "Fa-مادر.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D9%85%D8%A7%D8%AF%D8%B1.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-8dbba60a": {
+  "fa": "سایه",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-سایه.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%B3%D8%A7%DB%8C%D9%87.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-8fc4a492": {
+  "fa": "زبان",
+  "file": "Fa-زبان.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%B2%D8%A8%D8%A7%D9%86.ogg",
+  "speaker": "Diako1971",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-9009dcfe": {
+  "fa": "ماهی",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-ماهی.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%85%D8%A7%D9%87%DB%8C.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-90579b49": {
+  "fa": "دانش",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-دانش.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%AF%D8%A7%D9%86%D8%B4.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-9482c066": {
+  "fa": "بازار",
+  "file": "Fa-بازار.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-959d70f7": {
+  "fa": "هوا",
+  "file": "LL-Q9168 (fas)-Afsham23-هَوا.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D9%87%D9%8E%D9%88%D8%A7.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
+ },
+ "w-966dc589": {
+  "fa": "نانوایی",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-نانوایی.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%86%D8%A7%D9%86%D9%88%D8%A7%DB%8C%DB%8C.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-9bb14da2": {
+  "fa": "مقام",
+  "file": "LL-Q9168 (fas)-Darafsh-مقام.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Darafsh-%D9%85%D9%82%D8%A7%D9%85.wav",
+  "speaker": "Darafsh",
+  "license": "CC0"
+ },
+ "w-9be703bd": {
+  "fa": "در",
+  "file": "Fa-در.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AF%D8%B1.ogg",
+  "speaker": "Wikimedia Commons contributor",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-9d57afc0": {
+  "fa": "دانه",
+  "file": "Fa-دانه.ogg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fa-%D8%AF%D8%A7%D9%86%D9%87.ogg",
+  "speaker": "The original uploader was AdaM at English Wikibooks .",
+  "license": "CC BY-SA 3.0"
+ },
+ "w-9e0b9954": {
+  "fa": "بیمارستان",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-بیمارستان.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D8%A8%DB%8C%D9%85%D8%A7%D8%B1%D8%B3%D8%AA%D8%A7%D9%86.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-9e9da61f": {
+  "fa": "فارسی",
+  "file": "LL-Q9168 (fas)-Mazanin (مازنین)-فارسی.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Mazanin_(%D9%85%D8%A7%D8%B2%D9%86%DB%8C%D9%86)-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C.wav",
+  "speaker": "Mazanin",
+  "license": "CC0"
+ },
+ "w-9fc6fe52": {
+  "fa": "بهشت",
+  "file": "LL-Q9168 (fas)-Afsham23-بِهِشت.wav",
+  "page": "https://commons.wikimedia.org/wiki/File:LL-Q9168_(fas)-Afsham23-%D8%A8%D9%90%D9%87%D9%90%D8%B4%D8%AA.wav",
+  "speaker": "Afsham23",
+  "license": "CC BY-SA 4.0"
  }
 }
